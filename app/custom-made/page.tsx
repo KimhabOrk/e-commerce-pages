@@ -71,20 +71,20 @@ export default function CustomMadePage() {
     <main className="relative min-h-screen container bg-black text-white">
       {/* Hero Section with Split Design */}
       <section className="relative flex w-full mx-auto justify-center items-center">
-        <div className="flex relative w-full h-auto aspect-video mx-auto">
+        <div className="flex relative max-w-full h-auto mx-auto">
           <Image
             src="https://ik.imagekit.io/kimhabork/assets/custom.png?updatedAt=1770285869097"
             alt="Custom Made Service"
             fill
             priority
-            className="object-cover w-7 h-7 md:w-10 md:h-10"
+            className="object-cover"
             sizes="100vw"
           />
         </div>
       </section>
       {/* Right Side - Content */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-black">
-        <div className="flex flex-col justify-center items-center text-center mx-auto max-w-6xl gap-6 md:gap-10">
+        <div className="flex flex-col justify-center items-center text-center mx-auto max-w-full gap-6 md:gap-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-serif font-bold uppercase">
             Custom Made
           </h1>
@@ -111,7 +111,7 @@ export default function CustomMadePage() {
 
       {/* Why Custom Made Section */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-black">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-full">
           <h2 className="font-serif text-xl md:text-3xl font-bold text-white text-center mb-4">
             Why Choose Custom Made?
           </h2>
@@ -146,18 +146,20 @@ export default function CustomMadePage() {
             {processSteps.map((step, index) => (
               <Card
                 key={index}
-                className="bg-muted/30 flex mx-auto justify-center items-center text-center"
+                className="bg-muted/30 flex flex-col mx-auto justify-center items-center text-center"
               >
                 <CardHeader>
-                  <div className="mb-4 w-8 h-8 md:w-12 md:h-12 flex items-center justify-center text-primary/70 group-hover:text-primary transition-colors">
+                  <div className="mb-4 w-8 h-8 md:w-12 md:h-12 flex items-center justify-center text-primary/80 group-hover:text-primary transition-colors">
                     {step.icon}
                   </div>
-                  <CardTitle className="font-serif text-lg md:text-xl font-semibold text-foreground mb-3 uppercase tracking-wide text-balance">
-                    {step.title}
+                  <CardTitle>
+                    <h3 className="font-serif text-lg md:text-xl font-semibold text-white uppercase tracking-wide text-balance">
+                      {step.title}
+                    </h3>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm md:text-base text-foreground/70 mb-4 leading-relaxed flex-grow text-balance">
+                  <p className="text-sm md:text-base text-white/70 leading-relaxed flex-grow text-balance">
                     {step.description}
                   </p>
                 </CardContent>

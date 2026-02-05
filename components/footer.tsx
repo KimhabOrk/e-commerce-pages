@@ -5,9 +5,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
   
   return (
-    <footer className="w-full border-t border-border/40 bg-background mt-20">
-      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-3 gap-4 md:gap-12 mb-6">
+    <footer className="w-full border-t border-border/40 bg-black mt-20">
+      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-12 bg-black md:py-16">
+        <div className="grid grid-cols-3 gap-2 md:gap-12 mb-4">
           {/* Company Links */}
           <div>
             <h4 className="font-semibold text-foreground mb-4 text-sm">Company</h4>
@@ -87,12 +87,12 @@ export function Footer() {
         </div>
         
         {/* Social Media */}
-        <div className="flex flex-wrap gap-4 md:gap-6 mx-auto justify-center items-center py-6 md:py-10">
+        <div className="flex flex-wrap gap-6 md:gap-8 mx-auto justify-center items-center py-4 md:py-8">
           <Link href="https://facebook.com/kimhaborkofficial">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
-              width={32} 
-              height={32} 
+              width={36} 
+              height={36} 
               alt="Facebook Logo"
               className="object-cover md:h-10 md:w-10"
             />
@@ -100,8 +100,8 @@ export function Footer() {
           <Link href="https://www.instagram.com/kimhabork_official">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/instagram.png?updatedAt=1767797839255" 
-              width={32}
-              height={32}
+              width={36}
+              height={36}
               alt="Instagram Logo"
               className="object-cover md:h-10 md:w-10" 
             />
@@ -109,8 +109,8 @@ export function Footer() {
           <Link href="https://www.tiktok.com/@kimhabork_official">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/tiktok.png?updatedAt=1769794402290"
-              width={32}
-              height={32} 
+              width={36}
+              height={36} 
               alt="Tiktok Logo" 
               className="object-cover md:h-10 md:w-10" 
              />
@@ -118,8 +118,8 @@ export function Footer() {
           <Link href="https://www.pinterest.com/kimhab_ork">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/pinterest.png?updatedAt=1767797839021"
-              width={32}
-              height={32} 
+              width={36}
+              height={36} 
               alt="Pinterest Logo" 
               className="object-cover md:h-10 md:w-10" 
              />
@@ -127,8 +127,8 @@ export function Footer() {
           <Link href="https://www.linkedin.com/in/kimhab-ork">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/linkedin.png?updatedAt=1767797838945"
-              width={32}
-              height={32} 
+              width={36}
+              height={36} 
               alt="LinkedIn Logo" 
               className="object-cover md:h-10 md:w-10" 
              />
@@ -136,8 +136,8 @@ export function Footer() {
         </div>
         
         {/* Divider */}
-        <div className="border-t border-border/40 pt-8 flex mx-auto text-center justify-center items-center">
-          <div className="relative flex flex-col gap-4">
+        <div className="border-t border-border/40 pt-8">
+          <div className="relative flex flex-col gap-4 mx-auto text-center justify-center items-center">
           <p className="text-sm text-foreground/70">
             &copy; {currentYear} Kimhab Ork. All rights reserved.
           </p>
