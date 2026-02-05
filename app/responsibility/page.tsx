@@ -20,7 +20,7 @@ export default function ResponsibilityPage() {
             <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Our Commitment to Responsibility
             </h1>
-            <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
               At Kimhab Ork, we believe that sustainable fashion and ethical practices are not optional—they are fundamental to who we are as a brand.
             </p>
           </div>
@@ -32,8 +32,8 @@ export default function ResponsibilityPage() {
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Our Vision
             </h2>
-            <div className="bg-background p-8 rounded-lg border border-border/40">
-              <p className="text-foreground/70 leading-relaxed text-lg">
+            <div className="bg-card p-8 rounded-lg border border-border/70">
+              <p className="text-foreground/75 leading-relaxed text-lg">
                 Kimhab Ork is committed to embedding sustainability as a fundamental part of our strategic development for a more responsible, net-positive future across climate, nature, and people. We are accountable as a business, as part of society, and as individuals contributing to the biodiversity that shares our planet.
               </p>
             </div>
@@ -78,11 +78,11 @@ export default function ResponsibilityPage() {
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Our Material Standards
             </h2>
-            <div className="bg-muted p-8 rounded-lg">
+            <div className="bg-muted p-8 rounded-lg border border-border/70">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-primary mb-3">Regeneratively-Grown</h4>
-                  <ul className="space-y-2 text-foreground/70 text-sm">
+                  <ul className="space-y-2 text-foreground/75 text-sm">
                     <li className="flex gap-2">
                       <span className="text-accent">•</span>
                       <span>RegenAgri® certified materials</span>

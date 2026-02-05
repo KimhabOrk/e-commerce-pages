@@ -53,25 +53,25 @@ export default function Home() {
   return (
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 lg:py-40 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-background via-muted to-background overflow-hidden">
+        <section className="relative py-20 md:py-32 lg:py-40 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
           <div className="mx-auto max-w-6xl">
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-foreground  mb-6 text-balance">
+              <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance">
                 Affordable Luxury Fashion
               </h1>
-              <p className="text-lg md:text-xl text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
                 Discover Kimhab Ork, where premium womenswear meets accessible pricing. Quality, sustainability, and style in every collection.
               </p>
               <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <Link
                   href="/about"
-                  className="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
+                  className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg"
                 >
                   Explore Our Story
                 </Link>
                 <Link
                   href="/responsibility"
-                  className="inline-block px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-primary-foreground transition-all"
+                  className="inline-block px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
                 >
                   Our Commitment
                 </Link>
@@ -160,48 +160,48 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <Link
                 href="/care-guides"
-                className="p-4 bg-muted rounded-lg hover:bg-accent/10 transition-colors text-center"
+                className="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center"
               >
                 <h3 className="font-semibold text-foreground mb-1">Care Guides</h3>
-                <p className="text-sm text-foreground/60">Fabric care instructions</p>
+                <p className="text-sm text-foreground/65">Fabric care instructions</p>
               </Link>
               <Link
                 href="/legal-notes"
-                className="p-4 bg-muted rounded-lg hover:bg-accent/10 transition-colors text-center"
+                className="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center"
               >
                 <h3 className="font-semibold text-foreground mb-1">Legal Notes</h3>
-                <p className="text-sm text-foreground/60">Legal information</p>
+                <p className="text-sm text-foreground/65">Legal information</p>
               </Link>
               <Link
                 href="/privacy-policy"
-                className="p-4 bg-muted rounded-lg hover:bg-accent/10 transition-colors text-center"
+                className="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center"
               >
                 <h3 className="font-semibold text-foreground mb-1">Privacy Policy</h3>
-                <p className="text-sm text-foreground/60">Data protection</p>
+                <p className="text-sm text-foreground/65">Data protection</p>
               </Link>
               <Link
                 href="/terms"
-                className="p-4 bg-muted rounded-lg hover:bg-accent/10 transition-colors text-center"
+                className="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center"
               >
                 <h3 className="font-semibold text-foreground mb-1">Terms & Conditions</h3>
-                <p className="text-sm text-foreground/60">Service terms</p>
+                <p className="text-sm text-foreground/65">Service terms</p>
               </Link>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-primary text-white">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-6 text-balance">
               Experience Affordable Luxury
             </h2>
-            <p className="text-lg mb-8 opacity-90 text-balance max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg mb-8 opacity-95 text-balance max-w-2xl mx-auto leading-relaxed">
               Discover premium womenswear that doesn't compromise on quality, sustainability, or price. Welcome to Kimhab Ork.
             </p>
             <Link
               href="/about"
-              className="inline-block px-8 py-3 bg-primary-foreground text-primary font-semibold rounded-lg hover:opacity-90 transition-opacity"
+              className="inline-block px-8 py-3 bg-primary-foreground text-primary font-semibold rounded-lg hover:shadow-lg hover:opacity-95 transition-all"
             >
               Start Exploring
             </Link>

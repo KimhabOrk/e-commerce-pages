@@ -68,7 +68,7 @@ export default function CustomMadePage() {
   ];
 
   return (
-    <main className="relative min-h-screen container bg-black text-white">
+    <main className="relative min-h-screen container bg-background text-foreground">
       {/* Hero Section with Split Design */}
       <section className="relative flex w-full mx-auto justify-center items-center">
         <div className="flex relative w-full h-auto aspect-video mx-auto">
@@ -148,16 +148,16 @@ export default function CustomMadePage() {
                 key={index}
                 className="bg-muted/30 flex mx-auto justify-center items-center text-center"
               >
-                <CardHeader>
-                  <div className="mb-4 w-8 h-8 md:w-12 md:h-12 flex items-center justify-center text-primary/70 group-hover:text-primary transition-colors">
+                <CardHeader className="flex flex-col mx-auto justify-center items-center text-center">
+                  <div className="mb-4 w-8 h-8 md:w-12 md:h-12 flex items-center justify-center text-primary group-hover:text-primary transition-colors">
                     {step.icon}
                   </div>
-                  <CardTitle className="font-serif text-lg md:text-xl font-semibold text-foreground mb-3 uppercase tracking-wide text-balance">
+                  <CardTitle className="font-serif text-lg md:text-xl font-semibold text-white uppercase tracking-wide text-balance">
                     {step.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm md:text-base text-foreground/70 mb-4 leading-relaxed flex-grow text-balance">
+                  <p className="text-sm md:text-base text-white/80 leading-relaxed flex-grow text-balance">
                     {step.description}
                   </p>
                 </CardContent>

@@ -54,18 +54,18 @@ const careGuides = [
 
 function CareGuideCard({ title, content, tips }: { title: string;content: string;tips: string[] }) {
   return (
-    <details className="group border border-border/40 rounded-lg overflow-hidden hover:border-primary/40 transition-colors">
-      <summary className="cursor-pointer px-6 py-4 bg-primary/80 hover:bg-background transition-colors flex items-center justify-between">
+    <details className="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+      <summary className="cursor-pointer px-6 py-4 bg-primary/85 hover:bg-primary/95 transition-colors flex items-center justify-between">
         <h3 className="font-semibold text-primary-foreground">{title}</h3>
-        <ChevronDown className="w-5 h-5 text-foreground/60 group-open:rotate-180 transition-transform" />
+        <ChevronDown className="w-5 h-5 text-primary-foreground group-open:rotate-180 transition-transform" />
       </summary>
-      <div className="px-6 py-4 bg-background border-t border-border/40 space-y-4">
-        <p className="text-foreground/70 leading-relaxed">{content}</p>
+      <div className="px-6 py-4 bg-card border-t border-border/70 space-y-4">
+        <p className="text-foreground/75 leading-relaxed">{content}</p>
         <div className="bg-muted p-4 rounded">
           <h4 className="font-semibold text-sm text-foreground mb-3">Care Tips:</h4>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
             {tips.map((tip, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm text-foreground/70">
+              <li key={index} className="flex items-start gap-2 text-sm text-foreground/75">
                 <span className="text-primary font-semibold mt-0.5">•</span>
                 <span>{tip}</span>
               </li>
@@ -83,12 +83,12 @@ export default function CareGuidesPage() {
     
     <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-12 md:py-16 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <section className="relative py-12 md:py-16 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/10">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Care Guides
             </h1>
-            <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
               Preserve the beauty and longevity of your Kimhab Ork pieces with our comprehensive care instructions. High-quality materials deserve proper care.
             </p>
           </div>

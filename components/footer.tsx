@@ -3,19 +3,19 @@ import Image from 'next/image'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
-  
+
   return (
-    <footer className="w-full border-t border-border/40 bg-background mt-20">
-      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-3 gap-4 md:gap-12 mb-6">
+    <footer className="w-full border-t border-border/60 bg-background">
+      <div className="mx-auto max-w-full justify-center items-center flex flex-col px-4 md:px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid grid-cols-3 gap-6 md:gap-12 mb-4">
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Company</h4>
+            <h4 className="font-semibold text-white mb-4 text-sm">Company</h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/about"
-                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   About Us
                 </Link>
@@ -23,7 +23,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/creative-director"
-                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Creative Director
                 </Link>
@@ -33,12 +33,12 @@ export function Footer() {
 
           {/* Support Links */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Support</h4>
+            <h4 className="font-semibold text-white mb-4 text-sm">Support</h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/care-guides"
-                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Care Guides
                 </Link>
@@ -46,7 +46,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/custom-made"
-                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Custom Made
                 </Link>
@@ -56,12 +56,12 @@ export function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4 text-sm">Legal</h4>
+            <h4 className="font-semibold text-white mb-4 text-sm">Legal</h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/legal-notes"
-                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Legal Notes
                 </Link>
@@ -69,7 +69,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/responsibility"
-                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Responsibility
                 </Link>
@@ -77,7 +77,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/privacy-policy"
-                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -85,76 +85,76 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        
+
         {/* Social Media */}
         <div className="flex flex-wrap gap-4 md:gap-6 mx-auto justify-center items-center py-6 md:py-10">
           <Link href="https://facebook.com/kimhaborkofficial">
-            <Image 
+            <Image
               src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
-              width={40} 
-              height={40} 
+              width={40}
+              height={40}
               alt="Facebook Logo"
               className="object-cover"
             />
           </Link>
           <Link href="https://www.instagram.com/kimhabork_official">
-            <Image 
-              src="https://ik.imagekit.io/kimhabork/assets/socials/instagram.png?updatedAt=1767797839255" 
+            <Image
+              src="https://ik.imagekit.io/kimhabork/assets/socials/instagram.png?updatedAt=1767797839255"
               width={40}
               height={40}
               alt="Instagram Logo"
-              className="object-cover" 
+              className="object-cover"
             />
           </Link>
           <Link href="https://www.tiktok.com/@kimhabork_official">
-            <Image 
+            <Image
               src="https://ik.imagekit.io/kimhabork/assets/socials/tiktok.png?updatedAt=1769794402290"
               width={40}
-              height={40} 
-              alt="Tiktok Logo" 
-              className="object-cover" 
-             />
+              height={40}
+              alt="Tiktok Logo"
+              className="object-cover"
+            />
           </Link>
           <Link href="https://www.pinterest.com/kimhab_ork">
-            <Image 
+            <Image
               src="https://ik.imagekit.io/kimhabork/assets/socials/pinterest.png?updatedAt=1767797839021"
               width={40}
-              height={40} 
-              alt="Pinterest Logo" 
-              className="object-cover" 
-             />
+              height={40}
+              alt="Pinterest Logo"
+              className="object-cover"
+            />
           </Link>
           <Link href="https://www.linkedin.com/in/kimhab-ork">
-            <Image 
+            <Image
               src="https://ik.imagekit.io/kimhabork/assets/socials/linkedin.png?updatedAt=1767797838945"
               width={40}
-              height={40} 
-              alt="LinkedIn Logo" 
-              className="object-cover" 
-             />
+              height={40}
+              alt="LinkedIn Logo"
+              className="object-cover"
+            />
           </Link>
         </div>
-        
+
         {/* Divider */}
-        <div className="border-t border-border/40 pt-8 flex mx-auto text-center justify-center items-center">
+        <div className="border-t border-border/60 pt-8 flex mx-auto text-center justify-center items-center">
           <div className="relative flex flex-col gap-4">
-          <p className="text-sm text-foreground/70">
-            &copy; {currentYear} Kimhab Ork. All rights reserved.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <Link
-              href="/privacy"
-              className="text-sm text-foreground/70 hover:text-primary transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="text-sm text-foreground/70 hover:text-primary transition-colors"
-            >
-              Terms & Conditions
-            </Link>
-          </div>
+            <p className="text-sm text-foreground/70">
+              &copy; {currentYear} Kimhab Ork. All rights reserved.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <Link
+                href="/privacy"
+                className="text-sm text-foreground/70 hover:text-primary transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="text-sm text-foreground/70 hover:text-primary transition-colors"
+              >
+                Terms & Conditions
+              </Link>
+            </div>
           </div>
         </div>
       </div>
