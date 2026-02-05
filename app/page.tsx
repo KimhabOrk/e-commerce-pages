@@ -81,7 +81,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-2xl md:text-4xl font-bold text-primary text-center mb-12">
               Why Choose Kimhab Ork?
@@ -120,7 +120,7 @@ export default function Home() {
         </section>
 
         {/* Pages Preview */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary text-center mb-12">
               Learn More
@@ -152,7 +152,7 @@ export default function Home() {
         </section>
 
         {/* Additional Pages */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-8">
               Legal & Support
@@ -191,7 +191,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-primary text-white">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-primary text-white">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-6 text-balance">
               Experience Affordable Luxury

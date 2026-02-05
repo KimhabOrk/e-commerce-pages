@@ -17,7 +17,7 @@ export default function CreativeDirector() {
   return (
       <main>
         {/* Hero Section */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <div className="text-center mb-12 md:mb-16">
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4 leading-tight">
@@ -31,7 +31,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Profile Section */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-muted/30">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/30">
           <div className="mx-auto max-w-5xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Profile Image */}
@@ -80,7 +80,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Journey Section */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary text-center mb-12">
               The Creative Journey
@@ -119,7 +119,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Core Values Section */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-muted/30">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/30">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary text-center mb-12">
               Core Values & Guiding Principles
@@ -162,7 +162,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Inspiration Section */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <div className="bg-card border border-border p-8 md:p-12 rounded-lg">
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
@@ -192,7 +192,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Connect Section */}
-        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-muted/30">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/30">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
               Connect with Our Vision
