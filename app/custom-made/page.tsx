@@ -77,7 +77,7 @@ export default function CustomMadePage() {
             alt="Custom Made Service"
             fill
             priority
-            className="object-cover w-7 h-7 md:w-10 md:h-10"
+            className="object-cover"
             sizes="100vw"
           />
         </div>

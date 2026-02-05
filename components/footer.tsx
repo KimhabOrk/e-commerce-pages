@@ -91,46 +91,46 @@ export function Footer() {
           <Link href="https://facebook.com/kimhaborkofficial">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
-              width={32} 
-              height={32} 
+              width={40} 
+              height={40} 
               alt="Facebook Logo"
-              className="object-cover md:h-10 md:w-10"
+              className="object-cover"
             />
           </Link>
           <Link href="https://www.instagram.com/kimhabork_official">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/instagram.png?updatedAt=1767797839255" 
-              width={32}
-              height={32}
+              width={40}
+              height={40}
               alt="Instagram Logo"
-              className="object-cover md:h-10 md:w-10" 
+              className="object-cover" 
             />
           </Link>
           <Link href="https://www.tiktok.com/@kimhabork_official">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/tiktok.png?updatedAt=1769794402290"
-              width={32}
-              height={32} 
+              width={40}
+              height={40} 
               alt="Tiktok Logo" 
-              className="object-cover md:h-10 md:w-10" 
+              className="object-cover" 
              />
           </Link>
           <Link href="https://www.pinterest.com/kimhab_ork">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/pinterest.png?updatedAt=1767797839021"
-              width={32}
-              height={32} 
+              width={40}
+              height={40} 
               alt="Pinterest Logo" 
-              className="object-cover md:h-10 md:w-10" 
+              className="object-cover" 
              />
           </Link>
           <Link href="https://www.linkedin.com/in/kimhab-ork">
             <Image 
               src="https://ik.imagekit.io/kimhabork/assets/socials/linkedin.png?updatedAt=1767797838945"
-              width={32}
-              height={32} 
+              width={40}
+              height={40} 
               alt="LinkedIn Logo" 
-              className="object-cover md:h-10 md:w-10" 
+              className="object-cover" 
              />
           </Link>
         </div>
