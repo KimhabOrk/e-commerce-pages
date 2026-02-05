@@ -65,7 +65,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/about"
-                  className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:opacity-90 transition-opacity"
+                  className="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
                 >
                   Explore Our Story
                 </Link>
@@ -83,33 +83,33 @@ export default function Home() {
         {/* Features Section */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-              Why Choose Kimhab Ork
+            <h2 className="font-serif text-2xl md:text-4xl font-bold text-primary text-center mb-12">
+              Why Choose Kimhab Ork?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <FeatureCard
-                icon={<Sparkles className="w-full h-full" />}
+                icon={<Sparkles className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Affordable Luxury"
                 description="Premium quality womenswear at prices that celebrate accessibility and value."
                 ctaText="Explore"
                 ctaHref="/about"
               />
               <FeatureCard
-                icon={<Leaf className="w-full h-full" />}
+                icon={<Leaf className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Sustainable Materials"
                 description="Responsibly sourced fabrics that minimize environmental impact without compromising quality."
                 ctaText="Learn More"
                 ctaHref="/responsibility"
               />
               <FeatureCard
-                icon={<Heart className="w-full h-full" />}
+                icon={<Heart className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Ethical Production"
                 description="Fair labor practices and transparent supply chain management throughout our operations."
                 ctaText="Discover"
                 ctaHref="/responsibility"
               />
               <FeatureCard
-                icon={<RotateCw className="w-full h-full" />}
+                icon={<RotateCw className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Timeless Design"
                 description="Versatile, classic silhouettes with modern details that remain relevant season after season."
                 ctaText="View"
@@ -127,21 +127,21 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <FeatureCard
-                icon={<BookOpen className="w-full h-full" />}
+                icon={<BookOpen className="w-7 h-7 md:w-10 md:h-10" />}
                 title="About Us"
                 description="Discover our story, values, and commitment to affordable luxury fashion for modern women."
                 ctaText="Read Our Story"
                 ctaHref="/about"
               />
               <FeatureCard
-                icon={<BookOpen className="w-full h-full" />}
+                icon={<BookOpen className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Care Guides"
                 description="Comprehensive care instructions for all fabric types to preserve your pieces for years."
                 ctaText="View Guides"
                 ctaHref="/care-guides"
               />
               <FeatureCard
-                icon={<FileText className="w-full h-full" />}
+                icon={<FileText className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Responsibility"
                 description="Learn about our commitment to sustainability, ethical sourcing, and responsible production."
                 ctaText="Our Commitment"
@@ -191,9 +191,9 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-primary text-white">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-balance">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-6 text-balance">
               Experience Affordable Luxury
             </h2>
             <p className="text-lg mb-8 opacity-90 text-balance max-w-2xl mx-auto leading-relaxed">

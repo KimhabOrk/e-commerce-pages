@@ -1,6 +1,4 @@
 import { Metadata } from 'next'
-
-
 import { FeatureCard } from '@/components/feature-card'
 import { Leaf, Users, Globe } from 'lucide-react'
 
@@ -15,13 +13,11 @@ export const metadata: Metadata = {
 
 export default function ResponsibilityPage() {
   return (
-    
-      
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-background">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance">
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Our Commitment to Responsibility
             </h1>
             <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -31,9 +27,9 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Our Vision */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-card">
+        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Our Vision
             </h2>
             <div className="bg-background p-8 rounded-lg border border-border/40">
@@ -47,26 +43,26 @@ export default function ResponsibilityPage() {
         {/* Three Main Pillars as Cards */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-12 text-center">
               Our Three Pillars of Responsibility
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <FeatureCard
-                icon={<Leaf className="w-full h-full" />}
+                icon={<Leaf className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Responsible Sourcing"
                 description="We approach sourcing holistically—considering lifecycle impacts, carbon footprints, water usage, waste, and biodiversity protection."
                 ctaText="Learn More"
                 ctaHref="#sourcing"
               />
               <FeatureCard
-                icon={<Users className="w-full h-full" />}
+                icon={<Users className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Ethical Production"
                 description="Fair wages, safe conditions, human rights protection, and rigorous monitoring throughout our entire supply chain."
                 ctaText="Discover"
                 ctaHref="#ethical"
               />
               <FeatureCard
-                icon={<Globe className="w-full h-full" />}
+                icon={<Globe className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Environmental Impact"
                 description="Reducing carbon emissions, conserving water, minimizing waste, and promoting circular design practices."
                 ctaText="Explore"
@@ -77,9 +73,9 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Responsible Sourcing Details */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-card" id="sourcing">
+        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background" id="sourcing">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Our Material Standards
             </h2>
             <div className="bg-muted p-8 rounded-lg">
@@ -144,7 +140,7 @@ export default function ResponsibilityPage() {
         {/* Ethical Production */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8" id="ethical">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Ethical Production & Labor Rights
             </h2>
             <div className="space-y-6">
@@ -179,9 +175,9 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Environmental Impact */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-card" id="environmental">
+        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background" id="environmental">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Reducing Environmental Impact
             </h2>
             <div className="space-y-8">
@@ -191,25 +187,25 @@ export default function ResponsibilityPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="p-6 bg-muted rounded-lg">
-                  <h3 className="font-semibold text-foreground mb-4">Restricted Materials</h3>
+                  <h3 className="font-semibold text-primary mb-4">Restricted Materials</h3>
                   <p className="text-sm text-foreground/70">
                     We have restricted the use of certain high-impact and ethically challenging materials. Animal fur is excluded from our collections, and we continuously evaluate new restrictions to minimize harm.
                   </p>
                 </div>
                 <div className="p-6 bg-muted rounded-lg">
-                  <h3 className="font-semibold text-foreground mb-4">Carbon Footprint Reduction</h3>
+                  <h3 className="font-semibold text-primary mb-4">Carbon Footprint Reduction</h3>
                   <p className="text-sm text-foreground/70">
                     We prioritize materials and processes with lower carbon footprints. Our sourcing team evaluates the environmental impact of every material choice in our collections.
                   </p>
                 </div>
                 <div className="p-6 bg-muted rounded-lg">
-                  <h3 className="font-semibold text-foreground mb-4">Water Conservation</h3>
+                  <h3 className="font-semibold text-primary mb-4">Water Conservation</h3>
                   <p className="text-sm text-foreground/70">
                     We work with suppliers to minimize water usage in production. Organic and responsibly-sourced materials significantly reduce water consumption compared to conventional methods.
                   </p>
                 </div>
                 <div className="p-6 bg-muted rounded-lg">
-                  <h3 className="font-semibold text-foreground mb-4">Waste Reduction</h3>
+                  <h3 className="font-semibold text-primary mb-4">Waste Reduction</h3>
                   <p className="text-sm text-foreground/70">
                     Through circular design practices and responsible production methods, we minimize waste. We encourage customers to care for and maintain their pieces for longevity.
                   </p>
@@ -222,7 +218,7 @@ export default function ResponsibilityPage() {
         {/* Our Policies */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Our Policies & Practices
             </h2>
             <div className="space-y-4">
@@ -233,11 +229,11 @@ export default function ResponsibilityPage() {
                 'We track the percentage of responsibly-sourced styles in each collection containing over 50% responsibly sourced materials by weight',
                 'We remain committed to transparency and openly communicate our progress, achievements, and areas for improvement',
               ].map((policy, index) => (
-                <div key={index} className="flex gap-4 p-4 bg-background rounded-lg border border-border/40">
+                <div key={index} className="flex gap-4 p-4 bg-muted rounded-lg border border-border/40">
                   <span className="text-primary font-semibold text-xl mt-0.5 flex-shrink-0">
                     {index + 1}
                   </span>
-                  <p className="text-foreground/70 leading-relaxed">{policy}</p>
+                  <p className="text-muted-foreground/80 leading-relaxed">{policy}</p>
                 </div>
               ))}
             </div>
@@ -247,7 +243,7 @@ export default function ResponsibilityPage() {
         {/* Looking Forward */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Looking Forward
             </h2>
             <div className="space-y-6 text-foreground/70 leading-relaxed">
@@ -265,9 +261,9 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-primary text-white">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-balance">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold mb-6 text-balance">
               Join Us in Building a Better Future
             </h2>
             <p className="text-lg mb-8 opacity-90 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -275,7 +271,7 @@ export default function ResponsibilityPage() {
             </p>
             <a
               href="/"
-              className="inline-block px-8 py-3 bg-primary-foreground text-primary font-semibold rounded-lg hover:opacity-90 transition-opacity"
+              className="inline-block px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:opacity-90 transition-opacity"
             >
               Explore Our Collections
             </a>

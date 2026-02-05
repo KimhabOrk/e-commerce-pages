@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
-
-
+import Image from 'next/image';
 import { FeatureCard } from '@/components/feature-card'
 import { Award, Sparkles, Heart, Globe } from 'lucide-react'
 
@@ -16,8 +15,6 @@ export const metadata: Metadata = {
 
 export default function CreativeDirector() {
   return (
-    
-      
       <main>
         {/* Hero Section */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
@@ -39,10 +36,12 @@ export default function CreativeDirector() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Profile Image */}
               <div className="flex justify-center">
-                <div className="w-full max-w-sm rounded-lg overflow-hidden shadow-lg bg-card border border-border">
-                  <img
-                    src="/placeholder.svg?height=600&width=500"
+                <div className="w-full max-w-sm rounded-lg overflow-hidden shadow-lg bg-background border border-border">
+                  <Image
+                    src="https://ik.imagekit.io/kimhabork/media/profile/director.jpg?updatedAt=1770273580618"
                     alt="Creative Director"
+                    width={1200}
+                    height={1200}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -52,7 +51,7 @@ export default function CreativeDirector() {
               <div className="space-y-6">
                 <div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-2">
-                    Sokhearn Ork
+                    KIMHAB ORK
                   </h2>
                   <p className="text-xl font-semibold text-foreground mb-4">Creative Director & Founder</p>
                   <p className="text-foreground/70 leading-relaxed">
@@ -185,7 +184,7 @@ export default function CreativeDirector() {
               </blockquote>
 
               <div className="mt-8 pt-8 border-t border-border">
-                <p className="font-semibold text-foreground">Sokhearn Ork</p>
+                <p className="font-semibold text-foreground">KIMHAB ORK</p>
                 <p className="text-foreground/60">Creative Director & Founder, Kimhab Ork</p>
               </div>
             </div>
@@ -219,7 +218,5 @@ export default function CreativeDirector() {
           </div>
         </section>
       </main>
-      
-    
   )
 }

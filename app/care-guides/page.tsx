@@ -1,6 +1,4 @@
 import { Metadata } from 'next'
-
-
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -58,7 +56,7 @@ const careGuides = [
 function CareGuideCard({ title, content, tips }: { title: string; content: string; tips: string[] }) {
   return (
     <details className="group border border-border/40 rounded-lg overflow-hidden hover:border-primary/40 transition-colors">
-      <summary className="cursor-pointer px-6 py-4 bg-card hover:bg-muted transition-colors flex items-center justify-between">
+      <summary className="cursor-pointer px-6 py-4 bg-muted/80 hover:bg-muted transition-colors flex items-center justify-between">
         <h3 className="font-semibold text-foreground">{title}</h3>
         <ChevronDown className="w-5 h-5 text-foreground/60 group-open:rotate-180 transition-transform" />
       </summary>
@@ -88,7 +86,7 @@ export default function CareGuidesPage() {
         {/* Hero Section */}
         <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance">
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Care Guides
             </h1>
             <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -101,8 +99,8 @@ export default function CareGuidesPage() {
         <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-card">
           <div className="mx-auto max-w-4xl">
             <div className="bg-background p-8 rounded-lg border border-border/40">
-              <h2 className="font-serif text-xl font-semibold text-primary mb-4">
-                Why Proper Care Matters
+              <h2 className="font-serif text-xl font-semibold text-foreground mb-4">
+                Why Proper Care Matters?
               </h2>
               <p className="text-foreground/70 leading-relaxed">
                 High-quality materials require specific care to preserve their integrity over time. Specific cleaning and care instructions are present on the product label inside each garment. For general advice, follow our dedicated guides for each fabric type.
@@ -128,7 +126,7 @@ export default function CareGuidesPage() {
         {/* General Tips Section */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-card">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground m b-8">
               General Care Tips
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -223,7 +221,7 @@ export default function CareGuidesPage() {
         {/* Stain Removal Section */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-8">
               Handling Stains
             </h2>
             <div className="bg-muted p-8 rounded-lg border border-border/40">

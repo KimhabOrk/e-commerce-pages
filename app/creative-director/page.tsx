@@ -1,6 +1,4 @@
 import { Metadata } from 'next'
-
-
 import { FeatureCard } from '@/components/feature-card'
 import { Award, Sparkles, Heart, Globe } from 'lucide-react'
 
@@ -41,7 +39,7 @@ export default function CreativeDirector() {
               <div className="flex justify-center">
                 <div className="w-full max-w-sm rounded-lg overflow-hidden shadow-lg bg-card border border-border">
                   <img
-                    src="/placeholder.svg?height=600&width=500"
+                    src="https://ik.imagekit.io/kimhabork/media/profile/director.jpg"
                     alt="Creative Director"
                     className="w-full h-full object-cover"
                   />

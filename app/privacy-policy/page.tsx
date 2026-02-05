@@ -1,7 +1,5 @@
 import { Metadata } from 'next'
 
-
-
 export const metadata: Metadata = {
   title: 'Privacy Policy | Kimhab Ork',
   description: 'Privacy policy and data protection information for Kimhab Ork',
@@ -12,13 +10,11 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    
-      
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-background">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance">
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Privacy Policy
             </h1>
             <p className="text-lg text-foreground/70 text-balance max-w-2xl mx-auto">
@@ -32,7 +28,7 @@ export default function PrivacyPolicyPage() {
           <div className="mx-auto max-w-4xl space-y-12">
             {/* Introduction */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Introduction
               </h2>
               <p className="text-foreground/70 leading-relaxed">
@@ -42,7 +38,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Information We Collect */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Information We Collect
               </h2>
               <div className="space-y-6">
@@ -108,7 +104,7 @@ export default function PrivacyPolicyPage() {
 
             {/* How We Use Information */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 How We Use Your Information
               </h2>
               <p className="text-foreground/70 mb-4">We use the information we collect for various purposes:</p>
@@ -146,7 +142,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Data Security */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Data Security
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -161,7 +157,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Sharing Information */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Sharing Your Information
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -190,7 +186,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Cookies */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Cookies and Tracking Technologies
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -205,7 +201,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Your Rights */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Your Rights
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -242,7 +238,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Updates */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Policy Updates
               </h2>
               <p className="text-foreground/70">
@@ -251,7 +247,7 @@ export default function PrivacyPolicyPage() {
             </div>
 
             {/* Contact */}
-            <div className="bg-card p-8 rounded-lg border border-border/40">
+            <div className="bg-muted/70 p-8 rounded-lg border border-border/40">
               <h2 className="font-serif text-2xl font-bold text-primary mb-4">
                 Contact Us
               </h2>

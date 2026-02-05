@@ -12,9 +12,9 @@ export default function TermsPage() {
   return (
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-background">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance">
+            <h1 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Terms & Conditions
             </h1>
             <p className="text-lg text-foreground/70 text-balance max-w-2xl mx-auto">
@@ -28,7 +28,7 @@ export default function TermsPage() {
           <div className="mx-auto max-w-4xl space-y-12">
             {/* Agreement */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Agreement to Terms
               </h2>
               <p className="text-foreground/70 leading-relaxed">
@@ -38,7 +38,7 @@ export default function TermsPage() {
 
             {/* Use License */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Use License
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -72,7 +72,7 @@ export default function TermsPage() {
 
             {/* Product Information */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Product Information & Pricing
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -101,7 +101,7 @@ export default function TermsPage() {
 
             {/* Orders & Payment */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Orders & Payment
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -128,7 +128,7 @@ export default function TermsPage() {
 
             {/* Shipping & Delivery */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Shipping & Delivery
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -146,7 +146,7 @@ export default function TermsPage() {
 
             {/* Returns & Refunds */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Returns & Refunds
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -183,7 +183,7 @@ export default function TermsPage() {
 
             {/* Warranties */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Product Warranties
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -213,7 +213,7 @@ export default function TermsPage() {
 
             {/* Limitation of Liability */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Limitation of Liability
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -228,7 +228,7 @@ export default function TermsPage() {
 
             {/* User Responsibilities */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 User Responsibilities
               </h2>
               <p className="text-foreground/70 mb-4">You agree to:</p>
@@ -258,7 +258,7 @@ export default function TermsPage() {
 
             {/* Governing Law */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Governing Law
               </h2>
               <p className="text-foreground/70">
@@ -268,7 +268,7 @@ export default function TermsPage() {
 
             {/* Changes to Terms */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Changes to Terms
               </h2>
               <p className="text-foreground/70">

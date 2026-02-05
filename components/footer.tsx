@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="w-full border-t border-border/40 bg-card mt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* Brand Info */}
           <div>
             <h3 className="font-serif text-lg font-bold text-primary mb-4">
@@ -104,7 +104,7 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-border/40 pt-8 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+        <div className="border-t border-border/40 pt-8 flex flex-col sm:justify-between sm:items-center gap-4">
           <p className="text-sm text-foreground/60">
             &copy; {currentYear} Kimhab Ork. All rights reserved.
           </p>
