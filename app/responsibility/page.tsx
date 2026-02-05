@@ -15,9 +15,9 @@ export default function ResponsibilityPage() {
   return (
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className="relative py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-8 bg-background">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Our Commitment to Responsibility
             </h1>
             <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -27,7 +27,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Our Vision */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-background">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Our Vision
@@ -41,7 +41,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Three Main Pillars as Cards */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-12 text-center">
               Our Three Pillars of Responsibility
@@ -73,7 +73,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Responsible Sourcing Details */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background" id="sourcing">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-background" id="sourcing">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Our Material Standards
@@ -138,7 +138,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Ethical Production */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8" id="ethical">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8" id="ethical">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Ethical Production & Labor Rights
@@ -175,7 +175,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Environmental Impact */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background" id="environmental">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-background" id="environmental">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Reducing Environmental Impact
@@ -216,7 +216,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Our Policies */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Our Policies & Practices
@@ -241,7 +241,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Looking Forward */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Looking Forward
@@ -261,7 +261,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-primary text-white">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-2xl md:text-3xl font-bold mb-6 text-balance">
               Join Us in Building a Better Future

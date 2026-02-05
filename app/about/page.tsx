@@ -33,13 +33,11 @@ export default function AboutPage() {
   ]
 
   return (
-    
-      
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <section className="relative py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance">
               Affordable Luxury for Modern Women
             </h1>
             <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -49,7 +47,7 @@ export default function AboutPage() {
         </section>
 
         {/* Our Story Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
               Our Story
@@ -69,7 +67,7 @@ export default function AboutPage() {
         </section>
 
         {/* Values Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
               Our Values
@@ -108,7 +106,7 @@ export default function AboutPage() {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-12">
               Why Choose Kimhab Ork?
@@ -182,7 +180,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-primary text-primary-foreground">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-balance">
               Discover Our Collections

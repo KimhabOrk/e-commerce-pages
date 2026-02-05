@@ -20,8 +20,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+      <nav className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link
             href="/"

@@ -18,22 +18,22 @@ export default function CustomMadePage() {
   {
     title: 'Consultation',
     description: 'Meet with our expert stylists to discuss your vision, preferences, and lifestyle needs.',
-    icon: <Users className="w-full h-full" />,
+    icon: <Users className="w-7 h-7 md:w-10 md:h-10" />,
   },
   {
     title: 'Design & Selection',
     description: 'Choose from our curated collection of premium fabrics and collaborate on the perfect design.',
-    icon: <Palette className="w-full h-full" />,
+    icon: <Palette className="w-7 h-7 md:w-10 md:h-10" />,
   },
   {
     title: 'Precision Tailoring',
     description: 'Our master tailors take precise measurements and create multiple fittings to ensure perfect fit.',
-    icon: <Tape className="w-full h-full" />,
+    icon: <Tape className="w-7 h-7 md:w-10 md:h-10" />,
   },
   {
     title: 'Crafted to Perfection',
     description: 'Each piece is meticulously handcrafted over weeks, combining cutting-edge techniques with traditional artistry.',
-    icon: <Sparkles className="w-full h-full" />,
+    icon: <Sparkles className="w-7 h-7 md:w-10 md:h-10" />,
   }, ]
   
   const features = [
@@ -51,24 +51,24 @@ export default function CustomMadePage() {
         <section className="relative flex w-full mx-auto justify-center items-center">
           <div className="flex relative w-full h-auto aspect-video mx-auto">
             <Image 
-              src="https://ik.imagekit.io/kimhabork/assets/custom.jpg"
+              src="https://ik.imagekit.io/kimhabork/assets/custom.png?updatedAt=1770285869097"
               alt="Custom Made Service"
               fill
               priority
-              className="object-cover w-full"
+              className="object-cover w-7 h-7 md:w-10 md:h-10"
               sizes="100vw"
             />
           </div>
         </section>
           {/* Right Side - Content */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-black">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-black">
           <div className="flex flex-col justify-center items-center text-center mx-auto max-w-6xl gap-8 md:gap-12">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold uppercase">Custom Made</h1>
-            <p className="font-sans text-lg sm:text-xl lg:text-3xl leading-tight text-balance uppercase">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-serif font-bold uppercase">Custom Made</h1>
+            <p className="font-sans text-md md:text-lg lg:text-xl leading-tight text-balance uppercase">
               True luxury is found in clothing that is expertly crafted for the woman who wears it.
             </p>
-            <p className="text-lg sm:text-xl lg:text-3xl leading-relaxed text-balance uppercase">
-              The Kimhab Ork custom-made  KIMHAB ORK custom-made garment is the utmost sartorial experience. Through the custom-made service, discerning clients can create a one of a kind garment through a private appointment. The master tailors at the KIMHAB ORK Atelier devote weeks of craftsmanship to cutting, constructing and finishing each piece using exquisite materials with care.
+            <p className="font-sans text-md md:text-lg lg:text-xl leading-relaxed text-balance uppercase">
+              The Kimhab Ork custom-made KIMHAB ORK custom-made garment is the utmost sartorial experience. Through the custom-made service, discerning clients can create a one of a kind garment through a private appointment. The master tailors at the KIMHAB ORK Atelier devote weeks of craftsmanship to cutting, constructing and finishing each piece using exquisite materials with care.
             </p>
             <Link
               href="#process"
@@ -80,9 +80,9 @@ export default function CustomMadePage() {
         </section>
 
         {/* Why Custom Made Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-black">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-black">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-white text-center mb-4">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-white text-center mb-4">
               Why Choose Custom Made
             </h2>
             <p className="text-center text-white/90 mb-12 max-w-2xl mx-auto">
@@ -92,7 +92,7 @@ export default function CustomMadePage() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex gap-4 p-6 bg-muted/80 rounded-lg border border-border/40"
+                  className="flex gap-4 p-6 bg-muted/30 rounded-lg border border-border/40"
                 >
                   <Check className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <p className="text-white/70 leading-relaxed">{feature}</p>
@@ -103,9 +103,9 @@ export default function CustomMadePage() {
         </section>
 
         {/* Process Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-black" id="process">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-black" id="process">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-white text-center mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-white text-center mb-12">
               The Custom Made Process
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -124,9 +124,9 @@ export default function CustomMadePage() {
         </section>
 
         {/* Timeline Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-black">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-black">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-white text-center mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-white text-center mb-12">
               Timeline & Commitment
             </h2>
             <div className="space-y-8">
@@ -178,6 +178,7 @@ export default function CustomMadePage() {
               <div className="flex gap-6">
                 <div className="flex flex-col items-center">
                   <div className="w-4 h-4 bg-primary rounded-full"></div>
+                  <div className="w-1 h-20 bg-white/70"></div>
                 </div>
                 <div>
                   <h3 className="font-semibold text-white text-lg mb-2">
@@ -193,15 +194,15 @@ export default function CustomMadePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-primary/5">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-muted/30">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-white mb-6">
               Ready to Create Your Bespoke Piece
             </h2>
             <p className="text-white/70 mb-8 text-lg">
               Schedule a private consultation with our master tailors and begin your custom-made journey today. Experience the ultimate luxury of womenswear crafted exclusively for you.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col md:flex-row gap-4 justify-center">
               <button className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-3 rounded transition-colors">
                 Book Appointment
               </button>
@@ -215,10 +216,10 @@ export default function CustomMadePage() {
         </section>
 
         {/* Testimonial Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-black">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-black">
           <div className="mx-auto max-w-3xl">
             <div className="space-y-8">
-              <div className="bg-muted p-8 rounded-lg border border-border/40">
+              <div className="bg-muted/30 p-8 rounded-lg border border-border/40">
                 <p className="text-lg text-white/80 italic mb-4 text-balance">
                   "My custom-made Kimhab Ork piece is not just clothing—it's a masterpiece. Every stitch, every detail, reflects the care and expertise of true artisans. I feel like a different woman when I wear it."
                 </p>
@@ -226,7 +227,7 @@ export default function CustomMadePage() {
                 <p className="text-white/90 text-sm">Custom Made Client</p>
               </div>
 
-              <div className="bg-muted p-8 rounded-lg border border-border/40">
+              <div className="bg-muted/30 p-8 rounded-lg border border-border/40">
                 <p className="text-lg text-white/80 italic mb-4 text-balance">
                   "The process was seamless and collaborative. The team truly listened to my vision and brought it to life with impeccable craftsmanship. This is luxury redefined."
                 </p>

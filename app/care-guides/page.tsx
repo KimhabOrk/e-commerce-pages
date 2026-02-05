@@ -83,9 +83,9 @@ export default function CareGuidesPage() {
     
     <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <section className="relative py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Care Guides
             </h1>
             <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -95,7 +95,7 @@ export default function CareGuidesPage() {
         </section>
 
         {/* Introduction */}
-        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
           <div className="mx-auto max-w-4xl">
             <div className="bg-muted p-8 rounded-lg border border-border/40">
               <h2 className="font-serif text-xl font-semibold text-primary mb-4">
@@ -109,7 +109,7 @@ export default function CareGuidesPage() {
         </section>
 
         {/* Care Guides */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-xl md:text-3xl font-bold text-foreground mb-12">
               Fabric Care Instructions
@@ -123,7 +123,7 @@ export default function CareGuidesPage() {
         </section>
 
         {/* General Tips Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8 bg-background">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
               General Care Tips
@@ -202,7 +202,7 @@ export default function CareGuidesPage() {
         </section>
 
         {/* Stain Removal Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-24 px-4 md:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
               Handling Stains

@@ -1,22 +1,60 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
-
+  
   return (
     <footer className="w-full border-t border-border/40 bg-background mt-20">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          {/* Brand Info */}
-          <div>
-            <h3 className="font-serif text-lg font-bold text-primary mb-4 uppercase">
-              Kimhab Ork
-            </h3>
-            <p className="text-sm text-foreground/60">
-              Affordable Luxury Brand For Modern Women.
-            </p>
-          </div>
-
+      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 py-12 md:py-16">
+        <div className="flex flex-wrap mx-auto justify-between items-center mb-4 md:mb-6">
+          <Link href="https://facebook.com/kimhaborkofficial">
+            <Image 
+              src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
+              width={28} 
+              height={28} 
+              alt="Facebook Logo"
+              className="object-cover"
+            />
+          </Link>
+          <Link href="https://www.instagram.com/kimhabork_official">
+            <Image 
+              src="https://ik.imagekit.io/kimhabork/assets/socials/instagram.png?updatedAt=1767797839255" 
+              width={28}
+              height={28}
+              alt="Instagram Logo"
+              className="object-cover" 
+            />
+          </Link>
+          <Link href="https://www.tiktok.com/@kimhabork_official">
+            <Image 
+              src="https://ik.imagekit.io/kimhabork/assets/socials/tiktok.png?updatedAt=1769794402290"
+              width={28}
+              height={28} 
+              alt="Tiktok Logo" 
+              className="object-cover" 
+             />
+          </Link>
+          <Link href="https://www.pinterest.com/kimhab_ork">
+            <Image 
+              src="https://ik.imagekit.io/kimhabork/assets/socials/pinterest.png?updatedAt=1767797839021"
+              width={28}
+              height={28} 
+              alt="Pinterest Logo" 
+              className="object-cover" 
+             />
+          </Link>
+          <Link href="https://www.linkedin.com/in/kimhab-ork">
+            <Image 
+              src="https://ik.imagekit.io/kimhabork/assets/socials/linkedin.png?updatedAt=1767797838945"
+              width={28}
+              height={28} 
+              alt="LinkedIn Logo" 
+              className="object-cover" 
+             />
+          </Link>
+        </div>
+        <div className="grid grid-cols-3 gap-6 md:gap-14 mb-8">
           {/* Company Links */}
           <div>
             <h4 className="font-semibold text-foreground mb-4 text-sm">Company</h4>
@@ -37,14 +75,6 @@ export function Footer() {
                   Creative Director
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/custom-made"
-                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
-                >
-                  Custom Made Service
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -62,10 +92,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/privacy-policy"
+                  href="/custom-made"
                   className="text-sm text-foreground/60 hover:text-primary transition-colors"
                 >
-                  Privacy Policy
+                  Custom Made
                 </Link>
               </li>
             </ul>
@@ -91,16 +121,25 @@ export function Footer() {
                   Responsibility
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/privacy-policy"
+                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Divider */}
-        <div className="border-t border-border/40 pt-8 flex flex-col justify-center items-center gap-4 mx-auto">
-          <p className="text-sm text-center text-foreground/70">
+        <div className="border-t border-border/40 pt-8 flex mx-auto text-center justify-center items-center">
+          <div className="relative flex flex-col gap-4">
+          <p className="text-sm text-foreground/70">
             &copy; {currentYear} Kimhab Ork. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-6">
             <Link
               href="/privacy"
               className="text-sm text-foreground/70 hover:text-primary transition-colors"
@@ -113,6 +152,7 @@ export function Footer() {
             >
               Terms & Conditions
             </Link>
+          </div>
           </div>
         </div>
       </div>
