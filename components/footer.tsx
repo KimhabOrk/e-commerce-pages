@@ -4,16 +4,16 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="w-full border-t border-border/40 bg-card mt-20">
+    <footer className="w-full border-t border-border/40 bg-background mt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* Brand Info */}
           <div>
-            <h3 className="font-serif text-lg font-bold text-primary mb-4">
+            <h3 className="font-serif text-lg font-bold text-primary mb-4 uppercase">
               Kimhab Ork
             </h3>
             <p className="text-sm text-foreground/60">
-              Affordable luxury womenswear fashion with a commitment to quality and sustainability.
+              Affordable Luxury Brand For Modern Women.
             </p>
           </div>
 
@@ -43,14 +43,6 @@ export function Footer() {
                   className="text-sm text-foreground/60 hover:text-primary transition-colors"
                 >
                   Custom Made Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/responsibility"
-                  className="text-sm text-foreground/60 hover:text-primary transition-colors"
-                >
-                  Responsibility
                 </Link>
               </li>
             </ul>
@@ -93,10 +85,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href="/responsibility"
                   className="text-sm text-foreground/60 hover:text-primary transition-colors"
                 >
-                  Terms & Conditions
+                  Responsibility
                 </Link>
               </li>
             </ul>
@@ -104,22 +96,22 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-border/40 pt-8 flex flex-col sm:justify-between sm:items-center gap-4">
-          <p className="text-sm text-foreground/60">
+        <div className="border-t border-border/40 pt-8 flex flex-col justify-center items-center gap-4 mx-auto">
+          <p className="text-sm text-center text-foreground/70">
             &copy; {currentYear} Kimhab Ork. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link
-              href="/privacy-policy"
-              className="text-sm text-foreground/60 hover:text-primary transition-colors"
+              href="/privacy"
+              className="text-sm text-foreground/70 hover:text-primary transition-colors"
             >
-              Privacy
+              Privacy Policy
             </Link>
             <Link
               href="/terms"
-              className="text-sm text-foreground/60 hover:text-primary transition-colors"
+              className="text-sm text-foreground/70 hover:text-primary transition-colors"
             >
-              Terms
+              Terms & Conditions
             </Link>
           </div>
         </div>

@@ -22,7 +22,7 @@ export function FeatureCard({
   return (
     <a
       href={ctaHref}
-      className={`group flex flex-col items-center text-center bg-card rounded-lg border border-border/40 p-8 md:p-10 hover:border-primary/40 hover:shadow-md transition-all duration-300 ${className}`}
+      className={`group flex flex-col items-center text-center bg-card/80 rounded-lg border border-border/40 p-8 md:p-10 hover:border-primary/40 hover:shadow-md transition-all duration-300 ${className}`}
     >
       {/* Icon */}
       {icon && (
