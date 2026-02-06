@@ -246,7 +246,7 @@ export default function ResponsibilityPage() {
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Looking Forward
             </h2>
-            <div className="space-y-6 text-foreground/70 bg-muted/60 leading-relaxed px-2 md:px-4">
+            <div className="space-y-6 text-foreground/70 bg-muted/60 leading-relaxed p-5">
               <p>
                 At Kimhab Ork, we understand that responsibility is a journey, not a destination. We are on this journey and look forward to sharing our progress with you. Our targets are continually assessed to ensure they remain both ambitious and achievable.
               </p>

@@ -93,12 +93,12 @@ export default function CustomMadePage() {
             woman who wears it.
           </p>
           <p className="font-sans text-sm md:text-md lg:text-lg leading-relaxed text-balance uppercase">
-            The Kimhab Ork custom-made KIMHAB ORK custom-made garment is the
-            utmost sartorial experience. Through the custom-made service,
-            discerning clients can create a one of a kind garment through a
-            private appointment. The master tailors at the KIMHAB ORK Atelier
-            devote weeks of craftsmanship to cutting, constructing and finishing
-            each piece using exquisite materials with care.
+            The Kimhab Ork custom-made garment is the utmost sartorial
+            experience. Through the custom-made service, discerning clients can
+            create a one of a kind garment through a private appointment. The
+            master tailors at the KIMHAB ORK Atelier devote weeks of
+            craftsmanship to cutting, constructing and finishing each piece
+            using exquisite materials with care.
           </p>
           <Link
             href="#process"
@@ -112,7 +112,7 @@ export default function CustomMadePage() {
       {/* Why Custom Made Section */}
       <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
         <div className="mx-auto max-w-6xl">
-          <h2 className="font-serif text-xl md:text-3xl font-bold text-white text-center mb-4">
+          <h2 className="font-serif text-2xl md:text-3xl font-bold text-white text-center mb-4">
             Why Choose Custom Made?
           </h2>
           <p className="text-center text-white/90 mb-12 max-w-2xl mx-auto">
