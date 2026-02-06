@@ -31,9 +31,9 @@ export function Header() {
               src="/logo-dark.png"
               alt="Kimhab Ork"
               width={120}
-              height={40}
+              height={45}
               priority
-              className="h-10 w-full object-cover"
+              className="h-11 w-full object-cover"
             />
           </Link>
 
