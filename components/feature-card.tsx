@@ -22,11 +22,11 @@ export function FeatureCard({
   return (
     <a
       href={ctaHref}
-      className={`group flex flex-col items-center text-center bg-card/80 rounded-lg border border-border/40 p-8 md:p-10 hover:border-primary/40 hover:shadow-md transition-all duration-300 ${className}`}
+      className={`group flex flex-col items-center text-center bg-card rounded-lg border border-border/80 p-8 md:p-10 hover:border-primary/60 hover:shadow-lg hover:bg-card/80 transition-all duration-300 ${className}`}
     >
       {/* Icon */}
       {icon && (
-        <div className="mb-6 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center text-primary/60 group-hover:text-primary transition-colors">
+        <div className="mb-4 w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mx-auto text-primary/70 group-hover:text-primary transition-colors">
           {icon}
         </div>
       )}
@@ -37,7 +37,7 @@ export function FeatureCard({
       </h3>
 
       {/* Description */}
-      <p className="text-sm md:text-base text-foreground/70 mb-6 leading-relaxed flex-grow text-balance">
+      <p className="text-sm md:text-base text-foreground/75 mb-6 leading-relaxed flex-grow text-balance">
         {description}
       </p>
 

@@ -35,24 +35,24 @@ export default function AboutPage() {
   return (
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-12 md:py-16 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance">
               Affordable Luxury for Modern Women
             </h1>
-            <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
               Kimhab Ork reimagines womenswear by combining exquisite design, premium quality materials, and sustainable practices at prices that celebrate accessibility.
             </p>
           </div>
         </section>
 
         {/* Our Story Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-8">
               Our Story
             </h2>
-            <div className="space-y-6 text-foreground/80 leading-relaxed">
+            <div className="space-y-6 text-foreground/75 leading-relaxed">
               <p>
                 Kimhab Ork was born from a simple belief: premium fashion should be accessible to everyone. Founded with a vision to bridge the gap between high fashion and everyday elegance, we create womenswear that empowers women to express themselves without compromise.
               </p>
@@ -67,9 +67,9 @@ export default function AboutPage() {
         </section>
 
         {/* Values Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8 text-start">
               Our Values
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -106,9 +106,9 @@ export default function AboutPage() {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-12">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8 text-start">
               Why Choose Kimhab Ork?
             </h2>
             <div className="space-y-8">
@@ -122,7 +122,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-semibold text-foreground mb-2">
                     Premium Materials
                   </h3>
-                  <p className="text-foreground/70">
+                  <p className="text-foreground/75">
                     We source the finest fabrics and materials, including organic cotton, sustainable silk, and responsibly-sourced textiles that feel luxurious and last longer.
                   </p>
                 </div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
 
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/10 text-primary">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/15 text-primary">
                     <span className="text-xl font-semibold">02</span>
                   </div>
                 </div>
@@ -138,7 +138,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-semibold text-foreground mb-2">
                     Timeless Design
                   </h3>
-                  <p className="text-foreground/70">
+                  <p className="text-foreground/75">
                     Our collections focus on versatile, classic silhouettes with modern details. Pieces that work today and remain relevant for years to come.
                   </p>
                 </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
 
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/10 text-primary">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/15 text-primary">
                     <span className="text-xl font-semibold">03</span>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-semibold text-foreground mb-2">
                     Ethical Production
                   </h3>
-                  <p className="text-foreground/70">
+                  <p className="text-foreground/75">
                     We partner with manufacturers who prioritize fair wages, safe working conditions, and environmental responsibility throughout our supply chain.
                   </p>
                 </div>
@@ -162,7 +162,7 @@ export default function AboutPage() {
 
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/10 text-primary">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/15 text-primary">
                     <span className="text-xl font-semibold">04</span>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-semibold text-foreground mb-2">
                     Exceptional Value
                   </h3>
-                  <p className="text-foreground/70">
+                  <p className="text-foreground/75">
                     Quality womenswear at accessible prices. We believe you shouldn't have to compromise on quality or pay luxury prices for great fashion.
                   </p>
                 </div>
@@ -180,24 +180,22 @@ export default function AboutPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-primary text-primary-foreground">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-balance">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold mb-6 text-balance">
               Discover Our Collections
             </h2>
-            <p className="text-lg mb-8 opacity-90 text-balance max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg mb-8 opacity-95 text-balance max-w-2xl mx-auto leading-relaxed">
               Explore our thoughtfully curated womenswear collections designed for the modern woman who values quality, style, and sustainability.
             </p>
             <Link
               href="/"
-              className="inline-block px-8 py-3 bg-primary-foreground text-primary font-semibold rounded-lg hover:opacity-90 transition-opacity"
+              className="inline-block px-8 py-3 bg-primary-foreground text-primary font-semibold rounded-lg hover:shadow-lg hover:opacity-95 transition-all"
             >
               Shop Now
             </Link>
           </div>
         </section>
       </main>
-      
-    
   )
 }

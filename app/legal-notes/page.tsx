@@ -12,7 +12,7 @@ export default function LegalNotesPage() {
   return (
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-12 md:py-16 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Legal Notes
@@ -24,7 +24,7 @@ export default function LegalNotesPage() {
         </section>
 
         {/* Legal Content */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl space-y-12">
             {/* Company Information */}
             <div>

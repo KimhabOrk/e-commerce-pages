@@ -15,25 +15,25 @@ export default function ResponsibilityPage() {
   return (
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-12 md:py-16 lg:py-32 px-4 md:px-6 lg:px-8 bg-background">
+        <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Our Commitment to Responsibility
             </h1>
-            <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
               At Kimhab Ork, we believe that sustainable fashion and ethical practices are not optional—they are fundamental to who we are as a brand.
             </p>
           </div>
         </section>
 
         {/* Our Vision */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
               Our Vision
             </h2>
-            <div className="bg-background p-8 rounded-lg border border-border/40">
-              <p className="text-foreground/70 leading-relaxed text-lg">
+            <div className="bg-card p-8 rounded-lg border border-border/70">
+              <p className="text-foreground/75 leading-relaxed text-lg">
                 Kimhab Ork is committed to embedding sustainability as a fundamental part of our strategic development for a more responsible, net-positive future across climate, nature, and people. We are accountable as a business, as part of society, and as individuals contributing to the biodiversity that shares our planet.
               </p>
             </div>
@@ -41,9 +41,9 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Three Main Pillars as Cards */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-12 text-center">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
               Our Three Pillars of Responsibility
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -73,16 +73,16 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Responsible Sourcing Details */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background" id="sourcing">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background" id="sourcing">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
               Our Material Standards
             </h2>
-            <div className="bg-muted p-8 rounded-lg">
+            <div className="bg-muted p-8 rounded-lg border border-border/70">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-primary mb-3">Regeneratively-Grown</h4>
-                  <ul className="space-y-2 text-foreground/70 text-sm">
+                  <ul className="space-y-2 text-foreground/75 text-sm">
                     <li className="flex gap-2">
                       <span className="text-accent">•</span>
                       <span>RegenAgri® certified materials</span>
@@ -138,7 +138,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Ethical Production */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8" id="ethical">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10" id="ethical">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Ethical Production & Labor Rights
@@ -175,7 +175,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Environmental Impact */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background" id="environmental">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background" id="environmental">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Reducing Environmental Impact
@@ -216,7 +216,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Our Policies */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Our Policies & Practices
@@ -241,12 +241,12 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* Looking Forward */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
               Looking Forward
             </h2>
-            <div className="space-y-6 text-foreground/70 leading-relaxed">
+            <div className="space-y-6 text-foreground/70 bg-muted/60 leading-relaxed px-2 md:px-4">
               <p>
                 At Kimhab Ork, we understand that responsibility is a journey, not a destination. We are on this journey and look forward to sharing our progress with you. Our targets are continually assessed to ensure they remain both ambitious and achievable.
               </p>
@@ -261,7 +261,7 @@ export default function ResponsibilityPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-primary text-white">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-primary text-white">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-2xl md:text-3xl font-bold mb-6 text-balance">
               Join Us in Building a Better Future

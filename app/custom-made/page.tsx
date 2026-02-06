@@ -68,10 +68,10 @@ export default function CustomMadePage() {
   ];
 
   return (
-    <main className="relative min-h-screen container bg-black text-white">
+    <main className="relative min-h-screen container bg-background text-foreground">
       {/* Hero Section with Split Design */}
       <section className="relative flex w-full mx-auto justify-center items-center">
-        <div className="flex relative max-w-full h-auto mx-auto">
+        <div className="flex relative w-full h-auto aspect-video mx-auto">
           <Image
             src="https://ik.imagekit.io/kimhabork/assets/custom.png?updatedAt=1770285869097"
             alt="Custom Made Service"
@@ -83,8 +83,8 @@ export default function CustomMadePage() {
         </div>
       </section>
       {/* Right Side - Content */}
-      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-black">
-        <div className="flex flex-col justify-center items-center text-center mx-auto max-w-full gap-6 md:gap-10">
+      <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
+        <div className="flex flex-col justify-center items-center text-center mx-auto max-w-6xl gap-6 md:gap-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-serif font-bold uppercase">
             Custom Made
           </h1>
@@ -110,8 +110,8 @@ export default function CustomMadePage() {
       </section>
 
       {/* Why Custom Made Section */}
-      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-black">
-        <div className="mx-auto max-w-full">
+      <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
+        <div className="mx-auto max-w-6xl">
           <h2 className="font-serif text-xl md:text-3xl font-bold text-white text-center mb-4">
             Why Choose Custom Made?
           </h2>
@@ -135,7 +135,7 @@ export default function CustomMadePage() {
 
       {/* Process Section */}
       <section
-        className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-black"
+        className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black"
         id="process"
       >
         <div className="mx-auto max-w-6xl">
@@ -146,20 +146,18 @@ export default function CustomMadePage() {
             {processSteps.map((step, index) => (
               <Card
                 key={index}
-                className="bg-muted/30 flex flex-col mx-auto justify-center items-center text-center"
+                className="bg-muted/30 flex mx-auto justify-center items-center text-center"
               >
-                <CardHeader>
-                  <div className="mb-4 w-8 h-8 md:w-12 md:h-12 flex items-center justify-center text-primary/80 group-hover:text-primary transition-colors">
+                <CardHeader className="flex flex-col mx-auto justify-center items-center text-center">
+                  <div className="mb-4 w-8 h-8 md:w-12 md:h-12 flex items-center justify-center text-primary group-hover:text-primary transition-colors">
                     {step.icon}
                   </div>
-                  <CardTitle>
-                    <h3 className="font-serif text-lg md:text-xl font-semibold text-white uppercase tracking-wide text-balance">
-                      {step.title}
-                    </h3>
+                  <CardTitle className="font-serif text-lg md:text-xl font-semibold text-white uppercase tracking-wide text-balance">
+                    {step.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm md:text-base text-white/70 leading-relaxed flex-grow text-balance">
+                  <p className="text-sm md:text-base text-white/80 leading-relaxed flex-grow text-balance">
                     {step.description}
                   </p>
                 </CardContent>
@@ -175,7 +173,7 @@ export default function CustomMadePage() {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-black">
+      <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
         <div className="mx-auto max-w-4xl">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-white text-center mb-12">
             Timeline & Commitment
@@ -253,7 +251,7 @@ export default function CustomMadePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/30">
+      <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-muted/30">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-white mb-6">
             Ready to Create Your Bespoke Piece
@@ -275,7 +273,7 @@ export default function CustomMadePage() {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-black">
+      <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
         <div className="mx-auto max-w-3xl">
           <div className="space-y-8">
             <div className="bg-muted/30 p-8 rounded-lg border border-border/40">

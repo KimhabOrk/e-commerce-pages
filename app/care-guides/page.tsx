@@ -54,18 +54,18 @@ const careGuides = [
 
 function CareGuideCard({ title, content, tips }: { title: string;content: string;tips: string[] }) {
   return (
-    <details className="group border border-border/40 rounded-lg overflow-hidden hover:border-primary/40 transition-colors">
-      <summary className="cursor-pointer px-6 py-4 bg-primary/80 hover:bg-background transition-colors flex items-center justify-between">
+    <details className="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+      <summary className="cursor-pointer px-6 py-4 bg-primary/85 hover:bg-primary/95 transition-colors flex items-center justify-between">
         <h3 className="font-semibold text-primary-foreground">{title}</h3>
-        <ChevronDown className="w-5 h-5 text-foreground/60 group-open:rotate-180 transition-transform" />
+        <ChevronDown className="w-5 h-5 text-primary-foreground group-open:rotate-180 transition-transform" />
       </summary>
-      <div className="px-6 py-4 bg-background border-t border-border/40 space-y-4">
-        <p className="text-foreground/70 leading-relaxed">{content}</p>
+      <div className="px-6 py-4 bg-card border-t border-border/70 space-y-4">
+        <p className="text-foreground/75 leading-relaxed">{content}</p>
         <div className="bg-muted p-4 rounded">
           <h4 className="font-semibold text-sm text-foreground mb-3">Care Tips:</h4>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
             {tips.map((tip, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm text-foreground/70">
+              <li key={index} className="flex items-start gap-2 text-sm text-foreground/75">
                 <span className="text-primary font-semibold mt-0.5">•</span>
                 <span>{tip}</span>
               </li>
@@ -83,19 +83,19 @@ export default function CareGuidesPage() {
     
     <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
+        <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
               Care Guides
             </h1>
-            <p className="text-lg text-foreground/70 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
               Preserve the beauty and longevity of your Kimhab Ork pieces with our comprehensive care instructions. High-quality materials deserve proper care.
             </p>
           </div>
         </section>
 
         {/* Introduction */}
-        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl">
             <div className="bg-muted p-8 rounded-lg border border-border/40">
               <h2 className="font-serif text-xl font-semibold text-primary mb-4">
@@ -109,7 +109,7 @@ export default function CareGuidesPage() {
         </section>
 
         {/* Care Guides */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-xl md:text-3xl font-bold text-foreground mb-12">
               Fabric Care Instructions
@@ -123,7 +123,7 @@ export default function CareGuidesPage() {
         </section>
 
         {/* General Tips Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
               General Care Tips
@@ -131,7 +131,7 @@ export default function CareGuidesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-foreground">Storage</h3>
-                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside marker-primary">
+                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside list-primary px-2 md:px-4">
                   <li>
                     <span>Store garments in a cool, dry place away from direct sunlight</span>
                   </li>
@@ -148,7 +148,7 @@ export default function CareGuidesPage() {
               </div>
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-foreground">Washing</h3>
-                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside marker-primary">
+                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside px-2 md:px-4">
                   <li>
                     <span>Always check the care label first for specific instructions</span>
                   </li>
@@ -165,7 +165,7 @@ export default function CareGuidesPage() {
               </div>
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-foreground">Drying</h3>
-                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside marker-primary">
+                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside px-2 md:px-4">
                   <li>
                     <span>Air dry whenever possible instead of machine drying</span>
                   </li>
@@ -182,7 +182,7 @@ export default function CareGuidesPage() {
               </div>
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-foreground">Ironing</h3>
-                <ul className="space-y-2 text-foreground/70 text-sm">
+                <ul className="space-y-2 text-foreground/70 text-sm px-2 md:px-4">
                   <li>
                     <span>Use low to medium heat depending on fabric type</span>
                   </li>
@@ -202,13 +202,13 @@ export default function CareGuidesPage() {
         </section>
 
         {/* Stain Removal Section */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
             <h2 className="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
               Handling Stains
             </h2>
             <div className="bg-muted p-6 rounded-lg border border-border/40 jutify-center items-center">
-              <ul className="space-y-4 text-foreground/70 list-inside">
+              <ul className="space-y-4 text-foreground/70 list-inside px-2 md:px-4">
                 <li>
                   <span className="font-semibold text-primary">Act Quickly:</span>
                   <span>Address stains as soon as possible for better results. Blot the stain rather than rubbing to avoid spreading it further.</span>

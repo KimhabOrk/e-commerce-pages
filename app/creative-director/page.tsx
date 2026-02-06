@@ -17,13 +17,13 @@ export default function CreativeDirector() {
   return (
       <main>
         {/* Hero Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-6xl">
             <div className="text-center mb-12 md:mb-16">
               <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
                 Meet Our Creative Director
               </h1>
-              <p className="text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-foreground/75 max-w-2xl mx-auto leading-relaxed">
                 The visionary leading Kimhab ORK's journey to redefine affordable luxury fashion
               </p>
             </div>
@@ -31,7 +31,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Profile Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/30">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-muted/20">
           <div className="mx-auto max-w-5xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Profile Image */}
@@ -50,37 +50,37 @@ export default function CreativeDirector() {
               {/* Profile Info */}
               <div className="space-y-6">
                 <div>
-                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
                     KIMHAB ORK
                   </h2>
-                  <p className="text-xl font-semibold text-foreground mb-4">Creative Director & Founder</p>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-xl font-semibold text-primary mb-4">Creative Director & Founder</p>
+                  <p className="text-foreground/75 leading-relaxed">
                     With over 15 years of experience in luxury fashion design, KIMHAB founded Kimhab ORK with a singular vision: to make high-quality, sustainably-produced womenswear accessible to everyone without compromising on elegance or ethics.
                   </p>
                 </div>
 
                 <div className="space-y-4">
                   <div>
-                    <h3 className="font-semibold text-primary mb-4">Design Philosophy</h3>
-                    <p className="text-foreground/70 leading-relaxed">
+                    <h3 className="text-xl font-semibold text-primary mb-4">Design Philosophy</h3>
+                    <p className="text-foreground/75 leading-relaxed">
                       KIMHAB believes that beautiful design transcends price points. Every piece in our collection reflects a commitment to timeless silhouettes, premium materials, and meticulous craftsmanship—all at prices that celebrate affordability.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="font-semibold text-primary mb-4">Sustainability Mission</h3>
-                    <p className="text-foreground/70 leading-relaxed">
+                    <h3 className="text-xl font-semibold text-primary mb-4">Sustnability Mission</h3>
+                    <p className="text-foreground/75 leading-relaxed">
                       Driven by environmental consciousness, KIMHAB leads our responsibility initiatives, ensuring every garment is produced ethically and sustainably. The vision extends beyond fashion to create positive impact on communities and our planet.
                     </p>
                   </div>
-                </div>
+                </div>t
               </div>
             </div>
           </div>
         </section>
 
         {/* Journey Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
               The Creative Journey
@@ -89,14 +89,14 @@ export default function CreativeDirector() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="space-y-4">
                 <h3 className="font-serif text-xl font-semibold text-primary">Early Inspiration</h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <p className="text-foreground/75 leading-relaxed">
                   Growing up in Cambodia, KIMHAB was captivated by the rich textile traditions and artisan craftsmanship that defines the region. This early exposure sparked a passion for creating fashion that honors heritage while embracing modern aesthetics.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <h3 className="font-serif text-xl font-semibold text-primary">Global Experience</h3>
-                <p className="text-foreground/70 leading-relaxed">
+                <p className="text-foreground/75 leading-relaxed">
                   After studying fashion design in Paris and working with renowned luxury houses across Europe and Asia, KIMHAB gained invaluable insights into craftsmanship, sustainability, and the disconnect between luxury and accessibility.
                 </p>
               </div>
@@ -119,7 +119,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Core Values Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/40">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
               Core Values & Guiding Principles
@@ -162,7 +162,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Inspiration Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
             <div className="bg-card/60 border border-border p-8 md:p-12 rounded-lg">
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
@@ -192,7 +192,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Connect Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/50">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-muted/50">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
               Connect with Our Vision
