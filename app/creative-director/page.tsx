@@ -36,7 +36,7 @@ export default function CreativeDirector() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Profile Image */}
               <div className="flex justify-center">
-                <div className="w-full max-w-sm rounded-lg overflow-hidden shadow-lg shadow-white/30 border border-border">
+                <div className="w-full max-w-sm rounded-lg overflow-hidden shadow-lg shadow-gray-600/30 border border-border">
                   <Image
                     src="https://ik.imagekit.io/kimhabork/media/profile/director.jpg?updatedAt=1770273580618"
                     alt="Creative Director"
