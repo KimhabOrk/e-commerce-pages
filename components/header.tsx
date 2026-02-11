@@ -10,12 +10,13 @@ export function Header() {
 
   const navigationLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About Us' },
-    { href: '/creative-director', label: 'Creative Director' },
-    { href: '/custom-made', label: 'Custom Made' },
-    { href: '/care-guides', label: 'Care Guides' },
-    { href: '/responsibility', label: 'Responsibility' },
-    { href: '/legal-notes', label: 'Legal' },
+    { href: '/company/about', label: 'About Us' },
+    { href: '/company/creative-director', label: 'Creative Director' },
+    { href: '/services/custom-made', label: 'Custom Made' },
+    { href: '/services/care-guides', label: 'Care Guides' },
+    { href: '/services/helps', label: 'Helps & FAQs' },
+    { href: '/company/responsibility', label: 'Responsibility' },
+    { href: '/legal/notes', label: 'Legal' },
   ]
 
   return (
