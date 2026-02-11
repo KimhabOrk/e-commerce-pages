@@ -12,7 +12,7 @@ export function HeroGradient({
   description,
 }: HeroGradientProps) {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-black">
+    <div className="relative w-full overflow-hidden bg-black">
       {/* Animated background gradient elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Deep black to charcoal gradient base */}
