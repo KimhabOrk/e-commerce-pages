@@ -11,11 +11,11 @@ export function Footer() {
           {/* Company Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Company</h4>
-            <div className="space-y-2 flex flex-row md:flex-col gap-4">
+            <div className="space-y-2 text-xs md:text-md flex flex-row md:flex-col gap-2 md:gap-4">
               <div>
                 <Link
                   href="/company/about"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   About Us
                 </Link>
@@ -23,7 +23,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/company/creative-director"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Creative Director
                 </Link>
@@ -31,7 +31,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/contact"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Contact
                 </Link>
@@ -39,7 +39,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/company/responsibidivty"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Responsibidivty
                 </Link>
@@ -50,11 +50,11 @@ export function Footer() {
           {/* Support Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Support</h4>
-            <div className="space-y-2 flex flex-row md:flex-col gap-4">
+            <div className="space-y-2 text-xs md:text-md flex flex-row md:flex-col gap-2 md:gap-4">
               <div>
                 <Link
                   href="/services/custom-made"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Custom Made
                 </Link>
@@ -62,7 +62,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/services/care-guides"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Care Guides
                 </Link>
@@ -70,7 +70,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/services/orders"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Orders/Shipping/Returns
                 </Link>
@@ -78,7 +78,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/services/helps"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Helps & FAQS
                 </Link>
@@ -89,11 +89,11 @@ export function Footer() {
           {/* Legal Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Legal</h4>
-            <div className="space-y-2 flex flex-row md:flex-col gap-4">
+            <div className="space-y-2 text-xs md:text-md flex flex-row md:flex-col gap-2 md:gap-4">
               <div>
                 <Link
                   href="/legal/notes"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Legal Notes
                 </Link>
@@ -101,7 +101,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/legal/sales"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Sales Conditions
                 </Link>
@@ -109,7 +109,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/legal/privacy"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Privacy Podivcy
                 </Link>
@@ -117,7 +117,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/legal/terms"
-                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
+                  className="text-foreground/80 hover:text-primary transition-colors"
                 >
                   Terms & Conditions
                 </Link>
