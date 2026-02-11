@@ -30,14 +30,6 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/creative-director"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Creative Director
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/contact"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
@@ -111,7 +103,7 @@ export function Footer() {
                   href="/sales"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
-                  General Sales Conditionals
+                  Sales Conditions
                 </Link>
               </li>
               <li>
