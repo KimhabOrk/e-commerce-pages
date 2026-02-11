@@ -228,22 +228,6 @@ export default function HelpFaqsPage() {
         </div>
       </section>
 
-      {/* Reference Image */}
-      <section className="py-8 md:py-12 px-4 md:px-6 lg:px-8 bg-muted/50">
-        <div className="mx-auto max-w-4xl">
-          <div className="relative rounded-lg overflow-hidden border border-border/40">
-            <Image
-              src="/images/img-20260211-111509.jpg"
-              alt="Kimhab Ork Help and FAQs Reference"
-              width={800}
-              height={1000}
-              className="w-full h-auto object-cover"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Content */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl">
