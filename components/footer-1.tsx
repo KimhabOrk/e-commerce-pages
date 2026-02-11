@@ -11,7 +11,7 @@ export function Footer() {
           {/* Company Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Company</h4>
-            <div className="space-y-2 text-xs md:text-md flex flex-row md:flex-col gap-2 md:gap-4">
+            <div className="space-y-2 text-xs md:text-md flex flex-row md:flex-col gap-3 md:gap-4">
               <div>
                 <Link
                   href="/company/about"
@@ -50,7 +50,7 @@ export function Footer() {
           {/* Support Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Support</h4>
-            <div className="space-y-2 text-xs md:text-md flex flex-row md:flex-col gap-2 md:gap-4">
+            <div className="space-y-2 text-xs md:text-md flex flex-row md:flex-col gap-3 md:gap-4">
               <div>
                 <Link
                   href="/services/custom-made"
@@ -89,7 +89,7 @@ export function Footer() {
           {/* Legal Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Legal</h4>
-            <div className="space-y-2 text-xs md:text-md flex flex-row md:flex-col gap-2 md:gap-4">
+            <div className="space-y-2 text-xs md:text-md flex flex-row md:flex-col gap-3 md:gap-4">
               <div>
                 <Link
                   href="/legal/notes"
