@@ -6,8 +6,8 @@ export function Footer() {
 
   return (
     <footer className="w-full border-t border-muted/80 bg-background pt-8">
-      <div className="relative mx-auto max-w-6xl justify-center items-center flex flex-col px-6 md:px-8 lg:px-10 py-8 md:py-12">
-        <div className="grid grid-rows-3 md:grid-cols-3 gap-8 md:gap-12 mb-4">
+      <div className="relative mx-auto max-w-8xl justify-center items-center flex flex-col px-6 md:px-8 lg:px-10 py-8 md:py-12">
+        <div className="grid grid-rows-3 md:grid-cols-3 gap-4 md:gap-10 mb-4">
           {/* Company Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Company</h4>
