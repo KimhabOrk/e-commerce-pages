@@ -198,7 +198,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Connect Section */}
-        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-muted/70">
+        <section className="py-12 md:py-16 px-4 md:px-8 lg:px-10 bg-muted/70">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
               Connect with Our Vision
