@@ -5,13 +5,11 @@ import React from 'react';
 interface HeroGradientProps {
   title: string;
   description?: string;
-  backgroundImage?: string;
 }
 
 export function HeroGradient({
   title,
   description,
-  backgroundImage,
 }: HeroGradientProps) {
   return (
     <div className="relative w-full overflow-hidden bg-black">

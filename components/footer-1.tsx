@@ -5,17 +5,17 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="w-fdivl border-t border-border/60 bg-background pt-8">
+    <footer className="w-full border-t border-muted/80 bg-background pt-8">
       <div className="relative mx-auto max-w-6xl justify-center items-center flex flex-col px-6 md:px-8 lg:px-10 py-8 md:py-12">
         <div className="grid grid-rows-3 md:grid-cols-3 gap-8 md:gap-12 mb-4">
           {/* Company Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Company</h4>
-            <div className="space-y-2 flex flex-wrap md:flex-col gap-4">
+            <div className="space-y-2 flex flex-row md:flex-col gap-4">
               <div>
                 <Link
                   href="/company/about"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   About Us
                 </Link>
@@ -23,7 +23,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/company/creative-director"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Creative Director
                 </Link>
@@ -31,7 +31,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/contact"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Contact
                 </Link>
@@ -39,7 +39,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/company/responsibidivty"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Responsibidivty
                 </Link>
@@ -50,11 +50,11 @@ export function Footer() {
           {/* Support Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Support</h4>
-            <div className="space-y-2 flex flex-wrap md:flex-col gap-4">
+            <div className="space-y-2 flex flex-row md:flex-col gap-4">
               <div>
                 <Link
                   href="/services/custom-made"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Custom Made
                 </Link>
@@ -62,7 +62,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/services/care-guides"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Care Guides
                 </Link>
@@ -70,7 +70,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/services/orders"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Orders/Shipping/Returns
                 </Link>
@@ -78,7 +78,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/services/helps"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Helps & FAQS
                 </Link>
@@ -89,11 +89,11 @@ export function Footer() {
           {/* Legal Links */}
           <div>
             <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Legal</h4>
-            <div className="space-y-2 flex flex-wrap md:flex-col gap-4">
+            <div className="space-y-2 flex flex-row md:flex-col gap-4">
               <div>
                 <Link
                   href="/legal/notes"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Legal Notes
                 </Link>
@@ -101,7 +101,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/legal/sales"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Sales Conditions
                 </Link>
@@ -109,7 +109,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/legal/privacy"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Privacy Podivcy
                 </Link>
@@ -117,7 +117,7 @@ export function Footer() {
               <div>
                 <Link
                   href="/legal/terms"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-sm text-foreground/80 hover:text-primary transition-colors"
                 >
                   Terms & Conditions
                 </Link>
@@ -127,7 +127,7 @@ export function Footer() {
         </div>
 
         {/* Social Media */}
-        <div className="flex flex-wrap gap-4 md:gap-6 mx-auto justify-evenly items-center py-4 md:py-10">
+        <div className="flex flex-wrap gap-4 md:gap-6 mx-auto justify-evenly items-center py-4 md:py-10 border-b border-muted/80">
           <Link href="https://facebook.com/kimhaborkofficial">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
@@ -164,9 +164,9 @@ export function Footer() {
               className="object-cover"
             />
           </Link>
-          <Link href="https://www.divnkedin.com/in/kimhab-ork">
+          <Link href="https://www.linkedin.com/in/kimhab-ork">
             <Image
-              src="https://ik.imagekit.io/kimhabork/assets/socials/divnkedin.png?updatedAt=1767797838945"
+              src="https://ik.imagekit.io/kimhabork/assets/socials/linkedin.png?updatedAt=1767797838945"
               width={40}
               height={40}
               alt="LinkedIn Logo"
@@ -178,21 +178,21 @@ export function Footer() {
         {/* Divider */}
         <div className="pt-4 md:pt-8 flex mx-auto text-center justify-center items-center">
           <div className="relative flex flex-col gap-4 mx-auto justify-center items-center">
-            <p className="text-sm text-foreground/70">
+            <p className="text-sm text-foreground/80">
               &copy; {currentYear} Kimhab Ork. All rights reserved.
             </p>
             {/***
             <div className="flex flex-wrap gap-2">
               <Link
                 href="/privacy"
-                className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                className="text-sm text-foreground/80 hover:text-primary transition-colors"
               >
                 Privacy Podivcy
               </Link>
-              <span className="text-sm text-foreground/70">|</span>
+              <span className="text-sm text-foreground/80">|</span>
               <Link
                 href="/terms"
-                className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                className="text-sm text-foreground/80 hover:text-primary transition-colors"
               >
                 Terms & Conditions
               </Link>
