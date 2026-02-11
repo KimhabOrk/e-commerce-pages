@@ -27,16 +27,16 @@ export function HeroGradient({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center px-4 md:px-6 lg:px-8 py-16 md:py-20">
+      <div className="relative z-10 flex flex-col items-center justify-center px-4 md:px-6 lg:px-8 py-20 md:py-28">
         <div className="max-w-7xl mx-auto text-center space-y-6">
           {/* Main Title */}
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-white leading-tight">
-            <span className="text-balance">{title}</span>
+          <h1 className="font-serif text-3xl text-balance md:text-4xl lg:text-6xl font-semibold tracking-tight text-white leading-tight">
+            {title}
           </h1>
 
           {/* Description */}
           {description && (
-            <p className="text-lg md:text-xl text-foreground/80 max-w-5xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
               {description}
             </p>
           )}

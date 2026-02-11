@@ -178,9 +178,15 @@ export default function LegalNotesPage() {
               <p className="text-foreground/70 mb-4">
                 If you have any questions regarding these legal notes or the use of this Site, please contact us at:
               </p>
-              <p className="text-foreground font-semibold">
-                Kimhab Ork Co., Ltd.<br />
-                Email: legal@kimhabork.com
+              <p>Kimhab Ork Co</p>
+              <p> Email: 
+                <a href="mailto:customerservice@kimhabork.com">customerservice@kimhabork.com</a>
+              </p>
+              <p>Telephone: 
+                <a href="tel:+855 (23) 123-4567">+855 (23) 123-4567</a>
+              </p>
+              <p>
+                <a href="/contact">Contact Form</a>
               </p>
             </div>
           </div>

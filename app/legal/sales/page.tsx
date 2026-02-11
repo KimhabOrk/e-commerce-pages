@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
+import { HeroGradient } from '@/components/hero-gradient'
 
 export const metadata: Metadata = {
   title: 'General Sales Conditions | Kimhab Ork',
@@ -13,16 +14,10 @@ export default function GeneralSalesConditionsPage() {
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative py-12 md:py-16 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-            General Sales Conditions
-          </h1>
-          <p className="text-xl md:text-2xl text-foreground/70 text-balance max-w-2xl mx-auto">
-            Fashion & Accessories - Terms & Conditions for all purchases
-          </p>
-        </div>
-      </section>
+      <HeroGradient 
+        title="General Sales Conditions"
+        description="Fashion & Accessories - Terms & Conditions for all purchases"
+      />
       
       {/* Sales Conditions Content */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
@@ -325,7 +320,7 @@ export default function GeneralSalesConditionsPage() {
               If you have any questions regarding these General Sales Conditions or need further clarification, please contact us:
             </p>
             <div className="text-foreground font-semibold space-y-2">
-              <p>Kimhab Ork Co., Ltd.</p>
+              <p>Kimhab Ork Co</p>
               <p>Email: 
                 <a href="mailto:customerservice@kimhabork.com">customerservice@kimhabork.com</a>
               </p>

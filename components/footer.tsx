@@ -119,7 +119,7 @@ export function Footer() {
                   href="/legal/terms"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Terms & Conditions
+                  Terms
                 </Link>
               </li>
             </ul>
