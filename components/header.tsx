@@ -22,7 +22,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/98 backdrop-blur-sm">
       <nav className="mx-auto max-w-7xl px-4 md:px-8 lg:px-10">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-12 md:h-16">
           {/* Logo */}
           <Link
             href="/"
@@ -32,9 +32,9 @@ export function Header() {
               src="/logo-dark.png"
               alt="Kimhab Ork"
               width={120}
-              height={45}
+              height={22}
               priority
-              className="h-11 w-full object-cover"
+              className="h-8 w-full object-cover"
             />
           </Link>
 
