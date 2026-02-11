@@ -5,8 +5,8 @@
 
 :root {
   /* Luxury Dark Mode - Black Background with White Text */
-  --background: #0A0A0A;
-  --foreground: #FFFFFF;
+  --background: #000000;
+  --foreground: #ffffff;
   --card: #1A1A1A;
   --card-foreground: #E0E0E0;
   --popover: #1A1A1A;

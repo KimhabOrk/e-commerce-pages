@@ -17,7 +17,7 @@ export default function CreativeDirector() {
   return (
       <main>
         {/* Hero Section */}
-        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-6xl">
             <div className="text-center mb-12 md:mb-16">
               <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -31,7 +31,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Profile Section */}
-        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-5xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Profile Image */}
@@ -53,7 +53,7 @@ export default function CreativeDirector() {
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
                     KIMHAB ORK
                   </h2>
-                  <p className="text-xl font-semibold text-primary/70 mb-4">Creative Director & Founder</p>
+                  <p className="text-xl font-semibold text-foreground mb-4">Creative Director & Founder</p>
                   <p className="text-foreground/75 leading-relaxed">
                     With over 15 years of experience in luxury fashion design, KIMHAB founded Kimhab ORK with a singular vision: to make high-quality, sustainably-produced womenswear accessible to everyone without compromising on elegance or ethics.
                   </p>
@@ -61,14 +61,14 @@ export default function CreativeDirector() {
 
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-xl font-semibold text-primary/70 mb-4">Design Philosophy</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-4">Design Philosophy</h3>
                     <p className="text-foreground/75 leading-relaxed">
                       KIMHAB believes that beautiful design transcends price points. Every piece in our collection reflects a commitment to timeless silhouettes, premium materials, and meticulous craftsmanship—all at prices that celebrate affordability.
                     </p>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold text-primary/70 mb-4">Sustnability Mission</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-4">Sustnability Mission</h3>
                     <p className="text-foreground/75 leading-relaxed">
                       Driven by environmental consciousness, KIMHAB leads our responsibility initiatives, ensuring every garment is produced ethically and sustainably. The vision extends beyond fashion to create positive impact on communities and our planet.
                     </p>
@@ -80,7 +80,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Journey Section */}
-        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
               The Creative Journey
@@ -88,28 +88,28 @@ export default function CreativeDirector() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="space-y-4">
-                <h3 className="font-serif text-xl font-semibold text-primary/70">Early Inspiration</h3>
+                <h3 className="font-serif text-xl font-semibold text-foreground">Early Inspiration</h3>
                 <p className="text-foreground/75 leading-relaxed">
                   Growing up in Cambodia, KIMHAB was captivated by the rich textile traditions and artisan craftsmanship that defines the region. This early exposure sparked a passion for creating fashion that honors heritage while embracing modern aesthetics.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="font-serif text-xl font-semibold text-primary/70">Global Experience</h3>
+                <h3 className="font-serif text-xl font-semibold text-foreground">Global Experience</h3>
                 <p className="text-foreground/75 leading-relaxed">
                   After studying fashion design in Paris and working with renowned luxury houses across Europe and Asia, KIMHAB gained invaluable insights into craftsmanship, sustainability, and the disconnect between luxury and accessibility.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="font-serif text-xl font-semibold text-primary/70">Founding Vision</h3>
+                <h3 className="font-serif text-xl font-semibold text-foreground">Founding Vision</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   In 2018, KIMHAB founded Kimhab ORK to challenge the luxury fashion industry. The brand was born from a question: why should quality, sustainability, and beautiful design be exclusive to the wealthy?
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="font-serif text-xl font-semibold text-primary/70/70">Present Impact</h3>
+                <h3 className="font-serif text-xl font-semibold text-foreground/70">Present Impact</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   Today, Kimhab ORK has grown into a global community of conscious consumers and creative collaborators, proving that affordable luxury and ethical fashion aren't just ideals—they're achievable.
                 </p>
@@ -119,7 +119,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Core Values Section */}
-        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-6xl">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
               Core Values & Guiding Principles
@@ -162,7 +162,7 @@ export default function CreativeDirector() {
         </section>
 
         {/* Inspiration Section */}
-        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl">
             <div className="bg-card/60 border border-border p-8 md:p-12 rounded-lg">
               <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
@@ -192,13 +192,13 @@ export default function CreativeDirector() {
         </section>
 
         {/* Connect Section */}
-        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-muted/50">
+        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-muted/70">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
               Connect with Our Vision
             </h2>
-            <p className="text-lg text-foreground/70 mb-8 leading-relaxed">
-              Follow KIMHAB and Kimhab ORK on social media to stay updated on new collections, behind-the-scenes stories, and our journey toward redefining luxury fashion.
+            <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+              Follow KIMHAB ORK on social media to stay updated on new collections, behind-the-scenes stories, and our journey toward redefining luxury fashion.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
@@ -209,7 +209,7 @@ export default function CreativeDirector() {
                 Shop Latest Collection
               </a>
               <a
-                href="/about"
+                href="/company/about"
                 className="inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 Our Story
