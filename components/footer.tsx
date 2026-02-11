@@ -6,7 +6,7 @@ export function Footer() {
 
   return (
     <footer className="w-full border-t border-border/60 bg-background pt-8">
-      <div className="mx-auto max-w-full justify-center items-center flex flex-col px-6 md:px-8 lg:px-10 py-8 md:py-12">
+      <div className="mx-auto max-w-full justify-center items-center flex flex-col px-4 md:px-8 lg:px-10 py-8 md:py-12">
         <div className="grid grid-cols-3 gap-8 md:gap-12 mb-4">
           {/* Company Links */}
           <div>
@@ -28,6 +28,30 @@ export function Footer() {
                   Creative Director
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/creative-director"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Creative Director
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/responsibility"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Responsibility
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -35,6 +59,14 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-4 text-sm">Support</h4>
             <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/custom-made"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Custom Made
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/care-guides"
@@ -45,10 +77,18 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/custom-made"
+                  href="/orders"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Custom Made
+                  Orders/Shipping/Returns
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/helps"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Helps & FAQS
                 </Link>
               </li>
             </ul>
@@ -68,10 +108,26 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/responsibility"
+                  href="/sales"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Responsibility
+                  General Sales Conditionals
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Terms & Conditions
                 </Link>
               </li>
             </ul>
