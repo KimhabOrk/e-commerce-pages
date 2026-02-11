@@ -6,7 +6,7 @@ export function Footer() {
 
   return (
     <footer className="w-full border-t border-border/60 bg-background pt-8">
-      <div className="mx-auto max-w-full justify-center items-center flex flex-col px-4 md:px-8 lg:px-10 py-8 md:py-12">
+      <div className="relative mx-auto max-w-full justify-center items-center flex flex-col px-4 md:px-8 lg:px-10 py-8 md:py-12">
         <div className="grid grid-cols-3 gap-8 md:gap-12 mb-4">
           {/* Company Links */}
           <div>
@@ -14,7 +14,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/about"
+                  href="/company/about"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   About Us
@@ -22,7 +22,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/creative-director"
+                  href="/company/creative-director"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Creative Director
@@ -38,7 +38,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/responsibility"
+                  href="/company/responsibility"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Responsibility
@@ -53,7 +53,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/custom-made"
+                  href="/services/custom-made"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Custom Made
@@ -61,7 +61,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/care-guides"
+                  href="/services/care-guides"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Care Guides
@@ -69,7 +69,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/orders"
+                  href="/services/orders"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Orders/Shipping/Returns
@@ -77,7 +77,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/helps"
+                  href="/services/helps"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Helps & FAQS
@@ -92,7 +92,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/legal-notes"
+                  href="/legal/notes"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Legal Notes
@@ -100,7 +100,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/sales"
+                  href="/legal/sales"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Sales Conditions
@@ -108,7 +108,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/privacy"
+                  href="/legal/privacy"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Privacy Policy
@@ -116,7 +116,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/terms"
+                  href="/legal/terms"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   Terms & Conditions
@@ -181,6 +181,7 @@ export function Footer() {
             <p className="text-sm text-foreground/70">
               &copy; {currentYear} Kimhab Ork. All rights reserved.
             </p>
+            {/***
             <div className="flex flex-wrap gap-2">
               <Link
                 href="/privacy"
@@ -196,6 +197,7 @@ export function Footer() {
                 Terms & Conditions
               </Link>
             </div>
+            */}
           </div>
         </div>
       </div>

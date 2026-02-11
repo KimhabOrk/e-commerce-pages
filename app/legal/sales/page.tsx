@@ -18,28 +18,12 @@ export default function GeneralSalesConditionsPage() {
           <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
             General Sales Conditions
           </h1>
-          <p className="text-lg text-foreground/70 text-balance max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-foreground/70 text-balance max-w-2xl mx-auto">
             Fashion & Accessories - Terms & Conditions for all purchases
           </p>
         </div>
       </section>
-
-      {/* Reference Image */}
-      <section className="py-8 px-4 md:px-6 lg:px-8 bg-muted/40">
-        <div className="mx-auto max-w-4xl">
-          <div className="relative w-full h-auto rounded-lg overflow-hidden border border-border/40">
-            <Image
-              src="/images/img-20260211-115617.jpg"
-              alt="General Sales Conditions Reference Document"
-              width={1200}
-              height={1500}
-              loading="eager"
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-      </section>
-
+      
       {/* Sales Conditions Content */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl space-y-12">
@@ -342,9 +326,15 @@ export default function GeneralSalesConditionsPage() {
             </p>
             <div className="text-foreground font-semibold space-y-2">
               <p>Kimhab Ork Co., Ltd.</p>
-              <p>Email: customerservice@kimhabork.com</p>
-              <p>Telephone: +855 (23) 123-4567</p>
-              <p>Address: 123 Fashion Street, Phnom Penh, Cambodia</p>
+              <p>Email: 
+                <a href="mailto:customerservice@kimhabork.com">customerservice@kimhabork.com</a>
+              </p>
+              <p>Telephone: 
+                <a href="tel:+855 (23) 123-4567">+855 (23) 123-4567</a>
+              </p>
+              <p>
+                <a href="/contact">Contact Form</a>
+              </p>
             </div>
             <p className="text-foreground/70 mt-4 text-sm">
               Last Updated: February 2026

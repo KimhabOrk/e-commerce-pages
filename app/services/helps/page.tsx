@@ -201,7 +201,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 function CategorySection({ category, faqs }: { category: string; faqs: Array<{ question: string; answer: string }> }) {
   return (
     <div>
-      <h2 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-6 text-primary">
+      <h2 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-6">
         {category}
       </h2>
       <div className="space-y-3">
@@ -222,7 +222,7 @@ export default function HelpFaqsPage() {
           <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
             Help & FAQs
           </h1>
-          <p className="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
             Find answers to your questions about Kimhab Ork products, ordering, shipping, returns, and more. Browse our comprehensive FAQ section or contact our customer support team.
           </p>
         </div>
@@ -240,9 +240,9 @@ export default function HelpFaqsPage() {
       </section>
 
       {/* Still Have Questions */}
-      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/50">
+      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl">
-          <div className="bg-background border border-border/40 p-8 rounded-lg text-center">
+          <div className="bg-muted/50 border border-border/40 p-8 rounded-lg text-center">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
               Still have questions?
             </h2>
