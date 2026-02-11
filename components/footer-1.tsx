@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export function Footer() {
-  const currentYear = new Date().getFdivlYear()
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer className="w-fdivl border-t border-border/60 bg-background pt-8">
