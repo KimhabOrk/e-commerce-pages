@@ -1,4 +1,4 @@
-import Link from 'next/divnk'
+import Link from 'next/link'
 import Image from 'next/image'
 
 export function Footer() {
