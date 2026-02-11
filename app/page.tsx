@@ -55,8 +55,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative py-16 md:py-20 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
         <div className="mx-auto max-w-6xl">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance">
+          <div className="text-center max-w-7xl mx-auto">
+            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance">
               Affordable Luxury Fashion
             </h1>
             <p className="text-lg md:text-xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -131,21 +131,21 @@ export default function Home() {
               title="About Us"
               description="Discover our story, values, and commitment to affordable luxury fashion for modern women."
               ctaText="Read Our Story"
-              ctaHref="/about"
+              ctaHref="/company/about"
             />
             <FeatureCard
               icon={<BookOpen className="w-7 h-7 md:w-10 md:h-10" />}
               title="Care Guides"
               description="Comprehensive care instructions for all fabric types to preserve your pieces for years."
               ctaText="View Guides"
-              ctaHref="/care-guides"
+              ctaHref="/services/care-guides"
             />
             <FeatureCard
               icon={<FileText className="w-7 h-7 md:w-10 md:h-10" />}
               title="Responsibility"
               description="Learn about our commitment to sustainability, ethical sourcing, and responsible production."
               ctaText="Our Commitment"
-              ctaHref="/responsibility"
+              ctaHref="/company/responsibility"
             />
           </div>
         </div>
@@ -159,28 +159,28 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Link
-              href="/care-guides"
+              href="/legal/sales"
               className="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center"
             >
-              <h3 className="font-semibold text-foreground mb-1">Care Guides</h3>
+              <h3 className="font-semibold text-foreground mb-1">General Sales Conditions</h3>
               <p className="text-sm text-foreground/65">Fabric care instructions</p>
             </Link>
             <Link
-              href="/legal-notes"
+              href="/legal/notes"
               className="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center"
             >
               <h3 className="font-semibold text-foreground mb-1">Legal Notes</h3>
               <p className="text-sm text-foreground/65">Legal information</p>
             </Link>
             <Link
-              href="/privacy-policy"
+              href="/legal/privacy"
               className="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center"
             >
               <h3 className="font-semibold text-foreground mb-1">Privacy Policy</h3>
               <p className="text-sm text-foreground/65">Data protection</p>
             </Link>
             <Link
-              href="/terms"
+              href="/legal/terms"
               className="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center"
             >
               <h3 className="font-semibold text-foreground mb-1">Terms & Conditions</h3>
