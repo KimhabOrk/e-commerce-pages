@@ -84,6 +84,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  href="/general-sales-conditions"
+                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Sales Conditions
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/responsibility"
                   className="text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
