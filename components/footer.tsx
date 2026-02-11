@@ -7,15 +7,15 @@ export function Footer() {
   return (
     <footer className="w-full border-t border-border/60 bg-background pt-8">
       <div className="relative mx-auto max-w-6xl justify-center items-center flex flex-col px-6 md:px-8 lg:px-10 py-8 md:py-12">
-        <div className="grid grid-rows-3 md:grid-cols-3 gap-8 md:gap-12 mb-4">
+        <div className="grid grid-cols-3 gap-4 md:gap-10 mb-4">
           {/* Company Links */}
           <div>
-            <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Company</h4>
-            <ul className="space-y-2">
+            <h4 className="font-semibold text-white mb-4 text-sm md:text-md">Company</h4>
+            <ul className="space-y-2 text-xs md:text-md">
               <li>
                 <Link
                   href="/company/about"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   About Us
                 </Link>
@@ -23,7 +23,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/company/creative-director"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Creative Director
                 </Link>
@@ -31,7 +31,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Contact
                 </Link>
@@ -39,7 +39,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/company/responsibility"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Responsibility
                 </Link>
@@ -49,12 +49,12 @@ export function Footer() {
 
           {/* Support Links */}
           <div>
-            <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Support</h4>
-            <ul className="space-y-2">
+            <h4 className="font-semibold text-white mb-4 text-sm md:text-md">Support</h4>
+            <ul className="space-y-2 text-xs md:text-md">
               <li>
                 <Link
                   href="/services/custom-made"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Custom Made
                 </Link>
@@ -62,7 +62,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services/care-guides"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Care Guides
                 </Link>
@@ -70,7 +70,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services/orders"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Orders/Shipping/Returns
                 </Link>
@@ -78,7 +78,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services/helps"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Helps & FAQS
                 </Link>
@@ -88,12 +88,12 @@ export function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h4 className="hidden md:block lg:block font-semibold text-white mb-4 text-sm">Legal</h4>
-            <ul className="space-y-2">
+            <h4 className="font-semibold text-white mb-4 text-sm md:text-md">Legal</h4>
+            <ul className="space-y-2 text-xs md:text-md">
               <li>
                 <Link
                   href="/legal/notes"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Legal Notes
                 </Link>
@@ -101,7 +101,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/legal/sales"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Sales Conditions
                 </Link>
@@ -109,7 +109,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/legal/privacy"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -117,7 +117,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/legal/terms"
-                  className="text-sm text-foreground/70 hover:text-primary transition-colors"
+                  className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Terms & Conditions
                 </Link>
