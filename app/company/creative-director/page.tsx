@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { FeatureCard } from '@/components/feature-card'
 import { Award, Sparkles, Heart, Globe } from 'lucide-react'
 import Image from 'next/image'
-import { HeroGradient } from '@/components/hero-gredient'
+import { HeroGradient } from '@/components/hero-gradient'
 
 export const metadata: Metadata = {
   title: 'Creative Director | Kimhab ORK',
