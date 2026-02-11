@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { FeatureCard } from '@/components/feature-card'
 import Link from 'next/link'
 import { Crown, Shield, TreePine, Users } from 'lucide-react'
+import { HeroGradient } from '@/components/hero-gredient'
 
 export const metadata: Metadata = {
   title: 'About Us | Kimhab Ork',
@@ -34,7 +35,11 @@ export default function AboutPage() {
 
   return (
       <main className="flex-1">
-        {/* Hero Section */}
+        <HeroGradient 
+          title="Affordable Luxury for Modern Women"
+          description="Kimhab Ork reimagines womenswear by combining exquisite design, premium quality materials, and sustainable practices at prices that celebrate accessibility."
+        />
+        {/* Hero Section
         <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance">
@@ -45,7 +50,8 @@ export default function AboutPage() {
             </p>
           </div>
         </section>
-
+        */}
+        
         {/* Our Story Section */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">

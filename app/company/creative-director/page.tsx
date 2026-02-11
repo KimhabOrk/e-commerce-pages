@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { FeatureCard } from '@/components/feature-card'
 import { Award, Sparkles, Heart, Globe } from 'lucide-react'
 import Image from 'next/image'
+import { HeroGradient } from '@/components/hero-gredient'
 
 export const metadata: Metadata = {
   title: 'Creative Director | Kimhab ORK',
@@ -16,7 +17,11 @@ export const metadata: Metadata = {
 export default function CreativeDirector() {
   return (
       <main>
-        {/* Hero Section */}
+        <HeroGradient
+          title="Meet Our Creative Director"
+          description="The visionary leading Kimhab ORK's journey to redefine affordable luxury fashion"
+        />
+        {/* Hero Section
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-6xl">
             <div className="text-center mb-12 md:mb-16">
@@ -29,7 +34,8 @@ export default function CreativeDirector() {
             </div>
           </div>
         </section>
-
+        */}
+        
         {/* Profile Section */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-5xl">
