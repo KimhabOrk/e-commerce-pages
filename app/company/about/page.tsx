@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { FeatureCard } from '@/components/feature-card'
 import Link from 'next/link'
 import { Crown, Shield, TreePine, Users } from 'lucide-react'
-import { HeroGradient } from '@/components/hero-gredient'
+import { HeroGradient } from '@/components/hero-gradient'
 
 export const metadata: Metadata = {
   title: 'About Us | Kimhab Ork',
