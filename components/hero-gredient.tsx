@@ -12,7 +12,7 @@ export function HeroGradient({
   description,
 }: HeroGradientProps) {
   return (
-    <div className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 w-full min-h-screen overflow-hidden bg-black">
+    <div className="relative w-full min-h-screen overflow-hidden bg-black">
       {/* Animated background gradient elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Deep black to charcoal gradient base */}
@@ -27,7 +27,7 @@ export function HeroGradient({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-6 lg:px-8 py-20">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 md:px-6 lg:px-8 py-12 md:py-16">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Main Title */}
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance">
