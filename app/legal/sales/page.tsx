@@ -312,20 +312,20 @@ export default function GeneralSalesConditionsPage() {
           </div>
 
           {/* Contact Section */}
-          <div className="bg-muted/80 p-8 rounded-lg border border-border/40">
+          <div className="bg-muted/80 p-4 rounded-lg border border-border/40">
             <h2 className="font-serif text-2xl font-bold text-primary mb-4">
               Questions About Our Sales Conditions?
             </h2>
             <p className="text-foreground/70 mb-4">
               If you have any questions regarding these General Sales Conditions or need further clarification, please contact us:
             </p>
-            <div className="text-foreground font-semibold space-y-2">
-              <p>Kimhab Ork Co</p>
+            <div className="text-foreground font-semibold space-y-2 text-wrap">
+              <p>Kimhab Ork</p>
               <p>Email: 
-                <a href="mailto:customerservice@kimhabork.com">customerservice@kimhabork.com</a>
+                <a href="mailto:customerservice@kimhabork.com"> customerservice@kimhabork.com</a>
               </p>
               <p>Telephone: 
-                <a href="tel:+855 (23) 123-4567">+855 (23) 123-4567</a>
+                <a href="tel:+855 (23) 123-4567"> +855 (23) 123-4567</a>
               </p>
               <p>
                 <a href="/contact">Contact Form</a>
