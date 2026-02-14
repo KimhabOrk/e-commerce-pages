@@ -7,25 +7,25 @@ const word = "MONO";
 
 const sideImages = [
   {
-    src: "/images/hero-side-1.png",
+    src: "/images/mono/hero-side-1.png",
     alt: "Modern architecture with corten steel",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/hero-side-2.png",
+    src: "/images/mono/hero-side-2.png",
     alt: "Aerial view of modern home",
     position: "left",
     span: 1,
   },
   {
-    src: "/images/hero-side-3.png",
+    src: "/images/mono/hero-side-3.png",
     alt: "Interior view with landscape",
     position: "right",
     span: 1,
   },
   {
-    src: "/images/hero-side-4.png",
+    src: "/images/mono/hero-side-4.png",
     alt: "Modern architecture at night",
     position: "right",
     span: 1,
@@ -148,7 +148,7 @@ export function HeroSection() {
               </div>
               
               <Image
-                src="/images/hero-mono.png"
+                src="/images/mono/hero-mono.png"
                 alt="Modern architectural structure with reflection"
                 fill
                 className="absolute inset-0 z-10 object-cover"

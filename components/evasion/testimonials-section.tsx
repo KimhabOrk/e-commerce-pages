@@ -16,7 +16,7 @@ export function TestimonialsSection() {
       {/* About Image */}
       <div className="relative aspect-video md:aspect-[16/9] w-full">
         <Image
-          src="/images/3d4046a0-b072-4b07-941f-9141ee3ed4a7.png"
+          src="/images/evasion/3d4046a0-b072-4b07-941f-9141ee3ed4a7.png"
           alt="Mountain peaks at sunrise"
           fill
           className="object-cover"
