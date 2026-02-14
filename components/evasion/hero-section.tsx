@@ -103,14 +103,14 @@ export function HeroSection() {
           <div className="flex h-full w-full flex-col items-center justify-center px-4 pb-12">
             <div className="relative w-full aspect-square mb-4">
               <Image
-                src="/images/hero-main.png"
+                src="/images/evasion/hero-main.png"
                 alt="Mountain landscape with camping tent at sunset"
                 fill
                 className="object-cover rounded-lg"
                 priority
               />
               <div className="absolute inset-0 flex items-end overflow-hidden">
-                <h1 className="w-full text-[clamp(2rem, 10vw, 3rem)] font-medium leading-[0.8] tracking-tighter text-white px-2 pb-4">
+                <h1 className="w-full text-[clamp(2rem, 10vw, 3rem)] font-medium leading-[0.8] tracking-tighter text-foreground px-2 pb-4">
                   {word.split("").map((letter, index) => (
                     <span key={index} className="inline-block">
                       {letter}
@@ -174,7 +174,7 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/images/hero-main.png"
+                src="/images/evasion/hero-main.png"
                 alt="Mountain landscape with camping tent at sunset"
                 fill
                 className="object-cover"

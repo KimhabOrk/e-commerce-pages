@@ -194,7 +194,7 @@ export function HeroSection() {
         className="pointer-events-none fixed bottom-0 left-0 right-0 z-10 px-6 pb-12 md:px-12 md:pb-16 lg:px-20 lg:pb-20"
         style={{ opacity: textOpacity }}
       >
-        <p className="mx-auto max-w-2xl text-center text-2xl leading-relaxed text-white md:text-3xl lg:text-[2.5rem] lg:leading-snug">
+        <p className="mx-auto max-w-2xl text-center text-2xl leading-relaxed text-foreground md:text-3xl lg:text-[2.5rem] lg:leading-snug">
           Lightweight, durable
           <br />
           and adventure-ready.
