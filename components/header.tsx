@@ -17,6 +17,8 @@ export function Header() {
     { href: '/services/helps', label: 'Helps & FAQs' },
     { href: '/company/responsibility', label: 'Responsibility' },
     { href: '/legal/notes', label: 'Legal' },
+    { href: '/sample/mono', label: 'Mono' },
+    { href: '/sample/evasion', label: 'Evasion' },
   ]
 
   return (
