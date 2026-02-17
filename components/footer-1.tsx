@@ -9,27 +9,27 @@ export function Footer() {
       <div className="relative mx-auto max-w-6xl justify-center items-center flex flex-col px-6 md:px-8 lg:px-10 py-6 md:py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-4">
           {/* Company Links */}
-          <div className="flex items-center justify-center mx-auto">
+          <div className="flex flex-col gap-2 md:gap-4 items-center justify-center mx-auto">
             <div className="flex flex-col gap-2 md:gap-4 text-foreground text-start text-balance">
               <Image
                 src="/logo-dark.png"
-                width={64}
-                height={11}
+                width={100}
+                height={17}
                 alt="Logo"
-                className="h-full w-16 md:w-20 object-cover"
+                className="h-full w-[100px] md:w-32 object-cover"
               />
-              <p className="text-lg md:text-2xl">
+              <p className="text-sm md:text-xl">
                 Affordable Luxury Womenswear
               </p>
             </div>
-            <div className="flex mx-auto gap-4 md:gap-6 justify-evenly items-center">
+            <div className="flex mx-auto justify-evenly items-center">
               <Link href="https://facebook.com/kimhaborkofficial">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
                   width={32}
                   height={32}
                   alt="Facebook Logo"
-                  className="object-cover md:w-11 md:h-11"
+                  className="object-cover md:w-10 md:h-10"
                 />
               </Link>
               <Link href="https://www.instagram.com/kimhabork_official">
@@ -38,7 +38,7 @@ export function Footer() {
                   width={32}
                   height={32}
                   alt="Instagram Logo"
-                  className="object-cover md:w-11 md:h-11"
+                  className="object-cover md:w-10 md:h-10"
                 />
               </Link>
               <Link href="https://www.tiktok.com/@kimhabork_official">
@@ -47,7 +47,7 @@ export function Footer() {
                   width={32}
                   height={32}
                   alt="Tiktok Logo"
-                  className="object-cover md:w-11 md:h-11"
+                  className="object-cover md:w-10 md:h-10"
                 />
               </Link>
               <Link href="https://www.linkedin.com/in/kimhab-ork">
@@ -56,12 +56,12 @@ export function Footer() {
                   width={32}
                   height={32}
                   alt="LinkedIn Logo"
-                  className="object-cover md:w-11 md:h-11"
+                  className="object-cover md:w-10 md:h-10"
                 />
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center mx-auto text-start">
+          <div>
             <h4 className="font-semibold text-white mb-2 text-sm md:text-md">
               Company
             </h4>
@@ -102,7 +102,7 @@ export function Footer() {
           </div>
 
           {/* Support Links */}
-          <div className="flex items-center justify-center mx-auto text-start">
+          <div>
             <h4 className="font-semibold text-white mb-2 text-sm md:text-md">
               Support
             </h4>
@@ -143,7 +143,7 @@ export function Footer() {
           </div>
 
           {/* Legal Links */}
-          <div className="flex items-center justify-center mx-auto text-start">
+          <div>
             <h4 className="font-semibold text-white mb-2 text-sm md:text-md">
               Legal
             </h4>
@@ -183,9 +183,8 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="w-full h-1 bg-border pt-3 md:pt-6" />
         {/* Divider */}
-        <div className="pt-2 md:pt-4 flex mx-auto text-center justify-center items-center">
+        <div className="pt-4 md:pt-8 border-t border-border flex mx-auto text-center justify-center items-center">
           <div className="relative flex flex-col gap-4 mx-auto justify-center items-center">
             <p className="text-sm text-foreground/70">
               &copy; {currentYear} Kimhab Ork. All rights reserved.
