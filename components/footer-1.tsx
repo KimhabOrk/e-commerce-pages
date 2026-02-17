@@ -7,9 +7,9 @@ export function Footer() {
   return (
     <footer className="w-full border-t border-border/60 bg-background pt-8 py-6 md:py-12">
       <div className="relative mx-auto max-w-6xl justify-center items-center flex flex-col px-6 md:px-8 lg:px-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-10 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mb-6">
           {/* Company Links */}
-          <div className="flex flex-col gap-2 md:gap-4 justify-center mx-auto">
+          <div className="flex flex-col gap-2 md:gap-4 items-center mx-auto">
             <div className="flex flex-col text-foreground text-start text-balance">
               <Image
                 src="/logo-dark.png"
@@ -24,8 +24,8 @@ export function Footer() {
               <Link href="https://facebook.com/kimhaborkofficial">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
-                  width={24}
-                  height={24}
+                  width={32}
+                  height={32}
                   alt="Facebook Logo"
                   className="object-cover md:w-10 md:h-10"
                 />
@@ -33,8 +33,8 @@ export function Footer() {
               <Link href="https://www.instagram.com/kimhabork_official">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/instagram.png?updatedAt=1767797839255"
-                  width={24}
-                  height={24}
+                  width={32}
+                  height={32}
                   alt="Instagram Logo"
                   className="object-cover md:w-10 md:h-10"
                 />
@@ -42,21 +42,23 @@ export function Footer() {
               <Link href="https://www.tiktok.com/@kimhabork_official">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/tiktok.png?updatedAt=1769794402290"
-                  width={24}
-                  height={24}
+                  width={32}
+                  height={32}
                   alt="Tiktok Logo"
                   className="object-cover md:w-10 md:h-10"
                 />
               </Link>
+              {/**
               <Link href="https://www.linkedin.com/in/kimhab-ork">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/linkedin.png?updatedAt=1767797838945"
-                  width={24}
-                  height={24}
+                  width={32}
+                  height={32}
                   alt="LinkedIn Logo"
                   className="object-cover md:w-10 md:h-10"
                 />
               </Link>
+              */}
             </div>
           </div>
           <div>
