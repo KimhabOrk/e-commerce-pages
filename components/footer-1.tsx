@@ -6,7 +6,7 @@ export function Footer() {
 
   return (
     <footer className="w-full border-t border-border/60 bg-background pt-8 py-6 md:py-12">
-      <div className="relative mx-auto justify-center items-center flex flex-col px-6 md:px-8 lg:px-10">
+      <div className="relative mx-auto max-w-4xl justify-center items-center flex flex-col px-8 md:px-12 lg:px-14">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-11 mb-8">
           {/* Company Links */}
           <div className="flex flex-col gap-2 md:gap-4 items-center mx-auto">
@@ -54,7 +54,7 @@ export function Footer() {
                   width={32}
                   height={32}
                   alt="LinkedIn Logo"
-                  className="hidden md:block object-cover md:w-10 md:h-10"
+                  className="object-cover md:w-10 md:h-10"
                 />
               </Link>
             </div>
