@@ -100,7 +100,7 @@ export function HeroSection() {
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* Mobile simple layout - stack vertically */}
         {isMobile && (
-          <div className="flex h-full w-full flex-col items-center justify-center px-4 pb-12">
+          <div className="flex h-full w-screen flex-col items-center justify-center px-4 pb-12">
             <div className="relative w-full aspect-square mb-4">
               <Image
                 src="/images/evasion/hero-main.png"
@@ -127,10 +127,10 @@ export function HeroSection() {
 
         {/* Desktop animation layout */}
         {!isMobile && (
-          <div className="flex h-full w-full items-center justify-center">
+          <div className="flex h-full w-screen items-center justify-center">
             {/* Bento Grid Container */}
             <div 
-              className="relative flex h-full w-full items-stretch justify-center"
+              className="relative flex h-full w-screen items-stretch justify-center"
               style={{ gap: `${gap}px`, padding: `${imageProgress * 16}px`, paddingBottom: `${60 + (imageProgress * 40)}px` }}
             >
             

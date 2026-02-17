@@ -8,6 +8,7 @@ import { CollectionSection } from "@/components/evasion/collection-section";
 import { EditorialSection } from "@/components/evasion/editorial-section";
 import { TestimonialsSection } from "@/components/evasion/testimonials-section";
 // import { FooterSection } from "@/components/evasion/footer-section";
+import "@/styles/evasion.css"
 
 export default function Home() {
   return (
