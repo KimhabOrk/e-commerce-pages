@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { Metadata } from "next"
 import { FeatureCard } from '@/components/feature-card'
 import { Award, Sparkles, Heart, Globe } from 'lucide-react'
 import Image from 'next/image'

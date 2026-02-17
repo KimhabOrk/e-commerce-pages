@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { Metadata } from "next"
 import { ChevronDown } from 'lucide-react'
 import Image from 'next/image'
 

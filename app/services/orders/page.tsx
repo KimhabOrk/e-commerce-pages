@@ -1,5 +1,5 @@
 import React from "react"
-import { Metadata } from 'next'
+import { Metadata } from "next"
 import { ChevronDown, Package, Truck, RotateCw } from 'lucide-react'
 
 export const metadata: Metadata = {

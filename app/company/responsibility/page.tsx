@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { Metadata } from "next"
 import { FeatureCard } from '@/components/feature-card'
 import { Leaf, Users, Globe } from 'lucide-react'
 
