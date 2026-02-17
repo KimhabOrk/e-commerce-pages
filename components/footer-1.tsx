@@ -6,8 +6,8 @@ export function Footer() {
 
   return (
     <footer className="w-full border-t border-border/60 bg-background pt-8 py-6 md:py-12">
-      <div className="relative mx-auto max-w-4xl justify-center items-center flex flex-col px-8 md:px-12 lg:px-14">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-11 mb-8">
+      <div className="relative mx-auto max-w-4xl justify-center items-center flex flex-col px-6 md:px-12 lg:px-14">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-8">
           {/* Company Links */}
           <div className="flex flex-col gap-2 md:gap-4 items-center mx-auto">
             <div className="flex flex-col text-foreground text-start text-balance">
@@ -20,7 +20,7 @@ export function Footer() {
               />
               <p className="text-sm md:text-xl">Affordable Luxury Womenswear</p>
             </div>
-            <div className="flex mx-auto justify-center gap-3 items-center">
+            <div className="flex mx-auto justify-center gap-2 items-center">
               <Link href="https://facebook.com/kimhaborkofficial">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
