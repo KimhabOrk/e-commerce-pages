@@ -4,7 +4,7 @@ import { Raleway, Playfair_Display, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
+import { Footer } from "@/components/footer-1"
 
 const _playfair = Playfair_Display({
   subsets: ["latin"],
@@ -19,12 +19,12 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kimhab Ork - Affordable Luxury Womenswear",
   description: "Discover Kimhab Ork, offering affordable luxury womenswear with the highest quality. Bold, elegant, fragile and timeless for the modern woman.",
-  manifest: "https://ecommerce-pages-git-main-ppfis-projects.vercel.app/manifest.json",
+  manifest: "https://ecommerce-pages-ten.vercel.app/manifest.json",
     icons: {
       shortcut: { url: "/favicon.ico", type: "image/x-icon" },
       icon: [
         { url: "/favicon/favicon.ico", type: "image/x-icon" },
-        new URL("/favicon.ico", "https://ecommerce-pages-git-main-ppfis-projects.vercel.app/favicon.ico"),
+        new URL("/favicon.ico", "https://ecommerce-pages-ten.vercel.app/favicon.ico"),
         {
           url: "/favicon.svg",
           type: "image/svg",
