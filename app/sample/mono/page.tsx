@@ -8,18 +8,21 @@ import { CollectionSection } from "@/components/mono/sections/collection-section
 import { EditorialSection } from "@/components/mono/sections/editorial-section";
 import { TestimonialsSection } from "@/components/mono/sections/testimonials-section";
 // import { FooterSection } from "@/components/mono/sections/footer-section";
+import styles from "./mono.module.css";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
-      <HeroSection />
-      <PhilosophySection />
-      <FeaturedProductsSection />
-      <TechnologySection />
-      <GallerySection />
-      <CollectionSection />
-      <EditorialSection />
-      <TestimonialsSection />
-    </main>
+    <div className="min-h-screen bg-background">
+      <main className={styles.main}>
+        <HeroSection />
+        <PhilosophySection />
+        <FeaturedProductsSection />
+        <TechnologySection />
+        <GallerySection />
+        <CollectionSection />
+        <EditorialSection />
+        <TestimonialsSection />
+      </main>
+    </div>
   );
 }

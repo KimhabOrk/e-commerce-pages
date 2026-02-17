@@ -8,19 +8,21 @@ import { CollectionSection } from "@/components/evasion/collection-section";
 import { EditorialSection } from "@/components/evasion/editorial-section";
 import { TestimonialsSection } from "@/components/evasion/testimonials-section";
 // import { FooterSection } from "@/components/evasion/footer-section";
-import "./evasion.css"
+import styles from "./evasion.module.css"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
-      <HeroSection />
-      <PhilosophySection />
-      <FeaturedProductsSection />
-      <TechnologySection />
-      <GallerySection />
-      <CollectionSection />
-      <EditorialSection />
-      <TestimonialsSection />
-    </main>
+    <div className="min-h-screen bg-background">
+      <main className={styles.main}>
+        <HeroSection />
+        <PhilosophySection />
+        <FeaturedProductsSection />
+        <TechnologySection />
+        <GallerySection />
+        <CollectionSection />
+        <EditorialSection />
+        <TestimonialsSection />
+      </main>
+    </div>
   );
 }
