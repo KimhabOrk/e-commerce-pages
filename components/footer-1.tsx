@@ -20,7 +20,7 @@ export function Footer() {
               />
               <p className="text-sm md:text-xl">Affordable Luxury Womenswear</p>
             </div>
-            <div className="flex mx-auto justify-center gap-4 items-center">
+            <div className="flex mx-auto justify-center gap-3 items-center">
               <Link href="https://facebook.com/kimhaborkofficial">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
@@ -85,7 +85,7 @@ export function Footer() {
                   href="/contact"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </li>
               <li>
@@ -93,7 +93,7 @@ export function Footer() {
                   href="/company/responsibility"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Responsibility
+                  Products Responsibility
                 </Link>
               </li>
             </ul>
@@ -126,7 +126,7 @@ export function Footer() {
                   href="/services/orders"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Shipping
+                  Shipping & Return
                 </Link>
               </li>
               <li>
@@ -134,7 +134,7 @@ export function Footer() {
                   href="/services/helps"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Helps & FAQS
+                  Helps & FAQs
                 </Link>
               </li>
             </ul>
@@ -175,7 +175,7 @@ export function Footer() {
                   href="/legal/terms"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Terms
+                  Terms and Conditions
                 </Link>
               </li>
             </ul>
