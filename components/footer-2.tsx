@@ -59,7 +59,7 @@ export function Footer() {
               </Link>
             </div>
           </div>
-          <div>
+          <div className="flex flex-col mx-auto justify-end text-start">
             <h4 className="font-semibold text-white mb-2 text-sm md:text-md">
               Company
             </h4>
@@ -141,7 +141,7 @@ export function Footer() {
           </div>
 
           {/* Legal Links */}
-          <div>
+          <div className="flex flex-col mx-auto justify-end text-start">
             <h4 className="font-semibold text-white mb-2 text-sm md:text-md">
               Legal
             </h4>

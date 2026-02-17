@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export function TestimonialsSection() {
   return (
-    <section id="about" className="w-screen bg-background">
+    <section id="about" className="h-full w-screen bg-background">
       {/* About Image with Text Overlay */}
-      <div className="relative h-[60hv] w-full">
+      <div className="relative aspect-[9/16] w-full">
         <Image
           src="/images/mono/testimonial-house.png"
           alt="Modern corten steel architecture in natural landscape"
@@ -18,7 +18,7 @@ export function TestimonialsSection() {
         
         {/* Text Overlay */}
         <div className="absolute inset-0 flex items-end justify-center px-6 pb-16 md:px-12 md:pb-24 lg:px-20 lg:pb-32">
-          <p className="mx-auto max-w-5xl text-2xl leading-relaxed text-white md:text-3xl lg:text-[2.5rem] lg:leading-snug text-center">
+          <p className="mx-auto max-w-5xl text-xl md:text-2xl leading-relaxed text-white md:text-3xl lg:text-[2.5rem] lg:leading-snug text-center">
             A passive house that combines contemporary design with environmental respect — 
             built for those who refuse to choose between modern comfort and ecological responsibility.
           </p>

@@ -54,7 +54,7 @@ export function EditorialSection() {
   const parallaxY = (scrollProgress - 0.5) * 30; // -15px to +15px range
 
   return (
-    <section className="bg-background">
+    <section className="h-full w-screen bg-background">
       {/* Newsletter Banner */}
       
 
