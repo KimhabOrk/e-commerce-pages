@@ -37,7 +37,7 @@ const features = [
 
 export function FeaturedProductsSection() {
   return (
-    <section id="technology" className="bg-background">
+    <section id="technology" className="relative max-w-screen bg-background">
       {/* Section Title */}
       <div className="px-4 md:px-6 py-12 md:py-20 text-center md:px-12 md:py-28 lg:px-20 lg:py-32 lg:pb-20">
         <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-foreground md:text-4xl lg:text-5xl">

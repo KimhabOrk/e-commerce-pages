@@ -5,29 +5,27 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full border-t border-border/60 bg-background pt-8">
-      <div className="relative mx-auto max-w-6xl justify-center items-center flex flex-col px-6 md:px-8 lg:px-10 py-6 md:py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-4">
+    <footer className="w-full border-t border-border/60 bg-background pt-8 py-6 md:py-12">
+      <div className="relative mx-auto max-w-6xl justify-between items-center flex flex-col px-6 md:px-8 lg:px-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mb-6">
           {/* Company Links */}
           <div className="flex flex-col gap-2 md:gap-4 items-center justify-center mx-auto">
             <div className="flex flex-col gap-2 md:gap-4 text-foreground text-start text-balance">
               <Image
                 src="/logo-dark.png"
-                width={100}
-                height={17}
+                width={120}
+                height={20}
                 alt="Logo"
                 className="h-full w-[100px] md:w-32 object-cover"
               />
-              <p className="text-sm md:text-xl">
-                Affordable Luxury Womenswear
-              </p>
+              <p className="text-sm md:text-xl">Affordable Luxury Womenswear</p>
             </div>
-            <div className="flex mx-auto justify-evenly items-center">
+            <div className="flex mx-auto justify-between items-center">
               <Link href="https://facebook.com/kimhaborkofficial">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
-                  width={32}
-                  height={32}
+                  width={24}
+                  height={24}
                   alt="Facebook Logo"
                   className="object-cover md:w-10 md:h-10"
                 />
@@ -35,8 +33,8 @@ export function Footer() {
               <Link href="https://www.instagram.com/kimhabork_official">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/instagram.png?updatedAt=1767797839255"
-                  width={32}
-                  height={32}
+                  width={24}
+                  height={24}
                   alt="Instagram Logo"
                   className="object-cover md:w-10 md:h-10"
                 />
@@ -44,8 +42,8 @@ export function Footer() {
               <Link href="https://www.tiktok.com/@kimhabork_official">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/tiktok.png?updatedAt=1769794402290"
-                  width={32}
-                  height={32}
+                  width={24}
+                  height={24}
                   alt="Tiktok Logo"
                   className="object-cover md:w-10 md:h-10"
                 />
@@ -53,8 +51,8 @@ export function Footer() {
               <Link href="https://www.linkedin.com/in/kimhab-ork">
                 <Image
                   src="https://ik.imagekit.io/kimhabork/assets/socials/linkedin.png?updatedAt=1767797838945"
-                  width={32}
-                  height={32}
+                  width={24}
+                  height={24}
                   alt="LinkedIn Logo"
                   className="object-cover md:w-10 md:h-10"
                 />
@@ -183,13 +181,15 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        {/* Divider */}
-        <div className="pt-4 md:pt-8 border-t border-border flex mx-auto text-center justify-center items-center">
-          <div className="relative flex flex-col gap-4 mx-auto justify-center items-center">
-            <p className="text-sm text-foreground/70">
-              &copy; {currentYear} Kimhab Ork. All rights reserved.
-            </p>
-            {/***
+      </div>
+
+      {/* Divider */}
+      <div className="pt-6 md:pt-10 w-full border-t border-border flex mx-auto justify-center items-center">
+        <div className="relative flex flex-col gap-4 mx-auto justify-center items-center text-center px-6 md:px-8 lg:px-10">
+          <p className="text-sm text-foreground/70">
+            &copy; {currentYear} Kimhab Ork. All rights reserved.
+          </p>
+          {/***
             <div className="flex flex-wrap gap-2">
               <Link
                 href="/privacy"
@@ -206,7 +206,6 @@ export function Footer() {
               </Link>
             </div>
             */}
-          </div>
         </div>
       </div>
     </footer>

@@ -115,7 +115,7 @@ export function GallerySection() {
     <section 
       id="gallery"
       ref={galleryRef}
-      className="relative bg-background"
+      className="relative max-w-screen bg-background"
       style={{ height: sectionHeight }}
     >
       {/* Mobile grid layout */}

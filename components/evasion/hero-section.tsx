@@ -127,7 +127,7 @@ export function HeroSection() {
 
         {/* Desktop animation layout */}
         {!isMobile && (
-          <div className="flex h-full w-screen items-center justify-center">
+          <div className="flex h-full w-full items-center justify-center">
             {/* Bento Grid Container */}
             <div 
               className="relative flex h-full w-screen items-stretch justify-center"

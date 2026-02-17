@@ -36,7 +36,7 @@ export function FadeImage({ className, fadeDelay = 0, ...props }: FadeImageProps
   }, [fadeDelay]);
 
   return (
-    <div ref={ref} className="relative h-full w-full">
+    <div ref={ref} className="relative h-full w-screen">
       <Image
         {...props}
         className={`${className || ""} transition-all duration-700 ease-out ${

@@ -166,15 +166,15 @@ export function TechnologySection() {
   const grayscaleAmount = Math.round((1 - textProgress) * 100);
 
   return (
-    <section ref={sectionRef} className="relative bg-foreground">
+    <section ref={sectionRef} className="max-w-screen bg-foreground">
       {/* Mobile simple layout */}
       {isMobile && (
         <div className="min-h-screen flex items-center justify-center px-4 py-12">
           <div className="w-full max-w-md">
-            <h2 className="text-2xl font-medium leading-tight tracking-tight text-white mb-6">
+            <h2 className="text-2xl font-medium leading-tight tracking-tight text-background mb-6">
               Technology Meets Wilderness.
             </h2>
-            <p className="text-sm text-white/70 leading-relaxed">
+            <p className="text-sm text-background/70 leading-relaxed">
               {descriptionText}
             </p>
           </div>

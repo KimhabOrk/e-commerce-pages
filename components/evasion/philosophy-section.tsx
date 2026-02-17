@@ -74,7 +74,7 @@ export function PhilosophySection() {
   }, [updateTransforms]);
 
   return (
-    <section id="products" className="bg-background">
+    <section id="products" className="max-w-screen bg-background">
       {/* Scroll-Animated Product Grid */}
       <div ref={sectionRef} className="relative" style={{ height: isMobile ? "auto" : "200vh" }}>
         <div className={`${isMobile ? "relative py-12 px-4" : "sticky top-0 h-screen flex items-center justify-center"}`}>

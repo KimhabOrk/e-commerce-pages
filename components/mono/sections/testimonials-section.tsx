@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export function TestimonialsSection() {
   return (
-    <section id="about" className="bg-background">
+    <section id="about" className="w-screen bg-background">
       {/* About Image with Text Overlay */}
-      <div className="relative aspect-[16/9] w-full">
+      <div className="relative h-[60hv] w-full">
         <Image
           src="/images/mono/testimonial-house.png"
           alt="Modern corten steel architecture in natural landscape"
