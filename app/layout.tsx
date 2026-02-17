@@ -19,12 +19,12 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kimhab Ork - Affordable Luxury Womenswear",
   description: "Discover Kimhab Ork, offering affordable luxury womenswear with the highest quality. Bold, elegant, fragile and timeless for the modern woman.",
-  manifest: "/manifest.json",
+  manifest: "https://ecommerce-pages-git-main-ppfis-projects.vercel.app/manifest.json",
     icons: {
       shortcut: { url: "/favicon.ico", type: "image/x-icon" },
       icon: [
-        { url: "/favicon.ico", type: "image/x-icon" },
-        new URL("/favicon/favicon.ico"),
+        { url: "/favicon/favicon.ico", type: "image/x-icon" },
+        new URL("/favicon.ico", "https://ecommerce-pages-git-main-ppfis-projects.vercel.app/favicon.ico"),
         {
           url: "/favicon.svg",
           type: "image/svg",
