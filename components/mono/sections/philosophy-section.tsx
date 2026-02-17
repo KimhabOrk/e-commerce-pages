@@ -74,7 +74,7 @@ export function PhilosophySection() {
     <section id="products" className="bg-background">
       {/* Scroll-Animated Product Grid */}
       <div ref={sectionRef} className="relative" style={{ height: "200vh" }}>
-        <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
+        <div className="sticky top-0 h-[70vh] md:h-screen flex items-center justify-center overflow-hidden">
           <div className="relative w-full max-w-7xl px-4">
             {/* Title - centered with 3D rotation */}
             <div 
@@ -144,7 +144,7 @@ export function PhilosophySection() {
       <div ref={descriptionRef} className="px-6 pt-8 pb-20 md:px-12 md:pt-12 md:pb-28 lg:px-20 lg:pt-16 lg:pb-36">
         <div className="text-center">
           
-          <p className="mt-8 leading-relaxed text-muted-foreground text-3xl text-center">
+          <p className="mt-8 leading-relaxed text-muted-foreground text-2xl md:text-4xl text-center">
             {("A design home that combines contemporary aesthetics and energy performance. Built with eco-friendly materials, it minimizes carbon footprint while offering optimal comfort.").split(" ").map((word, index, array) => {
               const wordProgress = Math.max(0, Math.min(1, (descriptionProgress * array.length) - index));
               const opacity = wordProgress;

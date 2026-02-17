@@ -13,10 +13,10 @@ export function Footer() {
             <div className="flex flex-col text-foreground text-start text-balance">
               <Image
                 src="/logo-dark.png"
-                width={120}
-                height={20}
+                width={138}
+                height={26}
                 alt="Logo"
-                className="h-full w-[100px] md:w-32 object-cover mb-2"
+                className="h-full w-[138px] md:w-32 object-cover mb-2"
               />
               <p className="text-sm md:text-xl">Affordable Luxury Womenswear</p>
             </div>

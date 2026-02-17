@@ -250,7 +250,7 @@ export function TechnologySection() {
                   return (
                     <h2 
                       key={cycleIndex}
-                      className="absolute max-w-3xl font-medium leading-tight tracking-tight text-white md:text-5xl lg:text-7xl text-5xl"
+                      className="absolute max-w-3xl font-medium leading-tight tracking-tight text-foreground md:text-5xl lg:text-7xl text-3xl"
                     >
                       {words.map((word, wordIndex) => {
                         let wordOpacity = 0;
