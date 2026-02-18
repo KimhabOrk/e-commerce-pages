@@ -1,211 +1,203 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
+import { useRouter, usePathname } from "next/navigation";
+
+type FooterSection = {
+  title: string;
+  links: { label: string; href: string }[];
+};
+
+const footerSections: FooterSection[] = [
+  {
+    title: "Shop",
+    links: [
+      { label: "All Products", href: "/shop" },
+      { label: "Collections", href: "/collections" },
+      { label: "New Arrivals", href: "/shop?sort=newest" },
+      {
+        /*"" { label: "Sale", href: "/shop?filter=sale" },
+      { label: "Gift Cards", href: "/gift-cards" }, */
+      },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "About Us", href: "/company/about" },
+      { label: "Creative Director", href: "/company/creative-director" },
+      { label: "Product Responsibilities", href: "/company/responsibility" },
+      { label: "Contact Us", href: "/contact" },
+      { label: "Press", href: "/company/press" },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      { label: "Custom Made", href: "/services/custom-made" },
+      { label: "Care Guides", href: "/services/care-guides" },
+      { label: "Shipping & Return", href: "/services/orders" },
+      { label: "Helps & FAQs", href: "/services/helps" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Legal Notes", href: "/legal/notes" },
+      { label: "General Sales Conditions", href: "/legal/sales" },
+      { label: "Privacy Policy", href: "/legal/privacy" },
+      { label: "Terms of Service", href: "/legal/terms" },
+    ],
+  },
+];
+
+function FooterSection({
+  section,
+  isOpen,
+  onToggle,
+  onClose,
+}: {
+  section: FooterSection;
+  isOpen: boolean;
+  onToggle: () => void;
+  onClose: () => void;
+}) {
+  return (
+    <div className="border-b border-border md:border-b-0">
+      <button
+        onClick={onToggle}
+        className="md:hidden w-full flex items-center justify-between py-4 text-left"
+      >
+        <h4 className="font-semibold text-sm md:text-base">{section.title}</h4>
+        <ChevronDown
+          className={`h-4 w-4 transition-transform duration-200 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      <h4 className="hidden md:block font-semibold text-sm md:text-base mb-4">
+        {section.title}
+      </h4>
+
+      <ul
+        className={`overflow-hidden transition-all duration-300 md:transition-none md:max-h-none space-y-2 text-sm text-muted-foreground md:space-y-3 ${
+          isOpen ? "max-h-96 md:max-h-none pb-4" : "max-h-0 md:max-h-none"
+        }`}
+      >
+        {section.links.map((link) => (
+          <li key={link.href}>
+            <Link
+              href={link.href}
+              onClick={onClose}
+              className="hover:text-foreground transition-colors duration-200"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [openSection, setOpenSection] = useState<string | null>(null);
+  const pathname = usePathname();
+
+  // Close dropdown when pathname changes (navigation occurs)
+  useEffect(() => {
+    setOpenSection(null);
+  }, [pathname]);
+
+  const handleToggle = (sectionTitle: string) => {
+    setOpenSection(openSection === sectionTitle ? null : sectionTitle);
+  };
+
+  const handleClose = () => {
+    setOpenSection(null);
+  };
 
   return (
-    <footer className="w-full border-t border-border/60 bg-background pt-8 py-6 md:py-12">
-      <div className="relative mx-auto max-w-6xl justify-center items-center flex flex-col px-6 md:px-8 lg:px-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-10 mb-6">
-          {/* Company Links */}
-          <div className="flex flex-col gap-2 md:gap-4 justify-center mx-auto">
-            <div className="flex flex-col text-foreground text-start text-balance">
-              <Image
-                src="/logo-dark.png"
-                width={120}
-                height={20}
-                alt="Logo"
-                className="h-full w-[100px] md:w-32 object-cover mb-2 md:mb-4"
-              />
-              <p className="text-sm md:text-xl">Affordable Luxury Womenswear</p>
-            </div>
-            <div className="flex mx-auto justify-evenly items-center">
-              <Link href="https://facebook.com/kimhaborkofficial">
-                <Image
-                  src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
-                  width={24}
-                  height={24}
-                  alt="Facebook Logo"
-                  className="object-cover md:w-10 md:h-10"
-                />
-              </Link>
-              <Link href="https://www.instagram.com/kimhabork_official">
-                <Image
-                  src="https://ik.imagekit.io/kimhabork/assets/socials/instagram.png?updatedAt=1767797839255"
-                  width={24}
-                  height={24}
-                  alt="Instagram Logo"
-                  className="object-cover md:w-10 md:h-10"
-                />
-              </Link>
-              <Link href="https://www.tiktok.com/@kimhabork_official">
-                <Image
-                  src="https://ik.imagekit.io/kimhabork/assets/socials/tiktok.png?updatedAt=1769794402290"
-                  width={24}
-                  height={24}
-                  alt="Tiktok Logo"
-                  className="object-cover md:w-10 md:h-10"
-                />
-              </Link>
-              <Link href="https://www.linkedin.com/in/kimhab-ork">
-                <Image
-                  src="https://ik.imagekit.io/kimhabork/assets/socials/linkedin.png?updatedAt=1767797838945"
-                  width={24}
-                  height={24}
-                  alt="LinkedIn Logo"
-                  className="object-cover md:w-10 md:h-10"
-                />
-              </Link>
-            </div>
-          </div>
-          <div className="flex flex-col mx-auto justify-end text-start">
-            <h4 className="font-semibold text-white mb-2 text-sm md:text-md">
-              Company
-            </h4>
-            <ul className="space-y-2 text-sm md:text-md">
-              <li>
-                <Link
-                  href="/company/about"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/company/creative-director"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Creative Director
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/company/responsibility"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Responsibility
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support Links */}
-          <div>
-            <h4 className="font-semibold text-white mb-2 text-sm md:text-md">
-              Support
-            </h4>
-            <ul className="space-y-2 text-sm md:text-md">
-              <li>
-                <Link
-                  href="/services/custom-made"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Custom Made
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/care-guides"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Care Guides
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/orders"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Shipping
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/helps"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Helps & FAQS
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Legal Links */}
-          <div className="flex flex-col mx-auto justify-end text-start">
-            <h4 className="font-semibold text-white mb-2 text-sm md:text-md">
-              Legal
-            </h4>
-            <ul className="space-y-2 text-sm md:text-md">
-              <li>
-                <Link
-                  href="/legal/notes"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Legal Notes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/legal/sales"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Sales Conditions
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/legal/privacy"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/legal/terms"
-                  className="text-foreground/70 hover:text-primary transition-colors"
-                >
-                  Terms
-                </Link>
-              </li>
-            </ul>
+    <footer className="border-t border-border mt-16 md:mt-24 bg-background">
+      <div className="container mx-auto px-6 md:px-8 py-8 md:py-12 lg:py-16">
+        {/* Main Content */}
+        <div className="mb-12 md:mb-16">
+          <div className="flex flex-col text-foreground text-start text-balance">
+            <Image
+              src="/logo-dark.png"
+              width={140}
+              height={26}
+              alt="Logo"
+              className="h-full w-[140px] md:w-34 object-cover mb-2"
+            />
+            <p className="text-sm md:text-lg">Affordable Luxury Womenswear</p>
           </div>
         </div>
-      </div>
 
-      {/* Divider */}
-      <div className="pt-6 md:pt-10 w-full border-t border-border flex mx-auto justify-center items-center">
-        <div className="relative flex flex-col gap-4 mx-auto justify-center items-center text-center px-6 md:px-8 lg:px-10">
-          <p className="text-sm text-foreground/70">
-            &copy; {currentYear} Kimhab Ork. All rights reserved.
-          </p>
-          {/***
-            <div className="flex flex-wrap gap-2">
-              <Link
-                href="/privacy"
-                className="text-sm text-foreground/70 hover:text-primary transition-colors"
-              >
-                Privacy Policy
-              </Link>
-              <span className="text-sm text-foreground/70">|</span>
-              <Link
-                href="/terms"
-                className="text-sm text-foreground/70 hover:text-primary transition-colors"
-              >
-                Terms & Conditions
-              </Link>
-            </div>
-            */}
+        {/* Footer Sections Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-0 md:gap-8 mb-12 md:mb-16">
+          {footerSections.map((section) => (
+            <FooterSection
+              key={section.title}
+              section={section}
+              isOpen={openSection === section.title}
+              onToggle={() => handleToggle(section.title)}
+              onClose={handleClose}
+            />
+          ))}
+        </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-border pt-8 md:pt-12">
+          <div className="flex mx-auto items-center justify-evenly gap-3 items-center">
+            <Link href="https://facebook.com/kimhaborkofficial">
+              <Image
+                src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
+                width={32}
+                height={32}
+                alt="Facebook Logo"
+                className="object-cover md:w-10 md:h-10"
+              />
+            </Link>
+            <Link href="https://www.instagram.com/kimhabork_official">
+              <Image
+                src="https://ik.imagekit.io/kimhabork/assets/socials/instagram.png?updatedAt=1767797839255"
+                width={32}
+                height={32}
+                alt="Instagram Logo"
+                className="object-cover md:w-10 md:h-10"
+              />
+            </Link>
+            <Link href="https://www.tiktok.com/@kimhabork_official">
+              <Image
+                src="https://ik.imagekit.io/kimhabork/assets/socials/tiktok.png?updatedAt=1769794402290"
+                width={32}
+                height={32}
+                alt="Tiktok Logo"
+                className="object-cover md:w-10 md:h-10"
+              />
+            </Link>
+            <Link href="https://www.linkedin.com/in/kimhab-ork">
+              <Image
+                src="https://ik.imagekit.io/kimhabork/assets/socials/linkedin.png?updatedAt=1767797838945"
+                width={32}
+                height={32}
+                alt="LinkedIn Logo"
+                className="object-cover md:w-10 md:h-10"
+              />
+            </Link>
+          </div>
+
+          {/* Copyright */}
+          <div className="border-t border-border pt-8 text-center mx-auto flex justify-center items-center">
+            <p className="text-xs text-muted-foreground">
+              &copy; {new Date().getFullYear()} Kimhab Ork. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
