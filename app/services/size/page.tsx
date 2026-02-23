@@ -107,7 +107,7 @@ export default function SizeGuidePage() {
           <div className="absolute top-0 right-1/4 h-96 w-96 rounded-full bg-accent/5 blur-3xl"></div>
           <div className="absolute bottom-0 left-1/4 h-96 w-96 rounded-full bg-accent/5 blur-3xl"></div>
         </div>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-balance font-serif text-4xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl mt-4">
               Size Guide
@@ -121,7 +121,7 @@ export default function SizeGuidePage() {
 
       {/* Size Chart Section */}
       <section className="border-b border-border/50 py-16 md:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
           <div className="mb-12">
             <h2 className="font-serif text-3xl font-light text-foreground">
               Conversion Chart
@@ -183,7 +183,7 @@ export default function SizeGuidePage() {
 
       {/* Measurement Guide Image Section */}
       <section className="border-b border-border/50 py-16 md:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
           <div className="mb-12">
             <h2 className="font-serif text-3xl font-light text-foreground">
               Visual Measurement Guide
@@ -211,7 +211,7 @@ export default function SizeGuidePage() {
 
       {/* How to Measure Section */}
       <section className="border-b border-border/50 py-16 md:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
           <div className="mb-12">
             <h2 className="font-serif text-4xl font-light text-foreground">
               How to Measure
