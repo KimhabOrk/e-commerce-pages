@@ -6,10 +6,10 @@ export default function SizeGuidePage() {
   const sizeData = [
     {
       measurement: 'IT',
-      xs: '38 / XS',
-      s: '40 / S',
-      m: '42 / M',
-      l: '44 / L',
+      xs: '38/XS',
+      s: '40/S',
+      m: '42/M',
+      l: '44/L',
     },
     {
       measurement: 'UK/AU',
@@ -147,19 +147,19 @@ export default function SizeGuidePage() {
             <table className="w-full">
               <thead>
                 <tr className="border-b border-border/50 bg-muted">
-                  <th className="px-2 py-4 text-left font-serif text-xs md:text-md font-semibold text-foreground">
+                  <th className="px-2 md:px-4 py-4 text-left font-serif text-xs md:text-md font-semibold text-foreground">
                     Measurement
                   </th>
-                  <th className="px-2 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
+                  <th className="px-2 md:px-4 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
                     38/XS
                   </th>
-                  <th className="px-2 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
+                  <th className="px-2 md:px-4 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
                     40/S
                   </th>
-                  <th className="px-2 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
+                  <th className="px-2 md:px-4 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
                     42/M
                   </th>
-                  <th className="px-2 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
+                  <th className="px-2 md:px-4 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
                     44/L
                   </th>
                 </tr>
@@ -172,19 +172,19 @@ export default function SizeGuidePage() {
                       idx % 2 === 0 ? 'bg-muted/80 hover:bg-muted/90' : 'bg-muted hover:bg-muted/80'
                     }`}
                   >
-                    <td className="px-2 py-4 font-medium text-xs md:text-md text-foreground">
+                    <td className="px-2 md:px-4 py-4 font-medium text-xs md:text-md text-foreground">
                       {row.measurement}
                     </td>
-                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">
+                    <td className="px-2 md:px-4 py-4 text-center text-xs md:text-md text-foreground">
                       {row.xs}
                     </td>
-                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">
+                    <td className="px-2 md:px-4 py-4 text-center text-xs md:text-md text-foreground">
                       {row.s}
                     </td>
-                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">
+                    <td className="px-2 md:px-4 py-4 text-center text-xs md:text-md text-foreground">
                       {row.m}
                     </td>
-                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">
+                    <td className="px-2 md:px-4 text-center text-xs md:text-md text-foreground">
                       {row.l}
                     </td>
                   </tr>
@@ -247,7 +247,7 @@ export default function SizeGuidePage() {
                 className="group relative border border-border/50 bg-muted p-6 rounded-lg transition-all hover:border-accent/50 hover:bg-muted/80 hover:shadow-lg"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="flex h-7 w-7 md:h-10 md:w-10 flex-shrink-0 mx-auto items-center justify-center rounded-full bg-primary group-hover:bg-primary/30 transition-colors">
+                  <div className="flex h-7 w-7 md:h-10 md:w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary group-hover:bg-primary/50 transition-colors">
                     <span className="font-serif text-sm md:text-md font-semibold text-foreground">
                       {idx + 1}
                     </span>
