@@ -18,10 +18,6 @@ const footerSections: FooterSection[] = [
       { label: "All Products", href: "/shop" },
       { label: "Collections", href: "/collections" },
       { label: "New Arrivals", href: "/shop?sort=newest" },
-      {
-        /*"" { label: "Sale", href: "/shop?filter=sale" },
-      { label: "Gift Cards", href: "/gift-cards" }, */
-      },
     ],
   },
   {
@@ -73,9 +69,8 @@ function FooterSection({
       >
         <h4 className="font-semibold text-sm md:text-base">{section.title}</h4>
         <ChevronDown
-          className={`h-4 w-4 transition-transform duration-200 ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`h-4 w-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""
+            }`}
         />
       </button>
 
@@ -84,9 +79,8 @@ function FooterSection({
       </h4>
 
       <ul
-        className={`overflow-hidden transition-all duration-300 md:transition-none md:max-h-none space-y-2 text-sm text-muted-foreground md:space-y-3 ${
-          isOpen ? "max-h-96 md:max-h-none pb-4" : "max-h-0 md:max-h-none"
-        }`}
+        className={`overflow-hidden transition-all duration-300 md:transition-none md:max-h-none space-y-2 text-sm text-foreground/75 md:space-y-3 ${isOpen ? "max-h-96 md:max-h-none pb-4" : "max-h-0 md:max-h-none"
+          }`}
       >
         {section.links.map((link) => (
           <li key={link.href}>
@@ -122,24 +116,24 @@ export function Footer() {
   };
 
   return (
-    <footer className="border-t border-border mt-16 md:mt-24 bg-background">
+    <footer className="border-t border-border mt-16 md:mt-24 bg-background/60">
       <div className="container mx-auto px-6 md:px-8 py-8 md:py-12 lg:py-16">
         {/* Main Content */}
-        <div className="mb-12 md:mb-16">
+        <div className="mb-6 md:mb-12">
           <div className="flex flex-col text-foreground text-start text-balance">
             <Image
-              src="/logo-dark.png"
-              width={140}
+              src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png?updatedAt=1771854445628"
+              width={160}
               height={26}
               alt="Logo"
-              className="h-full w-[140px] md:w-34 object-cover mb-2"
+              className="h-full w-[160px] md:w-32 object-cover mb-2"
             />
             <p className="text-sm md:text-lg">Affordable Luxury Womenswear</p>
           </div>
         </div>
 
         {/* Footer Sections Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-0 md:gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-0 md:gap-8 mb-6 md:mb-12">
           {footerSections.map((section) => (
             <FooterSection
               key={section.title}
@@ -152,8 +146,8 @@ export function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-border pt-8 md:pt-12">
-          <div className="flex mx-auto items-center justify-evenly gap-3 items-center">
+        <div className="pt-4 md:pt-6">
+          <div className="flex mx-auto justify-evenly gap-3 items-center mb-4 md:mb-8">
             <Link href="https://facebook.com/kimhaborkofficial">
               <Image
                 src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
@@ -193,7 +187,7 @@ export function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-border pt-8 text-center mx-auto flex justify-center items-center">
+          <div className="pt-4 md:pt-6 text-center mx-auto flex justify-center items-center">
             <p className="text-xs text-muted-foreground">
               &copy; {new Date().getFullYear()} Kimhab Ork. All rights reserved.
             </p>
