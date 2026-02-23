@@ -28,14 +28,14 @@ export default function ContactPage() {
           {/* Email */}
           <div className="text-center">
             <div className="flex justify-center mb-4">
-              <div className="p-3 bg-secondary rounded-xl">
-                <Mail className="h-5 w-5 text-foreground" />
+              <div className="p-3 bg-primary rounded-xl">
+                <Mail className="h-3 w-3 md:h-5 md:w-5 text-foreground" />
               </div>
             </div>
-            <h3 className="font-serif text-xl font-semibold mb-2">Email</h3>
+            <h3 className="font-serif text-lg font-semibold mb-2">Email</h3>
             <p className="text-muted-foreground">
               <a
-                href="mailto:info@khlimhab.com"
+                href="mailto:info@kimhab.com"
                 className="hover:text-foreground transition-colors"
               >
                 info@kimhab.com
@@ -46,11 +46,11 @@ export default function ContactPage() {
           {/* Phone */}
           <div className="text-center">
             <div className="flex justify-center mb-4">
-              <div className="p-3 bg-secondary rounded-xl">
-                <Phone className="h-5 w-5 text-foreground" />
+              <div className="p-3 bg-primary rounded-xl">
+                <Phone className="h-3 w-3 md:h-5 md:w-5 text-foreground" />
               </div>
             </div>
-            <h3 className="font-serif text-xl font-semibold mb-2">Phone</h3>
+            <h3 className="font-serif text-lg font-semibold mb-2">Phone</h3>
             <p className="text-muted-foreground">
               <a
                 href="tel:+85512345678"
@@ -64,8 +64,8 @@ export default function ContactPage() {
 
         {/* Contact Form Section */}
         <div className="max-w-6xl mx-auto">
-          <div className="bg-muted rounded-2xl p-8 md:p-12">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-8 text-center">
+          <div className="bg-muted rounded-2xl p-4 md:p-10">
+            <h2 className="font-serif text-2xl md:text-4xl font-semibold mb-8 text-center">
               Send us a Message
             </h2>
             <ContactForm />
