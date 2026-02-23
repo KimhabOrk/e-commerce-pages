@@ -9,60 +9,70 @@ export default function SizeGuidePage() {
       xs: '38 / XS',
       s: '40 / S',
       m: '42 / M',
+      l: '44 / L',
     },
     {
       measurement: 'UK/AU',
       xs: '6',
       s: '8',
       m: '10',
+      l: '12',
     },
     {
       measurement: 'US',
       xs: '2',
       s: '4',
       m: '6',
+      l: '8',
     },
     {
       measurement: 'FR',
       xs: '34',
       s: '36',
       m: '38',
+      l: '40',
     },
     {
       measurement: 'BUST',
       xs: '84',
       s: '87',
       m: '90',
+      l: '94',
     },
     {
       measurement: 'UNDER BUST',
       xs: '70',
       s: '73',
       m: '76',
+      l: '80',
     },
     {
       measurement: 'WAIST',
       xs: '66',
       s: '69',
       m: '72',
+      l: '76',
     },
     {
       measurement: 'HIPS',
       xs: '90',
       s: '93',
       m: '96',
+      l: '100',
     },
     {
       measurement: 'SLEEVE LENGTH',
       xs: '80.4',
       s: '81.7',
       m: '83',
+      l: '85',
     },
     {
       measurement: 'SHOULDERS',
       xs: '38',
       s: '39',
       m: '40',
+      l: '41.4',
     },
   ];
 
@@ -149,6 +159,9 @@ export default function SizeGuidePage() {
                   <th className="px-2 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
                     42/M
                   </th>
+                  <th className="px-2 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
+                    44/L
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -168,7 +181,12 @@ export default function SizeGuidePage() {
                     <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">
                       {row.s}
                     </td>
-                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">{row.m}</td>
+                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">
+                      {row.m}
+                    </td>
+                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">
+                      {row.l}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -185,7 +203,7 @@ export default function SizeGuidePage() {
       <section className="border-b border-border/50 py-16 md:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="font-serif text-3xl font-light text-foreground">
+            <h2 className="font-serif text-2xl md:text-4xl font-light text-foreground">
               Visual Measurement Guide
             </h2>
             <div className="mt-2 h-1 w-16 bg-primary"></div>
@@ -201,7 +219,7 @@ export default function SizeGuidePage() {
                 alt="Measurement points guide showing where to measure shoulders, bust, underarm, waist, hip, and length on a woman wearing a red dress"
                 width={500}
                 height={700}
-                className="h-auto w-full object-cover"
+                className="rounded-lg object-cover"
                 priority
               />
             </div>
