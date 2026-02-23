@@ -29,9 +29,8 @@ const footerSections: FooterSection[] = [
     links: [
       { label: "About Us", href: "/company/about" },
       { label: "Creative Director", href: "/company/creative-director" },
-      { label: "Product Responsibilities", href: "/company/responsibility" },
+      { label: "Responsibilities", href: "/company/responsibility" },
       { label: "Contact Us", href: "/contact" },
-      { label: "Press", href: "/company/press" },
     ],
   },
   {
@@ -39,6 +38,7 @@ const footerSections: FooterSection[] = [
     links: [
       { label: "Custom Made", href: "/services/custom-made" },
       { label: "Care Guides", href: "/services/care-guides" },
+      { label: "Size Guide", href: "/services/size" },
       { label: "Shipping & Return", href: "/services/orders" },
       { label: "Helps & FAQs", href: "/services/helps" },
     ],
