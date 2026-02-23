@@ -247,7 +247,7 @@ export default function SizeGuidePage() {
                 className="group relative border border-border/50 bg-muted p-6 rounded-lg transition-all hover:border-accent/50 hover:bg-muted/80 hover:shadow-lg"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="flex h-7 w-7 md:h-10 md:w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary group-hover:bg-primary/50 transition-colors">
+                  <div className="flex text-center h-7 w-7 md:h-10 md:w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary group-hover:bg-primary/50 transition-colors">
                     <span className="font-serif text-sm md:text-md font-semibold text-foreground">
                       {idx + 1}
                     </span>
