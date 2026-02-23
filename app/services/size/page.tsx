@@ -137,16 +137,16 @@ export default function SizeGuidePage() {
             <table className="w-full">
               <thead>
                 <tr className="border-b border-border/50 bg-muted">
-                  <th className="px-4 py-4 text-left font-serif text-sm font-semibold text-foreground">
+                  <th className="px-2 py-4 text-left font-serif text-xs md:text-md font-semibold text-foreground">
                     Measurement
                   </th>
-                  <th className="px-4 py-4 text-center font-serif text-sm font-semibold text-foreground">
+                  <th className="px-2 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
                     38/XS
                   </th>
-                  <th className="px-4 py-4 text-center font-serif text-sm font-semibold text-foreground">
+                  <th className="px-2 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
                     40/S
                   </th>
-                  <th className="px-4 py-4 text-center font-serif text-sm font-semibold text-foreground">
+                  <th className="px-2 py-4 text-center font-serif text-xs md:text-md font-semibold text-foreground">
                     42/M
                   </th>
                 </tr>
@@ -156,19 +156,19 @@ export default function SizeGuidePage() {
                   <tr
                     key={idx}
                     className={`border-b border-border/30 transition-colors ${
-                      idx % 2 === 0 ? 'bg-muted/60 hover:bg-muted/80' : 'bg-muted hover:bg-muted/70'
+                      idx % 2 === 0 ? 'bg-muted/80 hover:bg-muted/90' : 'bg-muted hover:bg-muted/80'
                     }`}
                   >
-                    <td className="px-4 py-4 font-medium text-foreground">
+                    <td className="px-2 py-4 font-medium text-xs md:text-md text-foreground">
                       {row.measurement}
                     </td>
-                    <td className="px-4 py-4 text-center text-foreground">
+                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">
                       {row.xs}
                     </td>
-                    <td className="px-4 py-4 text-center text-foreground">
+                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">
                       {row.s}
                     </td>
-                    <td className="px-4 py-4 text-center text-foreground">{row.m}</td>
+                    <td className="px-2 py-4 text-center text-xs md:text-md text-foreground">{row.m}</td>
                   </tr>
                 ))}
               </tbody>
@@ -194,7 +194,7 @@ export default function SizeGuidePage() {
             </p>
           </div>
 
-          <div className="flex justify-center bg-muted rounded-lg border border-border/50 px-4">
+          <div className="flex justify-center bg-muted rounded-lg border border-border/50 mx-4">
             <div className="relative w-full max-w-6xl">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1_20260223_195656_0000-fmiQguIfhwYTKz8WmU6CuynWhzbp1Y.png"
@@ -229,8 +229,8 @@ export default function SizeGuidePage() {
                 className="group relative border border-border/50 bg-muted p-6 rounded-lg transition-all hover:border-accent/50 hover:bg-muted/80 hover:shadow-lg"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-primary group-hover:bg-primary/30 transition-colors">
-                    <span className="font-serif text-sm font-semibold text-foreground">
+                  <div className="flex h-7 w-7 md:h-10 md:w-10 flex-shrink-0 mx-auto items-center justify-center rounded-full bg-primary group-hover:bg-primary/30 transition-colors">
+                    <span className="font-serif text-sm md:text-md font-semibold text-foreground">
                       {idx + 1}
                     </span>
                   </div>
@@ -247,7 +247,7 @@ export default function SizeGuidePage() {
 
           {/* Additional Tips */}
           <div className="mt-16 rounded-lg border border-accent/30 bg-muted p-8 md:p-10">
-            <h3 className="font-serif text-2xl font-light text-muted-foreground flex items-center gap-3">
+            <h3 className="font-serif text-2xl font-light text-foreground flex items-center gap-3">
               <span className="inline-block h-1 w-8 bg-primary"></span>
               Measurement Tips
             </h3>
@@ -278,21 +278,6 @@ export default function SizeGuidePage() {
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      {/* Footer CTA Section */}
-      <section className="border-t border-border/50 py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-light text-foreground">
-            Need Personalized Assistance?
-          </h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Our expert styling team is ready to help you find your perfect size and guide you through the fitting process
-          </p>
-          <button className="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3 font-serif text-sm font-medium text-primary-foreground transition-all hover:shadow-lg hover:shadow-accent/20 active:scale-95">
-            Contact Our Experts
-          </button>
         </div>
       </section>
     </main>
