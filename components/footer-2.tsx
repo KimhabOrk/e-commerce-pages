@@ -116,8 +116,8 @@ export function Footer() {
   };
 
   return (
-    <footer className="border-t border-border mt-16 md:mt-24 bg-background/60">
-      <div className="container mx-auto px-6 md:px-8 py-8 md:py-12 lg:py-16">
+    <footer className="border-t border-border/50 mt-16 md:mt-24 bg-background/60">
+      <div className="container mx-auto px-4 md:px-8 py-8 md:py-12 lg:py-16">
         {/* Main Content */}
         <div className="mb-6 md:mb-12">
           <div className="flex flex-col text-foreground text-start text-balance">
@@ -128,7 +128,7 @@ export function Footer() {
               alt="Logo"
               className="h-full w-[160px] md:w-32 object-cover mb-2"
             />
-            <p className="text-sm md:text-lg">Affordable Luxury Womenswear</p>
+            <p className="text-sm md:text-lg">Affordable Luxury Fashion For Bold Modern Women.</p>
           </div>
         </div>
 
