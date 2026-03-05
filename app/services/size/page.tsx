@@ -212,7 +212,7 @@ export default function SizeGuidePage() {
             </p>
           </div>
 
-          <div className="flex rounded-lg border border-border/50">
+          <div className="flex mx-auto">
             <div className="relative flex h-full w-full max-w-6xl flex justify-center items-center mx-auto">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1_20260223_195656_0000-fmiQguIfhwYTKz8WmU6CuynWhzbp1Y.png"
