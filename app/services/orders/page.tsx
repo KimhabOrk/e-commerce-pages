@@ -32,11 +32,11 @@ function DetailCard({ icon: Icon, title, children }: { icon: React.ReactNode; ti
 function AccordionItem({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <details className="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
-      <summary className="cursor-pointer px-6 py-4 bg-primary/85 hover:bg-primary/95 transition-colors flex items-center justify-between">
+      <summary className="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
         <h3 className="font-semibold text-primary-foreground">{title}</h3>
         <ChevronDown className="w-5 h-5 text-primary-foreground group-open:rotate-180 transition-transform" />
       </summary>
-      <div className="px-6 py-4 bg-card border-t border-border/70 space-y-4">
+      <div className="px-6 py-4 bg-muted border-t border-border/70 space-y-4">
         {children}
       </div>
     </details>
@@ -59,7 +59,7 @@ export default function OrdersShippingReturnsPage() {
       </section>
 
       {/* Quick Overview Cards */}
-      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/30">
+      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <DetailCard icon={<Package className="w-6 h-6" />} title="Order Processing">
@@ -319,19 +319,19 @@ export default function OrdersShippingReturnsPage() {
       </section>
 
       {/* Return Address */}
-      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/30">
+      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
             Return Address
           </h2>
-          <div className="bg-background border border-border/40 p-8 rounded-lg">
-            <p className="text-foreground/75 mb-6">
+          <div className="bg-muted border border-border/40 p-8 rounded-xl">
+            <p className="text-foreground/85 mb-6">
               When you initiate a return, we will provide you with the appropriate return address for your location. Return addresses may vary based on your shipping region. Please do not ship items to us without receiving explicit return instructions first.
             </p>
-            <div className="bg-primary/10 border border-primary/20 p-6 rounded">
+            <div className="bg-primary/20 border border-primary/20 p-6 rounded-xl">
               <p className="text-foreground font-semibold mb-2">General Return Contact:</p>
               <p className="text-foreground/75 mb-4">
-                For return inquiries: support@kimhabork.com
+                For return inquiries: info@kimhabork.com
               </p>
               <p className="text-foreground font-semibold mb-2">Important:</p>
               <p className="text-foreground/75 text-sm">
@@ -345,18 +345,18 @@ export default function OrdersShippingReturnsPage() {
       {/* FAQ Summary */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl">
-          <div className="bg-muted/50 border border-border/40 p-8 rounded-lg text-center">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <div className="bg-muted/50 border border-border/40 p-8 rounded-lg">
+            <h2 className="font-serif text-2xl md:text-3xl text-center font-bold text-foreground mb-4">
               More Questions?
             </h2>
-            <p className="text-foreground/70 mb-6 max-w-2xl mx-auto">
+            <p className="text-foreground/70 mb-6 text-center max-w-2xl mx-auto">
               We have compiled answers to the most common questions about our products, sizes, and services. Visit our comprehensive Help & FAQs page for additional information.
             </p>
-            <div className="inline-block bg-primary/10 border border-primary/20 p-6 rounded">
+            <div className="inline-block bg-primary/20 border border-primary/20 p-6 rounded text-start">
               <p className="text-foreground/75">
                 <span className="font-semibold text-foreground">Hours:</span> Monday - Friday, 9 AM - 6 PM (GMT+7)
               </p>
-              <p className="text-foreground/75 mt-2">
+              <p className="text-foreground/.75 mt-2">
                 <span className="font-semibold text-foreground">Email:</span> support@kimhabork.com
               </p>
             </div>

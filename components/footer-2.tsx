@@ -128,7 +128,7 @@ export function Footer() {
               alt="Logo"
               className="h-auto w-[198px] md:w-32 object-cover mb-3 md:mb-5"
             />
-            <p className="text-md md:text-lg">Affordable Luxury Womenswear Brand.</p>
+            <p className="text-sm md:text-lg">Affordable Luxury Womenswear Brand.</p>
           </div>
         </div>
 
