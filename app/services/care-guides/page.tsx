@@ -95,7 +95,7 @@ export default function CareGuidesPage() {
         </section>
 
         {/* Introduction */}
-        <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
+        <section className="py-8 md:py-14 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl">
             <div className="bg-muted p-8 rounded-lg border border-border/40">
               <h2 className="font-serif text-xl font-semibold text-primary mb-4">
@@ -131,7 +131,7 @@ export default function CareGuidesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-foreground">Storage</h3>
-                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside list-primary px-2 md:px-4">
+                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside marker:text-primary px-2 md:px-4">
                   <li>
                     <span>Store garments in a cool, dry place away from direct sunlight</span>
                   </li>
@@ -148,7 +148,7 @@ export default function CareGuidesPage() {
               </div>
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-foreground">Washing</h3>
-                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside px-2 md:px-4">
+                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside marker:text-primary px-2 md:px-4">
                   <li>
                     <span>Always check the care label first for specific instructions</span>
                   </li>
@@ -182,7 +182,7 @@ export default function CareGuidesPage() {
               </div>
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-foreground">Ironing</h3>
-                <ul className="space-y-2 text-foreground/70 text-sm px-2 md:px-4">
+                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside marker:text-primary px-2 md:px-4">
                   <li>
                     <span>Use low to medium heat depending on fabric type</span>
                   </li>
@@ -208,21 +208,21 @@ export default function CareGuidesPage() {
               Handling Stains
             </h2>
             <div className="bg-muted p-6 rounded-lg border border-border/40 jutify-center items-center">
-              <ul className="space-y-4 text-foreground/70 list-inside px-2 md:px-4">
+              <ul className="space-y-4 text-foreground/70 list-inside marker:text-primary px-2 md:px-4">
                 <li>
-                  <span className="font-semibold text-primary">Act Quickly:</span>
+                  <span className="font-semibold text-primary">Act Quickly: </span>
                   <span>Address stains as soon as possible for better results. Blot the stain rather than rubbing to avoid spreading it further.</span>
                 </li>
                 <li>
-                  <span className="font-semibold text-primary">Test First:</span>
+                  <span className="font-semibold text-primary">Test First: </span>
                   <span>Always test any cleaning solution on a hidden area of the garment before applying it to the visible stain.</span>
                 </li>
                 <li>
-                  <span className="font-semibold text-primary">Be Gentle:</span>
+                  <span className="font-semibold text-primary">Be Gentle: </span>
                   <span>Use gentle, circular motions when treating stains. Avoid harsh scrubbing that can damage the fabric fibers.</span>
                 </li>
                 <li>
-                  <span className="font-semibold text-primary">Professional Help:</span>
+                  <span className="font-semibold text-primary">Professional Help: </span>
                   <span>For stubborn or valuable pieces, consider professional dry cleaning services to ensure proper stain removal.</span>
                 </li>
               </ul>
