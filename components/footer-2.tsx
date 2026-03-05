@@ -123,12 +123,12 @@ export function Footer() {
           <div className="flex flex-col text-foreground text-start text-balance">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png?updatedAt=1771854445628"
-              width={190}
-              height={34}
+              width={198}
+              height={36}
               alt="Logo"
-              className="h-auto w-[190px] md:w-32 object-cover mb-2"
+              className="h-auto w-[198px] md:w-32 object-cover mb-3 md:mb-5"
             />
-            <p className="text-sm md:text-lg">Affordable Luxury Womenswear Brand.</p>
+            <p className="text-md md:text-lg">Affordable Luxury Womenswear Brand.</p>
           </div>
         </div>
 

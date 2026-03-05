@@ -59,9 +59,9 @@ function CareGuideCard({ title, content, tips }: { title: string;content: string
         <h3 className="font-semibold text-primary-foreground">{title}</h3>
         <ChevronDown className="w-5 h-5 text-primary-foreground group-open:rotate-180 transition-transform" />
       </summary>
-      <div className="px-6 py-4 bg-card border-t border-border/70 space-y-4">
+      <div className="px-6 py-4 bg-card/80 border-t border-border/70 space-y-4">
         <p className="text-foreground/75 leading-relaxed">{content}</p>
-        <div className="bg-muted p-4 rounded">
+        <div className="bg-muted/70 p-4 rounded">
           <h4 className="font-semibold text-sm text-foreground mb-3">Care Tips:</h4>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
             {tips.map((tip, index) => (
