@@ -324,7 +324,7 @@ export default function OrdersShippingReturnsPage() {
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
             Return Address
           </h2>
-          <div className="bg-muted border border-border/40 p-8 rounded-xl">
+          <div className="bg-muted/50 border border-border/40 p-8 rounded-xl">
             <p className="text-foreground/85 mb-6">
               When you initiate a return, we will provide you with the appropriate return address for your location. Return addresses may vary based on your shipping region. Please do not ship items to us without receiving explicit return instructions first.
             </p>
@@ -345,14 +345,14 @@ export default function OrdersShippingReturnsPage() {
       {/* FAQ Summary */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl">
-          <div className="bg-muted/50 border border-border/40 p-8 rounded-lg">
-            <h2 className="font-serif text-2xl md:text-3xl text-center font-bold text-foreground mb-4">
+          <div className="bg-muted/50 border border-border/40 p-8 rounded-lg text-center">
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
               More Questions?
             </h2>
-            <p className="text-foreground/70 mb-6 text-center max-w-2xl mx-auto">
+            <p className="text-foreground/70 mb-6 max-w-2xl mx-auto">
               We have compiled answers to the most common questions about our products, sizes, and services. Visit our comprehensive Help & FAQs page for additional information.
             </p>
-            <div className="inline-block bg-primary/20 border border-primary/20 p-6 rounded text-start">
+            <div className="inline-block bg-primary/20 border border-primary/20 p-6 rounded">
               <p className="text-foreground/75">
                 <span className="font-semibold text-foreground">Hours:</span> Monday - Friday, 9 AM - 6 PM (GMT+7)
               </p>
