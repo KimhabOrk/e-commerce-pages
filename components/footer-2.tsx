@@ -123,12 +123,12 @@ export function Footer() {
           <div className="flex flex-col text-foreground text-start text-balance">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png?updatedAt=1771854445628"
-              width={160}
-              height={26}
+              width={190}
+              height={34}
               alt="Logo"
-              className="h-full w-[160px] md:w-32 object-cover mb-2"
+              className="h-auto w-[190px] md:w-32 object-cover mb-2"
             />
-            <p className="text-sm md:text-lg">Affordable Luxury Fashion For Bold Modern Women.</p>
+            <p className="text-sm md:text-lg">Affordable Luxury Womenswear Brand.</p>
           </div>
         </div>
 
@@ -147,7 +147,7 @@ export function Footer() {
 
         {/* Bottom Section */}
         <div className="pt-4 md:pt-6">
-          <div className="flex mx-auto justify-evenly gap-3 items-center mb-4 md:mb-8">
+          <div className="flex mx-auto justify-between gap-3 items-center mb-4 md:mb-8">
             <Link href="https://facebook.com/kimhaborkofficial">
               <Image
                 src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"

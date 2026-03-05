@@ -187,7 +187,7 @@ const faqCategories = [
 function FAQItem({ question, answer }: { question: string; answer: string }) {
   return (
     <details className="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
-      <summary className="cursor-pointer px-6 py-4 bg-primary/85 hover:bg-primary/95 transition-colors flex items-center justify-between">
+      <summary className="cursor-pointer px-6 py-4 bg-muted/85 hover:bg-muted/95 transition-colors flex items-center justify-between">
         <h3 className="font-semibold text-primary-foreground text-left">{question}</h3>
         <ChevronDown className="w-5 h-5 text-primary-foreground group-open:rotate-180 transition-transform flex-shrink-0 ml-4" />
       </summary>
@@ -249,9 +249,9 @@ export default function HelpFaqsPage() {
             <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">
               We are here to help! If you cannot find the answer to your question in our FAQ section, please do not hesitate to contact our customer service team.
             </p>
-            <div className="bg-primary/10 border border-primary/20 rounded p-6 inline-block">
+            <div className="bg-muted border border-white/40 rounded-xl p-6 inline-block">
               <p className="text-foreground/75 mb-2">
-                <span className="font-semibold text-foreground">Email:</span> support@kimhabork.com
+                <span className="font-semibold text-foreground">Email:</span> info@kimhabork.com
               </p>
               <p className="text-foreground/75">
                 <span className="font-semibold text-foreground">Hours:</span> Monday - Friday, 9 AM - 6 PM (GMT+7)
