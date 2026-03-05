@@ -55,7 +55,7 @@ const careGuides = [
 function CareGuideCard({ title, content, tips }: { title: string;content: string;tips: string[] }) {
   return (
     <details className="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
-      <summary className="cursor-pointer px-6 py-4 bg-primary/85 hover:bg-primary/95 transition-colors flex items-center justify-between">
+      <summary className="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
         <h3 className="font-semibold text-primary-foreground">{title}</h3>
         <ChevronDown className="w-5 h-5 text-primary-foreground group-open:rotate-180 transition-transform" />
       </summary>
@@ -165,7 +165,7 @@ export default function CareGuidesPage() {
               </div>
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg text-foreground">Drying</h3>
-                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside px-2 md:px-4">
+                <ul className="space-y-2 text-foreground/70 text-sm list-disc list-inside marker:text-primary px-2 md:px-4">
                   <li>
                     <span>Air dry whenever possible instead of machine drying</span>
                   </li>
