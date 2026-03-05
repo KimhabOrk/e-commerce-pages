@@ -30,7 +30,7 @@ const footerSections: FooterSection[] = [
     ],
   },
   {
-    title: "Support",
+    title: "Service",
     links: [
       { label: "Custom Made", href: "/services/custom-made" },
       { label: "Care Guides", href: "/services/care-guides" },
