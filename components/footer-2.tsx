@@ -147,7 +147,7 @@ export function Footer() {
 
         {/* Bottom Section */}
         <div className="pt-4 md:pt-6">
-          <div className="flex mx-auto justify-between gap-3 items-center mb-4 md:mb-8">
+          <div className="flex mx-auto justify-center gap-3 items-center mb-4 md:mb-8">
             <Link href="https://facebook.com/kimhaborkofficial">
               <Image
                 src="https://ik.imagekit.io/kimhabork/assets/socials/facebook.png?updatedAt=1767797839119"
