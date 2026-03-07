@@ -1,0 +1,178 @@
+{% comment %}
+  Responsibility/Sustainability Page Template for Kimhab Ork
+  Shopify Liquid conversion from Next.js React page
+  Highlights commitment to sustainability and ethical practices
+{% endcomment %}
+
+<main class="flex-1">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 text-balance">
+        {{ page.title | default: 'Our Responsibility' }}
+      </h1>
+      <p class="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+        {{ 'pages.responsibility.hero_desc' | t: default: 'We are committed to sustainable and ethical practices in every aspect of our business, from material sourcing to production and packaging.' }}
+      </p>
+    </div>
+  </section>
+
+  <!-- Commitment Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-primary mb-8">
+        {{ 'pages.responsibility.commitment_title' | t: default: 'Our Commitment' }}
+      </h2>
+      <div class="space-y-6 text-foreground/75 leading-relaxed">
+        <p>
+          {{ 'pages.responsibility.commitment_para_1' | t: default: 'At Kimhab Ork, we believe that sustainability isn\'t just a buzzword—it\'s a responsibility we take seriously. Every decision we make, from the materials we choose to the factories we partner with, is guided by our commitment to protect our planet and the people who make our clothes.' }}
+        </p>
+        <p>
+          {{ 'pages.responsibility.commitment_para_2' | t: default: 'We understand that the fashion industry has historically had significant environmental and social impacts. That\'s why we\'ve made the conscious choice to operate differently, creating premium womenswear that\'s beautiful, ethical, and sustainable.' }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three Pillars Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8 text-start">
+        {{ 'pages.responsibility.pillars_title' | t: default: 'Our Three Pillars' }}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Materials Pillar -->
+        <div class="p-6 rounded-lg bg-muted border border-border/40">
+          <div class="w-10 h-10 text-primary mb-4">🌿</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.responsibility.pillar_1_title' | t: default: 'Responsible Materials' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.responsibility.pillar_1_desc' | t: default: 'We prioritize organic, sustainable, and responsibly-sourced fabrics including organic cotton, GOTS-certified materials, recycled fibers, and innovative sustainable alternatives.' }}
+          </p>
+        </div>
+
+        <!-- Production Pillar -->
+        <div class="p-6 rounded-lg bg-muted border border-border/40">
+          <div class="w-10 h-10 text-primary mb-4">🏭</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.responsibility.pillar_2_title' | t: default: 'Ethical Production' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.responsibility.pillar_2_desc' | t: default: 'Our manufacturing partners are carefully selected and regularly audited to ensure fair wages, safe working conditions, and compliance with international labor standards.' }}
+          </p>
+        </div>
+
+        <!-- Impact Pillar -->
+        <div class="p-6 rounded-lg bg-muted border border-border/40">
+          <div class="w-10 h-10 text-primary mb-4">🌍</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.responsibility.pillar_3_title' | t: default: 'Minimizing Impact' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.responsibility.pillar_3_desc' | t: default: 'We work to minimize our environmental footprint through efficient production, sustainable packaging, and responsible waste management throughout our supply chain.' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Practices Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.responsibility.practices_title' | t: default: 'Our Practices' }}
+      </h2>
+      <div class="space-y-8">
+        
+        <!-- Material Sourcing -->
+        <div class="border-l-4 border-primary pl-6">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.responsibility.practice_1_title' | t: default: 'Material Sourcing' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.responsibility.practice_1_desc' | t: default: 'We source organic cotton from GOTS-certified suppliers, sustainable silk from responsible producers, recycled materials to reduce waste, and innovative alternatives like Tencel and linen that minimize environmental impact.' }}
+          </p>
+        </div>
+
+        <!-- Manufacturing Standards -->
+        <div class="border-l-4 border-primary pl-6">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.responsibility.practice_2_title' | t: default: 'Manufacturing Standards' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.responsibility.practice_2_desc' | t: default: 'Our manufacturers are selected based on their commitment to fair wages, safe working conditions, proper waste management, and environmental responsibility. We conduct regular audits to ensure compliance.' }}
+          </p>
+        </div>
+
+        <!-- Packaging -->
+        <div class="border-l-4 border-primary pl-6">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.responsibility.practice_3_title' | t: default: 'Sustainable Packaging' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.responsibility.practice_3_desc' | t: default: 'We use recyclable and biodegradable packaging materials, minimize plastic use, and optimize shipping sizes to reduce our carbon footprint. All packaging is designed to be reusable or easily recyclable.' }}
+          </p>
+        </div>
+
+        <!-- Transparency -->
+        <div class="border-l-4 border-primary pl-6">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.responsibility.practice_4_title' | t: default: 'Transparency' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.responsibility.practice_4_desc' | t: default: 'We believe in full transparency with our customers. We regularly publish information about our suppliers, certifications, and progress toward sustainability goals.' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.responsibility.certifications_title' | t: default: 'Certifications & Standards' }}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="p-6 rounded-lg bg-muted border border-border/40">
+          <h3 class="font-semibold text-foreground mb-2">GOTS Certification</h3>
+          <p class="text-foreground/75 text-sm">Global Organic Textile Standard - ensures our organic cotton meets strict environmental and social criteria.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-muted border border-border/40">
+          <h3 class="font-semibold text-foreground mb-2">Fair Trade</h3>
+          <p class="text-foreground/75 text-sm">We partner with Fair Trade certified facilities to ensure workers receive fair compensation and benefits.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-muted border border-border/40">
+          <h3 class="font-semibold text-foreground mb-2">Carbon Neutral Shipping</h3>
+          <p class="text-foreground/75 text-sm">All shipments are carbon offset through verified programs to neutralize our transportation emissions.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-muted border border-border/40">
+          <h3 class="font-semibold text-foreground mb-2">B Corporation</h3>
+          <p class="text-foreground/75 text-sm">We are committed to meeting the highest standards of accountability and environmental responsibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="font-serif text-2xl md:text-3xl font-bold mb-6 text-balance">
+        {{ 'pages.responsibility.cta_title' | t: default: 'Join Us in Our Mission' }}
+      </h2>
+      <p class="text-lg mb-8 opacity-95 text-balance max-w-2xl mx-auto leading-relaxed">
+        {{ 'pages.responsibility.cta_desc' | t: default: 'By choosing Kimhab Ork, you\'re not just buying beautiful womenswear—you\'re supporting sustainable fashion and ethical manufacturing practices.' }}
+      </p>
+      <a href="/" class="inline-block px-8 py-3 bg-primary-foreground text-primary font-semibold rounded-lg hover:shadow-lg hover:opacity-95 transition-all">
+        {{ 'pages.responsibility.cta_button' | t: default: 'Shop Our Collection' }}
+      </a>
+    </div>
+  </section>
+</main>

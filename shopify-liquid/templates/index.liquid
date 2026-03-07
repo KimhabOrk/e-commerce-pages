@@ -1,0 +1,196 @@
+{% comment %}
+  Index/Home Page Template for Kimhab Ork
+  Shopify Liquid conversion from Next.js React page
+  This is the main storefront landing page
+{% endcomment %}
+
+<main class="flex-1">
+  
+  <!-- Hero Section -->
+  <section class="relative py-16 md:py-20 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
+    <div class="mx-auto max-w-6xl">
+      <div class="text-center max-w-7xl mx-auto">
+        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance">
+          {{ 'pages.home.hero.title' | t: default: 'Affordable Luxury Fashion' }}
+        </h1>
+        <p class="text-lg md:text-xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+          {{ 'pages.home.hero.description' | t: default: 'Discover Kimhab Ork, where premium womenswear meets accessible pricing. Quality, sustainability, and style in every collection.' }}
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+          <a href="/pages/about" class="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg">
+            {{ 'pages.home.hero.cta_primary' | t: default: 'Explore Our Story' }}
+          </a>
+          <a href="/pages/responsibility" class="inline-block px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all">
+            {{ 'pages.home.hero.cta_secondary' | t: default: 'Our Commitment' }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="font-serif text-2xl md:text-4xl font-bold text-foreground text-start mb-12">
+        {{ 'pages.home.features.title' | t: default: 'Why Choose Kimhab Ork?' }}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        {% comment %} Affordable Luxury Card {% endcomment %}
+        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
+          <div class="w-10 h-10 text-primary mb-4">✨</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.home.features.feature_1_title' | t: default: 'Affordable Luxury' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.home.features.feature_1_desc' | t: default: 'Premium quality womenswear at prices that celebrate accessibility and value.' }}
+          </p>
+          <a href="/pages/about" class="text-primary hover:text-primary/80 font-semibold text-sm mt-4 inline-block">
+            {{ 'common.explore' | t: default: 'Explore' }} →
+          </a>
+        </div>
+
+        {% comment %} Sustainable Materials Card {% endcomment %}
+        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
+          <div class="w-10 h-10 text-primary mb-4">🌿</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.home.features.feature_2_title' | t: default: 'Sustainable Materials' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.home.features.feature_2_desc' | t: default: 'Responsibly sourced fabrics that minimize environmental impact without compromising quality.' }}
+          </p>
+          <a href="/pages/responsibility" class="text-primary hover:text-primary/80 font-semibold text-sm mt-4 inline-block">
+            {{ 'common.learn_more' | t: default: 'Learn More' }} →
+          </a>
+        </div>
+
+        {% comment %} Ethical Production Card {% endcomment %}
+        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
+          <div class="w-10 h-10 text-primary mb-4">❤️</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.home.features.feature_3_title' | t: default: 'Ethical Production' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.home.features.feature_3_desc' | t: default: 'Fair labor practices and transparent supply chain management throughout our operations.' }}
+          </p>
+          <a href="/pages/responsibility" class="text-primary hover:text-primary/80 font-semibold text-sm mt-4 inline-block">
+            {{ 'common.discover' | t: default: 'Discover' }} →
+          </a>
+        </div>
+
+        {% comment %} Timeless Design Card {% endcomment %}
+        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
+          <div class="w-10 h-10 text-primary mb-4">♻️</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.home.features.feature_4_title' | t: default: 'Timeless Design' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed">
+            {{ 'pages.home.features.feature_4_desc' | t: default: 'Versatile, classic silhouettes with modern details that remain relevant season after season.' }}
+          </p>
+          <a href="/pages/about" class="text-primary hover:text-primary/80 font-semibold text-sm mt-4 inline-block">
+            {{ 'common.view' | t: default: 'View' }} →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pages Preview Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="font-serif text-2xl md:text-4xl font-bold text-foreground text-start mb-12">
+        {{ 'pages.home.learn_more.title' | t: default: 'Learn More' }}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- About Us Card -->
+        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
+          <div class="w-10 h-10 text-primary mb-4">📖</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.home.learn_more.card_1_title' | t: default: 'About Us' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed mb-4">
+            {{ 'pages.home.learn_more.card_1_desc' | t: default: 'Discover our story, values, and commitment to affordable luxury fashion for modern women.' }}
+          </p>
+          <a href="/pages/about" class="text-primary hover:text-primary/80 font-semibold text-sm">
+            {{ 'pages.home.learn_more.card_1_cta' | t: default: 'Read Our Story' }} →
+          </a>
+        </div>
+
+        <!-- Care Guides Card -->
+        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
+          <div class="w-10 h-10 text-primary mb-4">📖</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.home.learn_more.card_2_title' | t: default: 'Care Guides' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed mb-4">
+            {{ 'pages.home.learn_more.card_2_desc' | t: default: 'Comprehensive care instructions for all fabric types to preserve your pieces for years.' }}
+          </p>
+          <a href="/pages/care-guides" class="text-primary hover:text-primary/80 font-semibold text-sm">
+            {{ 'pages.home.learn_more.card_2_cta' | t: default: 'View Guides' }} →
+          </a>
+        </div>
+
+        <!-- Responsibility Card -->
+        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
+          <div class="w-10 h-10 text-primary mb-4">📄</div>
+          <h3 class="font-semibold text-lg text-foreground mb-2">
+            {{ 'pages.home.learn_more.card_3_title' | t: default: 'Responsibility' }}
+          </h3>
+          <p class="text-foreground/75 text-sm leading-relaxed mb-4">
+            {{ 'pages.home.learn_more.card_3_desc' | t: default: 'Learn about our commitment to sustainability, ethical sourcing, and responsible production.' }}
+          </p>
+          <a href="/pages/responsibility" class="text-primary hover:text-primary/80 font-semibold text-sm">
+            {{ 'pages.home.learn_more.card_3_cta' | t: default: 'Our Commitment' }} →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal & Support Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="font-serif text-2xl md:text-4xl font-bold text-foreground text-start mb-8">
+        {{ 'pages.home.legal.title' | t: default: 'Legal & Support' }}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <a href="/pages/general-sales-conditions" class="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center hover:bg-muted/80">
+          <h3 class="font-semibold text-foreground mb-1">{{ 'pages.home.legal.link_1' | t: default: 'General Sales Conditions' }}</h3>
+          <p class="text-sm text-foreground/65">{{ 'pages.home.legal.link_1_desc' | t: default: 'Fabric care instructions' }}</p>
+        </a>
+
+        <a href="/pages/legal-notes" class="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center hover:bg-muted/80">
+          <h3 class="font-semibold text-foreground mb-1">{{ 'pages.home.legal.link_2' | t: default: 'Legal Notes' }}</h3>
+          <p class="text-sm text-foreground/65">{{ 'pages.home.legal.link_2_desc' | t: default: 'Legal information' }}</p>
+        </a>
+
+        <a href="/policies/privacy-policy" class="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center hover:bg-muted/80">
+          <h3 class="font-semibold text-foreground mb-1">{{ 'pages.home.legal.link_3' | t: default: 'Privacy Policy' }}</h3>
+          <p class="text-sm text-foreground/65">{{ 'pages.home.legal.link_3_desc' | t: default: 'Data protection' }}</p>
+        </a>
+
+        <a href="/policies/terms-of-service" class="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center hover:bg-muted/80">
+          <h3 class="font-semibold text-foreground mb-1">{{ 'pages.home.legal.link_4' | t: default: 'Terms & Conditions' }}</h3>
+          <p class="text-sm text-foreground/65">{{ 'pages.home.legal.link_4_desc' | t: default: 'Service terms' }}</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
+    <div class="mx-auto max-w-4xl text-center">
+      <h2 class="font-serif text-3xl md:text-4xl font-semibold mb-6 text-balance">
+        {{ 'pages.home.cta.title' | t: default: 'Experience Affordable Luxury' }}
+      </h2>
+      <p class="text-lg mb-8 opacity-95 text-balance max-w-2xl mx-auto leading-relaxed">
+        {{ 'pages.home.cta.description' | t: default: 'Discover premium womenswear that doesn\'t compromise on quality, sustainability, or price. Welcome to Kimhab Ork.' }}
+      </p>
+      <a href="/pages/about" class="inline-block px-8 py-3 bg-primary-foreground text-primary font-semibold rounded-lg hover:shadow-lg hover:opacity-95 transition-all">
+        {{ 'pages.home.cta.button' | t: default: 'Start Exploring' }}
+      </a>
+    </div>
+  </section>
+</main>
