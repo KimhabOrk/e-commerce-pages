@@ -146,13 +146,13 @@ export default function CustomMadePage() {
             {processSteps.map((step, index) => (
               <Card
                 key={index}
-                className="bg-muted/40 flex mx-auto justify-center items-center text-center"
+                className="bg-muted/50 flex mx-auto justify-center items-center text-center"
               >
                 <CardHeader className="flex flex-col mx-auto justify-center items-center text-center">
                   <div className="mb-4 w-8 h-8 md:w-12 md:h-12 flex items-center justify-center text-primary group-hover:text-primary transition-colors">
                     {step.icon}
                   </div>
-                  <CardTitle className="font-serif text-lg md:text-xl font-semibold text-white uppercase tracking-wide">
+                  <CardTitle className="font-serif text-lg md:text-xl font-semibold text-white uppercase tracking-wide text-balance">
                     {step.title}
                   </CardTitle>
                 </CardHeader>
