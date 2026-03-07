@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import { FeatureCard } from '@/components/feature-card'
 import Link from 'next/link'
-import { Crown, Shield, TreePine, Users } from 'lucide-react'
+import { Crown, Shield, TreePine, Users, ChevronDown } from 'lucide-react'
 import { HeroGradient } from '@/components/hero-gradient'
 
 export const metadata: Metadata = {
@@ -11,6 +11,52 @@ export const metadata: Metadata = {
     title: 'About Us | Kimhab Ork',
     description: 'Learn about our commitment to affordable luxury and sustainable fashion',
   },
+}
+
+const faqs = [
+  {
+    id: "01",
+    title: "Premium Materials",
+    content: "We source the finest fabrics and materials, including organic cotton, sustainable silk, and responsibly-sourced textiles that feel luxurious and last longer.",
+  },
+  {
+    id: "02",
+    title: "Timeless Design",
+    content: "Our collections focus on versatile, classic silhouettes with modern details. Pieces that work today and remain relevant for years to come.",
+  },
+  {
+    id: "03",
+    title: "Ethical Production",
+    content: "We partner with manufacturers who prioritize fair wages, safe working conditions, and environmental responsibility throughout our supply chain.",
+  },
+  {
+    id: "04",
+    title: "Exceptional Value",
+    content: "Quality womenswear at accessible prices. We believe you shouldn't have to compromise on quality or pay luxury prices for great fashion.",
+  },
+]
+
+function FAQCard({ id, title, content }: { id: string;title: string;content: string }) {
+  return (
+    <details className="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+      <summary className="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+        <div className="flex gap-6">
+          <div className="flex-shrink-0">
+            <div className="flex items-center justify-center h-5 w-5 rounded-md bg-primary/70 text-white">
+              <span className="text-md font-semibold">{id}</span>
+            </div>
+          </div>
+          <h3 className="text-lg font-semibold text-foreground mb-2">
+            {title}
+          </h3>
+        </div>
+        <ChevronDown className="w-5 h-5 text-primary-foreground group-open:rotate-180 transition-transform" />
+      </summary>
+      <div className="px-6 py-4 bg-card/60 border-t border-border/70 space-y-4">
+        <p className="text-foreground/75 leading-relaxed">{content}</p>
+      </div>
+    </details>
+  )
 }
 
 export default function AboutPage() {
@@ -118,6 +164,10 @@ export default function AboutPage() {
               Why Choose Kimhab Ork?
             </h2>
             <div className="space-y-8">
+              {faqs.map((faq, index) => (
+                <FAQCard key={index} tips={faq.id} title={faq.title} content={faq.content} />
+              ))}
+              {/**
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/10 text-primary">
@@ -136,7 +186,7 @@ export default function AboutPage() {
 
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/15 text-primary">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary/50 text-white">
                     <span className="text-xl font-semibold">02</span>
                   </div>
                 </div>
@@ -181,6 +231,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
+              */}
             </div>
           </div>
         </section>
