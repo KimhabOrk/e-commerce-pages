@@ -1,0 +1,61 @@
+{
+  "navigation": {
+    "home": "ទំព័រដើម",
+    "about": "អំពីយើងខ្ញុំ",
+    "creativeDirctor": "នាយកដ្ឋានច្នៃប្រឌិត",
+    "customMade": "ឡើងក្រោយដូច្នេះ",
+    "careGuides": "ឯកសារថែរក្សា",
+    "helpsAndFaqs": "ជំនួយ និង សំណួរដែលគេសួរញឹកញាប់",
+    "responsibility": "ទំនួលខ責",
+    "legal": "ច្បាប់",
+    "mono": "Mono",
+    "evasion": "Evasion",
+    "contact": "ติดต่อយើងខ្ញុំ"
+  },
+  "footer": {
+    "shop": "ហាង",
+    "allProducts": "ផលិតផលទាំងអស់",
+    "collections": "ការប្រមូល",
+    "newArrivals": "ការមកដល់ថ្មីៗ",
+    "company": "ក្រុមហ៊ុន",
+    "creativeDirector": "នាយកដ្ឋានច្នៃប្រឌិត",
+    "responsibilities": "ទំនួលខ្ იាមួយ",
+    "service": "សេវា",
+    "sizeGuide": "ឯកសារណែនាំទំហំ",
+    "shippingReturn": "ការដឹក ត្រឡប់",
+    "legal": "ច្បាប់",
+    "legalNotes": "កំណត់ចំណាំច្បាប់",
+    "generalSalesConditions": "លក្ខខណ្ឌលក់ទូទៅ",
+    "privacyPolicy": "គោលការណ៍ឯកជនភាព",
+    "termsOfService": "លក្ខខណ្ឌសេវាកម្ម",
+    "cookiePolicy": "គោលការណ៍ខូគី"
+  },
+  "common": {
+    "language": "ភាសា",
+    "english": "ភាសាអង់គ្លេស",
+    "khmer": "ភាសាខ្មែរ",
+    "selectLanguage": "ជ្រើសរើសភាសា"
+  },
+  "pages": {
+    "home": {
+      "title": "Kimhab Ork - ស្ទើរលួយសម្លៀកបំពាក់នារី",
+      "description": "ស្វាគមន៍ផលិតផលម៉ាដដែលមានគុណភាពលម្អិតក្នុងតម្លៃដែលអាចទទួលយកបាន"
+    },
+    "about": {
+      "title": "អំពីយើងខ្ញុំ",
+      "description": "ស្វាគមន៍ចក្ខុវិស័យ និងរឿងរ៉ាវរបស់ Kimhab Ork"
+    },
+    "customMade": {
+      "title": "ឡើងក្រោយដូច្នេះ",
+      "description": "បង្កើតលម្អិតរបស់អ្នកដោយប្រើសេវាកម្មដាក់ស្ងួតលម្អិតរបស់យើងខ្ញុំ"
+    },
+    "careGuides": {
+      "title": "ឯកសារថែរក្សា",
+      "description": "រៀនពីរបៀបថែរក្សាលម្អិតរបស់អ្នក"
+    },
+    "helps": {
+      "title": "ជំនួយ និង សំណួរដែលគេសួរញឹកញាប់",
+      "description": "រកឃើញចម្លើយចំពោះសំណួររបស់អ្នក"
+    }
+  }
+}

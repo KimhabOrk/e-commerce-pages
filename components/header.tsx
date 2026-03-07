@@ -4,21 +4,25 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { useTranslations, useLocale } from 'next-intl'
+import { LanguageSwitcher } from './language-switcher'
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const t = useTranslations('navigation')
+  const locale = useLocale()
 
   const navigationLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/company/about', label: 'About Us' },
-    { href: '/company/creative-director', label: 'Creative Director' },
-    { href: '/services/custom-made', label: 'Custom Made' },
-    { href: '/services/care-guides', label: 'Care Guides' },
-    { href: '/services/helps', label: 'Helps & FAQs' },
-    { href: '/company/responsibility', label: 'Responsibility' },
-    { href: '/legal/notes', label: 'Legal' },
-    { href: '/sample/mono', label: 'Mono' },
-    { href: '/sample/evasion', label: 'Evasion' },
+    { href: `/${locale}/`, label: t('home') },
+    { href: `/${locale}/company/about`, label: t('about') },
+    { href: `/${locale}/company/creative-director`, label: t('creativeDirctor') },
+    { href: `/${locale}/services/custom-made`, label: t('customMade') },
+    { href: `/${locale}/services/care-guides`, label: t('careGuides') },
+    { href: `/${locale}/services/helps`, label: t('helpsAndFaqs') },
+    { href: `/${locale}/company/responsibility`, label: t('responsibility') },
+    { href: `/${locale}/legal/notes`, label: t('legal') },
+    { href: `/${locale}/sample/mono`, label: t('mono') },
+    { href: `/${locale}/sample/evasion`, label: t('evasion') },
   ]
 
   return (
