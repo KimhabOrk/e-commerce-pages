@@ -1,0 +1,140 @@
+<header class="header" data-section-id="{{ section.id }}" data-section-type="header">
+  <div class="header__wrapper">
+    <div class="header__top">
+      <div class="header__logo">
+        <a href="/" class="header__logo-link">
+          {% if section.settings.logo %}
+            <img src="{{ section.settings.logo | img_url: '200x' }}" alt="{{ shop.name }}" class="header__logo-img">
+          {% else %}
+            <span class="header__logo-text">{{ shop.name }}</span>
+          {% endif %}
+        </a>
+      </div>
+      
+      <nav class="header__nav">
+        {% for link in linklists[section.settings.menu].links %}
+          {% if link.links != blank %}
+            <div class="header__nav-dropdown">
+              <button class="header__nav-btn" aria-haspopup="menu">
+                {{ link.title }}
+              </button>
+              <ul class="header__dropdown">
+                {% for childlink in link.links %}
+                  <li><a href="{{ childlink.url }}">{{ childlink.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% else %}
+            <a href="{{ link.url }}" class="header__nav-link{% if link.active %} active{% endif %}">
+              {{ link.title }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+
+      <div class="header__actions">
+        <button class="header__search-btn" aria-label="Search">
+          {% include 'icon-search' %}
+        </button>
+        <a href="/cart" class="header__cart-link">
+          {% include 'icon-cart' %}
+          <span class="header__cart-count" data-cart-count="{{ cart.item_count }}">{{ cart.item_count }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    border-bottom: 1px solid var(--color-border, #e0e0e0);
+    padding: 1rem 2rem;
+  }
+
+  .header__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .header__logo-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo-img {
+    max-height: 50px;
+    width: auto;
+  }
+
+  .header__nav {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    align-items: center;
+  }
+
+  .header__nav-link {
+    text-decoration: none;
+    color: var(--color-text, #000);
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+
+  .header__nav-link:hover,
+  .header__nav-link.active {
+    opacity: 0.7;
+  }
+
+  .header__actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .header__cart-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--color-accent, #000);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    }
+  ]
+}
+{% endschema %}

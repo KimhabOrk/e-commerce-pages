@@ -1,196 +1,591 @@
-{% comment %}
-  Index/Home Page Template for Kimhab Ork
-  Shopify Liquid conversion from Next.js React page
-  This is the main storefront landing page
-{% endcomment %}
+{% section 'header' %}
 
-<main class="flex-1">
-  
+<main class="home">
   <!-- Hero Section -->
-  <section class="relative py-16 md:py-20 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
-    <div class="mx-auto max-w-6xl">
-      <div class="text-center max-w-7xl mx-auto">
-        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance">
-          {{ 'pages.home.hero.title' | t: default: 'Affordable Luxury Fashion' }}
-        </h1>
-        <p class="text-lg md:text-xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
-          {{ 'pages.home.hero.description' | t: default: 'Discover Kimhab Ork, where premium womenswear meets accessible pricing. Quality, sustainability, and style in every collection.' }}
-        </p>
-        <div class="flex flex-col md:flex-row gap-4 justify-center">
-          <a href="/pages/about" class="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg">
-            {{ 'pages.home.hero.cta_primary' | t: default: 'Explore Our Story' }}
-          </a>
-          <a href="/pages/responsibility" class="inline-block px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all">
-            {{ 'pages.home.hero.cta_secondary' | t: default: 'Our Commitment' }}
-          </a>
+  {% if section.settings.hero_enabled %}
+    <section class="hero">
+      <div class="hero__wrapper">
+        {% if section.settings.hero_image %}
+          <div class="hero__image">
+            <img src="{{ section.settings.hero_image | img_url: '1200x600' }}" alt="{{ section.settings.hero_title }}" loading="lazy">
+          </div>
+        {% endif %}
+        <div class="hero__content">
+          <h1 class="hero__title">{{ section.settings.hero_title }}</h1>
+          <p class="hero__subtitle">{{ section.settings.hero_subtitle }}</p>
+          {% if section.settings.hero_cta_text %}
+            <a href="{{ section.settings.hero_cta_url }}" class="hero__cta">{{ section.settings.hero_cta_text }}</a>
+          {% endif %}
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  {% endif %}
 
-  <!-- Features Section -->
-  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
-    <div class="mx-auto max-w-6xl">
-      <h2 class="font-serif text-2xl md:text-4xl font-bold text-foreground text-start mb-12">
-        {{ 'pages.home.features.title' | t: default: 'Why Choose Kimhab Ork?' }}
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        {% comment %} Affordable Luxury Card {% endcomment %}
-        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
-          <div class="w-10 h-10 text-primary mb-4">✨</div>
-          <h3 class="font-semibold text-lg text-foreground mb-2">
-            {{ 'pages.home.features.feature_1_title' | t: default: 'Affordable Luxury' }}
-          </h3>
-          <p class="text-foreground/75 text-sm leading-relaxed">
-            {{ 'pages.home.features.feature_1_desc' | t: default: 'Premium quality womenswear at prices that celebrate accessibility and value.' }}
-          </p>
-          <a href="/pages/about" class="text-primary hover:text-primary/80 font-semibold text-sm mt-4 inline-block">
-            {{ 'common.explore' | t: default: 'Explore' }} →
-          </a>
-        </div>
-
-        {% comment %} Sustainable Materials Card {% endcomment %}
-        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
-          <div class="w-10 h-10 text-primary mb-4">🌿</div>
-          <h3 class="font-semibold text-lg text-foreground mb-2">
-            {{ 'pages.home.features.feature_2_title' | t: default: 'Sustainable Materials' }}
-          </h3>
-          <p class="text-foreground/75 text-sm leading-relaxed">
-            {{ 'pages.home.features.feature_2_desc' | t: default: 'Responsibly sourced fabrics that minimize environmental impact without compromising quality.' }}
-          </p>
-          <a href="/pages/responsibility" class="text-primary hover:text-primary/80 font-semibold text-sm mt-4 inline-block">
-            {{ 'common.learn_more' | t: default: 'Learn More' }} →
-          </a>
-        </div>
-
-        {% comment %} Ethical Production Card {% endcomment %}
-        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
-          <div class="w-10 h-10 text-primary mb-4">❤️</div>
-          <h3 class="font-semibold text-lg text-foreground mb-2">
-            {{ 'pages.home.features.feature_3_title' | t: default: 'Ethical Production' }}
-          </h3>
-          <p class="text-foreground/75 text-sm leading-relaxed">
-            {{ 'pages.home.features.feature_3_desc' | t: default: 'Fair labor practices and transparent supply chain management throughout our operations.' }}
-          </p>
-          <a href="/pages/responsibility" class="text-primary hover:text-primary/80 font-semibold text-sm mt-4 inline-block">
-            {{ 'common.discover' | t: default: 'Discover' }} →
-          </a>
-        </div>
-
-        {% comment %} Timeless Design Card {% endcomment %}
-        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
-          <div class="w-10 h-10 text-primary mb-4">♻️</div>
-          <h3 class="font-semibold text-lg text-foreground mb-2">
-            {{ 'pages.home.features.feature_4_title' | t: default: 'Timeless Design' }}
-          </h3>
-          <p class="text-foreground/75 text-sm leading-relaxed">
-            {{ 'pages.home.features.feature_4_desc' | t: default: 'Versatile, classic silhouettes with modern details that remain relevant season after season.' }}
-          </p>
-          <a href="/pages/about" class="text-primary hover:text-primary/80 font-semibold text-sm mt-4 inline-block">
-            {{ 'common.view' | t: default: 'View' }} →
-          </a>
+  <!-- Featured Collections -->
+  {% if section.settings.featured_collections_enabled %}
+    <section class="featured-collections">
+      <div class="featured-collections__wrapper">
+        <h2 class="featured-collections__title">{{ section.settings.featured_collections_title }}</h2>
+        <div class="featured-collections__grid">
+          {% for collection in collections %}
+            {% if collection.title != 'All' %}
+              <div class="collection-card">
+                {% if collection.featured_image %}
+                  <img src="{{ collection.featured_image | img_url: '300x300' }}" alt="{{ collection.title }}" loading="lazy">
+                {% endif %}
+                <h3>{{ collection.title }}</h3>
+                <p>{{ collection.description | strip_html | truncatewords: 15 }}</p>
+                <a href="{{ collection.url }}" class="collection-card__link">View Collection</a>
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  {% endif %}
 
-  <!-- Pages Preview Section -->
-  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
-    <div class="mx-auto max-w-6xl">
-      <h2 class="font-serif text-2xl md:text-4xl font-bold text-foreground text-start mb-12">
-        {{ 'pages.home.learn_more.title' | t: default: 'Learn More' }}
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <!-- About Us Card -->
-        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
-          <div class="w-10 h-10 text-primary mb-4">📖</div>
-          <h3 class="font-semibold text-lg text-foreground mb-2">
-            {{ 'pages.home.learn_more.card_1_title' | t: default: 'About Us' }}
-          </h3>
-          <p class="text-foreground/75 text-sm leading-relaxed mb-4">
-            {{ 'pages.home.learn_more.card_1_desc' | t: default: 'Discover our story, values, and commitment to affordable luxury fashion for modern women.' }}
-          </p>
-          <a href="/pages/about" class="text-primary hover:text-primary/80 font-semibold text-sm">
-            {{ 'pages.home.learn_more.card_1_cta' | t: default: 'Read Our Story' }} →
-          </a>
-        </div>
-
-        <!-- Care Guides Card -->
-        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
-          <div class="w-10 h-10 text-primary mb-4">📖</div>
-          <h3 class="font-semibold text-lg text-foreground mb-2">
-            {{ 'pages.home.learn_more.card_2_title' | t: default: 'Care Guides' }}
-          </h3>
-          <p class="text-foreground/75 text-sm leading-relaxed mb-4">
-            {{ 'pages.home.learn_more.card_2_desc' | t: default: 'Comprehensive care instructions for all fabric types to preserve your pieces for years.' }}
-          </p>
-          <a href="/pages/care-guides" class="text-primary hover:text-primary/80 font-semibold text-sm">
-            {{ 'pages.home.learn_more.card_2_cta' | t: default: 'View Guides' }} →
-          </a>
-        </div>
-
-        <!-- Responsibility Card -->
-        <div class="p-6 rounded-lg bg-muted hover:bg-muted/80 transition-colors border border-border/40 hover:border-primary/40">
-          <div class="w-10 h-10 text-primary mb-4">📄</div>
-          <h3 class="font-semibold text-lg text-foreground mb-2">
-            {{ 'pages.home.learn_more.card_3_title' | t: default: 'Responsibility' }}
-          </h3>
-          <p class="text-foreground/75 text-sm leading-relaxed mb-4">
-            {{ 'pages.home.learn_more.card_3_desc' | t: default: 'Learn about our commitment to sustainability, ethical sourcing, and responsible production.' }}
-          </p>
-          <a href="/pages/responsibility" class="text-primary hover:text-primary/80 font-semibold text-sm">
-            {{ 'pages.home.learn_more.card_3_cta' | t: default: 'Our Commitment' }} →
-          </a>
+  <!-- Featured Products -->
+  {% if section.settings.featured_products_enabled %}
+    <section class="featured-products">
+      <div class="featured-products__wrapper">
+        <h2 class="featured-products__title">{{ section.settings.featured_products_title }}</h2>
+        <div class="featured-products__grid">
+          {% assign featured = section.settings.featured_product_limit %}
+          {% for product in collections['frontpage'].products %}
+            {% if forloop.index0 < featured %}
+              <div class="product-card">
+                {% if product.featured_image %}
+                  <img src="{{ product.featured_image | img_url: '250x250' }}" alt="{{ product.title }}" loading="lazy">
+                {% endif %}
+                <h3>{{ product.title }}</h3>
+                <p class="product-card__price">{{ product.price | money }}</p>
+                <a href="{{ product.url }}" class="product-card__link">View Product</a>
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Legal & Support Section -->
-  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
-    <div class="mx-auto max-w-6xl">
-      <h2 class="font-serif text-2xl md:text-4xl font-bold text-foreground text-start mb-8">
-        {{ 'pages.home.legal.title' | t: default: 'Legal & Support' }}
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        
-        <a href="/pages/general-sales-conditions" class="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center hover:bg-muted/80">
-          <h3 class="font-semibold text-foreground mb-1">{{ 'pages.home.legal.link_1' | t: default: 'General Sales Conditions' }}</h3>
-          <p class="text-sm text-foreground/65">{{ 'pages.home.legal.link_1_desc' | t: default: 'Fabric care instructions' }}</p>
-        </a>
-
-        <a href="/pages/legal-notes" class="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center hover:bg-muted/80">
-          <h3 class="font-semibold text-foreground mb-1">{{ 'pages.home.legal.link_2' | t: default: 'Legal Notes' }}</h3>
-          <p class="text-sm text-foreground/65">{{ 'pages.home.legal.link_2_desc' | t: default: 'Legal information' }}</p>
-        </a>
-
-        <a href="/policies/privacy-policy" class="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center hover:bg-muted/80">
-          <h3 class="font-semibold text-foreground mb-1">{{ 'pages.home.legal.link_3' | t: default: 'Privacy Policy' }}</h3>
-          <p class="text-sm text-foreground/65">{{ 'pages.home.legal.link_3_desc' | t: default: 'Data protection' }}</p>
-        </a>
-
-        <a href="/policies/terms-of-service" class="p-4 bg-muted rounded-lg hover:border-primary/40 border border-border transition-all text-center hover:bg-muted/80">
-          <h3 class="font-semibold text-foreground mb-1">{{ 'pages.home.legal.link_4' | t: default: 'Terms & Conditions' }}</h3>
-          <p class="text-sm text-foreground/65">{{ 'pages.home.legal.link_4_desc' | t: default: 'Service terms' }}</p>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  {% endif %}
 
   <!-- CTA Section -->
-  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
-    <div class="mx-auto max-w-4xl text-center">
-      <h2 class="font-serif text-3xl md:text-4xl font-semibold mb-6 text-balance">
-        {{ 'pages.home.cta.title' | t: default: 'Experience Affordable Luxury' }}
-      </h2>
-      <p class="text-lg mb-8 opacity-95 text-balance max-w-2xl mx-auto leading-relaxed">
-        {{ 'pages.home.cta.description' | t: default: 'Discover premium womenswear that doesn\'t compromise on quality, sustainability, or price. Welcome to Kimhab Ork.' }}
-      </p>
-      <a href="/pages/about" class="inline-block px-8 py-3 bg-primary-foreground text-primary font-semibold rounded-lg hover:shadow-lg hover:opacity-95 transition-all">
-        {{ 'pages.home.cta.button' | t: default: 'Start Exploring' }}
-      </a>
-    </div>
-  </section>
+  {% if section.settings.cta_enabled %}
+    <section class="cta">
+      <div class="cta__wrapper">
+        <h2 class="cta__title">{{ section.settings.cta_title }}</h2>
+        <p class="cta__text">{{ section.settings.cta_text }}</p>
+        <a href="{{ section.settings.cta_url }}" class="cta__btn">{{ section.settings.cta_btn_text }}</a>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- Testimonials Section -->
+  {% if section.settings.testimonials_enabled %}
+    <section class="testimonials">
+      <div class="testimonials__wrapper">
+        <h2 class="testimonials__title">{{ section.settings.testimonials_title }}</h2>
+        <div class="testimonials__grid">
+          {% for i in (1..3) %}
+            {% assign testimonial_title = 'testimonial_' | append: i | append: '_name' %}
+            {% assign testimonial_text = 'testimonial_' | append: i | append: '_text' %}
+            {% if section.settings[testimonial_title] %}
+              <div class="testimonial">
+                <p class="testimonial__text">"{{ section.settings[testimonial_text] }}"</p>
+                <p class="testimonial__author">— {{ section.settings[testimonial_title] }}</p>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
 </main>
+
+{% section 'footer' %}
+
+<style>
+  .home {
+    min-height: 100vh;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-primary, #000) 0%, var(--color-accent, #333) 100%);
+    color: white;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .hero__image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .hero__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hero__content {
+    padding: 2rem;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .hero__cta {
+    display: inline-block;
+    background-color: white;
+    color: var(--color-primary, #000);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .hero__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Featured Collections */
+  .featured-collections {
+    padding: 4rem 2rem;
+  }
+
+  .featured-collections__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .featured-collections__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .featured-collections__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .collection-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collection-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .collection-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .collection-card h3 {
+    padding: 1rem 1rem 0;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .collection-card p {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+    flex: 1;
+  }
+
+  .collection-card__link {
+    margin: 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-accent, #000);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  /* Featured Products */
+  .featured-products {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+
+  .featured-products__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .featured-products__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .featured-products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .product-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  .product-card__price {
+    color: var(--color-accent, #000);
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+
+  .product-card__link {
+    padding: 0.5rem;
+    background-color: var(--color-accent, #000);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* CTA Section */
+  .cta {
+    background-color: var(--color-primary, #000);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .cta__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .cta__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .cta__text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .cta__btn {
+    display: inline-block;
+    background-color: var(--color-accent, #fff);
+    color: var(--color-primary, #000);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+  }
+
+  .cta__btn:hover {
+    transform: scale(1.05);
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 4rem 2rem;
+  }
+
+  .testimonials__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .testimonials__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .testimonial {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-accent, #000);
+  }
+
+  .testimonial__text {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .testimonial__author {
+    font-weight: 600;
+    color: var(--color-accent, #000);
+    margin: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero__wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .hero__title {
+      font-size: 2rem;
+    }
+
+    .hero__subtitle {
+      font-size: 1rem;
+    }
+
+    .featured-collections__title,
+    .featured-products__title,
+    .testimonials__title {
+      font-size: 1.5rem;
+    }
+
+    .cta__title {
+      font-size: 1.75rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Home Page",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero Section"
+    },
+    {
+      "type": "checkbox",
+      "id": "hero_enabled",
+      "label": "Enable Hero Section",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Hero Title",
+      "default": "Welcome to Our Store"
+    },
+    {
+      "type": "text",
+      "id": "hero_subtitle",
+      "label": "Hero Subtitle",
+      "default": "Discover our amazing collection"
+    },
+    {
+      "type": "text",
+      "id": "hero_cta_text",
+      "label": "CTA Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "hero_cta_url",
+      "label": "CTA Button URL"
+    },
+    {
+      "type": "header",
+      "content": "Featured Collections"
+    },
+    {
+      "type": "checkbox",
+      "id": "featured_collections_enabled",
+      "label": "Enable Featured Collections",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "featured_collections_title",
+      "label": "Featured Collections Title",
+      "default": "Shop by Collection"
+    },
+    {
+      "type": "header",
+      "content": "Featured Products"
+    },
+    {
+      "type": "checkbox",
+      "id": "featured_products_enabled",
+      "label": "Enable Featured Products",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "featured_products_title",
+      "label": "Featured Products Title",
+      "default": "Best Sellers"
+    },
+    {
+      "type": "range",
+      "id": "featured_product_limit",
+      "min": 4,
+      "max": 12,
+      "step": 4,
+      "unit": "prod",
+      "label": "Number of Products to Show",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "CTA Section"
+    },
+    {
+      "type": "checkbox",
+      "id": "cta_enabled",
+      "label": "Enable CTA Section",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "cta_title",
+      "label": "CTA Title",
+      "default": "Join Our Community"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Get exclusive offers and updates"
+    },
+    {
+      "type": "text",
+      "id": "cta_btn_text",
+      "label": "CTA Button Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "header",
+      "content": "Testimonials"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonials_enabled",
+      "label": "Enable Testimonials",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "testimonials_title",
+      "label": "Testimonials Title",
+      "default": "What Our Customers Say"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_1_name",
+      "label": "Testimonial 1 - Name",
+      "default": "John Doe"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_1_text",
+      "label": "Testimonial 1 - Quote",
+      "default": "This is an amazing product!"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_2_name",
+      "label": "Testimonial 2 - Name",
+      "default": "Jane Smith"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_2_text",
+      "label": "Testimonial 2 - Quote",
+      "default": "Excellent quality and service."
+    },
+    {
+      "type": "text",
+      "id": "testimonial_3_name",
+      "label": "Testimonial 3 - Name",
+      "default": "Mike Johnson"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_3_text",
+      "label": "Testimonial 3 - Quote",
+      "default": "Highly recommend to everyone!"
+    }
+  ]
+}
+{% endschema %}
