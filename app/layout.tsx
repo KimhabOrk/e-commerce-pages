@@ -168,9 +168,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly < {
+}: Readonly<{
   children: React.ReactNode
-} > ) {
+}>) {
   return (
     <html suppressHydrationWarning>
       <body className={`font-sans antialiased`}>

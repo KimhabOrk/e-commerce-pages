@@ -6,11 +6,11 @@
     "customMade": "ឡើងក្រោយដូច្នេះ",
     "careGuides": "ឯកសារថែរក្សា",
     "helpsAndFaqs": "ជំនួយ និង សំណួរដែលគេសួរញឹកញាប់",
-    "responsibility": "ទំនួលខ責",
+    "responsibility": "ទំនួលខ្責ត្រូវ",
     "legal": "ច្បាប់",
     "mono": "Mono",
     "evasion": "Evasion",
-    "contact": "ติดต่อយើងខ្ញុំ"
+    "contact": "ទាក់ទងយើងខ្ញុំ"
   },
   "footer": {
     "shop": "ហាង",
@@ -19,7 +19,7 @@
     "newArrivals": "ការមកដល់ថ្មីៗ",
     "company": "ក្រុមហ៊ុន",
     "creativeDirector": "នាយកដ្ឋានច្នៃប្រឌិត",
-    "responsibilities": "ទំនួលខ្ იាមួយ",
+    "responsibilities": "ទំនួលខ្責ត្រូវ",
     "service": "សេវា",
     "sizeGuide": "ឯកសារណែនាំទំហំ",
     "shippingReturn": "ការដឹក ត្រឡប់",
@@ -28,7 +28,14 @@
     "generalSalesConditions": "លក្ខខណ្ឌលក់ទូទៅ",
     "privacyPolicy": "គោលការណ៍ឯកជនភាព",
     "termsOfService": "លក្ខខណ្ឌសេវាកម្ម",
-    "cookiePolicy": "គោលការណ៍ខូគី"
+    "cookiePolicy": "គោលការណ៍ខូគី",
+    "aboutUs": "អំពីយើងខ្ញុំ",
+    "contactUs": "ទាក់ទងយើងខ្ញុំ",
+    "customMade": "ឡើងក្រោយដូច្នេះ",
+    "careGuides": "ឯកសារថែរក្សា",
+    "helps": "ជំនួយ និង សំណួរដែលគេសួរញឹកញាប់",
+    "tagline": "ម៉ាក់សម្លៀកបំពាក់នារីប្រឌិតប្រដូច មានតម្លៃថោក។",
+    "copyright": "សិទ្ធិលក្ខណ៍ទាំងអស់រក្សាទុក។"
   },
   "common": {
     "language": "ភាសា",
@@ -38,12 +45,16 @@
   },
   "pages": {
     "home": {
-      "title": "Kimhab Ork - ស្ទើរលួយសម្លៀកបំពាក់នារី",
+      "title": "Kimhab Ork - សម្លៀកបំពាក់នារីប្រឌិតប្រដូច មានតម្លៃថោក",
       "description": "ស្វាគមន៍ផលិតផលម៉ាដដែលមានគុណភាពលម្អិតក្នុងតម្លៃដែលអាចទទួលយកបាន"
     },
     "about": {
       "title": "អំពីយើងខ្ញុំ",
       "description": "ស្វាគមន៍ចក្ខុវិស័យ និងរឿងរ៉ាវរបស់ Kimhab Ork"
+    },
+    "creativeDirtor": {
+      "title": "នាយកដ្ឋានច្នៃប្រឌិត",
+      "description": "ជួបលោកអ្នកក្រោយបច្ចេកដែលនៅពីក្រោយ Kimhab Ork"
     },
     "customMade": {
       "title": "ឡើងក្រោយដូច្នេះ",
@@ -56,6 +67,20 @@
     "helps": {
       "title": "ជំនួយ និង សំណួរដែលគេសួរញឹកញាប់",
       "description": "រកឃើញចម្លើយចំពោះសំណួររបស់អ្នក"
+    },
+    "responsibility": {
+      "title": "ទំនួលខ្責ត្រូវ",
+      "description": "ការប្តេជ្ញាធ្វើឱ្យអស់រីក ក្នុងភាពស៊ីសង្វាក់គ្នា"
+    },
+    "legal": {
+      "title": "ច្បាប់",
+      "description": "ព័ត៌មាននិងគោលការណ៍ច្បាប់"
+    },
+    "contact": {
+      "title": "ទាក់ទងយើងខ្ញុំ",
+      "description": "ទាក់ទងក្រុមរបស់យើងខ្ញុំ"
     }
+  }
+}
   }
 }

@@ -4,51 +4,59 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter, usePathname, useLocale } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 type FooterSection = {
   title: string;
   links: { label: string; href: string }[];
 };
 
-const footerSections: FooterSection[] = [
-  {
-    title: "Shop",
-    links: [
-      { label: "All Products", href: "/shop" },
-      { label: "Collections", href: "/collections" },
-      { label: "New Arrivals", href: "/shop?sort=newest" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { label: "About Us", href: "/company/about" },
-      { label: "Creative Director", href: "/company/creative-director" },
-      { label: "Responsibilities", href: "/company/responsibility" },
-      { label: "Contact Us", href: "/contact" },
-    ],
-  },
-  {
-    title: "Service",
-    links: [
-      { label: "Custom Made", href: "/services/custom-made" },
-      { label: "Care Guides", href: "/services/care-guides" },
-      { label: "Size Guide", href: "/services/size" },
-      { label: "Shipping & Return", href: "/services/orders" },
-      { label: "Helps & FAQs", href: "/services/helps" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { label: "Legal Notes", href: "/legal/notes" },
-      { label: "General Sales Conditions", href: "/legal/sales" },
-      { label: "Privacy Policy", href: "/legal/privacy" },
-      { label: "Terms of Service", href: "/legal/terms" },
-    ],
-  },
-];
+export function Footer() {
+  const locale = useLocale();
+  const t = useTranslations('footer');
+
+  const footerSections: FooterSection[] = [
+    {
+      title: t('shop'),
+      links: [
+        { label: t('allProducts'), href: `/${locale}/shop` },
+        { label: t('collections'), href: `/${locale}/collections` },
+        { label: t('newArrivals'), href: `/${locale}/shop?sort=newest` },
+      ],
+    },
+    {
+      title: t('company'),
+      links: [
+        { label: t('aboutUs'), href: `/${locale}/company/about` },
+        { label: t('creativeDirector'), href: `/${locale}/company/creative-director` },
+        { label: t('responsibilities'), href: `/${locale}/company/responsibility` },
+        { label: t('contactUs'), href: `/${locale}/contact` },
+      ],
+    },
+    {
+      title: t('service'),
+      links: [
+        { label: t('customMade'), href: `/${locale}/services/custom-made` },
+        { label: t('careGuides'), href: `/${locale}/services/care-guides` },
+        { label: t('sizeGuide'), href: `/${locale}/services/size` },
+        { label: t('shippingReturn'), href: `/${locale}/services/orders` },
+        { label: t('helps'), href: `/${locale}/services/helps` },
+      ],
+    },
+    {
+      title: t('legal'),
+      links: [
+        { label: t('legalNotes'), href: `/${locale}/legal/notes` },
+        { label: t('generalSalesConditions'), href: `/${locale}/legal/sales` },
+        { label: t('privacyPolicy'), href: `/${locale}/legal/privacy` },
+        { label: t('termsOfService'), href: `/${locale}/legal/terms` },
+      ],
+    },
+  ];
+
+  return <FooterContent footerSections={footerSections} />;
+}
 
 function FooterSection({
   section,
@@ -98,7 +106,7 @@ function FooterSection({
   );
 }
 
-export function Footer() {
+function FooterContent({ footerSections }: { footerSections: FooterSection[] }) {
   const [openSection, setOpenSection] = useState<string | null>(null);
   const pathname = usePathname();
 
@@ -128,7 +136,7 @@ export function Footer() {
               alt="Logo"
               className="h-auto w-[198px] md:w-32 object-cover mb-3 md:mb-5"
             />
-            <p className="text-sm md:text-lg">Affordable Luxury Womenswear Brand.</p>
+            <p className="text-sm md:text-lg">{t('tagline')}</p>
           </div>
         </div>
 
@@ -189,7 +197,7 @@ export function Footer() {
           {/* Copyright */}
           <div className="pt-4 md:pt-6 text-center mx-auto flex justify-center items-center">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Kimhab Ork. All rights reserved.
+              &copy; {new Date().getFullYear()} Kimhab Ork. {t('copyright')}
             </p>
           </div>
         </div>

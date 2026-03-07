@@ -28,7 +28,14 @@
     "generalSalesConditions": "General Sales Conditions",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
-    "cookiePolicy": "Cookie Policy"
+    "cookiePolicy": "Cookie Policy",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "customMade": "Custom Made",
+    "careGuides": "Care Guides",
+    "helps": "Helps & FAQs",
+    "tagline": "Affordable Luxury Womenswear Brand.",
+    "copyright": "All rights reserved."
   },
   "common": {
     "language": "Language",
@@ -45,6 +52,10 @@
       "title": "About Us",
       "description": "Learn about Kimhab Ork's vision and story"
     },
+    "creativeDirtor": {
+      "title": "Creative Director",
+      "description": "Meet the visionary behind Kimhab Ork"
+    },
     "customMade": {
       "title": "Custom Made",
       "description": "Create your perfect piece with our bespoke tailoring service"
@@ -56,6 +67,18 @@
     "helps": {
       "title": "Helps & FAQs",
       "description": "Find answers to your questions"
+    },
+    "responsibility": {
+      "title": "Responsibility",
+      "description": "Our commitment to sustainability and ethics"
+    },
+    "legal": {
+      "title": "Legal",
+      "description": "Legal information and policies"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with our team"
     }
   }
 }

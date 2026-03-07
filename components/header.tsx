@@ -45,7 +45,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navigationLinks.map((link) => (
               <Link
                 key={link.href}
@@ -55,6 +55,7 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,6 +85,9 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
+            <div className="px-2 py-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         )}
       </nav>
