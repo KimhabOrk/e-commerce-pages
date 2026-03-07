@@ -40,10 +40,10 @@ function FAQCard({ id, title, content }: { id: string;title: string;content: str
   return (
     <details className="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
       <summary className="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
-        <div className="flex gap-6">
+        <div className="flex gap-3">
           <div className="flex-shrink-0">
-            <div className="flex items-center justify-center h-5 w-5 rounded-md bg-primary/70 text-white">
-              <span className="text-md font-semibold">{id}</span>
+            <div className="flex items-center justify-center h-7 w-7 rounded-md bg-primary/70 text-white">
+              <span className="text-sm font-semibold">{id}</span>
             </div>
           </div>
           <h3 className="text-lg font-semibold text-foreground mb-2">

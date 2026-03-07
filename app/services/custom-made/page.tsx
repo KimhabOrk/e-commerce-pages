@@ -84,7 +84,7 @@ export default function CustomMadePage() {
       </section>
       {/* Right Side - Content */}
       <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
-        <div className="flex flex-col justify-center items-center text-center mx-auto max-w-6xl gap-6 md:gap-10">
+        <div className="flex flex-col justify-center items-center text-center mx-auto max-w-8xl gap-6 md:gap-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-serif font-bold uppercase">
             Custom Made
           </h1>
@@ -146,13 +146,13 @@ export default function CustomMadePage() {
             {processSteps.map((step, index) => (
               <Card
                 key={index}
-                className="bg-muted/30 flex mx-auto justify-center items-center text-center"
+                className="bg-muted/40 flex mx-auto justify-center items-center text-center"
               >
                 <CardHeader className="flex flex-col mx-auto justify-center items-center text-center">
                   <div className="mb-4 w-8 h-8 md:w-12 md:h-12 flex items-center justify-center text-primary group-hover:text-primary transition-colors">
                     {step.icon}
                   </div>
-                  <CardTitle className="font-serif text-lg md:text-xl font-semibold text-white uppercase tracking-wide text-balance">
+                  <CardTitle className="font-serif text-lg md:text-xl font-semibold text-white uppercase tracking-wide">
                     {step.title}
                   </CardTitle>
                 </CardHeader>
