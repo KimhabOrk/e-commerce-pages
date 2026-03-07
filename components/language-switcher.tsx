@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useLocale, usePathname } from 'next-intl'
+import { useLocale, usePathname } from 'next-intl/client'
 import Link from 'next/link'
 import { ChevronDown } from 'lucide-react'
 
