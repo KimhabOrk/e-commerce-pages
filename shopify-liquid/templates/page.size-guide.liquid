@@ -1,0 +1,404 @@
+{% section 'header' %}
+
+<main class="size-guide-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+        {{ page.title | default: 'Size Guide' }}
+      </h1>
+      <p class="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+        {{ 'pages.size_guide.hero_desc' | t: default: 'Find your perfect fit with our comprehensive sizing information and measurement guides.' }}
+      </p>
+    </div>
+  </section>
+
+  <!-- How to Measure Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.size_guide.measure_title' | t: default: 'How to Measure Yourself' }}
+      </h2>
+      
+      <div class="space-y-8">
+        
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold">
+              1
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.size_guide.measure_1_title' | t: default: 'Bust' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.size_guide.measure_1_desc' | t: default: 'Measure around the fullest part of your bust. Keep the tape measure parallel to the ground and snug but not tight.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold">
+              2
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.size_guide.measure_2_title' | t: default: 'Waist' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.size_guide.measure_2_desc' | t: default: 'Measure around your natural waistline, typically the narrowest part. Don''t pull the tape too tight.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold">
+              3
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.size_guide.measure_3_title' | t: default: 'Hip' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.size_guide.measure_3_desc' | t: default: 'Measure around the fullest part of your hips and buttocks. Keep the tape measure level and parallel to the ground.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold">
+              4
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.size_guide.measure_4_title' | t: default: 'Length' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.size_guide.measure_4_desc' | t: default: 'For dresses and tops, measure from your shoulder down to where you want the garment to end (typically knee or ankle for dresses).' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold">
+              5
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.size_guide.measure_5_title' | t: default: 'Sleeve Length' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.size_guide.measure_5_desc' | t: default: 'Measure from the center back neck across the shoulder and down your arm to the wrist for sleeve length.' }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Size Chart Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-5xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.size_guide.chart_title' | t: default: 'International Size Chart' }}
+      </h2>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="bg-primary text-background">
+              <th class="border border-border px-4 py-3 text-left font-semibold">
+                {{ 'pages.size_guide.chart_size' | t: default: 'Size' }}
+              </th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">
+                {{ 'pages.size_guide.chart_xs' | t: default: 'XS' }}
+              </th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">
+                {{ 'pages.size_guide.chart_s' | t: default: 'S' }}
+              </th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">
+                {{ 'pages.size_guide.chart_m' | t: default: 'M' }}
+              </th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">
+                {{ 'pages.size_guide.chart_l' | t: default: 'L' }}
+              </th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">
+                {{ 'pages.size_guide.chart_xl' | t: default: 'XL' }}
+              </th>
+              <th class="border border-border px-4 py-3 text-left font-semibold">
+                {{ 'pages.size_guide.chart_xxl' | t: default: 'XXL' }}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-border/40 hover:bg-muted/50">
+              <td class="border border-border px-4 py-3 font-semibold text-foreground">
+                {{ 'pages.size_guide.chart_bust_label' | t: default: 'Bust (in)' }}
+              </td>
+              <td class="border border-border px-4 py-3 text-foreground/80">31-32</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">33-34</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">35-36</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">37-39</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">40-42</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">43-45</td>
+            </tr>
+            <tr class="border-b border-border/40 hover:bg-muted/50">
+              <td class="border border-border px-4 py-3 font-semibold text-foreground">
+                {{ 'pages.size_guide.chart_bust_cm' | t: default: 'Bust (cm)' }}
+              </td>
+              <td class="border border-border px-4 py-3 text-foreground/80">79-81</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">84-86</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">89-91</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">94-99</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">102-107</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">109-114</td>
+            </tr>
+            <tr class="border-b border-border/40 hover:bg-muted/50">
+              <td class="border border-border px-4 py-3 font-semibold text-foreground">
+                {{ 'pages.size_guide.chart_waist_label' | t: default: 'Waist (in)' }}
+              </td>
+              <td class="border border-border px-4 py-3 text-foreground/80">24-25</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">26-27</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">28-29</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">30-32</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">33-35</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">36-38</td>
+            </tr>
+            <tr class="border-b border-border/40 hover:bg-muted/50">
+              <td class="border border-border px-4 py-3 font-semibold text-foreground">
+                {{ 'pages.size_guide.chart_waist_cm' | t: default: 'Waist (cm)' }}
+              </td>
+              <td class="border border-border px-4 py-3 text-foreground/80">61-63</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">66-68</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">71-74</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">76-81</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">84-89</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">91-96</td>
+            </tr>
+            <tr class="border-b border-border/40 hover:bg-muted/50">
+              <td class="border border-border px-4 py-3 font-semibold text-foreground">
+                {{ 'pages.size_guide.chart_hip_label' | t: default: 'Hip (in)' }}
+              </td>
+              <td class="border border-border px-4 py-3 text-foreground/80">34-35</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">36-37</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">38-39</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">40-42</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">43-45</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">46-48</td>
+            </tr>
+            <tr class="hover:bg-muted/50">
+              <td class="border border-border px-4 py-3 font-semibold text-foreground">
+                {{ 'pages.size_guide.chart_hip_cm' | t: default: 'Hip (cm)' }}
+              </td>
+              <td class="border border-border px-4 py-3 text-foreground/80">86-89</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">91-94</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">97-99</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">102-107</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">109-114</td>
+              <td class="border border-border px-4 py-3 text-foreground/80">117-122</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fit & Style Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.size_guide.fit_title' | t: default: 'Fit & Style Information' }}
+      </h2>
+      
+      <div class="space-y-6">
+        <div class="bg-muted p-6 rounded-lg border border-border/40">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.size_guide.fit_fitted_title' | t: default: 'Fitted' }}
+          </h3>
+          <p class="text-foreground/70 leading-relaxed">
+            {{ 'pages.size_guide.fit_fitted_desc' | t: default: 'A close-fitting silhouette that follows your body contours. Perfect for highlighting your shape. Recommend sizing true to size or one size down for a more dramatic fit.' }}
+          </p>
+        </div>
+
+        <div class="bg-muted p-6 rounded-lg border border-border/40">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.size_guide.fit_regular_title' | t: default: 'Regular' }}
+          </h3>
+          <p class="text-foreground/70 leading-relaxed">
+            {{ 'pages.size_guide.fit_regular_desc' | t: default: 'Our standard fit offering comfort and shape. This is our most versatile silhouette. Recommend sizing true to size for optimal fit.' }}
+          </p>
+        </div>
+
+        <div class="bg-muted p-6 rounded-lg border border-border/40">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.size_guide.fit_relaxed_title' | t: default: 'Relaxed' }}
+          </h3>
+          <p class="text-foreground/70 leading-relaxed">
+            {{ 'pages.size_guide.fit_relaxed_desc' | t: default: 'A looser, more comfortable fit ideal for effortless style. Provides room for movement. Consider sizing down one size if you prefer a more fitted relaxed look.' }}
+          </p>
+        </div>
+
+        <div class="bg-muted p-6 rounded-lg border border-border/40">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.size_guide.fit_oversized_title' | t: default: 'Oversized' }}
+          </h3>
+          <p class="text-foreground/70 leading-relaxed">
+            {{ 'pages.size_guide.fit_oversized_desc' | t: default: 'An intentionally loose, voluminous silhouette for a bold statement. Perfect for layering. We recommend sizing down for a more proportional oversized look.' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.size_guide.comparison_title' | t: default: 'Comparing to a Garment You Own' }}
+      </h2>
+      
+      <div class="bg-muted p-8 rounded-lg border border-border/40">
+        <p class="text-foreground/70 leading-relaxed mb-6">
+          {{ 'pages.size_guide.comparison_desc' | t: default: 'The easiest way to ensure the perfect fit is to compare our measurements with a garment you already own and love. Follow these steps:' }}
+        </p>
+        
+        <ol class="space-y-4 list-decimal list-inside">
+          <li class="text-foreground/70">
+            <span class="font-semibold">{{ 'pages.size_guide.comparison_1' | t: default: 'Lay the garment flat on a smooth surface.' }}</span>
+          </li>
+          <li class="text-foreground/70">
+            <span class="font-semibold">{{ 'pages.size_guide.comparison_2' | t: default: 'Measure from seam to seam across the chest.' }}</span>
+          </li>
+          <li class="text-foreground/70">
+            <span class="font-semibold">{{ 'pages.size_guide.comparison_3' | t: default: 'Compare these measurements with our size chart.' }}</span>
+          </li>
+          <li class="text-foreground/70">
+            <span class="font-semibold">{{ 'pages.size_guide.comparison_4' | t: default: 'Choose the size that most closely matches.' }}</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Helpful Tips Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.size_guide.tips_title' | t: default: 'Sizing Tips & Recommendations' }}
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="flex gap-4">
+          <span class="text-2xl text-primary">✓</span>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">
+              {{ 'pages.size_guide.tip_1_title' | t: default: 'Check Product Descriptions' }}
+            </h3>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.size_guide.tip_1_desc' | t: default: 'Many products include specific fit details in their descriptions that may affect sizing.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <span class="text-2xl text-primary">✓</span>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">
+              {{ 'pages.size_guide.tip_2_title' | t: default: 'Read Customer Reviews' }}
+            </h3>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.size_guide.tip_2_desc' | t: default: 'Customer reviews often mention if items run small, large, or true to size.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <span class="text-2xl text-primary">✓</span>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">
+              {{ 'pages.size_guide.tip_3_title' | t: default: 'Between Sizes' }}
+            </h3>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.size_guide.tip_3_desc' | t: default: 'If you''re between sizes, choose based on fit preference: smaller for fitted, larger for relaxed.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <span class="text-2xl text-primary">✓</span>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">
+              {{ 'pages.size_guide.tip_4_title' | t: default: 'Fabric Matters' }}
+            </h3>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.size_guide.tip_4_desc' | t: default: 'Different fabrics may fit slightly differently. Stretch fabrics allow more flexibility in sizing.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <span class="text-2xl text-primary">✓</span>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">
+              {{ 'pages.size_guide.tip_5_title' | t: default: 'Shrinkage Considerations' }}
+            </h3>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.size_guide.tip_5_desc' | t: default: 'Natural fabrics may shrink slightly. Check care instructions and consider this when sizing.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <span class="text-2xl text-primary">✓</span>
+          <div>
+            <h3 class="font-semibold text-foreground mb-2">
+              {{ 'pages.size_guide.tip_6_title' | t: default: 'Contact Customer Service' }}
+            </h3>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.size_guide.tip_6_desc' | t: default: 'Our team is happy to help if you''re unsure about sizing for a specific item.' }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-primary text-background">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-serif text-2xl md:text-3xl font-bold mb-4">
+        {{ 'pages.size_guide.cta_title' | t: default: 'Still Not Sure About Your Size?' }}
+      </h2>
+      <p class="text-background/90 mb-8 leading-relaxed">
+        {{ 'pages.size_guide.cta_desc' | t: default: 'Reach out to our team for personalized sizing advice.' }}
+      </p>
+      <a href="{{ 'contact' | append: '/' }}" class="inline-block bg-background text-primary px-8 py-3 rounded font-semibold hover:bg-background/90 transition-colors">
+        {{ 'pages.size_guide.cta_button' | t: default: 'Get Help Sizing' }}
+      </a>
+    </div>
+  </section>
+
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .size-guide-page {
+    min-height: 100vh;
+  }
+
+  table {
+    background-color: white;
+  }
+</style>

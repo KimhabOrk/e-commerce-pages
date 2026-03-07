@@ -1,0 +1,359 @@
+{% section 'header' %}
+
+<main class="orders-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+        {{ page.title | default: 'Orders' }}
+      </h1>
+      <p class="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+        {{ 'pages.orders.hero_desc' | t: default: 'Learn everything you need to know about placing, tracking, and managing your orders.' }}
+      </p>
+    </div>
+  </section>
+
+  <!-- Placing an Order Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.orders.placing_title' | t: default: 'Placing an Order' }}
+      </h2>
+      
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-background font-bold text-sm">
+              1
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.orders.placing_1_title' | t: default: 'Browse Our Collections' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.orders.placing_1_desc' | t: default: 'Explore our curated collections, new arrivals, and seasonal pieces. Each product page includes detailed descriptions, sizing information, and care instructions.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-background font-bold text-sm">
+              2
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.orders.placing_2_title' | t: default: 'Select Size and Add to Cart' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.orders.placing_2_desc' | t: default: 'Choose your desired size using our size guide. If you''re unsure about sizing, refer to measurements and customer reviews. Add items to your cart to continue shopping or proceed to checkout.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-background font-bold text-sm">
+              3
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.orders.placing_3_title' | t: default: 'Proceed to Checkout' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.orders.placing_3_desc' | t: default: 'Review your cart and proceed to checkout. You can create an account or continue as a guest. Account creation allows you to save your preferences and track orders easily.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-background font-bold text-sm">
+              4
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.orders.placing_4_title' | t: default: 'Enter Shipping Information' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.orders.placing_4_desc' | t: default: 'Provide accurate shipping address and select your preferred shipping method. Shipping costs are calculated based on destination and delivery speed.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-background font-bold text-sm">
+              5
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.orders.placing_5_title' | t: default: 'Complete Payment' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.orders.placing_5_desc' | t: default: 'Choose your payment method and complete your purchase. All payments are secure and encrypted. You''ll receive an order confirmation email immediately.' }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shipping Options Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.orders.shipping_title' | t: default: 'Shipping Options & Delivery Times' }}
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="border border-border/70 rounded-lg p-6">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.orders.shipping_standard_title' | t: default: 'Standard Shipping' }}
+          </h3>
+          <p class="text-foreground/70 text-sm leading-relaxed mb-4">
+            {{ 'pages.orders.shipping_standard_desc' | t: default: 'Economical shipping option for non-urgent orders.' }}
+          </p>
+          <ul class="space-y-2 text-sm text-foreground/70">
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_standard_time' | t: default: 'Delivery: 5-7 business days' }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_standard_price' | t: default: 'Free on orders over $100' }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_standard_feature' | t: default: 'Order tracking included' }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="border border-border/70 rounded-lg p-6">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.orders.shipping_express_title' | t: default: 'Express Shipping' }}
+          </h3>
+          <p class="text-foreground/70 text-sm leading-relaxed mb-4">
+            {{ 'pages.orders.shipping_express_desc' | t: default: 'Faster delivery for urgent orders.' }}
+          </p>
+          <ul class="space-y-2 text-sm text-foreground/70">
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_express_time' | t: default: 'Delivery: 2-3 business days' }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_express_price' | t: default: 'Additional fee applies' }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_express_feature' | t: default: 'Signature required for delivery' }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="border border-border/70 rounded-lg p-6">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.orders.shipping_overnight_title' | t: default: 'Overnight Shipping' }}
+          </h3>
+          <p class="text-foreground/70 text-sm leading-relaxed mb-4">
+            {{ 'pages.orders.shipping_overnight_desc' | t: default: 'Premium option for next-day delivery.' }}
+          </p>
+          <ul class="space-y-2 text-sm text-foreground/70">
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_overnight_time' | t: default: 'Delivery: Next business day' }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_overnight_price' | t: default: 'Premium shipping fee' }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_overnight_feature' | t: default: 'Full tracking and insurance' }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="border border-border/70 rounded-lg p-6">
+          <h3 class="font-semibold text-lg text-foreground mb-3">
+            {{ 'pages.orders.shipping_intl_title' | t: default: 'International Shipping' }}
+          </h3>
+          <p class="text-foreground/70 text-sm leading-relaxed mb-4">
+            {{ 'pages.orders.shipping_intl_desc' | t: default: 'Worldwide delivery with tracking.' }}
+          </p>
+          <ul class="space-y-2 text-sm text-foreground/70">
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_intl_time' | t: default: 'Delivery: 10-25 business days' }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_intl_price' | t: default: 'Based on destination and weight' }}</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary font-semibold">•</span>
+              <span>{{ 'pages.orders.shipping_intl_feature' | t: default: 'Customs and duties calculated' }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Status Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.orders.status_title' | t: default: 'Order Status & Tracking' }}
+      </h2>
+      
+      <div class="bg-muted p-8 rounded-lg border border-border/40 mb-8">
+        <h3 class="font-semibold text-lg text-foreground mb-4">
+          {{ 'pages.orders.status_desc_title' | t: default: 'Track Your Order' }}
+        </h3>
+        <p class="text-foreground/70 leading-relaxed">
+          {{ 'pages.orders.status_desc' | t: default: 'After your order ships, you''ll receive a tracking number via email. Use this number to monitor your shipment in real-time. Orders typically go through the following stages: Processing, Shipped, In Transit, and Delivered.' }}
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 mt-1">
+            <div class="w-3 h-3 rounded-full bg-primary"></div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-foreground">
+              {{ 'pages.orders.status_processing' | t: default: 'Processing' }}
+            </h4>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.orders.status_processing_desc' | t: default: 'Your order is being prepared for shipment (typically 1-2 business days).' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 mt-1">
+            <div class="w-3 h-3 rounded-full bg-primary"></div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-foreground">
+              {{ 'pages.orders.status_shipped' | t: default: 'Shipped' }}
+            </h4>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.orders.status_shipped_desc' | t: default: 'Your order has left our warehouse and is on its way to you.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 mt-1">
+            <div class="w-3 h-3 rounded-full bg-primary"></div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-foreground">
+              {{ 'pages.orders.status_transit' | t: default: 'In Transit' }}
+            </h4>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.orders.status_transit_desc' | t: default: 'Your package is in transit with the carrier. Check tracking for estimated delivery.' }}
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="flex-shrink-0 mt-1">
+            <div class="w-3 h-3 rounded-full bg-primary"></div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-foreground">
+              {{ 'pages.orders.status_delivered' | t: default: 'Delivered' }}
+            </h4>
+            <p class="text-foreground/70 text-sm">
+              {{ 'pages.orders.status_delivered_desc' | t: default: 'Your order has been delivered successfully.' }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Important Info Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.orders.important_title' | t: default: 'Important Information' }}
+      </h2>
+      
+      <div class="space-y-6">
+        <div class="border-l-4 border-primary pl-6 py-2">
+          <h3 class="font-semibold text-foreground mb-2">
+            {{ 'pages.orders.important_1_title' | t: default: 'Order Confirmation' }}
+          </h3>
+          <p class="text-foreground/70 text-sm">
+            {{ 'pages.orders.important_1_desc' | t: default: 'Check your email (including spam folder) for order confirmation immediately after purchase. If not received, contact us.' }}
+          </p>
+        </div>
+
+        <div class="border-l-4 border-primary pl-6 py-2">
+          <h3 class="font-semibold text-foreground mb-2">
+            {{ 'pages.orders.important_2_title' | t: default: 'Address Verification' }}
+          </h3>
+          <p class="text-foreground/70 text-sm">
+            {{ 'pages.orders.important_2_desc' | t: default: 'Ensure your shipping address is correct. We''re not responsible for packages delivered to incorrect addresses provided at checkout.' }}
+          </p>
+        </div>
+
+        <div class="border-l-4 border-primary pl-6 py-2">
+          <h3 class="font-semibold text-foreground mb-2">
+            {{ 'pages.orders.important_3_title' | t: default: 'Customs & Duties' }}
+          </h3>
+          <p class="text-foreground/70 text-sm">
+            {{ 'pages.orders.important_3_desc' | t: default: 'International customers may be responsible for customs duties and taxes. These are not included in our quoted shipping costs.' }}
+          </p>
+        </div>
+
+        <div class="border-l-4 border-primary pl-6 py-2">
+          <h3 class="font-semibold text-foreground mb-2">
+            {{ 'pages.orders.important_4_title' | t: default: 'Order Modifications' }}
+          </h3>
+          <p class="text-foreground/70 text-sm">
+            {{ 'pages.orders.important_4_desc' | t: default: 'Orders can only be modified within 24 hours of purchase. After that, you may cancel and place a new order.' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-primary text-background">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-serif text-2xl md:text-3xl font-bold mb-4">
+        {{ 'pages.orders.cta_title' | t: default: 'Need Help With Your Order?' }}
+      </h2>
+      <p class="text-background/90 mb-8 leading-relaxed">
+        {{ 'pages.orders.cta_desc' | t: default: 'Our customer service team is available to assist you with any order inquiries.' }}
+      </p>
+      <a href="{{ 'contact' | append: '/' }}" class="inline-block bg-background text-primary px-8 py-3 rounded font-semibold hover:bg-background/90 transition-colors">
+        {{ 'pages.orders.cta_button' | t: default: 'Contact Support' }}
+      </a>
+    </div>
+  </section>
+
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .orders-page {
+    min-height: 100vh;
+  }
+</style>

@@ -1,0 +1,182 @@
+{% section 'header' %}
+
+<main class="legal-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
+        {{ page.title | default: 'Terms & Conditions' }}
+      </h1>
+      <p class="text-sm text-foreground/60">
+        {{ 'pages.legal.last_updated' | t: default: 'Last updated:' }} <time datetime="2024-01-01">January 1, 2024</time>
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl prose prose-sm max-w-none">
+      
+      <h2 class="font-serif text-2xl font-bold text-foreground mt-0 mb-4">
+        {{ 'pages.terms.intro_title' | t: default: 'Terms of Service' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.intro' | t: default: 'These Terms of Service ("Terms") are a binding agreement between you and Kimhab Ork ("Company", "we", "our", "us"). By accessing or using our website www.kimhab-ork.com and services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our Service.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.use_title' | t: default: 'Use License' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.use_desc' | t: default: 'Permission is granted to temporarily download one copy of the materials (information or software) on Kimhab Ork''s website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:' }}
+      </p>
+
+      <ul class="space-y-2 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.terms.use_1' | t: default: 'Modify or copy the materials' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.use_2' | t: default: 'Use the materials for any commercial purpose' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.use_3' | t: default: 'Attempt to decompile or reverse engineer any software contained on the website' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.use_4' | t: default: 'Remove any copyright or proprietary notations' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.use_5' | t: default: 'Transfer the materials to another person or "mirror" the materials on any other server' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.product_title' | t: default: 'Product Information' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.product_desc' | t: default: 'We strive to provide accurate descriptions and images of our products on the website. However, we do not warrant that product descriptions, pricing, or other content on our site is accurate, complete, reliable, current, or error-free. If a product offered by Kimhab Ork is not as described, your sole remedy is to return it in unused condition.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.orders_title' | t: default: 'Order Acceptance & Terms' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.terms.orders_intro' | t: default: 'Placing an order on our website constitutes an offer to purchase our products. We reserve the right to:' }}
+      </p>
+
+      <ul class="space-y-2 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.terms.orders_1' | t: default: 'Refuse or cancel any order' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.orders_2' | t: default: 'Limit order quantities' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.orders_3' | t: default: 'Discontinue any product at any time' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.orders_4' | t: default: 'Correct pricing or product information errors' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.pricing_title' | t: default: 'Pricing & Availability' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.pricing_desc' | t: default: 'All prices are subject to change without notice. We reserve the right to limit quantities and discontinue any product. If a product is not available, we will notify you and refund any payment received. Prices are in the currency displayed on the website at the time of purchase.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.payment_title' | t: default: 'Payment Terms' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.payment_desc' | t: default: 'Payment must be received in full before your order is dispatched. We accept all major credit and debit cards, PayPal, Apple Pay, and Google Pay. All payment transactions are processed securely. By providing payment information, you represent that you are authorized to make the purchase.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.shipping_title' | t: default: 'Shipping' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.shipping_desc' | t: default: 'Shipping costs and delivery times are estimated. Kimhab Ork is not responsible for delays caused by shipping carriers or customs. Risk of loss passes to you upon delivery to the shipping carrier. We recommend purchasing shipping insurance for valuable orders.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.returns_title' | t: default: 'Returns & Refunds' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.returns_desc' | t: default: 'Our return policy is detailed on our Returns & Exchanges page. All returns must be initiated within 30 days of delivery. Items must be unused, unwashed, and in original condition with tags attached. Refunds are processed within 5-7 business days of receiving and inspecting returned items.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.warranty_title' | t: default: 'Limited Warranty' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.warranty_desc' | t: default: 'Products are warranted to be free from defects in materials and workmanship for thirty (30) days from the date of purchase. This warranty does not cover damage resulting from misuse, neglect, normal wear and tear, or failure to follow care instructions.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.liability_title' | t: default: 'Limitation of Liability' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.liability_desc' | t: default: 'In no event shall Kimhab Ork be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the website or products. Our total liability to you shall not exceed the amount paid for the product in question.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.intellectual_title' | t: default: 'Intellectual Property Rights' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.intellectual_desc' | t: default: 'All content on our website, including text, graphics, logos, images, and software, is the property of Kimhab Ork or our content suppliers. These materials are protected by international copyright laws. You may not reproduce, distribute, or transmit any content without our prior written permission.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.user_conduct_title' | t: default: 'User Conduct' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.terms.user_conduct_intro' | t: default: 'You agree not to:' }}
+      </p>
+
+      <ul class="space-y-2 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.terms.user_conduct_1' | t: default: 'Use the website for any unlawful purpose' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.user_conduct_2' | t: default: 'Harass or harm any person' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.user_conduct_3' | t: default: 'Interfere with the operation of the website' }}</li>
+        <li class="text-foreground/70">{{ 'pages.terms.user_conduct_4' | t: default: 'Engage in fraudulent activity' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.disclaimer_title' | t: default: 'Disclaimer' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.disclaimer_desc' | t: default: 'The materials on Kimhab Ork''s website are provided on an "as is" basis. Kimhab Ork makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.changes_title' | t: default: 'Changes to Terms' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.terms.changes' | t: default: 'We may revise these Terms of Service at any time without notice by updating this page. By using this website, you are agreeing to be bound by the then current version of these Terms of Service.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.terms.contact_title' | t: default: 'Contact Information' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed">
+        {{ 'pages.terms.contact' | t: default: 'For questions about these Terms of Service, please contact us at support@kimhab-ork.com.' }}
+      </p>
+    </div>
+  </section>
+
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .legal-page {
+    min-height: 100vh;
+  }
+
+  .prose {
+    color: var(--color-text, #000);
+  }
+
+  .prose h2 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose h3 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose p {
+    line-height: 1.8;
+  }
+
+  .prose ul {
+    list-style: none;
+  }
+
+  .prose li {
+    margin-left: 0;
+  }
+</style>

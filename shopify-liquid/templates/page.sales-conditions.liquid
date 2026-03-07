@@ -1,0 +1,189 @@
+{% section 'header' %}
+
+<main class="legal-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
+        {{ page.title | default: 'General Sales Conditions' }}
+      </h1>
+      <p class="text-sm text-foreground/60">
+        {{ 'pages.legal.last_updated' | t: default: 'Last updated:' }} <time datetime="2024-01-01">January 1, 2024</time>
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl prose prose-sm max-w-none">
+      
+      <h2 class="font-serif text-2xl font-bold text-foreground mt-0 mb-4">
+        {{ 'pages.sales_conditions.intro_title' | t: default: 'General Sales Conditions' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.sales_conditions.intro' | t: default: 'These General Sales Conditions ("Conditions") govern the sale of products by Kimhab Ork ("Seller") to customers ("Buyer") through our website www.kimhab-ork.com. By placing an order, the Buyer accepts and agrees to be bound by these Conditions.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.application_title' | t: default: 'Application of Conditions' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.sales_conditions.application' | t: default: 'These Conditions apply to all contracts for the sale of products between the Seller and the Buyer. Any terms and conditions proposed by the Buyer that are different from or in addition to these Conditions are rejected unless explicitly accepted in writing by the Seller.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.offer_title' | t: default: 'Offers and Ordering' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.sales_conditions.offer_desc' | t: default: 'Product descriptions and prices displayed on our website are offers for sale, not binding offers to sell. When the Buyer places an order, they make an offer to purchase the products. The Seller may accept or reject this offer. Receipt of an order acknowledgment email constitutes acceptance of the Buyer''s offer and creates a binding contract.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.price_title' | t: default: 'Pricing' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.sales_conditions.price_intro' | t: default: 'All prices displayed on our website:' }}
+      </p>
+
+      <ul class="space-y-2 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.price_1' | t: default: 'Are in the currency displayed at the time of browsing' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.price_2' | t: default: 'Are subject to change without notice' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.price_3' | t: default: 'Do not include taxes or applicable shipping charges' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.price_4' | t: default: 'Are valid only on the date displayed and may vary in other countries' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.payment_title' | t: default: 'Payment' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.sales_conditions.payment_intro' | t: default: 'Payment terms:' }}
+      </p>
+
+      <ul class="space-y-2 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.payment_1' | t: default: 'Payment is due upon order confirmation' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.payment_2' | t: default: 'The Buyer is responsible for any transaction fees charged by their bank' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.payment_3' | t: default: 'The Seller may refuse orders if payment cannot be verified' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.payment_4' | t: default: 'Orders will not be processed until payment is confirmed' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.delivery_title' | t: default: 'Delivery' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.sales_conditions.delivery_intro' | t: default: 'Delivery terms:' }}
+      </p>
+
+      <ul class="space-y-2 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.delivery_1' | t: default: 'Delivery dates are estimates and not guaranteed' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.delivery_2' | t: default: 'Risk of loss passes to the Buyer when the goods are delivered to the carrier' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.delivery_3' | t: default: 'The Seller is not responsible for delays caused by carriers or customs' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.delivery_4' | t: default: 'The Buyer must verify goods upon receipt and report damages immediately' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.risk_title' | t: default: 'Risk of Loss' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.sales_conditions.risk_desc' | t: default: 'Risk of loss passes to the Buyer upon the earliest of: (a) delivery to the Buyer, (b) delivery to a carrier selected by the Buyer, or (c) tender of the goods to any bailee. The Buyer should obtain insurance for all orders as the Seller assumes no liability for loss during shipment.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.warranty_title' | t: default: 'Warranties' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.sales_conditions.warranty_intro' | t: default: 'Warranties provided:' }}
+      </p>
+
+      <ul class="space-y-2 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.warranty_1' | t: default: 'Products are warranted to be free from defects in materials for 30 days from purchase' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.warranty_2' | t: default: 'Warranty does not cover misuse, neglect, or normal wear and tear' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.warranty_3' | t: default: 'Warranty does not cover damage from failure to follow care instructions' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.warranty_4' | t: default: 'This warranty is the Buyer''s sole remedy for defective goods' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.returns_title' | t: default: 'Returns and Refunds' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.sales_conditions.returns_intro' | t: default: 'Return eligibility:' }}
+      </p>
+
+      <ul class="space-y-2 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.returns_1' | t: default: 'Items must be returned within 30 days of receipt' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.returns_2' | t: default: 'Items must be unused, unwashed, and in original packaging' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.returns_3' | t: default: 'Return shipping is free for defective items only' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.returns_4' | t: default: 'Refunds are processed 5-7 business days after receipt' }}</li>
+        <li class="text-foreground/70">{{ 'pages.sales_conditions.returns_5' | t: default: 'Custom-made and final sale items cannot be returned' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.liability_title' | t: default: 'Limitation of Liability' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.sales_conditions.liability_desc' | t: default: 'The Seller''s total liability for any claims arising out of or relating to these Conditions or any products shall not exceed the purchase price of the product. In no event shall the Seller be liable for indirect, incidental, special, consequential, or punitive damages.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.compliance_title' | t: default: 'Compliance with Laws' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.sales_conditions.compliance_desc' | t: default: 'The Buyer represents and warrants that their use of the products and performance under these Conditions complies with all applicable laws and regulations. The Buyer is responsible for paying any applicable taxes, tariffs, and duties.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.disputes_title' | t: default: 'Dispute Resolution' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.sales_conditions.disputes_desc' | t: default: 'Any disputes arising from these Conditions or the sale of products shall be resolved through negotiation. If negotiation fails, disputes will be subject to the jurisdiction of the courts in the location where the Seller is based.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.severability_title' | t: default: 'Severability' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.sales_conditions.severability_desc' | t: default: 'If any provision of these Conditions is found to be invalid or unenforceable, such provision shall be severed and the remaining provisions shall continue in full force and effect.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.sales_conditions.contact_title' | t: default: 'Contact Information' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed">
+        {{ 'pages.sales_conditions.contact' | t: default: 'For questions regarding these Sales Conditions, please contact us at support@kimhab-ork.com.' }}
+      </p>
+    </div>
+  </section>
+
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .legal-page {
+    min-height: 100vh;
+  }
+
+  .prose {
+    color: var(--color-text, #000);
+  }
+
+  .prose h2 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose h3 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose p {
+    line-height: 1.8;
+  }
+
+  .prose ul {
+    list-style: none;
+  }
+
+  .prose li {
+    margin-left: 0;
+  }
+</style>

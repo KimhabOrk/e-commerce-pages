@@ -1,0 +1,224 @@
+{% section 'header' %}
+
+<main class="custom-made-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+        {{ page.title | default: 'Custom Made' }}
+      </h1>
+      <p class="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+        {{ 'pages.custom_made.hero_desc' | t: default: 'Create your perfect piece. Design custom garments tailored to your exact specifications and preferences.' }}
+      </p>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-8 md:py-14 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <div class="bg-muted p-8 rounded-lg border border-border/40">
+        <h2 class="font-serif text-xl font-semibold text-primary mb-4">
+          {{ 'pages.custom_made.intro_title' | t: default: 'Bespoke Tailoring Services' }}
+        </h2>
+        <p class="text-foreground/70 leading-relaxed">
+          {{ 'pages.custom_made.intro_desc' | t: default: 'At Kimhab Ork, we believe in creating pieces that are uniquely yours. Our custom-made service allows you to collaborate with our design team to create garments that perfectly match your vision, style, and measurements.' }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-12 text-center">
+        {{ 'pages.custom_made.process_title' | t: default: 'Our Custom Process' }}
+      </h2>
+      <div class="space-y-8">
+        
+        <!-- Step 1 -->
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold text-lg">
+              1
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.custom_made.step_1_title' | t: default: 'Initial Consultation' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.custom_made.step_1_desc' | t: default: 'Begin with a consultation with our design team. We discuss your vision, style preferences, body measurements, and any specific requirements you may have.' }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold text-lg">
+              2
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.custom_made.step_2_title' | t: default: 'Design & Material Selection' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.custom_made.step_2_desc' | t: default: 'Collaborate with our team to select fabrics, colors, and design details. We present various options and create sketches to visualize your custom piece.' }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold text-lg">
+              3
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.custom_made.step_3_title' | t: default: 'Precision Tailoring' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.custom_made.step_3_desc' | t: default: 'Our master tailors craft your piece with meticulous attention to detail, ensuring perfect fit and construction quality.' }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold text-lg">
+              4
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.custom_made.step_4_title' | t: default: 'Fittings & Adjustments' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.custom_made.step_4_desc' | t: default: 'We arrange fittings to ensure the perfect fit. Any adjustments are made to your satisfaction before final delivery.' }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary text-background font-bold text-lg">
+              5
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-foreground mb-2">
+              {{ 'pages.custom_made.step_5_title' | t: default: 'Delivery' }}
+            </h3>
+            <p class="text-foreground/70 leading-relaxed">
+              {{ 'pages.custom_made.step_5_desc' | t: default: 'Your bespoke piece is delivered beautifully packaged, ready to become a cherished part of your wardrobe.' }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Options & Customization Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-12">
+        {{ 'pages.custom_made.options_title' | t: default: 'Customization Options' }}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="space-y-4">
+          <h3 class="font-semibold text-lg text-foreground">
+            {{ 'pages.custom_made.fabrics_title' | t: default: 'Premium Fabrics' }}
+          </h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">
+            {{ 'pages.custom_made.fabrics_desc' | t: default: 'Choose from our exclusive collection of premium materials including silk, cashmere, organic cotton, and rare luxury fabrics.' }}
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="font-semibold text-lg text-foreground">
+            {{ 'pages.custom_made.fit_title' | t: default: 'Perfect Fit' }}
+          </h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">
+            {{ 'pages.custom_made.fit_desc' | t: default: 'Custom tailored to your exact measurements and body type. Choose your preferred fit level from fitted to oversized.' }}
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="font-semibold text-lg text-foreground">
+            {{ 'pages.custom_made.details_title' | t: default: 'Design Details' }}
+          </h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">
+            {{ 'pages.custom_made.details_desc' | t: default: 'Select custom details including stitching, buttons, zippers, pockets, and embellishments to personalize your piece.' }}
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="font-semibold text-lg text-foreground">
+            {{ 'pages.custom_made.colors_title' | t: default: 'Unlimited Colors' }}
+          </h3>
+          <p class="text-foreground/70 text-sm leading-relaxed">
+            {{ 'pages.custom_made.colors_desc' | t: default: 'Choose from unlimited color options across all our premium fabric selections to create your perfect piece.' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Timeline Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8 text-center">
+        {{ 'pages.custom_made.info_title' | t: default: 'Pricing & Timeline' }}
+      </h2>
+      <div class="bg-muted p-8 rounded-lg border border-border/40 space-y-6">
+        <div>
+          <h3 class="font-semibold text-foreground mb-2">
+            {{ 'pages.custom_made.pricing_label' | t: default: 'Custom Pricing:' }}
+          </h3>
+          <p class="text-foreground/70 leading-relaxed">
+            {{ 'pages.custom_made.pricing_desc' | t: default: 'Pricing depends on fabric selection, complexity of design, and customization level. Initial consultation is complimentary to discuss your budget and expectations.' }}
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-foreground mb-2">
+            {{ 'pages.custom_made.timeline_label' | t: default: 'Production Timeline:' }}
+          </h3>
+          <p class="text-foreground/70 leading-relaxed">
+            {{ 'pages.custom_made.timeline_desc' | t: default: 'Typical custom orders take 6-12 weeks from consultation to delivery, depending on complexity and current demand. Rush options available upon request.' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-gradient-to-br from-primary to-primary/90 text-background">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-serif text-2xl md:text-3xl font-bold mb-4">
+        {{ 'pages.custom_made.cta_title' | t: default: 'Ready to Create Your Custom Piece?' }}
+      </h2>
+      <p class="text-background/90 mb-8 leading-relaxed">
+        {{ 'pages.custom_made.cta_desc' | t: default: 'Start your bespoke journey today with our expert design team.' }}
+      </p>
+      <a href="{{ 'contact' | append: '/' }}" class="inline-block bg-background text-primary px-8 py-3 rounded font-semibold hover:bg-background/90 transition-colors">
+        {{ 'pages.custom_made.cta_button' | t: default: 'Start Your Consultation' }}
+      </a>
+    </div>
+  </section>
+
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .custom-made-page {
+    min-height: 100vh;
+  }
+</style>
