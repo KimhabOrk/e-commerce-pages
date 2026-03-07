@@ -2,7 +2,7 @@ import { getRequestConfig } from 'next-intl/server'
 
 const timeZone = 'Asia/Phnom_Penh'
 
-export const localePrefix = 'as-needed'
+export const localePrefix = 'always'
 export const locales = ['en', 'kh'] as const
 export const defaultLocale = 'en' as const
 

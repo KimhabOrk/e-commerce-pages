@@ -31,7 +31,7 @@ export function Header() {
         <div className="flex items-center justify-between h-12 md:h-16">
           {/* Logo */}
           <Link
-            href="/"
+            href={`/${locale}/`}
             className="flex items-center transition-opacity hover:opacity-80"
           >
             <Image
