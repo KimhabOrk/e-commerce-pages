@@ -1,9 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { useLocale } from 'next-intl'
+import { useLocale, usePathname } from 'next-intl/client'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import { ChevronDown } from 'lucide-react'
 
 export function LanguageSwitcher() {

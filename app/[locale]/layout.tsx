@@ -1,10 +1,10 @@
 import { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
-import { NextIntlClientProvider } from 'next-intl'
+import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getMessages } from 'next-intl/server'
-import { locales } from '@/i18n.config'
+import { routing } from '@/i18n/routing'
 import type { Metadata } from 'next'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/next'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer-2'
 import '../globals.css'
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 }
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }))
+  return routing.locales.map((locale) => ({ locale }))
 }
 
 export default async function LocaleLayout({
@@ -27,7 +27,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params
 
-  if (!locales.includes(locale as any)) {
+  if (!hasLocale(routing.locales, locale)) {
     notFound()
   }
 

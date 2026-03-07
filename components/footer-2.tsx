@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
-import { useRouter, usePathname, useLocale } from "next/navigation";
+import { usePathname, useLocale } from "next-intl/client";
 import { useTranslations } from "next-intl";
 
 type FooterSection = {
