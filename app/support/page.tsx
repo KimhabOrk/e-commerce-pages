@@ -217,7 +217,7 @@ export default function HelpFaqsPage() {
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative py-12 md:py-16 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/10">
+      <section className="relative py-8 md:py-10 mt-10 md:mt-14 lg:py-20 lg:mt-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
             Supports
@@ -240,7 +240,7 @@ export default function HelpFaqsPage() {
       </section>
 
       {/* Still Have Questions */}
-      <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
+      <section className="py-8 md:py-10 mt-10 md:mt-14 lg:py-20 lg:mt-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl">
           <div className="bg-muted/50 border border-border/40 p-8 rounded-lg text-center">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
