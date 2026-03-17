@@ -1,0 +1,187 @@
+{% section 'header' %}
+
+<main class="legal-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
+        {{ page.title | default: 'Legal Notes' }}
+      </h1>
+      <p class="text-sm text-foreground/60">
+        {{ 'pages.legal.last_updated' | t: default: 'Last updated:' }} <time datetime="2024-01-01">January 1, 2024</time>
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl prose prose-sm max-w-none">
+      
+      <h2 class="font-serif text-2xl font-bold text-foreground mt-0 mb-4">
+        {{ 'pages.legal_notes.intro_title' | t: default: 'Imprint / Company Information' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.intro' | t: default: 'This page provides important legal and company information for Kimhab Ork.' }}
+      </p>
+
+      <h3 class="font-semibold text-lg text-foreground mb-3">
+        {{ 'pages.legal_notes.company_title' | t: default: 'Company' }}
+      </h3>
+      <div class="bg-muted p-6 rounded-lg mb-6 space-y-2 text-foreground/70">
+        <p>
+          <span class="font-semibold text-foreground">{{ 'pages.legal_notes.company_name_label' | t: default: 'Company Name:' }}</span>
+          <span>{{ 'pages.legal_notes.company_name' | t: default: 'Kimhab Ork' }}</span>
+        </p>
+        <p>
+          <span class="font-semibold text-foreground">{{ 'pages.legal_notes.company_type_label' | t: default: 'Business Type:' }}</span>
+          <span>{{ 'pages.legal_notes.company_type' | t: default: 'Fashion & Apparel Company' }}</span>
+        </p>
+        <p>
+          <span class="font-semibold text-foreground">{{ 'pages.legal_notes.website_label' | t: default: 'Website:' }}</span>
+          <span>{{ 'pages.legal_notes.website' | t: default: 'www.kimhab-ork.com' }}</span>
+        </p>
+      </div>
+
+      <h3 class="font-semibold text-lg text-foreground mb-3">
+        {{ 'pages.legal_notes.contact_title' | t: default: 'Contact Information' }}
+      </h3>
+      <div class="bg-muted p-6 rounded-lg mb-6 space-y-2 text-foreground/70">
+        <p>
+          <span class="font-semibold text-foreground">{{ 'pages.legal_notes.email_label' | t: default: 'Email:' }}</span>
+          <a href="mailto:support@kimhab-ork.com" class="text-primary hover:underline">support@kimhab-ork.com</a>
+        </p>
+        <p>
+          <span class="font-semibold text-foreground">{{ 'pages.legal_notes.phone_label' | t: default: 'Customer Service:' }}</span>
+          <span>{{ 'pages.legal_notes.phone' | t: default: 'Available via email and contact form' }}</span>
+        </p>
+      </div>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.trademarks_title' | t: default: 'Trademarks & Intellectual Property' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.trademarks_desc' | t: default: '"Kimhab Ork" and all related logos, product names, and service marks are the exclusive property of Kimhab Ork. All content, including text, graphics, logos, images, and software, is protected by copyright and other intellectual property laws. Unauthorized reproduction, distribution, or transmission of any content is strictly prohibited.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.disclaimer_title' | t: default: 'Website Disclaimer' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.disclaimer' | t: default: 'The information, products, and services provided on this website are provided "as is" without warranties of any kind. Kimhab Ork makes no warranties, expressed or implied, regarding the accuracy, completeness, or reliability of any content on this site. Your reliance on any information or materials on this website is at your own risk.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.liability_title' | t: default: 'Limitation of Liability' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.liability' | t: default: 'To the fullest extent permitted by law, Kimhab Ork shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of the website, products, or services. This includes, but is not limited to, loss of revenue, lost profits, or loss of data.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.links_title' | t: default: 'External Links' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.links_desc' | t: default: 'Our website may contain links to external websites that are not operated by Kimhab Ork. We are not responsible for the content, accuracy, or practices of these external sites. Your use of external links is at your own risk, and you should review their privacy policies and terms of service independently.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.user_conduct_title' | t: default: 'Prohibited Conduct' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.legal_notes.user_conduct_intro' | t: default: 'Users are prohibited from:' }}
+      </p>
+
+      <ul class="space-y-2 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.legal_notes.conduct_1' | t: default: 'Harassing or threatening other users or employees' }}</li>
+        <li class="text-foreground/70">{{ 'pages.legal_notes.conduct_2' | t: default: 'Posting defamatory, obscene, or offensive content' }}</li>
+        <li class="text-foreground/70">{{ 'pages.legal_notes.conduct_3' | t: default: 'Violating intellectual property rights' }}</li>
+        <li class="text-foreground/70">{{ 'pages.legal_notes.conduct_4' | t: default: 'Engaging in fraudulent or illegal activity' }}</li>
+        <li class="text-foreground/70">{{ 'pages.legal_notes.conduct_5' | t: default: 'Attempting to interfere with website operations' }}</li>
+        <li class="text-foreground/70">{{ 'pages.legal_notes.conduct_6' | t: default: 'Collecting or transmitting personal information of others without consent' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.data_protection_title' | t: default: 'Data Protection' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.data_protection_desc' | t: default: 'We take data protection seriously and comply with applicable data protection laws including GDPR. For information about how we collect, use, and protect your personal data, please review our Privacy Policy.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.modifications_title' | t: default: 'Modifications to Website' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.modifications_desc' | t: default: 'Kimhab Ork reserves the right to modify or discontinue the website or any services without notice. We are not liable to you or any third party for any modification, suspension, or discontinuation of the website or services.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.governing_title' | t: default: 'Governing Law' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.governing_desc' | t: default: 'These legal notes and all matters relating to the website are governed by and construed in accordance with the laws of the jurisdiction in which Kimhab Ork is based, without regard to its conflict of law principles.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.disputes_title' | t: default: 'Dispute Resolution' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.disputes_desc' | t: default: 'Any legal dispute or controversy relating to the website or our services shall be resolved exclusively by the courts in the jurisdiction where Kimhab Ork is based. You agree to submit to the jurisdiction of such courts.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.severability_title' | t: default: 'Severability' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.severability_desc' | t: default: 'If any provision of these legal notes is found to be invalid or unenforceable by a court of competent jurisdiction, such provision shall be severed, and the remaining provisions shall continue in full force and effect.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.entire_title' | t: default: 'Entire Agreement' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.legal_notes.entire_desc' | t: default: 'These legal notes, together with our Terms of Service, Privacy Policy, Cookie Policy, and other policies available on the website, constitute the entire agreement between you and Kimhab Ork regarding your use of the website.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.legal_notes.contact_support_title' | t: default: 'Questions or Concerns' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed">
+        {{ 'pages.legal_notes.contact_support' | t: default: 'If you have any questions or concerns about these legal notes or our website, please contact us at support@kimhab-ork.com.' }}
+      </p>
+    </div>
+  </section>
+
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .legal-page {
+    min-height: 100vh;
+  }
+
+  .prose {
+    color: var(--color-text, #000);
+  }
+
+  .prose h2 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose h3 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose p {
+    line-height: 1.8;
+  }
+
+  .prose ul {
+    list-style: none;
+  }
+
+  .prose li {
+    margin-left: 0;
+  }
+</style>

@@ -1,0 +1,651 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "creativeDirctor": "Creative Director",
+    "customMade": "Custom Made",
+    "careGuides": "Care Guides",
+    "helpsAndFaqs": "Helps & FAQs",
+    "responsibility": "Responsibility",
+    "legal": "Legal",
+    "mono": "Mono",
+    "evasion": "Evasion",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "shop": "Shop",
+    "allProducts": "All Products",
+    "collections": "Collections",
+    "newArrivals": "New Arrivals",
+    "company": "Company",
+    "creativeDirector": "Creative Director",
+    "responsibilities": "Responsibilities",
+    "service": "Service",
+    "sizeGuide": "Size Guide",
+    "shippingReturn": "Shipping & Return",
+    "legal": "Legal",
+    "legalNotes": "Legal Notes",
+    "generalSalesConditions": "General Sales Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "customMade": "Custom Made",
+    "careGuides": "Care Guides",
+    "helps": "Helps & FAQs",
+    "tagline": "Affordable Luxury Womenswear Brand.",
+    "copyright": "All rights reserved."
+  },
+  "common": {
+    "language": "Language",
+    "english": "English",
+    "khmer": "Khmer",
+    "selectLanguage": "Select Language",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "explore": "Explore",
+    "learnMore": "Learn More",
+    "discover": "Discover",
+    "view": "View",
+    "readOurStory": "Read Our Story",
+    "viewGuides": "View Guides",
+    "ourCommitment": "Our Commitment",
+    "startExploring": "Start Exploring",
+    "shopNow": "Shop Now",
+    "sendMessage": "Send us a Message"
+  },
+  "pages": {
+    "home": {
+      "title": "Kimhab Ork - Affordable Luxury Womenswear",
+      "description": "Discover premium quality womenswear fashion at accessible prices",
+      "hero": {
+        "title": "Affordable Luxury Fashion",
+        "description": "Discover Kimhab Ork, where premium womenswear meets accessible pricing. Quality, sustainability, and style in every collection.",
+        "cta1": "Explore Our Story",
+        "cta2": "Our Commitment"
+      },
+      "features": {
+        "title": "Why Choose Kimhab Ork?",
+        "affordableLuxury": {
+          "title": "Affordable Luxury",
+          "description": "Premium quality womenswear at prices that celebrate accessibility and value.",
+          "cta": "Explore"
+        },
+        "sustainableMaterials": {
+          "title": "Sustainable Materials",
+          "description": "Responsibly sourced fabrics that minimize environmental impact without compromising quality.",
+          "cta": "Learn More"
+        },
+        "ethicalProduction": {
+          "title": "Ethical Production",
+          "description": "Fair labor practices and transparent supply chain management throughout our operations.",
+          "cta": "Discover"
+        },
+        "timelessDesign": {
+          "title": "Timeless Design",
+          "description": "Versatile, classic silhouettes with modern details that remain relevant season after season.",
+          "cta": "View"
+        }
+      },
+      "learnMore": {
+        "title": "Learn More",
+        "aboutUs": {
+          "title": "About Us",
+          "description": "Discover our story, values, and commitment to affordable luxury fashion for modern women.",
+          "cta": "Read Our Story"
+        },
+        "careGuides": {
+          "title": "Care Guides",
+          "description": "Comprehensive care instructions for all fabric types to preserve your pieces for years.",
+          "cta": "View Guides"
+        },
+        "responsibility": {
+          "title": "Responsibility",
+          "description": "Learn about our commitment to sustainability, ethical sourcing, and responsible production.",
+          "cta": "Our Commitment"
+        }
+      },
+      "legalAndSupport": {
+        "title": "Legal & Support",
+        "generalSalesConditions": "General Sales Conditions",
+        "generalSalesConditionsDesc": "Fabric care instructions",
+        "legalNotes": "Legal Notes",
+        "legalNotesDesc": "Legal information",
+        "privacyPolicy": "Privacy Policy",
+        "privacyPolicyDesc": "Data protection",
+        "termsConditions": "Terms & Conditions",
+        "termsConditionsDesc": "Service terms"
+      },
+      "cta": {
+        "title": "Experience Affordable Luxury",
+        "description": "Discover premium womenswear that doesn't compromise on quality, sustainability, or price. Welcome to Kimhab Ork.",
+        "button": "Start Exploring"
+      }
+    },
+    "about": {
+      "title": "About Us | Kimhab Ork",
+      "description": "Discover Kimhab Ork's story. An affordable luxury womenswear brand dedicated to quality, sustainability, and empowering women through fashion.",
+      "hero": {
+        "title": "Affordable Luxury for Modern Women",
+        "description": "Kimhab Ork reimagines womenswear by combining exquisite design, premium quality materials, and sustainable practices at prices that celebrate accessibility."
+      },
+      "ourStory": {
+        "title": "Our Story",
+        "text1": "Kimhab Ork was born from a simple belief: premium fashion should be accessible to everyone. Founded with a vision to bridge the gap between high fashion and everyday elegance, we create womenswear that empowers women to express themselves without compromise.",
+        "text2": "Every piece in our collection is thoughtfully designed with the modern woman in mind. We draw inspiration from contemporary style, timeless elegance, and the diverse needs of women who refuse to choose between quality, design, and affordability.",
+        "text3": "Our name reflects our commitment: Kimhab carries the essence of Khmer culture and heritage, while Ork symbolizes new beginnings and growth. Together, they represent our vision of creating something beautiful that resonates across cultures and generations."
+      },
+      "ourValues": {
+        "title": "Our Values",
+        "qualityOverQuantity": {
+          "title": "Quality Over Quantity",
+          "description": "We believe in creating pieces that last. Every garment is carefully crafted with premium materials and attention to detail, ensuring you invest in items that remain timeless."
+        },
+        "accessibleLuxury": {
+          "title": "Accessible Luxury",
+          "description": "Luxury fashion should not be exclusive. We make premium womenswear affordable without compromising on design, materials, or craftsmanship."
+        },
+        "sustainableFashion": {
+          "title": "Sustainable Fashion",
+          "description": "Our commitment to the environment is reflected in our material choices and production practices. We strive to minimize our ecological footprint while maximizing impact."
+        },
+        "empoweredWomen": {
+          "title": "Empowered Women",
+          "description": "We design for confident, modern women who value both style and substance. Every collection celebrates femininity, strength, and individuality."
+        }
+      },
+      "whyChoose": {
+        "title": "Why Choose Kimhab Ork?",
+        "premiumMaterials": {
+          "id": "01",
+          "title": "Premium Materials",
+          "content": "We source the finest fabrics and materials, including organic cotton, sustainable silk, and responsibly-sourced textiles that feel luxurious and last longer."
+        },
+        "timelessDesign": {
+          "id": "02",
+          "title": "Timeless Design",
+          "content": "Our collections focus on versatile, classic silhouettes with modern details. Pieces that work today and remain relevant for years to come."
+        },
+        "ethicalProduction": {
+          "id": "03",
+          "title": "Ethical Production",
+          "content": "We partner with manufacturers who prioritize fair wages, safe working conditions, and environmental responsibility throughout our supply chain."
+        },
+        "exceptionalValue": {
+          "id": "04",
+          "title": "Exceptional Value",
+          "content": "Quality womenswear at accessible prices. We believe you shouldn't have to compromise on quality or pay luxury prices for great fashion."
+        }
+      },
+      "cta": {
+        "title": "Discover Our Collections",
+        "description": "Explore our thoughtfully curated womenswear collections designed for the modern woman who values quality, style, and sustainability.",
+        "button": "Shop Now"
+      }
+    },
+    "creativeDirector": {
+      "title": "Creative Director | Kimhab ORK",
+      "description": "Meet the visionary behind Kimhab ORK - our Creative Director who leads the brand with passion for affordable luxury and sustainable fashion.",
+      "hero": {
+        "title": "Meet Our Creative Director",
+        "description": "The visionary leading Kimhab ORK's journey to redefine affordable luxury fashion"
+      },
+      "profile": {
+        "name": "KIMHAB ORK",
+        "role": "Creative Director & Founder",
+        "bio": "With over 15 years of experience in luxury fashion design, KIMHAB founded Kimhab ORK with a singular vision: to make high-quality, sustainably-produced womenswear accessible to everyone without compromising on elegance or ethics.",
+        "designPhilosophy": {
+          "title": "Design Philosophy",
+          "content": "KIMHAB believes that beautiful design transcends price points. Every piece in our collection reflects a commitment to timeless silhouettes, premium materials, and meticulous craftsmanship—all at prices that celebrate affordability."
+        },
+        "sustainabilityMission": {
+          "title": "Sustainability Mission",
+          "content": "Driven by environmental consciousness, KIMHAB leads our responsibility initiatives, ensuring every garment is produced ethically and sustainably. The vision extends beyond fashion to create positive impact on communities and our planet."
+        }
+      },
+      "journey": {
+        "title": "The Creative Journey",
+        "earlyInspiration": {
+          "title": "Early Inspiration",
+          "content": "Growing up in Cambodia, KIMHAB was captivated by the rich textile traditions and artisan craftsmanship that defines the region. This early exposure sparked a passion for creating fashion that honors heritage while embracing modern aesthetics."
+        },
+        "globalExperience": {
+          "title": "Global Experience",
+          "content": "After studying fashion design in Paris and working with renowned luxury houses across Europe and Asia, KIMHAB gained invaluable insights into craftsmanship, sustainability, and the disconnect between luxury and accessibility."
+        },
+        "foundingVision": {
+          "title": "Founding Vision",
+          "content": "In 2018, KIMHAB founded Kimhab ORK to challenge the luxury fashion industry. The brand was born from a question: why should quality, sustainability, and beautiful design be exclusive to the wealthy?"
+        },
+        "presentImpact": {
+          "title": "Present Impact",
+          "content": "Today, Kimhab ORK has grown into a global community of conscious consumers and creative collaborators, proving that affordable luxury and ethical fashion aren't just ideals—they're achievable."
+        }
+      },
+      "coreValues": {
+        "title": "Core Values & Guiding Principles",
+        "creativity": {
+          "title": "Creativity",
+          "description": "Innovation and artistic expression at the heart of every design decision and collection release."
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "Honesty in practices, transparency in supply chain, and genuine commitment to our values."
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "Environmental responsibility woven into every aspect of design, production, and packaging."
+        },
+        "excellence": {
+          "title": "Excellence",
+          "description": "Uncompromising quality standards and continuous pursuit of perfection in every piece."
+        }
+      },
+      "quote": {
+        "title": "A Word from KIMHAB",
+        "text1": "Fashion has the power to transform how people feel about themselves. But too often, that transformation comes at a price—not just in dollars, but in ethics and the environment. When I founded Kimhab ORK, I wanted to prove a different way was possible.",
+        "text2": "Every woman deserves to feel confident, beautiful, and proud of what she's wearing. We create pieces that don't require compromise—beautiful design, premium quality, ethical production, and prices that make luxury accessible. This is our promise, and it's why I wake up excited every morning.",
+        "text3": "Join us in redefining what luxury means. Together, we're building a fashion community that celebrates individuality, respects our planet, and proves that affordability and excellence can coexist.",
+        "author": "KIMHAB ORK",
+        "authorTitle": "Creative Director & Founder, Kimhab ORK"
+      },
+      "connect": {
+        "title": "Connect with Our Vision",
+        "description": "Follow KIMHAB ORK on social media to stay updated on new collections, behind-the-scenes stories, and our journey toward redefining luxury fashion.",
+        "buttons": {
+          "shop": "Shop Latest Collection",
+          "story": "Our Story"
+        }
+      }
+    },
+    "customMade": {
+      "title": "Custom Made Service | Kimhab Ork",
+      "description": "Experience the ultimate luxury with Kimhab Ork's custom-made service. Create one-of-a-kind garments through private appointments with master tailors.",
+      "hero": {
+        "title": "Custom Made",
+        "subtitle": "True luxury is found in clothing that is expertly crafted for the woman who wears it.",
+        "description": "The Kimhab Ork custom-made garment is the utmost sartorial experience. Through the custom-made service, discerning clients can create a one of a kind garment through a private appointment. The master tailors at the KIMHAB ORK Atelier devote weeks of craftsmanship to cutting, constructing and finishing each piece using exquisite materials with care.",
+        "cta": "Explore the Process"
+      },
+      "whyCustomMade": {
+        "title": "Why Choose Custom Made?",
+        "description": "Our custom-made service elevates womenswear to an art form, combining your vision with our master craftsmen's expertise.",
+        "features": [
+          "Bespoke designs tailored to your unique style and measurements",
+          "Access to exclusive luxury fabrics sourced globally",
+          "Personalized styling consultation with expert advisors",
+          "Multiple fitting sessions for perfect proportions",
+          "Weeks of meticulous craftsmanship and attention to detail",
+          "One-of-a-kind garments that reflect your individuality"
+        ]
+      },
+      "process": {
+        "title": "The Custom Made Process",
+        "steps": [
+          {
+            "title": "Consultation",
+            "description": "Meet with our expert stylists to discuss your vision, preferences, and lifestyle needs."
+          },
+          {
+            "title": "Design & Selection",
+            "description": "Choose from our curated collection of premium fabrics and collaborate on the perfect design."
+          },
+          {
+            "title": "Precision Tailoring",
+            "description": "Our master tailors take precise measurements and create multiple fittings to ensure perfect fit."
+          },
+          {
+            "title": "Crafted to Perfection",
+            "description": "Each piece is meticulously handcrafted over weeks, combining cutting-edge techniques with traditional artistry."
+          }
+        ]
+      },
+      "timeline": {
+        "title": "Timeline & Commitment",
+        "steps": [
+          {
+            "title": "Initial Consultation",
+            "description": "Schedule a private appointment with our styling experts to discuss your vision and preferences. This typically takes 1-2 hours."
+          },
+          {
+            "title": "Design & Measurements",
+            "description": "Finalize your design and have precise measurements taken. Our tailors use these to create your custom pattern and foundation."
+          },
+          {
+            "title": "Craftsmanship (4-8 weeks)",
+            "description": "Our master tailors meticulously craft your garment, with multiple fittings scheduled to ensure absolute perfection and fit."
+          },
+          {
+            "title": "Final Delivery",
+            "description": "Receive your one-of-a-kind garment, expertly crafted to perfection. Your custom piece will be a cherished investment in your wardrobe."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Ready to Create Your Bespoke Piece",
+        "description": "Schedule a private consultation with our master tailors and begin your custom-made journey today. Experience the ultimate luxury of womenswear crafted exclusively for you.",
+        "buttons": {
+          "book": "Book Appointment",
+          "learnMore": "Learn More"
+        }
+      },
+      "testimonials": [
+        {
+          "text": "My custom-made Kimhab Ork piece is not just clothing—it's a masterpiece. Every stitch, every detail, reflects the care and expertise of true artisans. I feel like a different woman when I wear it.",
+          "author": "Sarah M.",
+          "role": "Custom Made Client"
+        },
+        {
+          "text": "The process was seamless and collaborative. The team truly listened to my vision and brought it to life with impeccable craftsmanship. This is luxury redefined.",
+          "author": "Emma L.",
+          "role": "Custom Made Client"
+        }
+      ]
+    },
+    "careGuides": {
+      "title": "Care Guides | Kimhab Ork",
+      "description": "Comprehensive care guides for all Kimhab Ork fabrics. Learn how to properly care for cotton, silk, denim, leather, and more to preserve your pieces.",
+      "hero": {
+        "title": "Care Guides",
+        "description": "Preserve the beauty and longevity of your Kimhab Ork pieces with our comprehensive care instructions. High-quality materials deserve proper care."
+      },
+      "introduction": {
+        "title": "Why Proper Care Matters?",
+        "content": "High-quality materials require specific care to preserve their integrity over time. Specific cleaning and care instructions are present on the product label inside each garment. For general advice, follow our dedicated guides for each fabric type."
+      },
+      "guides": {
+        "cotton": {
+          "title": "Cotton Garments",
+          "content": "Cotton is a natural plant-derived fiber that is lightweight, versatile, and breathable. We recommend gentle hand washing at 30°C or gentle dry cleaning. Preferably, turn the garment inside out and ensure the protection or removal of any accessories. Always check the care label inside your garment for specific instructions.",
+          "tips": ["Wash at 30°C", "Hand wash or gentle cycle", "Turn inside out", "Remove accessories before washing"]
+        },
+        "silk": {
+          "title": "Silk Garments",
+          "content": "Silk is a natural fiber of animal origin, obtained from the filament of the silkworm. It has a smooth, lustrous appearance pleasant to the touch. We recommend gentle dry cleaning and reverse ironing, ensuring the protection and removal of any accessories.",
+          "tips": ["Dry clean recommended", "Reverse iron", "Avoid direct heat", "Remove accessories"]
+        },
+        "denim": {
+          "title": "Denim Garments",
+          "content": "Denim is a durable cotton fiber material. Jacquard denim reproduces distinctive designs with a woven texture. Laminated denim achieves a shiny appearance through specific processing. We recommend gentle washing at 30°C, preferably turning the garment inside out and ensuring the protection or removal of any accessories. Gentle ironing with interposed cloth is suggested.",
+          "tips": ["Wash at 30°C", "Turn inside out", "Gentle ironing with cloth", "Avoid frequent washing"]
+        },
+        "knitwear": {
+          "title": "Knitwear & Cashmere",
+          "content": "Cashmere is a fine fiber of animal origin with a silky, soft, and woolly hand feel. Wool is valued for its length and fineness. We recommend gentle hand washing or delicate dry cleaning, ensuring the protection and removal of any accessories, and following label instructions. Gentle ironing with interposed cloth is suggested.",
+          "tips": ["Hand wash or delicate cycle", "Use cold water", "Flat dry recommended", "Store on flat surface"]
+        },
+        "leather": {
+          "title": "Leather Garments",
+          "content": "Calfskin is soft yet durable leather of animal origin. Nappa is moldable and supple leather characterized by natural markings that make each piece unique. We advise cleaning leather with a soft, dry cloth and contacting a specialized leather treatment center. It is preferable to store leather pieces in cotton garment bags, avoiding heat and light sources, or direct contact with products on the skin (creams or perfumes).",
+          "tips": ["Use soft dry cloth", "Avoid moisture", "Store in cotton garment bags", "Avoid direct sunlight"]
+        },
+        "velvet": {
+          "title": "Velvet Garments",
+          "content": "Velvet is a rich fabric with a soft hand-feel and bright appearance in a smooth or textured finish. We recommend water or gentle dry cleaning following the label instructions. Flat drying is suggested to maintain the garment's natural shape.",
+          "tips": ["Gentle dry cleaning", "Avoid water when possible", "Flat dry only", "Brush gently with soft brush"]
+        },
+        "embellished": {
+          "title": "Embellished Garments",
+          "content": "Crystal and metal embellishments are applied by hand, adding preciousness and luminous accents to garments. Embroideries showcase couture craftsmanship, applied mostly by hand, making each piece unique. We recommend gentle hand washing or dry cleaning at a specialized center, ensuring the protection or removal of any accessories. Reverse ironing is suggested with an interposed damp cloth, avoiding direct contact with embellishments.",
+          "tips": ["Hand wash or dry clean", "Reverse iron", "Avoid direct contact", "Protect embellishments"]
+        },
+        "printed": {
+          "title": "Printed Garments",
+          "content": "Prints feature distinctive patterns on various fabrics including cotton, viscose, knits, and silks, created by digital printing or transfer techniques. We recommend gentle washing at 30°C or delicate dry cleaning. Reverse ironing is preferred, ensuring the protection and removal of any accessories.",
+          "tips": ["Wash inside out", "Reverse iron", "Avoid bleach", "Use cold water"]
+        }
+      },
+      "generalTips": {
+        "title": "General Care Tips",
+        "storage": {
+          "title": "Storage",
+          "tips": [
+            "Store garments in a cool, dry place away from direct sunlight",
+            "Use breathable garment bags or cotton storage",
+            "Ensure proper ventilation to prevent moisture accumulation",
+            "Keep away from perfumes and creams that may stain"
+          ]
+        },
+        "washing": {
+          "title": "Washing",
+          "tips": [
+            "Always check the care label first for specific instructions",
+            "Turn garments inside out before washing",
+            "Use cold water when possible to preserve color",
+            "Avoid over-washing to extend garment lifespan"
+          ]
+        },
+        "drying": {
+          "title": "Drying",
+          "tips": [
+            "Air dry whenever possible instead of machine drying",
+            "Lay flat or hang in a well-ventilated area",
+            "Avoid direct heat sources and intense sunlight",
+            "Remove from drying immediately to prevent wrinkles"
+          ]
+        },
+        "ironing": {
+          "title": "Ironing",
+          "tips": [
+            "Use low to medium heat depending on fabric type",
+            "Always use a pressing cloth between iron and delicate fabrics",
+            "Iron reverse side of printed or embellished garments",
+            "Iron while garment is slightly damp for best results"
+          ]
+        }
+      },
+      "stainRemoval": {
+        "title": "Handling Stains",
+        "tips": [
+          {
+            "label": "Act Quickly:",
+            "content": "Address stains as soon as possible for better results. Blot the stain rather than rubbing to avoid spreading it further."
+          },
+          {
+            "label": "Test First:",
+            "content": "Always test any cleaning solution on a hidden area of the garment before applying it to the visible stain."
+          },
+          {
+            "label": "Be Gentle:",
+            "content": "Use gentle, circular motions when treating stains. Avoid harsh scrubbing that can damage the fabric fibers."
+          },
+          {
+            "label": "Professional Help:",
+            "content": "For stubborn or valuable pieces, consider professional dry cleaning services to ensure proper stain removal."
+          }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Contact Us - Kimhab Ork",
+      "description": "Get in touch with Kimhab Ork. We'd love to hear from you.",
+      "hero": {
+        "title": "Get in Touch",
+        "description": "Have questions about our collections? We're here to help. Reach out to us and we'll get back to you as soon as possible."
+      },
+      "contactInfo": {
+        "email": {
+          "label": "Email",
+          "value": "info@kimhab.com"
+        },
+        "phone": {
+          "label": "Phone",
+          "value": "+855 12 345-678"
+        }
+      },
+      "formSection": {
+        "title": "Send us a Message"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "shipping": {
+          "question": "How long does shipping take?",
+          "answer": "We offer standard shipping (5-7 business days) and express shipping (2-3 business days). Shipping times may vary depending on your location."
+        },
+        "returns": {
+          "question": "What is your return policy?",
+          "answer": "We offer a 30-day return policy on all unused items in original condition. Please contact our customer service team for details on how to initiate a return."
+        },
+        "customTailoring": {
+          "question": "Do you offer custom tailoring?",
+          "answer": "Yes, we offer custom tailoring services for our premium collections. Please reach out to us to discuss your specific requirements."
+        },
+        "tracking": {
+          "question": "How can I track my order?",
+          "answer": "Once your order ships, you'll receive a tracking number via email. You can use this to monitor your package's journey."
+        }
+      }
+    },
+    "responsibility": {
+      "title": "Our Commitment to Responsibility | Kimhab Ork",
+      "description": "Discover Kimhab Ork's commitment to sustainable fashion, ethical sourcing, and responsible production practices.",
+      "hero": {
+        "title": "Our Commitment to Responsibility",
+        "description": "At Kimhab Ork, we believe that sustainable fashion and ethical practices are not optional—they are fundamental to who we are as a brand."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "content": "Kimhab Ork is committed to embedding sustainability as a fundamental part of our strategic development for a more responsible, net-positive future across climate, nature, and people. We are accountable as a business, as part of society, and as individuals contributing to the biodiversity that shares our planet."
+      },
+      "threePillars": {
+        "title": "Our Three Pillars of Responsibility",
+        "sourcing": {
+          "title": "Responsible Sourcing",
+          "description": "We approach sourcing holistically—considering lifecycle impacts, carbon footprints, water usage, waste, and biodiversity protection."
+        },
+        "ethical": {
+          "title": "Ethical Production",
+          "description": "Fair wages, safe conditions, human rights protection, and rigorous monitoring throughout our entire supply chain."
+        },
+        "environmental": {
+          "title": "Environmental Impact",
+          "description": "Reducing carbon emissions, conserving water, minimizing waste, and promoting circular design practices."
+        }
+      },
+      "materials": {
+        "title": "Our Material Standards",
+        "regenerativelyGrown": {
+          "title": "Regeneratively-Grown",
+          "items": [
+            "RegenAgri® certified materials",
+            "NATIVA™ responsibly sourced fibers"
+          ]
+        },
+        "organicallyProduced": {
+          "title": "Organically-Produced",
+          "items": [
+            "Global Organic Textile Standard (GOTS)",
+            "Organic Content Standard (OCS)"
+          ]
+        },
+        "recycledMaterials": {
+          "title": "Recycled Materials",
+          "items": [
+            "Global Recycled Standard (GRS)",
+            "Recycled Claim Standard (RCS)"
+          ]
+        },
+        "otherCertifications": {
+          "title": "Other Certifications",
+          "items": [
+            "Responsible Wool Standard (RWS)",
+            "Leather Working Group (LWG) Silver/Gold"
+          ]
+        }
+      },
+      "ethicalProduction": {
+        "title": "Ethical Production & Labor Rights",
+        "intro": "We are committed to driving positive impact on people throughout our supply chain. We go beyond minimum compliance to ensure rigorous social, ethical, and environmental standards are maintained.",
+        "fairLabor": {
+          "title": "Fair Labor Practices",
+          "content": "We monitor and enforce fair wages, safe working conditions, and proper treatment of workers throughout our supply chain. We are committed to strengthening the protections of all artisans involved in our production."
+        },
+        "workerWelfare": {
+          "title": "Worker Welfare & Safety",
+          "content": "Health and safety, welfare standards, fair pay, human rights protection, and prevention of forced labor and discrimination are non-negotiable priorities in our operations."
+        },
+        "supplyChain": {
+          "title": "Supply Chain Accountability",
+          "content": "We routinely audit and monitor our suppliers to ensure compliance with our standards. We provide training and support to help partners meet and exceed ethical requirements."
+        }
+      },
+      "environmentalImpact": {
+        "title": "Reducing Environmental Impact",
+        "intro": "We are designing and implementing creative solutions to facilitate the use of traceable, low-impact, responsibly sourced, and recyclable materials across our products. Our goal is to mainstream these materials within our collections and minimize waste throughout our operations.",
+        "restrictedMaterials": {
+          "title": "Restricted Materials",
+          "content": "We have restricted the use of certain high-impact and ethically challenging materials. Animal fur is excluded from our collections, and we continuously evaluate new restrictions to minimize harm."
+        },
+        "carbonFootprint": {
+          "title": "Carbon Footprint Reduction",
+          "content": "We prioritize materials and processes with lower carbon footprints. Our sourcing team evaluates the environmental impact of every material choice in our collections."
+        },
+        "waterConservation": {
+          "title": "Water Conservation",
+          "content": "We work with suppliers to minimize water usage in production. Organic and responsibly-sourced materials significantly reduce water consumption compared to conventional methods."
+        },
+        "wasteReduction": {
+          "title": "Waste Reduction",
+          "content": "Through circular design practices and responsible production methods, we minimize waste. We encourage customers to care for and maintain their pieces for longevity."
+        }
+      },
+      "policies": {
+        "title": "Our Policies & Practices",
+        "items": [
+          "We have developed a comprehensive social responsibility program ensuring rigorous standards throughout our supply chain",
+          "Responsible Sourcing Internal Guidance supports our sourcing, product development, and design teams in making effective daily choices",
+          "Our Sustainability, Communications, and Digital departments work closely to ensure accurate information is presented for each product",
+          "We track the percentage of responsibly-sourced styles in each collection containing over 50% responsibly sourced materials by weight",
+          "We remain committed to transparency and openly communicate our progress, achievements, and areas for improvement"
+        ]
+      },
+      "lookingForward": {
+        "title": "Looking Forward",
+        "text1": "At Kimhab Ork, we understand that responsibility is a journey, not a destination. We are on this journey and look forward to sharing our progress with you. Our targets are continually assessed to ensure they remain both ambitious and achievable.",
+        "text2": "We are increasing supplier engagement, training, and upskilling our internal teams on low-impact, responsible sourcing and design. We are laying the foundation for what's to come while remaining open and honest about our progress and challenges.",
+        "text3": "Through increasing the use of responsibly sourced materials, partnering with ethical manufacturers, and maintaining transparency with our customers, we are building a more sustainable future for affordable luxury fashion."
+      },
+      "cta": {
+        "title": "Join Us in Building a Better Future",
+        "description": "By choosing Kimhab Ork, you're supporting sustainable fashion and ethical practices. Every purchase matters.",
+        "button": "Explore Our Collections"
+      }
+    },
+    "helps": {
+      "title": "Helps & FAQs | Kimhab Ork",
+      "description": "Find answers to your questions about our products and services"
+    },
+    "orders": {
+      "title": "Orders & Shipping | Kimhab Ork",
+      "description": "Information about orders and shipping"
+    },
+    "size": {
+      "title": "Size Guide | Kimhab Ork",
+      "description": "Find your perfect fit with our size guide"
+    },
+    "legal": {
+      "notes": {
+        "title": "Legal Notes | Kimhab Ork",
+        "description": "Legal information and notices"
+      },
+      "privacy": {
+        "title": "Privacy Policy | Kimhab Ork",
+        "description": "Our commitment to your privacy"
+      },
+      "terms": {
+        "title": "Terms of Service | Kimhab Ork",
+        "description": "Terms and conditions of service"
+      },
+      "sales": {
+        "title": "General Sales Conditions | Kimhab Ork",
+        "description": "General terms and conditions for purchases"
+      },
+      "cookie": {
+        "title": "Cookie Policy | Kimhab Ork",
+        "description": "Information about our use of cookies"
+      }
+    }
+  }
+}

@@ -1,0 +1,454 @@
+{% section 'header' %}
+
+<main class="creative-director-page">
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="page-hero__wrapper">
+      <h1 class="page-hero__title">Our Creative Director</h1>
+      <p class="page-hero__subtitle">The Vision Behind Kimhab Ork</p>
+    </div>
+  </section>
+
+  <!-- Director Profile Section -->
+  <section class="director-profile">
+    <div class="director-profile__wrapper">
+      <div class="director-profile__grid">
+        <div class="director-profile__image">
+          <img src="/placeholder.svg?height=500&width=400" alt="Creative Director" loading="lazy">
+        </div>
+        <div class="director-profile__content">
+          <h2 class="director-profile__name">Creative Director Name</h2>
+          <p class="director-profile__title">Founder & Creative Director</p>
+          
+          <div class="director-profile__bio">
+            <h3>About the Director</h3>
+            <p>
+              With over 15 years of experience in the fashion industry, our Creative Director brings a unique vision to Kimhab Ork. 
+              Her journey spans from working with renowned international brands to launching her own sustainable fashion line.
+            </p>
+            <p>
+              She believes that luxury fashion should be accessible to everyone. Her design philosophy combines timeless elegance 
+              with contemporary details, creating pieces that empower women to express their individuality.
+            </p>
+          </div>
+
+          <div class="director-profile__stats">
+            <div class="stat">
+              <div class="stat__number">15+</div>
+              <div class="stat__label">Years of Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat__number">10+</div>
+              <div class="stat__label">Collections Launched</div>
+            </div>
+            <div class="stat">
+              <div class="stat__number">50K+</div>
+              <div class="stat__label">Happy Customers</div>
+            </div>
+          </div>
+
+          <div class="director-profile__social">
+            <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" class="social-link" aria-label="Email">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Philosophy Section -->
+  <section class="philosophy">
+    <div class="philosophy__wrapper">
+      <h2 class="philosophy__title">Design Philosophy</h2>
+      <div class="philosophy__grid">
+        <div class="philosophy-card">
+          <h3>Timeless Design</h3>
+          <p>Creating pieces that transcend seasonal trends and remain relevant for years, embodying classic elegance with modern sensibility.</p>
+        </div>
+        <div class="philosophy-card">
+          <h3>Quality Craftsmanship</h3>
+          <p>Every detail matters. From fabric selection to seam finishing, we invest in the highest standards of production and quality control.</p>
+        </div>
+        <div class="philosophy-card">
+          <h3>Sustainable Practices</h3>
+          <p>Fashion should not harm the planet. We prioritize eco-friendly materials and ethical manufacturing throughout our entire production process.</p>
+        </div>
+        <div class="philosophy-card">
+          <h3>Women Empowerment</h3>
+          <p>We design for women who know their worth. Our collections celebrate confidence, strength, and the multifaceted nature of modern femininity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections Overview -->
+  <section class="collections-overview">
+    <div class="collections-overview__wrapper">
+      <h2 class="collections-overview__title">Signature Collections</h2>
+      <div class="collections-overview__grid">
+        <div class="collection-showcase">
+          <img src="/placeholder.svg?height=300&width=300" alt="Collection" loading="lazy">
+          <h3>Essence</h3>
+          <p>Minimalist elegance with refined details, perfect for the everyday woman.</p>
+        </div>
+        <div class="collection-showcase">
+          <img src="/placeholder.svg?height=300&width=300" alt="Collection" loading="lazy">
+          <h3>Heritage</h3>
+          <p>Inspired by Khmer culture, blending traditional elements with contemporary design.</p>
+        </div>
+        <div class="collection-showcase">
+          <img src="/placeholder.svg?height=300&width=300" alt="Collection" loading="lazy">
+          <h3>Empower</h3>
+          <p>Bold statements and confident silhouettes that celebrate strength and individuality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Statement -->
+  <section class="vision">
+    <div class="vision__wrapper">
+      <h2 class="vision__title">Our Vision for the Future</h2>
+      <div class="vision__content">
+        <p>
+          At Kimhab Ork, we envision a fashion industry where accessibility and luxury coexist. Where women from all walks of life 
+          can access beautifully designed, sustainably made clothing that makes them feel confident and proud.
+        </p>
+        <p>
+          We're committed to expanding our reach globally while maintaining our core values of quality, sustainability, and 
+          women's empowerment. Our goal is not just to create fashion, but to create a movement that changes how people perceive 
+          and consume fashion.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="page-cta">
+    <div class="page-cta__wrapper">
+      <h2>Connect with Our Creator</h2>
+      <p>Have questions about our collections or design inspiration?</p>
+      <a href="/contact" class="page-cta__btn">Get In Touch</a>
+    </div>
+  </section>
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .creative-director-page {
+    min-height: 100vh;
+  }
+
+  /* Page Hero */
+  .page-hero {
+    background: linear-gradient(135deg, var(--color-primary, #000) 0%, var(--color-accent, #333) 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .page-hero__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .page-hero__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .page-hero__subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+
+  /* Director Profile */
+  .director-profile {
+    padding: 4rem 2rem;
+  }
+
+  .director-profile__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .director-profile__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .director-profile__image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .director-profile__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .director-profile__name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent, #000);
+  }
+
+  .director-profile__title {
+    font-size: 1.2rem;
+    color: #999;
+    margin-bottom: 2rem;
+  }
+
+  .director-profile__bio h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary, #000);
+  }
+
+  .director-profile__bio p {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+
+  .director-profile__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat__number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-accent, #000);
+  }
+
+  .stat__label {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 0.5rem;
+  }
+
+  .director-profile__social {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .social-link {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--color-accent, #000);
+    color: var(--color-accent, #000);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .social-link:hover {
+    background-color: var(--color-accent, #000);
+    color: white;
+  }
+
+  /* Philosophy Section */
+  .philosophy {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+  }
+
+  .philosophy__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .philosophy__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .philosophy__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .philosophy-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .philosophy-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent, #000);
+  }
+
+  .philosophy-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* Collections Overview */
+  .collections-overview {
+    padding: 4rem 2rem;
+  }
+
+  .collections-overview__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .collections-overview__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .collections-overview__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .collection-showcase {
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .collection-showcase:hover {
+    transform: translateY(-8px);
+  }
+
+  .collection-showcase img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .collection-showcase h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-accent, #000);
+  }
+
+  .collection-showcase p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  /* Vision Section */
+  .vision {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+
+  .vision__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .vision__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .vision__content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Page CTA */
+  .page-cta {
+    background-color: var(--color-primary, #000);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .page-cta__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .page-cta__wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-cta__wrapper p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .page-cta__btn {
+    display: inline-block;
+    background-color: var(--color-accent, #fff);
+    color: var(--color-primary, #000);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+  }
+
+  .page-cta__btn:hover {
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .page-hero__title {
+      font-size: 2rem;
+    }
+
+    .director-profile__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .director-profile__name {
+      font-size: 1.8rem;
+    }
+
+    .director-profile__stats {
+      grid-template-columns: 1fr;
+    }
+
+    .philosophy__title,
+    .collections-overview__title,
+    .vision__title {
+      font-size: 1.5rem;
+    }
+
+    .page-cta__wrapper h2 {
+      font-size: 1.75rem;
+    }
+  }
+</style>

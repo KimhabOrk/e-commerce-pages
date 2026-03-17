@@ -8,6 +8,8 @@ import {
   BookOpen,
   FileText,
 } from 'lucide-react'
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer-2"
 
 export default function Home() {
   const features = [
@@ -51,6 +53,8 @@ export default function Home() {
   ]
 
   return (
+    <>
+    <Header />
     <main className="flex-1">
       {/* Hero Section */}
       <section className="relative py-16 md:py-20 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
@@ -208,5 +212,7 @@ export default function Home() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   )
 }

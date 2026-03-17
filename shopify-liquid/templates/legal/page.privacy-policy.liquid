@@ -1,0 +1,166 @@
+{% section 'header' %}
+
+<main class="legal-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
+        {{ page.title | default: 'Privacy Policy' }}
+      </h1>
+      <p class="text-sm text-foreground/60">
+        {{ 'pages.legal.last_updated' | t: default: 'Last updated:' }} <time datetime="2024-01-01">January 1, 2024</time>
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl prose prose-sm max-w-none">
+      
+      <h2 class="font-serif text-2xl font-bold text-foreground mt-0 mb-4">
+        {{ 'pages.privacy_policy.intro_title' | t: default: 'Introduction' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.privacy_policy.intro' | t: default: 'Kimhab Ork ("Company", "we", "our", or "us") operates the www.kimhab-ork.com website (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.privacy_policy.collect_title' | t: default: 'Information We Collect' }}
+      </h2>
+      
+      <h3 class="font-semibold text-lg text-foreground mb-3">
+        {{ 'pages.privacy_policy.personal_title' | t: default: 'Personal Data' }}
+      </h3>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.privacy_policy.personal_desc' | t: default: 'While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"):' }}
+      </p>
+      
+      <ul class="space-y-2 mb-4 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.personal_1' | t: default: 'Email address' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.personal_2' | t: default: 'First name and last name' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.personal_3' | t: default: 'Phone number' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.personal_4' | t: default: 'Address, State, Province, ZIP/Postal code, City' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.personal_5' | t: default: 'Cookies and Usage Data' }}</li>
+      </ul>
+
+      <h3 class="font-semibold text-lg text-foreground mb-3">
+        {{ 'pages.privacy_policy.usage_title' | t: default: 'Usage Data' }}
+      </h3>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.privacy_policy.usage_desc' | t: default: 'We also collect information about how the Service is accessed and used ("Usage Data"). This may include your device's Internet Protocol address, browser type, the pages you visit, and other similar information.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.privacy_policy.use_title' | t: default: 'How We Use Your Information' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.privacy_policy.use_intro' | t: default: 'Kimhab Ork uses the collected data for various purposes:' }}
+      </p>
+      
+      <ul class="space-y-3 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.use_1' | t: default: 'To provide and maintain our Service' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.use_2' | t: default: 'To notify you about changes to our Service' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.use_3' | t: default: 'To allow you to participate in interactive features of our Service' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.use_4' | t: default: 'To provide customer care and support' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.use_5' | t: default: 'To gather analysis or valuable information for improving our Service' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.use_6' | t: default: 'To monitor the usage of our Service' }}</li>
+        <li class="text-foreground/70">{{ 'pages.privacy_policy.use_7' | t: default: 'To detect, prevent and address technical issues' }}</li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.privacy_policy.security_title' | t: default: 'Security of Data' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.privacy_policy.security_desc' | t: default: 'The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.privacy_policy.retention_title' | t: default: 'Retention of Data' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.privacy_policy.retention_desc' | t: default: 'We will retain your Personal Data only for as long as necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.privacy_policy.rights_title' | t: default: 'Your Rights' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.privacy_policy.rights_intro' | t: default: 'You have the right to:' }}
+      </p>
+      
+      <ul class="space-y-3 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">
+          <span class="font-semibold text-primary">{{ 'pages.privacy_policy.rights_1_title' | t: default: 'Access:' }}</span>
+          <span>{{ 'pages.privacy_policy.rights_1' | t: default: 'Request access to your Personal Data.' }}</span>
+        </li>
+        <li class="text-foreground/70">
+          <span class="font-semibold text-primary">{{ 'pages.privacy_policy.rights_2_title' | t: default: 'Correct:' }}</span>
+          <span>{{ 'pages.privacy_policy.rights_2' | t: default: 'Request correction of inaccurate data.' }}</span>
+        </li>
+        <li class="text-foreground/70">
+          <span class="font-semibold text-primary">{{ 'pages.privacy_policy.rights_3_title' | t: default: 'Delete:' }}</span>
+          <span>{{ 'pages.privacy_policy.rights_3' | t: default: 'Request deletion of your Personal Data.' }}</span>
+        </li>
+        <li class="text-foreground/70">
+          <span class="font-semibold text-primary">{{ 'pages.privacy_policy.rights_4_title' | t: default: 'Opt-Out:' }}</span>
+          <span>{{ 'pages.privacy_policy.rights_4' | t: default: 'Opt out of receiving marketing communications.' }}</span>
+        </li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.privacy_policy.third_title' | t: default: 'Third-Party Links' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.privacy_policy.third_desc' | t: default: 'Our Service may contain links to other sites that are not operated by us. This Privacy Policy does not apply to those external sites. We encourage you to review the privacy policy of any site before providing your information.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.privacy_policy.contact_title' | t: default: 'Contact Us' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.privacy_policy.contact' | t: default: 'If you have any questions about this Privacy Policy, please contact us at support@kimhab-ork.com.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.privacy_policy.changes_title' | t: default: 'Changes to This Privacy Policy' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed">
+        {{ 'pages.privacy_policy.changes' | t: default: 'We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top of this Privacy Policy.' }}
+      </p>
+    </div>
+  </section>
+
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .legal-page {
+    min-height: 100vh;
+  }
+
+  .prose {
+    color: var(--color-text, #000);
+  }
+
+  .prose h2 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose h3 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose p {
+    line-height: 1.8;
+  }
+
+  .prose ul {
+    list-style: none;
+  }
+
+  .prose li {
+    margin-left: 0;
+  }
+</style>

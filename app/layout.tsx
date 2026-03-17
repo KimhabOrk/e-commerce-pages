@@ -3,8 +3,6 @@ import type { Viewport, Metadata } from "next"
 import { Raleway, Playfair_Display, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer-2"
 
 const _playfair = Playfair_Display({
   subsets: ["latin"],
@@ -170,16 +168,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly < {
+}: Readonly<{
   children: React.ReactNode
-} > ) {
+}>) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
-        <Header />
           {children}
-        <Footer />
-        <Analytics />
       </body>
     </html>
   )

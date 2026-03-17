@@ -1,0 +1,591 @@
+{% section 'header' %}
+
+<main class="home">
+  <!-- Hero Section -->
+  {% if section.settings.hero_enabled %}
+    <section class="hero">
+      <div class="hero__wrapper">
+        {% if section.settings.hero_image %}
+          <div class="hero__image">
+            <img src="{{ section.settings.hero_image | img_url: '1200x600' }}" alt="{{ section.settings.hero_title }}" loading="lazy">
+          </div>
+        {% endif %}
+        <div class="hero__content">
+          <h1 class="hero__title">{{ section.settings.hero_title }}</h1>
+          <p class="hero__subtitle">{{ section.settings.hero_subtitle }}</p>
+          {% if section.settings.hero_cta_text %}
+            <a href="{{ section.settings.hero_cta_url }}" class="hero__cta">{{ section.settings.hero_cta_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- Featured Collections -->
+  {% if section.settings.featured_collections_enabled %}
+    <section class="featured-collections">
+      <div class="featured-collections__wrapper">
+        <h2 class="featured-collections__title">{{ section.settings.featured_collections_title }}</h2>
+        <div class="featured-collections__grid">
+          {% for collection in collections %}
+            {% if collection.title != 'All' %}
+              <div class="collection-card">
+                {% if collection.featured_image %}
+                  <img src="{{ collection.featured_image | img_url: '300x300' }}" alt="{{ collection.title }}" loading="lazy">
+                {% endif %}
+                <h3>{{ collection.title }}</h3>
+                <p>{{ collection.description | strip_html | truncatewords: 15 }}</p>
+                <a href="{{ collection.url }}" class="collection-card__link">View Collection</a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- Featured Products -->
+  {% if section.settings.featured_products_enabled %}
+    <section class="featured-products">
+      <div class="featured-products__wrapper">
+        <h2 class="featured-products__title">{{ section.settings.featured_products_title }}</h2>
+        <div class="featured-products__grid">
+          {% assign featured = section.settings.featured_product_limit %}
+          {% for product in collections['frontpage'].products %}
+            {% if forloop.index0 < featured %}
+              <div class="product-card">
+                {% if product.featured_image %}
+                  <img src="{{ product.featured_image | img_url: '250x250' }}" alt="{{ product.title }}" loading="lazy">
+                {% endif %}
+                <h3>{{ product.title }}</h3>
+                <p class="product-card__price">{{ product.price | money }}</p>
+                <a href="{{ product.url }}" class="product-card__link">View Product</a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- CTA Section -->
+  {% if section.settings.cta_enabled %}
+    <section class="cta">
+      <div class="cta__wrapper">
+        <h2 class="cta__title">{{ section.settings.cta_title }}</h2>
+        <p class="cta__text">{{ section.settings.cta_text }}</p>
+        <a href="{{ section.settings.cta_url }}" class="cta__btn">{{ section.settings.cta_btn_text }}</a>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- Testimonials Section -->
+  {% if section.settings.testimonials_enabled %}
+    <section class="testimonials">
+      <div class="testimonials__wrapper">
+        <h2 class="testimonials__title">{{ section.settings.testimonials_title }}</h2>
+        <div class="testimonials__grid">
+          {% for i in (1..3) %}
+            {% assign testimonial_title = 'testimonial_' | append: i | append: '_name' %}
+            {% assign testimonial_text = 'testimonial_' | append: i | append: '_text' %}
+            {% if section.settings[testimonial_title] %}
+              <div class="testimonial">
+                <p class="testimonial__text">"{{ section.settings[testimonial_text] }}"</p>
+                <p class="testimonial__author">— {{ section.settings[testimonial_title] }}</p>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .home {
+    min-height: 100vh;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-primary, #000) 0%, var(--color-accent, #333) 100%);
+    color: white;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .hero__image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .hero__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .hero__content {
+    padding: 2rem;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .hero__cta {
+    display: inline-block;
+    background-color: white;
+    color: var(--color-primary, #000);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .hero__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Featured Collections */
+  .featured-collections {
+    padding: 4rem 2rem;
+  }
+
+  .featured-collections__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .featured-collections__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .featured-collections__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .collection-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collection-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .collection-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .collection-card h3 {
+    padding: 1rem 1rem 0;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .collection-card p {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+    flex: 1;
+  }
+
+  .collection-card__link {
+    margin: 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-accent, #000);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  /* Featured Products */
+  .featured-products {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+
+  .featured-products__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .featured-products__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .featured-products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .product-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  .product-card__price {
+    color: var(--color-accent, #000);
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+
+  .product-card__link {
+    padding: 0.5rem;
+    background-color: var(--color-accent, #000);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  /* CTA Section */
+  .cta {
+    background-color: var(--color-primary, #000);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .cta__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .cta__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .cta__text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .cta__btn {
+    display: inline-block;
+    background-color: var(--color-accent, #fff);
+    color: var(--color-primary, #000);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+  }
+
+  .cta__btn:hover {
+    transform: scale(1.05);
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 4rem 2rem;
+  }
+
+  .testimonials__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .testimonials__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .testimonial {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-accent, #000);
+  }
+
+  .testimonial__text {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .testimonial__author {
+    font-weight: 600;
+    color: var(--color-accent, #000);
+    margin: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero__wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .hero__title {
+      font-size: 2rem;
+    }
+
+    .hero__subtitle {
+      font-size: 1rem;
+    }
+
+    .featured-collections__title,
+    .featured-products__title,
+    .testimonials__title {
+      font-size: 1.5rem;
+    }
+
+    .cta__title {
+      font-size: 1.75rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Home Page",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero Section"
+    },
+    {
+      "type": "checkbox",
+      "id": "hero_enabled",
+      "label": "Enable Hero Section",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Hero Title",
+      "default": "Welcome to Our Store"
+    },
+    {
+      "type": "text",
+      "id": "hero_subtitle",
+      "label": "Hero Subtitle",
+      "default": "Discover our amazing collection"
+    },
+    {
+      "type": "text",
+      "id": "hero_cta_text",
+      "label": "CTA Button Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "hero_cta_url",
+      "label": "CTA Button URL"
+    },
+    {
+      "type": "header",
+      "content": "Featured Collections"
+    },
+    {
+      "type": "checkbox",
+      "id": "featured_collections_enabled",
+      "label": "Enable Featured Collections",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "featured_collections_title",
+      "label": "Featured Collections Title",
+      "default": "Shop by Collection"
+    },
+    {
+      "type": "header",
+      "content": "Featured Products"
+    },
+    {
+      "type": "checkbox",
+      "id": "featured_products_enabled",
+      "label": "Enable Featured Products",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "featured_products_title",
+      "label": "Featured Products Title",
+      "default": "Best Sellers"
+    },
+    {
+      "type": "range",
+      "id": "featured_product_limit",
+      "min": 4,
+      "max": 12,
+      "step": 4,
+      "unit": "prod",
+      "label": "Number of Products to Show",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "CTA Section"
+    },
+    {
+      "type": "checkbox",
+      "id": "cta_enabled",
+      "label": "Enable CTA Section",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "cta_title",
+      "label": "CTA Title",
+      "default": "Join Our Community"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Get exclusive offers and updates"
+    },
+    {
+      "type": "text",
+      "id": "cta_btn_text",
+      "label": "CTA Button Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "header",
+      "content": "Testimonials"
+    },
+    {
+      "type": "checkbox",
+      "id": "testimonials_enabled",
+      "label": "Enable Testimonials",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "testimonials_title",
+      "label": "Testimonials Title",
+      "default": "What Our Customers Say"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_1_name",
+      "label": "Testimonial 1 - Name",
+      "default": "John Doe"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_1_text",
+      "label": "Testimonial 1 - Quote",
+      "default": "This is an amazing product!"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_2_name",
+      "label": "Testimonial 2 - Name",
+      "default": "Jane Smith"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_2_text",
+      "label": "Testimonial 2 - Quote",
+      "default": "Excellent quality and service."
+    },
+    {
+      "type": "text",
+      "id": "testimonial_3_name",
+      "label": "Testimonial 3 - Name",
+      "default": "Mike Johnson"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_3_text",
+      "label": "Testimonial 3 - Quote",
+      "default": "Highly recommend to everyone!"
+    }
+  ]
+}
+{% endschema %}

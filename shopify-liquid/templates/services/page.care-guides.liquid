@@ -1,0 +1,313 @@
+{% section 'header' %}
+
+<main class="care-guides-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+        {{ page.title | default: 'Care Guides' }}
+      </h1>
+      <p class="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+        {{ 'pages.care_guides.hero_desc' | t: default: 'Preserve the beauty and longevity of your Kimhab Ork pieces with our comprehensive care instructions. High-quality materials deserve proper care.' }}
+      </p>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-8 md:py-14 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <div class="bg-muted p-8 rounded-lg border border-border/40">
+        <h2 class="font-serif text-xl font-semibold text-primary mb-4">
+          {{ 'pages.care_guides.intro_title' | t: default: 'Why Proper Care Matters?' }}
+        </h2>
+        <p class="text-foreground/70 leading-relaxed">
+          {{ 'pages.care_guides.intro_desc' | t: default: 'High-quality materials require specific care to preserve their integrity over time. Specific cleaning and care instructions are present on the product label inside each garment. For general advice, follow our dedicated guides for each fabric type.' }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fabric Care Instructions -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-12">
+        {{ 'pages.care_guides.fabric_title' | t: default: 'Fabric Care Instructions' }}
+      </h2>
+      <div class="space-y-3">
+        
+        <!-- Cotton Garments -->
+        <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+          <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+            <h3 class="font-semibold text-primary-foreground">
+              {{ 'pages.care_guides.care_01_title' | t: default: 'Cotton Garments' }}
+            </h3>
+            <span class="text-primary">▼</span>
+          </summary>
+          <div class="px-6 py-4 bg-card/0 border-t border-border/70 space-y-4">
+            <p class="text-foreground/75 leading-relaxed">
+              {{ 'pages.care_guides.care_01_desc' | t: default: 'Cotton is a natural plant-derived fiber that is lightweight, versatile, and breathable. We recommend gentle hand washing at 30°C or gentle dry cleaning. Preferably, turn the garment inside out and ensure the protection or removal of any accessories. Always check the care label inside your garment for specific instructions.' }}
+            </p>
+            <div class="bg-muted/70 p-4 rounded">
+              <h4 class="font-semibold text-sm text-foreground mb-3">{{ 'pages.care_guides.care_tips' | t: default: 'Care Tips:' }}</h4>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_01_tip_1' | t: default: 'Wash at 30°C' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_01_tip_2' | t: default: 'Hand wash or gentle cycle' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_01_tip_3' | t: default: 'Turn inside out' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_01_tip_4' | t: default: 'Remove accessories before washing' }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- Silk Garments -->
+        <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+          <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+            <h3 class="font-semibold text-primary-foreground">
+              {{ 'pages.care_guides.care_02_title' | t: default: 'Silk Garments' }}
+            </h3>
+            <span class="text-primary">▼</span>
+          </summary>
+          <div class="px-6 py-4 bg-card/0 border-t border-border/70 space-y-4">
+            <p class="text-foreground/75 leading-relaxed">
+              {{ 'pages.care_guides.care_02_desc' | t: default: 'Silk is a natural fiber of animal origin, obtained from the filament of the silkworm. It has a smooth, lustrous appearance pleasant to the touch. We recommend gentle dry cleaning and reverse ironing, ensuring the protection and removal of any accessories.' }}
+            </p>
+            <div class="bg-muted/70 p-4 rounded">
+              <h4 class="font-semibold text-sm text-foreground mb-3">{{ 'pages.care_guides.care_tips' | t: default: 'Care Tips:' }}</h4>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_02_tip_1' | t: default: 'Dry clean recommended' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_02_tip_2' | t: default: 'Reverse iron' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_02_tip_3' | t: default: 'Avoid direct heat' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_02_tip_4' | t: default: 'Remove accessories' }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- Denim Garments -->
+        <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+          <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+            <h3 class="font-semibold text-primary-foreground">
+              {{ 'pages.care_guides.care_03_title' | t: default: 'Denim Garments' }}
+            </h3>
+            <span class="text-primary">▼</span>
+          </summary>
+          <div class="px-6 py-4 bg-card/0 border-t border-border/70 space-y-4">
+            <p class="text-foreground/75 leading-relaxed">
+              {{ 'pages.care_guides.care_03_desc' | t: default: 'Denim is a durable cotton fiber material. Jacquard denim reproduces distinctive designs with a woven texture. Laminated denim achieves a shiny appearance through specific processing. We recommend gentle washing at 30°C, preferably turning the garment inside out and ensuring the protection or removal of any accessories.' }}
+            </p>
+            <div class="bg-muted/70 p-4 rounded">
+              <h4 class="font-semibold text-sm text-foreground mb-3">{{ 'pages.care_guides.care_tips' | t: default: 'Care Tips:' }}</h4>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_03_tip_1' | t: default: 'Wash at 30°C' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_03_tip_2' | t: default: 'Turn inside out' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_03_tip_3' | t: default: 'Gentle ironing with cloth' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_03_tip_4' | t: default: 'Avoid frequent washing' }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- Knitwear & Cashmere -->
+        <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+          <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+            <h3 class="font-semibold text-primary-foreground">
+              {{ 'pages.care_guides.care_04_title' | t: default: 'Knitwear & Cashmere' }}
+            </h3>
+            <span class="text-primary">▼</span>
+          </summary>
+          <div class="px-6 py-4 bg-card/0 border-t border-border/70 space-y-4">
+            <p class="text-foreground/75 leading-relaxed">
+              {{ 'pages.care_guides.care_04_desc' | t: default: 'Cashmere is a fine fiber of animal origin with a silky, soft, and woolly hand feel. Wool is valued for its length and fineness. We recommend gentle hand washing or delicate dry cleaning, ensuring the protection and removal of any accessories, and following label instructions.' }}
+            </p>
+            <div class="bg-muted/70 p-4 rounded">
+              <h4 class="font-semibold text-sm text-foreground mb-3">{{ 'pages.care_guides.care_tips' | t: default: 'Care Tips:' }}</h4>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_04_tip_1' | t: default: 'Hand wash or delicate cycle' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_04_tip_2' | t: default: 'Use cold water' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_04_tip_3' | t: default: 'Flat dry recommended' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_04_tip_4' | t: default: 'Store on flat surface' }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- Leather Garments -->
+        <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+          <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+            <h3 class="font-semibold text-primary-foreground">
+              {{ 'pages.care_guides.care_05_title' | t: default: 'Leather Garments' }}
+            </h3>
+            <span class="text-primary">▼</span>
+          </summary>
+          <div class="px-6 py-4 bg-card/0 border-t border-border/70 space-y-4">
+            <p class="text-foreground/75 leading-relaxed">
+              {{ 'pages.care_guides.care_05_desc' | t: default: 'Calfskin is soft yet durable leather of animal origin. Nappa is moldable and supple leather characterized by natural markings that make each piece unique. We advise cleaning leather with a soft, dry cloth and contacting a specialized leather treatment center.' }}
+            </p>
+            <div class="bg-muted/70 p-4 rounded">
+              <h4 class="font-semibold text-sm text-foreground mb-3">{{ 'pages.care_guides.care_tips' | t: default: 'Care Tips:' }}</h4>
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_05_tip_1' | t: default: 'Use soft dry cloth' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_05_tip_2' | t: default: 'Avoid moisture' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_05_tip_3' | t: default: 'Store in cotton garment bags' }}</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-foreground/75">
+                  <span class="text-primary font-semibold mt-0.5">•</span>
+                  <span>{{ 'pages.care_guides.care_05_tip_4' | t: default: 'Avoid direct sunlight' }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- General Care Tips Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.care_guides.general_title' | t: default: 'General Care Tips' }}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Storage Tips -->
+        <div class="space-y-4">
+          <h3 class="font-semibold text-lg text-foreground">
+            {{ 'pages.care_guides.storage_title' | t: default: 'Storage' }}
+          </h3>
+          <ul class="space-y-2 text-foreground/70 text-sm list-disc list-inside marker:text-primary px-2 md:px-4">
+            <li><span>{{ 'pages.care_guides.storage_1' | t: default: 'Store garments in a cool, dry place away from direct sunlight' }}</span></li>
+            <li><span>{{ 'pages.care_guides.storage_2' | t: default: 'Use breathable garment bags or cotton storage' }}</span></li>
+            <li><span>{{ 'pages.care_guides.storage_3' | t: default: 'Ensure proper ventilation to prevent moisture accumulation' }}</span></li>
+            <li><span>{{ 'pages.care_guides.storage_4' | t: default: 'Keep away from perfumes and creams that may stain' }}</span></li>
+          </ul>
+        </div>
+
+        <!-- Washing Tips -->
+        <div class="space-y-4">
+          <h3 class="font-semibold text-lg text-foreground">
+            {{ 'pages.care_guides.washing_title' | t: default: 'Washing' }}
+          </h3>
+          <ul class="space-y-2 text-foreground/70 text-sm list-disc list-inside marker:text-primary px-2 md:px-4">
+            <li><span>{{ 'pages.care_guides.washing_1' | t: default: 'Always check the care label first for specific instructions' }}</span></li>
+            <li><span>{{ 'pages.care_guides.washing_2' | t: default: 'Turn garments inside out before washing' }}</span></li>
+            <li><span>{{ 'pages.care_guides.washing_3' | t: default: 'Use cold water when possible to preserve color' }}</span></li>
+            <li><span>{{ 'pages.care_guides.washing_4' | t: default: 'Avoid over-washing to extend garment lifespan' }}</span></li>
+          </ul>
+        </div>
+
+        <!-- Drying Tips -->
+        <div class="space-y-4">
+          <h3 class="font-semibold text-lg text-foreground">
+            {{ 'pages.care_guides.drying_title' | t: default: 'Drying' }}
+          </h3>
+          <ul class="space-y-2 text-foreground/70 text-sm list-disc list-inside marker:text-primary px-2 md:px-4">
+            <li><span>{{ 'pages.care_guides.drying_1' | t: default: 'Air dry whenever possible instead of machine drying' }}</span></li>
+            <li><span>{{ 'pages.care_guides.drying_2' | t: default: 'Lay flat or hang in a well-ventilated area' }}</span></li>
+            <li><span>{{ 'pages.care_guides.drying_3' | t: default: 'Avoid direct heat sources and intense sunlight' }}</span></li>
+            <li><span>{{ 'pages.care_guides.drying_4' | t: default: 'Remove from drying immediately to prevent wrinkles' }}</span></li>
+          </ul>
+        </div>
+
+        <!-- Ironing Tips -->
+        <div class="space-y-4">
+          <h3 class="font-semibold text-lg text-foreground">
+            {{ 'pages.care_guides.ironing_title' | t: default: 'Ironing' }}
+          </h3>
+          <ul class="space-y-2 text-foreground/70 text-sm list-disc list-inside marker:text-primary px-2 md:px-4">
+            <li><span>{{ 'pages.care_guides.ironing_1' | t: default: 'Use low to medium heat depending on fabric type' }}</span></li>
+            <li><span>{{ 'pages.care_guides.ironing_2' | t: default: 'Always use a pressing cloth between iron and delicate fabrics' }}</span></li>
+            <li><span>{{ 'pages.care_guides.ironing_3' | t: default: 'Iron reverse side of printed or embellished garments' }}</span></li>
+            <li><span>{{ 'pages.care_guides.ironing_4' | t: default: 'Iron while garment is slightly damp for best results' }}</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stain Removal Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+        {{ 'pages.care_guides.stain_title' | t: default: 'Handling Stains' }}
+      </h2>
+      <div class="bg-muted p-6 rounded-lg border border-border/40">
+        <ul class="space-y-4 text-foreground/70 list-inside marker:text-primary px-2 md:px-4">
+          <li>
+            <span class="font-semibold text-primary">{{ 'pages.care_guides.stain_1_title' | t: default: 'Act Quickly:' }}</span>
+            <span>{{ 'pages.care_guides.stain_1_desc' | t: default: 'Address stains as soon as possible for better results. Blot the stain rather than rubbing to avoid spreading it further.' }}</span>
+          </li>
+          <li>
+            <span class="font-semibold text-primary">{{ 'pages.care_guides.stain_2_title' | t: default: 'Test First:' }}</span>
+            <span>{{ 'pages.care_guides.stain_2_desc' | t: default: 'Always test any cleaning solution on a hidden area of the garment before applying it to the visible stain.' }}</span>
+          </li>
+          <li>
+            <span class="font-semibold text-primary">{{ 'pages.care_guides.stain_3_title' | t: default: 'Be Gentle:' }}</span>
+            <span>{{ 'pages.care_guides.stain_3_desc' | t: default: 'Use gentle, circular motions when treating stains. Avoid harsh scrubbing that can damage the fabric fibers.' }}</span>
+          </li>
+          <li>
+            <span class="font-semibold text-primary">{{ 'pages.care_guides.stain_4_title' | t: default: 'Professional Help:' }}</span>
+            <span>{{ 'pages.care_guides.stain_4_desc' | t: default: 'For stubborn or valuable pieces, consider professional dry cleaning services to ensure proper stain removal.' }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>

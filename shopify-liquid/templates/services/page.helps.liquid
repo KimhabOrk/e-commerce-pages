@@ -1,0 +1,301 @@
+{% section 'header' %}
+
+<main class="helps-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+        {{ page.title | default: 'Help & FAQs' }}
+      </h1>
+      <p class="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+        {{ 'pages.helps.hero_desc' | t: default: 'Find answers to frequently asked questions about our products, services, and ordering process.' }}
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ Sections -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl">
+      
+      <!-- General Questions Section -->
+      <div class="mb-12">
+        <h2 class="font-serif text-2xl font-bold text-foreground mb-8">
+          {{ 'pages.helps.general_title' | t: default: 'General Questions' }}
+        </h2>
+        <div class="space-y-3">
+          
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.general_1_q' | t: default: 'Who is Kimhab Ork?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.general_1_a' | t: default: 'Kimhab Ork is a premium womenswear brand dedicated to creating beautifully designed, high-quality garments that celebrate individuality and craftsmanship. Founded with a passion for sustainable fashion and artistic expression, we offer timeless pieces and custom-made options.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.general_2_q' | t: default: 'What materials do you use?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.general_2_a' | t: default: 'We use premium, responsibly sourced materials including organic cotton, silk, cashmere, linen, and wool. All fabrics are selected for their quality, durability, and comfort. We prioritize sustainable and ethical sourcing practices.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.general_3_q' | t: default: 'Do you offer international shipping?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.general_3_a' | t: default: 'Yes, we ship worldwide. International shipping costs are calculated based on location and order weight. Delivery times vary by region, typically ranging from 10-25 business days. All shipments are tracked and insured.' }}
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Ordering Questions Section -->
+      <div class="mb-12">
+        <h2 class="font-serif text-2xl font-bold text-foreground mb-8">
+          {{ 'pages.helps.ordering_title' | t: default: 'Ordering & Payments' }}
+        </h2>
+        <div class="space-y-3">
+          
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.order_1_q' | t: default: 'What payment methods do you accept?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.order_1_a' | t: default: 'We accept all major credit and debit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, and Google Pay. All payments are processed securely with SSL encryption.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.order_2_q' | t: default: 'How can I track my order?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.order_2_a' | t: default: 'After your order ships, you will receive a confirmation email with a tracking number. You can track your shipment in real-time through our website or the carrier''s tracking portal.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.order_3_q' | t: default: 'Can I modify or cancel my order?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.order_3_a' | t: default: 'We can modify or cancel orders within 24 hours of purchase, before they enter our fulfillment process. After that, you may be able to return the item once received. Please contact us immediately if you need to make changes.' }}
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Returns & Exchanges Section -->
+      <div class="mb-12">
+        <h2 class="font-serif text-2xl font-bold text-foreground mb-8">
+          {{ 'pages.helps.returns_title' | t: default: 'Returns & Exchanges' }}
+        </h2>
+        <div class="space-y-3">
+          
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.return_1_q' | t: default: 'What is your return policy?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.return_1_a' | t: default: 'We offer a 30-day return policy for all unworn, unwashed items in original condition with tags attached. Returns must be initiated within 30 days of delivery. Return shipping is free for defective items; otherwise, customers cover return shipping costs.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.return_2_q' | t: default: 'How long do refunds take?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.return_2_a' | t: default: 'Once we receive and inspect your return, we process refunds within 5-7 business days. Depending on your bank or payment method, the refund may take an additional 3-5 business days to appear in your account.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.return_3_q' | t: default: 'Can I exchange items for a different size or color?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.return_3_a' | t: default: 'Yes, exchanges are available for different sizes or colors within 30 days of purchase. Contact us with your order number and desired exchange. Exchanges of equal value ship free; additional charges apply for upgrades.' }}
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Sizing & Fit Section -->
+      <div class="mb-12">
+        <h2 class="font-serif text-2xl font-bold text-foreground mb-8">
+          {{ 'pages.helps.sizing_title' | t: default: 'Sizing & Fit' }}
+        </h2>
+        <div class="space-y-3">
+          
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.sizing_1_q' | t: default: 'How do I find my size?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.sizing_1_a' | t: default: 'Visit our Size Guide page for detailed measurements for each size. We provide bust, waist, hip, and length measurements in both imperial and metric units. Compare these to a garment that fits you well, or measure yourself using our provided guidelines.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.sizing_2_q' | t: default: 'What if the item doesn't fit?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.sizing_2_a' | t: default: 'If an item doesn't fit, you can exchange it for a different size at no additional charge. If it doesn't fit due to a manufacturing error, we'll provide a full refund or replacement. Please contact us within 14 days of delivery.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.sizing_3_q' | t: default: 'Do you offer custom sizing?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.sizing_3_a' | t: default: 'Yes! Our custom-made service allows you to specify exact measurements and sizing preferences. Contact our design team to learn more about our bespoke tailoring options.' }}
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Care Questions Section -->
+      <div>
+        <h2 class="font-serif text-2xl font-bold text-foreground mb-8">
+          {{ 'pages.helps.care_title' | t: default: 'Care & Maintenance' }}
+        </h2>
+        <div class="space-y-3">
+          
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.care_1_q' | t: default: 'How should I care for my Kimhab Ork pieces?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.care_1_a' | t: default: 'Check the care label inside each garment for specific instructions. Each fabric type has unique care requirements. Visit our Care Guides page for detailed information on caring for different materials including cotton, silk, cashmere, and leather.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.care_2_q' | t: default: 'Can items be machine washed?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.care_2_a' | t: default: 'Some items can be machine washed on gentle cycles, while others require hand washing or dry cleaning. Always check the care label first. When in doubt, hand washing and air drying are the safest options for delicate pieces.' }}
+              </p>
+            </div>
+          </details>
+
+          <details class="group border border-border/70 rounded-lg overflow-hidden hover:border-primary/60 transition-colors">
+            <summary class="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
+              <h3 class="font-semibold text-primary-foreground">
+                {{ 'pages.helps.care_3_q' | t: default: 'What should I do if my item gets stained?' }}
+              </h3>
+              <span class="text-primary">▼</span>
+            </summary>
+            <div class="px-6 py-4 bg-card/0 border-t border-border/70">
+              <p class="text-foreground/75 leading-relaxed">
+                {{ 'pages.helps.care_3_a' | t: default: 'Act quickly when treating stains. Blot gently rather than rubbing. Test any cleaning solution on a hidden area first. For delicate fabrics, professional dry cleaning is recommended. See our Care Guides for stain-specific advice.' }}
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-muted">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
+        {{ 'pages.helps.contact_title' | t: default: 'Didn't Find Your Answer?' }}
+      </h2>
+      <p class="text-foreground/70 mb-8 leading-relaxed">
+        {{ 'pages.helps.contact_desc' | t: default: 'Our customer service team is here to help. Reach out to us with any questions or concerns.' }}
+      </p>
+      <a href="{{ 'contact' | append: '/' }}" class="inline-block bg-primary text-background px-8 py-3 rounded font-semibold hover:bg-primary/90 transition-colors">
+        {{ 'pages.helps.contact_button' | t: default: 'Contact Us' }}
+      </a>
+    </div>
+  </section>
+
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .helps-page {
+    min-height: 100vh;
+  }
+</style>

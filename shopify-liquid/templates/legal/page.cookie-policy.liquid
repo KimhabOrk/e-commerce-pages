@@ -1,0 +1,144 @@
+{% section 'header' %}
+
+<main class="legal-page">
+  
+  <!-- Hero Section -->
+  <section class="relative py-12 md:py-16 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
+    <div class="mx-auto max-w-4xl text-center">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
+        {{ page.title | default: 'Cookie Policy' }}
+      </h1>
+      <p class="text-sm text-foreground/60">
+        {{ 'pages.legal.last_updated' | t: default: 'Last updated:' }} <time datetime="2024-01-01">January 1, 2024</time>
+      </p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="py-12 md:py-16 px-6 md:px-8 lg:px-10">
+    <div class="mx-auto max-w-4xl prose prose-sm max-w-none">
+      
+      <h2 class="font-serif text-2xl font-bold text-foreground mt-0 mb-4">
+        {{ 'pages.cookie_policy.intro_title' | t: default: 'Introduction' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.cookie_policy.intro' | t: default: 'Kimhab Ork (hereinafter "we", "us", "our", or "Company") operates the www.kimhab-ork.com website (hereinafter referred to as the "Service"). This Cookie Policy explains how we use cookies and similar tracking technologies to recognize you and improve your experience on our website.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.cookie_policy.what_are_title' | t: default: 'What Are Cookies?' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.cookie_policy.what_are' | t: default: 'Cookies are small pieces of data stored on your device that help websites remember information about you. They are widely used to make websites work more efficiently, as well as to provide information to the owners of the site.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.cookie_policy.types_title' | t: default: 'Types of Cookies We Use' }}
+      </h2>
+      
+      <h3 class="font-semibold text-lg text-foreground mb-3">
+        {{ 'pages.cookie_policy.essential_title' | t: default: 'Essential Cookies' }}
+      </h3>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.cookie_policy.essential_desc' | t: default: 'These cookies are necessary for the website to function properly. They enable core functionality such as security, payment processing, and shopping cart operations. Without these cookies, services you request cannot be provided.' }}
+      </p>
+
+      <h3 class="font-semibold text-lg text-foreground mb-3">
+        {{ 'pages.cookie_policy.analytics_title' | t: default: 'Analytics Cookies' }}
+      </h3>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.cookie_policy.analytics_desc' | t: default: 'We use analytics cookies to understand how visitors interact with our website. This helps us improve site performance, user experience, and identify areas for enhancement. These cookies collect anonymous information about your visit.' }}
+      </p>
+
+      <h3 class="font-semibold text-lg text-foreground mb-3">
+        {{ 'pages.cookie_policy.marketing_title' | t: default: 'Marketing Cookies' }}
+      </h3>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.cookie_policy.marketing_desc' | t: default: 'Marketing cookies are used to track your preferences and behavior to show you personalized advertisements. They help us understand your interests and deliver relevant marketing content.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.cookie_policy.control_title' | t: default: 'How to Control Cookies' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-4">
+        {{ 'pages.cookie_policy.control_intro' | t: default: 'You have the right to decide whether to accept or reject non-essential cookies. However, please note that some cookies are necessary for the website to function.' }}
+      </p>
+      
+      <ul class="space-y-3 mb-6 list-inside marker:text-primary">
+        <li class="text-foreground/70">
+          <span class="font-semibold text-primary">{{ 'pages.cookie_policy.control_1_title' | t: default: 'Browser Controls:' }}</span>
+          <span>{{ 'pages.cookie_policy.control_1' | t: default: 'You can adjust your browser settings to refuse cookies or alert you when cookies are being sent.' }}</span>
+        </li>
+        <li class="text-foreground/70">
+          <span class="font-semibold text-primary">{{ 'pages.cookie_policy.control_2_title' | t: default: 'Cookie Management:' }}</span>
+          <span>{{ 'pages.cookie_policy.control_2' | t: default: 'Most browsers allow you to view and delete cookies from your device.' }}</span>
+        </li>
+        <li class="text-foreground/70">
+          <span class="font-semibold text-primary">{{ 'pages.cookie_policy.control_3_title' | t: default: 'Opt-Out:' }}</span>
+          <span>{{ 'pages.cookie_policy.control_3' | t: default: 'You can opt out of certain types of cookies through our preference center or contact us directly.' }}</span>
+        </li>
+      </ul>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.cookie_policy.third_party_title' | t: default: 'Third-Party Cookies' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.cookie_policy.third_party' | t: default: 'Our website may contain links to external sites and integrate third-party services (e.g., payment processors, analytics providers). These third parties may place their own cookies on your device. We are not responsible for their cookie practices. Please review their privacy policies directly.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.cookie_policy.gdpr_title' | t: default: 'GDPR Compliance' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.cookie_policy.gdpr' | t: default: 'For users in the European Union, we comply with the General Data Protection Regulation (GDPR). We obtain explicit consent before placing non-essential cookies on your device. You have the right to access, modify, or delete your data at any time.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.cookie_policy.contact_title' | t: default: 'Contact Us' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed mb-6">
+        {{ 'pages.cookie_policy.contact' | t: default: 'If you have any questions about our cookie policy, please contact us at support@kimhab-ork.com or visit our contact page.' }}
+      </p>
+
+      <h2 class="font-serif text-2xl font-bold text-foreground mb-4 mt-8">
+        {{ 'pages.cookie_policy.changes_title' | t: default: 'Changes to This Policy' }}
+      </h2>
+      <p class="text-foreground/70 leading-relaxed">
+        {{ 'pages.cookie_policy.changes' | t: default: 'We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to review this policy periodically to stay informed about our cookie usage.' }}
+      </p>
+    </div>
+  </section>
+
+</main>
+
+{% section 'footer' %}
+
+<style>
+  .legal-page {
+    min-height: 100vh;
+  }
+
+  .prose {
+    color: var(--color-text, #000);
+  }
+
+  .prose h2 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose h3 {
+    color: var(--color-foreground, #000);
+  }
+
+  .prose p {
+    line-height: 1.8;
+  }
+
+  .prose ul {
+    list-style: none;
+  }
+
+  .prose li {
+    margin-left: 0;
+  }
+</style>
