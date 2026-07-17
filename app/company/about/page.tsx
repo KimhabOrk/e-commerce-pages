@@ -126,28 +126,28 @@ export default function AboutPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <FeatureCard
-                icon={<Crown className="w-full h-full" />}
+                icon={<Crown className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Quality Over Quantity"
                 description="We believe in creating pieces that last. Every garment is carefully crafted with premium materials and attention to detail."
                 ctaText="Discover"
                 ctaHref="/care-guides"
               />
               <FeatureCard
-                icon={<Shield className="w-full h-full" />}
+                icon={<Shield className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Accessible Luxury"
                 description="Luxury fashion should not be exclusive. We make premium womenswear affordable without compromising on design or craftsmanship."
                 ctaText="Shop"
                 ctaHref="/"
               />
               <FeatureCard
-                icon={<TreePine className="w-full h-full" />}
+                icon={<TreePine className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Sustainable Fashion"
                 description="Our commitment to the environment is reflected in our material choices and production practices."
                 ctaText="Learn"
                 ctaHref="/responsibility"
               />
               <FeatureCard
-                icon={<Users className="w-full h-full" />}
+                icon={<Users className="w-7 h-7 md:w-10 md:h-10" />}
                 title="Empowered Women"
                 description="We design for confident, modern women who value both style and substance. Every collection celebrates femininity and strength."
                 ctaText="Explore"
