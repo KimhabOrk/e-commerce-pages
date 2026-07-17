@@ -71,7 +71,7 @@ export default function ContactPage() {
 
         {/* Contact Form Section */}
         <div className="max-w-6xl mx-auto">
-          <div className="bg-muted rounded-2xl p-4 md:p-10">
+          <div className="bg-muted/80 rounded-2xl p-4 md:p-10">
             <h2 className="font-serif text-2xl md:text-4xl font-semibold mb-8 text-center">
               Send us a Message
             </h2>

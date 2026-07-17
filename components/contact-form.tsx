@@ -155,7 +155,7 @@ export function ContactForm() {
           onChange={handleChange}
           placeholder="John Doe"
           disabled={isLoading}
-          className="w-full border border-foreground/30 rounded-xl"
+          className="w-full border border-foreground/40 rounded-xl"
           required
         />
       </div>
@@ -173,7 +173,7 @@ export function ContactForm() {
           onChange={handleChange}
           placeholder="john@example.com"
           disabled={isLoading}
-          className="w-full border border-foreground/30 rounded-xl"
+          className="w-full border border-foreground/40 rounded-xl"
           required
         />
       </div>
@@ -191,7 +191,7 @@ export function ContactForm() {
           onChange={handleChange}
           placeholder="How can we help?"
           disabled={isLoading}
-          className="w-full border border-foreground/30 rounded-xl"
+          className="w-full border border-foreground/40 rounded-xl"
           required
         />
       </div>
@@ -217,7 +217,7 @@ export function ContactForm() {
       <Button
         type="submit"
         disabled={isLoading}
-        className="w-full md:w-auto"
+        className="w-full md:w-auto pb-2"
       >
         {isLoading ? (
           <>

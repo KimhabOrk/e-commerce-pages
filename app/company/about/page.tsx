@@ -14,27 +14,26 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-  {
-    id: "01",
-    title: "Premium Materials",
-    content: "We source the finest fabrics and materials, including organic cotton, sustainable silk, and responsibly-sourced textiles that feel luxurious and last longer.",
-  },
-  {
-    id: "02",
-    title: "Timeless Design",
-    content: "Our collections focus on versatile, classic silhouettes with modern details. Pieces that work today and remain relevant for years to come.",
-  },
-  {
-    id: "03",
-    title: "Ethical Production",
-    content: "We partner with manufacturers who prioritize fair wages, safe working conditions, and environmental responsibility throughout our supply chain.",
-  },
-  {
-    id: "04",
-    title: "Exceptional Value",
-    content: "Quality womenswear at accessible prices. We believe you shouldn't have to compromise on quality or pay luxury prices for great fashion.",
-  },
-]
+{
+  id: "01",
+  title: "Premium Materials",
+  content: "We source the finest fabrics and materials, including organic cotton, sustainable silk, and responsibly-sourced textiles that feel luxurious and last longer.",
+},
+{
+  id: "02",
+  title: "Timeless Design",
+  content: "Our collections focus on versatile, classic silhouettes with modern details. Pieces that work today and remain relevant for years to come.",
+},
+{
+  id: "03",
+  title: "Ethical Production",
+  content: "We partner with manufacturers who prioritize fair wages, safe working conditions, and environmental responsibility throughout our supply chain.",
+},
+{
+  id: "04",
+  title: "Exceptional Value",
+  content: "Quality womenswear at accessible prices. We believe you shouldn't have to compromise on quality or pay luxury prices for great fashion.",
+}, ]
 
 function FAQCard({ id, title, content }: { id: string;title: string;content: string }) {
   return (
@@ -42,11 +41,11 @@ function FAQCard({ id, title, content }: { id: string;title: string;content: str
       <summary className="cursor-pointer px-6 py-4 bg-muted hover:bg-muted/85 transition-colors flex items-center justify-between">
         <div className="flex gap-3">
           <div className="flex-shrink-0">
-            <div className="flex items-center justify-center h-7 w-7 rounded-md bg-primary/70">
-              <span className="text-sm text-white font-semibold">{id}</span>
+            <div className="flex items-center justify-center text-center h-5 w-5 md:h-7 md:w-7 rounded-full bg-primary/85 mx-auto">
+              <span className="text-sm md:text-md text-white font-semibold">{id}</span>
             </div>
           </div>
-          <h3 className="text-lg font-semibold text-foreground mb-2">
+          <h3 className="text-md md:text-lg font-semibold text-foreground mb-2">
             {title}
           </h3>
         </div>
@@ -61,26 +60,25 @@ function FAQCard({ id, title, content }: { id: string;title: string;content: str
 
 export default function AboutPage() {
   const values = [
-    {
-      title: 'Quality Over Quantity',
-      description: 'We believe in creating pieces that last. Every garment is carefully crafted with premium materials and attention to detail, ensuring you invest in items that remain timeless.',
-    },
-    {
-      title: 'Accessible Luxury',
-      description: 'Luxury fashion should not be exclusive. We make premium womenswear affordable without compromising on design, materials, or craftsmanship.',
-    },
-    {
-      title: 'Sustainable Fashion',
-      description: 'Our commitment to the environment is reflected in our material choices and production practices. We strive to minimize our ecological footprint while maximizing impact.',
-    },
-    {
-      title: 'Empowered Women',
-      description: 'We design for confident, modern women who value both style and substance. Every collection celebrates femininity, strength, and individuality.',
-    },
-  ]
-
+  {
+    title: 'Quality Over Quantity',
+    description: 'We believe in creating pieces that last. Every garment is carefully crafted with premium materials and attention to detail, ensuring you invest in items that remain timeless.',
+  },
+  {
+    title: 'Accessible Luxury',
+    description: 'Luxury fashion should not be exclusive. We make premium womenswear affordable without compromising on design, materials, or craftsmanship.',
+  },
+  {
+    title: 'Sustainable Fashion',
+    description: 'Our commitment to the environment is reflected in our material choices and production practices. We strive to minimize our ecological footprint while maximizing impact.',
+  },
+  {
+    title: 'Empowered Women',
+    description: 'We design for confident, modern women who value both style and substance. Every collection celebrates femininity, strength, and individuality.',
+  }, ]
+  
   return (
-      <main className="flex-1">
+    <main className="flex-1">
         <HeroGradient 
           title="Affordable Luxury for Modern Women"
           description="Kimhab Ork reimagines womenswear by combining exquisite design, premium quality materials, and sustainable practices at prices that celebrate accessibility."
