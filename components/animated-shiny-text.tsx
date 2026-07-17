@@ -24,7 +24,7 @@ export const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
         } as CSSProperties
       }
       className={cn(
-        "mx-auto max-w-md text-gray-200/90 dark:text-gray-100/90",
+        "mx-auto max-w-md text-gray-400/80 dark:text-gray-300/80",
 
         // Shine effect
         "animate-shiny-text bg-size-[var(--shiny-width)_100%] bg-clip-text bg-position-[0_0] bg-no-repeat [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite]",

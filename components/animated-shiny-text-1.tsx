@@ -13,15 +13,15 @@ export interface AnimatedShinyTextProps extends ComponentPropsWithoutRef < "span
 
 const variantStyles = {
   rainbow: {
-    base: "text-gray-200/90 dark:text-gray-100/90",
+    base: "text-gray-400/80 dark:text-gray-300/80",
     shine: "bg-linear-to-r from-transparent via-sky-500 via-30% via-rose-400 via-50% via-cyan-500 via-70% to-transparent dark:via-orange-400 dark:via-50% dark:via-fuchsia-500 dark:via-30% dark:via-red-200",
   },
   aurora: {
-    base: "text-gray-200/85 dark:text-gray-100/85",
+    base: "text-gray-400/85 dark:text-gray-300/85",
     shine: "bg-linear-to-r from-transparent via-emerald-400 via-40% via-cyan-500 via-60% to-transparent dark:via-rose-300 dark:via-50% dark:via-blue-400 dark:via-30% dark:via-purple-300",
   },
   neon: {
-    base: "text-gray-200 dark:text-white",
+    base: "text-gray-400 dark:text-white",
     shine: "bg-linear-to-r from-transparent via-cyan-500 via-30% via-fuchsia-500 via-50% via-rose-500 via-70% to-transparent dark:via-indigo-400 dark:via-50% dark:via-cyan-400 dark:via-30% dark:via-teal-400",
   },
 }

@@ -3,6 +3,7 @@ import { ChevronDown } from 'lucide-react'
 import Image from 'next/image'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer-2"
+import { AnimatedShinyText } from "@/components/animated-shiny-text";
 
 export const metadata: Metadata = {
   title: 'Help & FAQs | Kimhab Ork',
@@ -223,8 +224,10 @@ export default function HelpFaqsPage() {
       {/* Hero Section */}
       <section className="relative py-8 md:py-10 mt-10 md:mt-14 lg:py-20 lg:mt-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
-            Supports
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight mb-6 text-balance">
+            <AnimatedShinyText>
+              Supports
+            </AnimatedShinyText>
           </h1>
           <p className="text-xl md:text-2xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
             Find answers to your questions about Kimhab Ork products, ordering, shipping, returns, and more. Browse our comprehensive FAQ section or contact our customer support team.
