@@ -39,7 +39,7 @@ export function HeroGradient({
 
           {/* Description */}
           {description && (
-            <p className="text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="md:text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
               {description}
             </p>
           )}

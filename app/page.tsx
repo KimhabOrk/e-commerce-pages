@@ -66,7 +66,7 @@ export default function Home() {
                 Affordable Luxury Fashion
               </AnimatedShinyText>
             </h1>
-            <p className="text-lg md:text-xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+            <p className="md:text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
               Discover Kimhab Ork, where premium womenswear meets accessible pricing. Quality, sustainability, and style in every collection.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center">

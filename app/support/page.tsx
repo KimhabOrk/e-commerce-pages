@@ -229,7 +229,7 @@ export default function HelpFaqsPage() {
               Supports
             </AnimatedShinyText>
           </h1>
-          <p className="text-foreground/75 mb-8 text-balance max-w-5xl mx-auto leading-relaxed">
+          <p className="md:text-lg text-foreground/75 mb-8 text-balance max-w-5xl mx-auto leading-relaxed">
             Find answers to your questions about Kimhab Ork products, ordering, shipping, returns, and more. Browse our comprehensive FAQ section or contact our customer support team.
           </p>
         </div>
