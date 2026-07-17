@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { ChevronDown } from 'lucide-react'
+import { AnimatedShinyText } from "@/components/animated-shiny-text";
 
 export const metadata: Metadata = {
   title: 'Care Guides | Kimhab Ork',
@@ -86,7 +87,9 @@ export default function CareGuidesPage() {
         <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-              Care Guides
+            	<AnimatedShinyText>
+            		Care Guides
+            	</AnimatedShinyText>
             </h1>
             <p className="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
               Preserve the beauty and longevity of your Kimhab Ork pieces with our comprehensive care instructions. High-quality materials deserve proper care.

@@ -18,6 +18,7 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
+import { AnimatedShinyText } from "@/components/animated-shiny-text";
 
 export const metadata: Metadata = {
   title: "Custom Made Service | Kimhab Ork",
@@ -86,7 +87,9 @@ export default function CustomMadePage() {
       <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-black">
         <div className="flex flex-col justify-center items-center text-center mx-auto max-w-8xl gap-6 md:gap-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-serif font-bold uppercase">
-            Custom Made
+            <AnimatedShinyText>
+            	Custom Made
+            </AnimatedShinyText>
           </h1>
           <p className="font-sans text-sm md:text-md lg:text-lg leading-tight text-balance uppercase">
             True luxury is found in clothing that is expertly crafted for the
