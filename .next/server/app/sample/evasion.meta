@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/sample/layout,_N_T_/sample/evasion/layout,_N_T_/sample/evasion/page,_N_T_/sample/evasion"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/sample/evasion/__PAGE__",
+    "/sample/evasion",
+    "/sample",
+    "/_index",
+    "/_head"
+  ]
+}

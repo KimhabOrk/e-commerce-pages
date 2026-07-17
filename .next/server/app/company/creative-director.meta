@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/company/layout,_N_T_/company/creative-director/layout,_N_T_/company/creative-director/page,_N_T_/company/creative-director"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/company/creative-director/__PAGE__",
+    "/company/creative-director",
+    "/company",
+    "/_index",
+    "/_head"
+  ]
+}

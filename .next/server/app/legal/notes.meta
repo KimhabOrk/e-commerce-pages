@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/legal/layout,_N_T_/legal/notes/layout,_N_T_/legal/notes/page,_N_T_/legal/notes"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/legal/notes/__PAGE__",
+    "/legal/notes",
+    "/legal",
+    "/_index",
+    "/_head"
+  ]
+}

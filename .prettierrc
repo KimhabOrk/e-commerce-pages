@@ -1,0 +1,24 @@
+{
+    "tabWidth": 2,
+    "useTabs": false,
+    "printWidth": 100,
+    "singleQuote": false,
+    "htmlWhitespaceSensitivity": "css",
+    "bracketSameLine": true,
+    "singleAttributePerLine": false,
+    "overrides": [
+        {
+            "files": "out/**/*.html",
+            "options": {
+                "parser": "html"
+            }
+        },
+        {
+            "files": "out/**/*.css",
+            "options": {
+                "parser": "css",
+                "singleQuote": true
+            }
+        }
+    ]
+}
