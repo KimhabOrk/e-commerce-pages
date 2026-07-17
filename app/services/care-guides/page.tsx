@@ -91,7 +91,7 @@ export default function CareGuidesPage() {
             		Care Guides
             	</AnimatedShinyText>
             </h1>
-            <p className="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
+            <p className="text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
               Preserve the beauty and longevity of your Kimhab Ork pieces with our comprehensive care instructions. High-quality materials deserve proper care.
             </p>
           </div>
