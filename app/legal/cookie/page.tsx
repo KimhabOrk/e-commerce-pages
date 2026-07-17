@@ -24,7 +24,7 @@ export default function CookiePolicyPage() {
         <div className="mx-auto max-w-4xl space-y-12">
           {/* Cookie List */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Cookie List
             </h2>
             <div className="text-foreground/70 space-y-4">
@@ -61,7 +61,7 @@ export default function CookiePolicyPage() {
 
           {/* Targeting Cookies */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Targeting Cookies
             </h2>
             <div className="text-foreground/70 space-y-4 mb-6">
@@ -131,7 +131,7 @@ export default function CookiePolicyPage() {
 
           {/* Functional Cookies */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Functional Cookies
             </h2>
             <div className="text-foreground/70 space-y-4 mb-6">
@@ -181,7 +181,7 @@ export default function CookiePolicyPage() {
 
           {/* Performance Cookies */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Performance Cookies
             </h2>
             <div className="text-foreground/70 space-y-4 mb-6">
@@ -231,7 +231,7 @@ export default function CookiePolicyPage() {
 
           {/* Strictly Necessary Cookies */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Strictly Necessary Cookies
             </h2>
             <div className="text-foreground/70 space-y-4 mb-6">
@@ -279,7 +279,7 @@ export default function CookiePolicyPage() {
 
           {/* Cookie Management */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Cookie Management and Control
             </h2>
             <div className="text-foreground/70 space-y-4">

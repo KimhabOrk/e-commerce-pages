@@ -14,7 +14,7 @@ export default function LegalNotesPage() {
         {/* Hero Section */}
         <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
               Legal Notes
             </h1>
             <p className="text-lg text-foreground/70 text-balance max-w-2xl mx-auto">
@@ -28,7 +28,7 @@ export default function LegalNotesPage() {
           <div className="mx-auto max-w-4xl space-y-12">
             {/* Company Information */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
                 Company Information
               </h2>
               <div className="text-foreground/70 space-y-4">
@@ -43,7 +43,7 @@ export default function LegalNotesPage() {
 
             {/* Intellectual Property */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
                 Intellectual Property Rights
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -72,7 +72,7 @@ export default function LegalNotesPage() {
 
             {/* Use of the Site */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
                 Use of the Site
               </h2>
               <div className="space-y-4 text-foreground/70">
@@ -93,7 +93,7 @@ export default function LegalNotesPage() {
 
             {/* External Links */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
                 External Links
               </h2>
               <div className="text-foreground/70 space-y-4">
@@ -111,7 +111,7 @@ export default function LegalNotesPage() {
 
             {/* Limitation of Liability */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
                 Limitation of Liability
               </h2>
               <div className="text-foreground/70 space-y-4">
@@ -145,7 +145,7 @@ export default function LegalNotesPage() {
 
             {/* Content Disclaimer */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
                 Content and Modifications
               </h2>
               <div className="text-foreground/70 space-y-4">
@@ -160,7 +160,7 @@ export default function LegalNotesPage() {
 
             {/* Governing Law */}
             <div>
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
                 Governing Law
               </h2>
               <div className="text-foreground/70">

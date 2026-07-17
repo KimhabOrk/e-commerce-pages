@@ -18,7 +18,7 @@ export default function ResponsibilityPage() {
         {/* Hero Section */}
         <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
               <AnimatedShinyText>
               	Our Commitment to Responsibility
               </AnimatedShinyText>
@@ -32,7 +32,7 @@ export default function ResponsibilityPage() {
         {/* Our Vision */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8">
               Our Vision
             </h2>
             <div className="bg-card p-8 rounded-lg border border-border/70">
@@ -46,7 +46,7 @@ export default function ResponsibilityPage() {
         {/* Three Main Pillars as Cards */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8">
               Our Three Pillars of Responsibility
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -78,7 +78,7 @@ export default function ResponsibilityPage() {
         {/* Responsible Sourcing Details */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background" id="sourcing">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8">
               Our Material Standards
             </h2>
             <div className="bg-muted p-8 rounded-lg border border-border/70">
@@ -143,7 +143,7 @@ export default function ResponsibilityPage() {
         {/* Ethical Production */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10" id="ethical">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Ethical Production & Labor Rights
             </h2>
             <div className="space-y-6">
@@ -180,7 +180,7 @@ export default function ResponsibilityPage() {
         {/* Environmental Impact */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background" id="environmental">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Reducing Environmental Impact
             </h2>
             <div className="space-y-8">
@@ -221,7 +221,7 @@ export default function ResponsibilityPage() {
         {/* Our Policies */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Our Policies & Practices
             </h2>
             <div className="space-y-4">
@@ -246,7 +246,7 @@ export default function ResponsibilityPage() {
         {/* Looking Forward */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Looking Forward
             </h2>
             <div className="space-y-6 text-foreground/70 bg-muted/60 leading-relaxed p-5 rounded-lg">

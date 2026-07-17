@@ -86,7 +86,7 @@ export default function CareGuidesPage() {
         {/* Hero Section */}
         <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
             	<AnimatedShinyText>
             		Care Guides
             	</AnimatedShinyText>
@@ -114,7 +114,7 @@ export default function CareGuidesPage() {
         {/* Care Guides */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-xl md:text-3xl font-bold text-foreground mb-12">
+            <h2 className="font-serif text-xl md:text-3xl font-semibold text-foreground mb-12">
               Fabric Care Instructions
             </h2>
             <div className="space-y-3">
@@ -128,7 +128,7 @@ export default function CareGuidesPage() {
         {/* General Tips Section */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+            <h2 className="font-serif text-xl md:text-3xl font-semibold text-foreground mb-8">
               General Care Tips
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -207,7 +207,7 @@ export default function CareGuidesPage() {
         {/* Stain Removal Section */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-xl md:text-3xl font-bold text-foreground mb-8">
+            <h2 className="font-serif text-xl md:text-3xl font-semibold text-foreground mb-8">
               Handling Stains
             </h2>
             <div className="bg-muted p-6 rounded-lg border border-border/40 jutify-center items-center">

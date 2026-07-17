@@ -201,7 +201,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 function CategorySection({ category, faqs }: { category: string; faqs: Array<{ question: string; answer: string }> }) {
   return (
     <div>
-      <h2 className="font-serif text-xl md:text-2xl font-bold text-foreground mb-6">
+      <h2 className="font-serif text-xl md:text-2xl font-semibold text-foreground mb-6">
         {category}
       </h2>
       <div className="space-y-3">
@@ -219,7 +219,7 @@ export default function HelpFaqsPage() {
       {/* Hero Section */}
       <section className="relative py-8 md:py-10 mt-10 md:mt-14 lg:py-20 lg:mt-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
             Supports
           </h1>
           <p className="text-xl md:text-2xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -243,7 +243,7 @@ export default function HelpFaqsPage() {
       <section className="py-8 md:py-10 mt-10 md:mt-14 lg:py-20 lg:mt-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl">
           <div className="bg-muted/50 border border-border/40 p-8 rounded-lg text-center">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">
               Still have questions?
             </h2>
             <p className="text-foreground/70 mb-8 max-w-2xl mx-auto">

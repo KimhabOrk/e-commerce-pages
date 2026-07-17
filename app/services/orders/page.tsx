@@ -49,7 +49,7 @@ export default function OrdersShippingReturnsPage() {
       {/* Hero Section */}
       <section className="relative py-12 md:py-16 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/10">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
             Orders, Shipping & Returns
           </h1>
           <p className="text-lg text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -78,7 +78,7 @@ export default function OrdersShippingReturnsPage() {
       {/* Placing Your Order */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8">
             Placing Your Order
           </h2>
           <div className="space-y-4">
@@ -119,7 +119,7 @@ export default function OrdersShippingReturnsPage() {
       {/* Shipping Information */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-muted/30">
         <div className="mx-auto max-w-4xl">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8">
             Shipping Information
           </h2>
           <div className="space-y-4">
@@ -187,7 +187,7 @@ export default function OrdersShippingReturnsPage() {
       {/* Returns & Exchanges */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8">
             Returns & Exchanges
           </h2>
           <div className="space-y-4 mb-8">
@@ -321,7 +321,7 @@ export default function OrdersShippingReturnsPage() {
       {/* Return Address */}
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8">
             Return Address
           </h2>
           <div className="bg-muted/50 border border-border/40 p-8 rounded-xl">
@@ -346,7 +346,7 @@ export default function OrdersShippingReturnsPage() {
       <section className="py-12 md:py-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-4xl">
           <div className="bg-muted/50 border border-border/40 p-8 rounded-lg text-center">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-4">
               More Questions?
             </h2>
             <p className="text-foreground/70 mb-6 max-w-2xl mx-auto">

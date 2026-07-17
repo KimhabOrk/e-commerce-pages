@@ -60,7 +60,7 @@ export default function Home() {
       <section className="relative py-16 md:py-20 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
         <div className="mx-auto max-w-6xl">
           <div className="text-center max-w-7xl mx-auto">
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance">
+            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold text-foreground mb-6 text-balance">
               Affordable Luxury Fashion
             </h1>
             <p className="text-lg md:text-xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
@@ -87,7 +87,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
         <div className="mx-auto max-w-6xl">
-          <h2 className="font-serif text-2xl md:text-4xl font-bold text-foreground text-start mb-12">
+          <h2 className="font-serif text-2xl md:text-4xl font-semibold text-foreground text-start mb-12">
             Why Choose Kimhab Ork?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -126,7 +126,7 @@ export default function Home() {
       {/* Pages Preview */}
       <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
         <div className="mx-auto max-w-6xl">
-          <h2 className="font-serif text-2xl md:text-4xl font-bold text-foreground text-start mb-12">
+          <h2 className="font-serif text-2xl md:text-4xl font-semibold text-foreground text-start mb-12">
             Learn More
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -158,7 +158,7 @@ export default function Home() {
       {/* Additional Pages */}
       <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10">
         <div className="mx-auto max-w-6xl">
-          <h2 className="font-serif text-2xl md:text-4xl font-bold text-foreground text-start mb-8">
+          <h2 className="font-serif text-2xl md:text-4xl font-semibold text-foreground text-start mb-8">
             Legal & Support
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

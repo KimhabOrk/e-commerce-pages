@@ -24,7 +24,7 @@ export default function GeneralSalesConditionsPage() {
         <div className="mx-auto max-w-4xl space-y-12">
           {/* Legal Terms and Conditions */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Legal Terms and Conditions
             </h2>
             <div className="text-foreground/70 space-y-4">
@@ -42,7 +42,7 @@ export default function GeneralSalesConditionsPage() {
 
           {/* Company Identification */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Company Identification
             </h2>
             <div className="space-y-4 text-foreground/70">
@@ -82,7 +82,7 @@ export default function GeneralSalesConditionsPage() {
 
           {/* Intellectual Property */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Intellectual Property Rights
             </h2>
             <div className="space-y-4 text-foreground/70">
@@ -124,7 +124,7 @@ export default function GeneralSalesConditionsPage() {
 
           {/* Website Ownership and Use */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Website Ownership and Use
             </h2>
             <div className="space-y-4 text-foreground/70">
@@ -182,7 +182,7 @@ export default function GeneralSalesConditionsPage() {
 
           {/* Limitation of Liability */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Limitation of Liability
             </h2>
             <div className="text-foreground/70 space-y-4">
@@ -223,7 +223,7 @@ export default function GeneralSalesConditionsPage() {
 
           {/* Currency and Pricing */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Currency and Pricing
             </h2>
             <div className="text-foreground/70 space-y-4">
@@ -252,7 +252,7 @@ export default function GeneralSalesConditionsPage() {
 
           {/* Ownership of Website */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Ownership of Website and Content
             </h2>
             <div className="text-foreground/70 space-y-4">
@@ -267,7 +267,7 @@ export default function GeneralSalesConditionsPage() {
 
           {/* Dispute Resolution */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Dispute Resolution and Amendments
             </h2>
             <div className="space-y-4 text-foreground/70">
@@ -295,7 +295,7 @@ export default function GeneralSalesConditionsPage() {
 
           {/* Governing Law */}
           <div>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Governing Law and Jurisdiction
             </h2>
             <div className="text-foreground/70 space-y-4">

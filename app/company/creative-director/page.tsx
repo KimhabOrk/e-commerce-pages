@@ -25,7 +25,7 @@ export default function CreativeDirector() {
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-6xl">
             <div className="text-center mb-12 md:mb-16">
-              <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+              <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 leading-tight">
                 Meet Our Creative Director
               </h1>
               <p className="text-lg md:text-xl text-foreground/75 max-w-2xl mx-auto leading-relaxed">
@@ -56,7 +56,7 @@ export default function CreativeDirector() {
               {/* Profile Info */}
               <div className="space-y-6">
                 <div>
-                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-4">
                     KIMHAB ORK
                   </h2>
                   <p className="text-xl font-semibold text-foreground mb-4">Creative Director & Founder</p>
@@ -88,7 +88,7 @@ export default function CreativeDirector() {
         {/* Journey Section */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground text-center mb-12">
               The Creative Journey
             </h2>
 
@@ -127,7 +127,7 @@ export default function CreativeDirector() {
         {/* Core Values Section */}
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-6xl">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground text-center mb-12">
               Core Values & Guiding Principles
             </h2>
 
@@ -171,7 +171,7 @@ export default function CreativeDirector() {
         <section className="py-12 md:py-16 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl">
             <div className="bg-card/60 border border-border p-8 md:p-12 rounded-lg">
-              <h2 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-6">
                 A Word from KIMHAB
               </h2>
 
@@ -200,7 +200,7 @@ export default function CreativeDirector() {
         {/* Connect Section */}
         <section className="py-12 md:py-16 px-4 md:px-8 lg:px-10 bg-muted/70">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Connect with Our Vision
             </h2>
             <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
