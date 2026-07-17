@@ -224,7 +224,7 @@ export default function HelpFaqsPage() {
       {/* Hero Section */}
       <section className="relative py-8 md:py-10 mt-10 md:mt-14 lg:py-20 lg:mt-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-7xl text-center">
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight mb-6 text-balance">
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold mb-6 text-balance">
             <AnimatedShinyText>
               Supports
             </AnimatedShinyText>
