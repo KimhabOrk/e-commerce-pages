@@ -2,6 +2,9 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import { Mail, MapPin, Phone, ArrowLeft } from "lucide-react"
+import { AnimatedShinyText } from "@/components/animated-shiny-text-1";
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer-2"
 
 export const metadata = {
   title: "Contact Us - Kimhab Ork",
@@ -10,13 +13,17 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
+    <>
+    <Header />
     <div className="min-h-screen">
       
       {/* Hero Section */}
       <section className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="text-center mb-12 md:mb-16">
-          <h1 className="font-serif text-4xl md:text-5xl md:text-6xl font-semibold mb-4 tracking-tight">
-            Get in Touch
+          <h1 className="font-serif text-3xl md:text-4xl md:text-6xl font-semibold mb-4 tracking-tight">
+            <AnimatedShinyText variant="neon">
+              Get in Touch
+            </AnimatedShinyText>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Have questions about our collections? We're here to help. Reach out to us and we'll get back to you as soon as possible.
@@ -124,5 +131,7 @@ export default function ContactPage() {
         </div>
       </section>
     </div>
+    <Footer />
+  </>
   )
 }

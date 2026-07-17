@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { AnimatedShinyText } from "@/components/animated-shiny-text";
+import { AnimatedShinyText } from "@/components/animated-shiny-text-1";
 
 interface HeroGradientProps {
   title: string;

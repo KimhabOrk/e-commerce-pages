@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import { FeatureCard } from '@/components/feature-card'
 import { Leaf, Users, Globe } from 'lucide-react'
-import { AnimatedShinyText } from "@/components/animated-shiny-text";
+import { AnimatedShinyText } from "@/components/animated-shiny-text-1";
 
 export const metadata: Metadata = {
   title: 'Our Commitment to Responsibility | Kimhab Ork',
@@ -19,7 +19,7 @@ export default function ResponsibilityPage() {
         <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-background">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
-              <AnimatedShinyText>
+              <AnimatedShinyText variant="aurora">
               	Our Commitment to Responsibility
               </AnimatedShinyText>
             </h1>

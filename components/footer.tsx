@@ -38,10 +38,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/company/responsibility"
+                  href="/support"
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
-                  Responsibility
+                  Support
                 </Link>
               </li>
             </ul>
@@ -81,6 +81,14 @@ export function Footer() {
                   className="text-foreground/70 hover:text-primary transition-colors"
                 >
                   Helps & FAQS
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/company/responsibility"
+                  className="text-foreground/70 hover:text-primary transition-colors"
+                >
+                  Responsibility
                 </Link>
               </li>
             </ul>
