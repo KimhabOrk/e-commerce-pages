@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react'
 import Image from 'next/image'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer-2"
-import { AnimatedShinyText } from "@/components/animated-shiny-text";
+import { AnimatedShinyText } from "@/components/animated-shiny-text-1";
 
 export const metadata: Metadata = {
   title: 'Help & FAQs | Kimhab Ork',
@@ -225,7 +225,7 @@ export default function HelpFaqsPage() {
       <section className="relative py-8 md:py-10 mt-10 md:mt-14 lg:py-20 lg:mt-16 px-4 md:px-6 lg:px-8 bg-background">
         <div className="mx-auto max-w-7xl text-center">
           <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold mb-6 text-balance">
-            <AnimatedShinyText>
+            <AnimatedShinyText variant="aurora">
               Supports
             </AnimatedShinyText>
           </h1>

@@ -10,6 +10,7 @@ import {
 } from 'lucide-react'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer-2"
+import { AnimatedShinyText } from "@/components/animated-shiny-text-1";
 
 export default function Home() {
   const features = [
@@ -60,8 +61,10 @@ export default function Home() {
       <section className="relative py-16 md:py-20 lg:py-24 px-6 md:px-8 lg:px-10 bg-gradient-to-br from-background via-muted/20 to-background overflow-hidden">
         <div className="mx-auto max-w-6xl">
           <div className="text-center max-w-7xl mx-auto">
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold text-foreground mb-6 text-balance">
-              Affordable Luxury Fashion
+            <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
+              <AnimatedShinyText variant="aurora">
+                Affordable Luxury Fashion
+              </AnimatedShinyText>
             </h1>
             <p className="text-lg md:text-xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
               Discover Kimhab Ork, where premium womenswear meets accessible pricing. Quality, sustainability, and style in every collection.

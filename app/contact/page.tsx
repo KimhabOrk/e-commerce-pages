@@ -21,7 +21,7 @@ export default function ContactPage() {
       <section className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="text-center mb-12 md:mb-16">
           <h1 className="font-serif text-3xl md:text-4xl md:text-6xl font-semibold mb-4 tracking-tight">
-            <AnimatedShinyText variant="neon">
+            <AnimatedShinyText variant="rainbow">
               Get in Touch
             </AnimatedShinyText>
           </h1>
