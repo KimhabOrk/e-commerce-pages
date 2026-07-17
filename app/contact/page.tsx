@@ -42,10 +42,10 @@ export default function ContactPage() {
             <h3 className="font-serif text-lg font-semibold mb-2">Email</h3>
             <p className="text-muted-foreground">
               <a
-                href="mailto:info@kimhab.com"
+                href="mailto:info@kimhabork.com"
                 className="hover:text-foreground transition-colors"
               >
-                info@kimhab.com
+                info@kimhabork.com
               </a>
             </p>
           </div>
