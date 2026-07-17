@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { ChevronDown } from 'lucide-react'
 import Image from 'next/image'
+import { AnimatedShinyText } from "@/components/animated-shiny-text";
 
 export const metadata: Metadata = {
   title: 'Help & FAQs | Kimhab Ork',
@@ -220,7 +221,9 @@ export default function HelpFaqsPage() {
       <section className="relative py-12 md:py-16 lg:py-32 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/10">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
-            Help & FAQs
+            <AnimatedShinyText>
+              Help & FAQs
+            </AnimatedShinyText>
           </h1>
           <p className="text-xl md:text-2xl text-foreground/75 mb-8 text-balance max-w-2xl mx-auto leading-relaxed">
             Find answers to your questions about Kimhab Ork products, ordering, shipping, returns, and more. Browse our comprehensive FAQ section or contact our customer support team.

@@ -87,7 +87,7 @@ export default function CareGuidesPage() {
         <section className="relative py-12 md:py-16 lg:py-32 px-6 md:px-8 lg:px-10 bg-gradient-to-b from-background to-muted/10">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="font-serif text-3xl md:text-4xl lg:text-6xl font-semibold text-foreground mb-6 text-balance">
-            	<AnimatedShinyText variant="neon">
+            	<AnimatedShinyText variant="rainbow">
             		Care Guides
             	</AnimatedShinyText>
             </h1>

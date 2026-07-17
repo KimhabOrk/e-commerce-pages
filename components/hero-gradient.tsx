@@ -32,7 +32,7 @@ export function HeroGradient({
         <div className="max-w-7xl mx-auto text-center space-y-6">
           {/* Main Title */}
           <h1 className="font-serif text-3xl text-balance md:text-4xl lg:text-6xl font-semibold tracking-tight leading-tight">
-            <AnimatedShinyText>
+            <AnimatedShinyText variant="neon">
             	{title}
             </AnimatedShinyText>
           </h1>
