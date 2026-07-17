@@ -1,0 +1,13 @@
+1:"$Sreact.fragment"
+2:I[2709,["/_next/static/chunks/e75471f9032833ff.js"],"HeroSection"]
+3:I[14618,["/_next/static/chunks/e75471f9032833ff.js"],"PhilosophySection"]
+4:I[52568,["/_next/static/chunks/e75471f9032833ff.js"],"FeaturedProductsSection"]
+5:I[58047,["/_next/static/chunks/e75471f9032833ff.js"],"TechnologySection"]
+6:I[47714,["/_next/static/chunks/e75471f9032833ff.js"],"GallerySection"]
+7:I[46725,["/_next/static/chunks/e75471f9032833ff.js"],"CollectionSection"]
+8:I[38124,["/_next/static/chunks/e75471f9032833ff.js"],"EditorialSection"]
+9:I[45054,["/_next/static/chunks/e75471f9032833ff.js"],"TestimonialsSection"]
+a:I[89836,["/_next/static/chunks/3337476739009024.js","/_next/static/chunks/92f4aff99574fa0c.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+0:{"buildId":"Gzr_pbEMkIP2ySxCgV8MP","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-background","children":[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/e75471f9032833ff.js","async":true}]],["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]]}],"loading":null,"isPartial":false}
+c:null
