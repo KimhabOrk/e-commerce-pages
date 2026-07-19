@@ -12,7 +12,7 @@ const features = [
     span: "col-span-1 row-span-1", // Small
   },
   {
-    image: "https://i.ibb.co/mono/dd1b32a8-3722-4ea2-8808-10d53532809d.png",
+    image: "https://i.ibb.co/4RHHcsSD/dd1b32a8-3722-4ea2-8808-10d53532809d.png",
     span: "col-span-1 row-span-1", // Small
   },
   {
