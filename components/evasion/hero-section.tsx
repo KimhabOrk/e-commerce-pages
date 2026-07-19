@@ -103,7 +103,7 @@ export function HeroSection() {
           <div className="flex h-full w-screen flex-col items-center justify-center px-4 pb-12">
             <div className="relative w-full aspect-square mb-4">
               <Image
-                src="/images/evasion/hero-main.png"
+                src="https://i.ibb.co/xb7rTJ9/hero-main.png"
                 alt="Mountain landscape with camping tent at sunset"
                 fill
                 className="object-cover rounded-lg"
@@ -174,7 +174,7 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/images/evasion/hero-main.png"
+                src="https://i.ibb.co/xb7rTJ9/hero-main.png"
                 alt="Mountain landscape with camping tent at sunset"
                 fill
                 className="object-cover"

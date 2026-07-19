@@ -13,14 +13,14 @@ export function GallerySection() {
   const lastScrollRef = useRef(0);
 
   const images = [
-    { src: "/images/evasion/bottle-bike.png", alt: "Thermal bottle on bike" },
-    { src: "/images/evasion/bottle-lake.png", alt: "Thermal bottle by lake" },
-    { src: "/images/evasion/bottle-water.png", alt: "Thermal bottle in water" },
-    { src: "/images/evasion/bottle-stream.png", alt: "Thermal bottle by stream" },
-    { src: "/images/evasion/bottle-fire.png", alt: "Thermal bottle by fire" },
-    { src: "/images/evasion/bottle-snow.png", alt: "Thermal bottle in snow" },
-    { src: "/images/evasion/bottle-mountain.png", alt: "Thermal bottle on mountain" },
-    { src: "/images/evasion/bottle-canyon.png", alt: "Thermal bottle at canyon" },
+    { src: "https://i.ibb.co/dRrKDg9/bottle-bike.png", alt: "Thermal bottle on bike" },
+    { src: "https://i.ibb.co/8Lbm4DW6/bottle-lake.png", alt: "Thermal bottle by lake" },
+    { src: "https://i.ibb.co/9LSxFdM/bottle-water.png", alt: "Thermal bottle in water" },
+    { src: "https://i.ibb.co/YB8g5h5z/bottle-stream.png", alt: "Thermal bottle by stream" },
+    { src: "https://i.ibb.co/PGHNNmRb/bottle-fire.png", alt: "Thermal bottle by fire" },
+    { src: "https://i.ibb.co/JwwLbbyT/bottle-snow.png", alt: "Thermal bottle in snow" },
+    { src: "https://i.ibb.co/MyYWgnyr/bottle-mountain.png", alt: "Thermal bottle on mountain" },
+    { src: "https://i.ibb.co/ZbdxyxM/bottle-canyon.png", alt: "Thermal bottle at canyon" },
   ];
 
   useEffect(() => {

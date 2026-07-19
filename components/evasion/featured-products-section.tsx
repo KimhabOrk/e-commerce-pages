@@ -6,32 +6,32 @@ const features = [
   {
     title: "Smart Temperature Control",
     description: "Innovation",
-    image: "/images/evasion/d18fe616-5596-4559-90f5-a90f5397d0d8.png",
+    image: "https://i.ibb.co/XrfMyCQJ/d18fe616-5596-4559-90f5-a90f5397d0d8.png",
   },
   {
     title: "Ultra-Light Carbon Frame",
     description: "Performance",
-    image: "/images/evasion/e26fa9c3-966d-4966-94a4-954a1e511c1c.png",
+    image: "https://i.ibb.co/vbdnc1D/e26fa9c3-966d-4966-94a4-954a1e511c1c.png",
   },
   {
     title: "Weather-Resistant Design",
     description: "Durability",
-    image: "/images/evasion/car.jpg",
+    image: "https://i.ibb.co/RpD3sMtf/car.jpg",
   },
   {
     title: "Integrated GPS Tracking",
     description: "Navigation",
-    image: "/images/evasion/204cee22-9e85-49e8-9303-1d309af626b0.png",
+    image: "https://i.ibb.co/YT0Cq9w0/204cee22-9e85-49e8-9303-1d309af626b0.png",
   },
   {
     title: "Built-In LED Flashlight",
     description: "Visibility",
-    image: "/images/evasion/led-flashlight-bottle.png",
+    image: "https://i.ibb.co/Q7dKH3VQ/led-flashlight-bottle.png",
   },
   {
     title: "Self-Heating Technology",
     description: "Comfort",
-    image: "/images/evasion/heating-campfire.png",
+    image: "https://i.ibb.co/Jw2Yc7cj/heating-campfire.png",
   },
 ];
 

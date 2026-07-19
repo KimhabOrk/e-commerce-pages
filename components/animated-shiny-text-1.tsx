@@ -13,16 +13,16 @@ export interface AnimatedShinyTextProps extends ComponentPropsWithoutRef < "span
 
 const variantStyles = {
   rainbow: {
-    base: "text-gray-200/90 dark:text-gray-100/90",
-    shine: "bg-linear-to-r from-transparent via-sky-500 via-40% via-rose-400 via-60% via-cyan-500 via-80% to-transparent dark:via-orange-400 dark:via-60% dark:via-fuchsia-500 dark:via-40% dark:via-red-400",
+    base: "text-white dark:text-gray-100/90",
+    shine: "bg-linear-to-r from-transparent via-gray-400 via-40% via-gray-600 via-60% via-gray-800 via-90% to-transparent dark:via-gray-400 dark:via-40% dark:via-gray-600 dark:via-60% dark:via-gray-800",
   },
   aurora: {
-    base: "text-gray-200/90 dark:text-gray-100/90",
-    shine: "bg-linear-to-r from-transparent via-emerald-400 via-50% via-cyan-500 via-70% to-transparent dark:via-rose-300 dark:via-60% dark:via-blue-400 dark:via-50% dark:via-purple-300",
+    base: "text-white dark:text-gray-100/90",
+    shine: "bg-linear-to-r from-transparent via-gray-500 via-50% via-gray-700 via-70% to-transparent dark:via-gray-300 dark:via-60% dark:via-gray-500 dark:via-40% dark:via-gray-800",
   },
   neon: {
     base: "text-gray-100 dark:text-white",
-    shine: "bg-linear-to-r from-transparent via-cyan-500 via-50% via-fuchsia-500 via-60% via-rose-500 via-85% to-transparent dark:via-indigo-400 dark:via-60% dark:via-purple-400 dark:via-40% dark:via-sky-500",
+    shine: "bg-linear-to-r from-transparent via-gray-800 via-50% via-gray-600 via-60% via-gray-400 via-85% to-transparent dark:via-gray-300 dark:via-60% dark:via-gray-600 dark:via-45% dark:via-gray-800",
   },
 }
 

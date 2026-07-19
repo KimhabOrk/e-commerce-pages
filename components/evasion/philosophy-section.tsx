@@ -111,7 +111,7 @@ export function PhilosophySection() {
                 }}
               >
                 <Image
-                  src="/images/evasion/product-backpack.png"
+                  src="https://i.ibb.co/TBdnB8Dz/product-backpack.png"
                   alt="V1 Expedition Backpack in alpine setting"
                   fill
                   className="object-cover"

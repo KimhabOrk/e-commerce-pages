@@ -8,21 +8,21 @@ const accessories = [
     name: "Compact Model",
     description: "120m² living space with optimal energy efficiency",
     price: "$285,000",
-    image: "/images/mono/hero-side-1.png",
+    image: "https://i.ibb.co/5xtvdmPD/hero-side-1.png",
   },
   {
     id: 2,
     name: "Standard Model",
     description: "180m² perfect balance of space and sustainability",
     price: "$395,000",
-    image: "/images/mono/hero-side-2.png",
+    image: "https://i.ibb.co/gMx4HtcG/hero-side-2.png",
   },
   {
     id: 3,
     name: "Premium Model",
     description: "250m² expansive design with maximum comfort",
     price: "$525,000",
-    image: "/images/mono/hero-side-4.png",
+    image: "https://i.ibb.co/wF5Cz6YJ/hero-side-4.png",
   },
 ];
 

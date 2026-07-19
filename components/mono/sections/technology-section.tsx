@@ -66,12 +66,12 @@ function ScrollRevealText({ text }: { text: string }) {
 
 const sideImages = [
   {
-    src: "/images/mono/interior-view.png",
+    src: "https://i.ibb.co/nN1RRL8b/interior-view.png",
     alt: "Interior view with landscape",
     position: "left",
   },
   {
-    src: "/images/mono/rusted-metal.png",
+    src: "https://i.ibb.co/CpywdGZD/rusted-metal.png",
     alt: "Rusted metal texture",
     position: "right",
   },
@@ -188,7 +188,7 @@ export function TechnologySection() {
               {/* Layered Images - Progressive Fade In */}
               {/* Image 1 - Base layer - Sunrise/Sunset with sun rays */}
               <Image
-                src="/images/mono/mono-1.png"
+                src="https: //i.ibb.co/1JB6Z0Yg/mono-1.png"
                 alt="Modern architecture at sunrise"
                 fill
                 className="object-cover"
@@ -199,7 +199,7 @@ export function TechnologySection() {
               
               {/* Image 2 - Daytime scene - Fades in during first text cycle */}
               <Image
-                src="/images/mono/mono-2.png"
+                src="https: //i.ibb.co/sp26mrJQ/mono-2.png"
                 alt="Modern architecture in daylight"
                 fill
                 className="absolute inset-0 object-cover"
@@ -211,7 +211,7 @@ export function TechnologySection() {
               
               {/* Image 3 - Dusk/Evening - Fades in during second text cycle */}
               <Image
-                src="/images/mono/mono-3.png"
+                src="https: //i.ibb.co/5ggWXpdD/mono-3.png"
                 alt="Modern architecture at dusk"
                 fill
                 className="absolute inset-0 object-cover"
@@ -223,7 +223,7 @@ export function TechnologySection() {
               
               {/* Image 4 - Night with stars - Fades in during third text cycle */}
               <Image
-                src="/images/mono/mono-4.png"
+                src="https: //i.ibb.co/JFHZj2xd/mono-4.png"
                 alt="Modern architecture at night"
                 fill
                 className="absolute inset-0 object-cover"
